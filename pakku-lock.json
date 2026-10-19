@@ -194,6 +194,44 @@
             ]
         },
         {
+            "pakku_id": "1z3fAsplcLVDAbv5",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "carry-on"
+            },
+            "name": {
+                "curseforge": "Carry On"
+            },
+            "id": {
+                "curseforge": "274259"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "carryon-forge-1.20.1-2.1.2.7.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4882/500/carryon-forge-1.20.1-2.1.2.7.jar",
+                    "id": "4882500",
+                    "parent_id": "274259",
+                    "hashes": {
+                        "sha1": "9999714ca3dd2f2401f0396ca44f3b27c3784c4f",
+                        "md5": "8956b37c2ae11cc5522c8404a262c6b7"
+                    },
+                    "required_dependencies": [],
+                    "size": 439457,
+                    "date_published": "2023-11-19T22:32:08.460Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "8Op3lZJRklSeAfu5",
             "type": "MOD",
             "slug": {
@@ -269,6 +307,51 @@
             ]
         },
         {
+            "pakku_id": "CtxkoPIADUUg1zxq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "continents"
+            },
+            "name": {
+                "curseforge": "Continents"
+            },
+            "id": {
+                "curseforge": "682515"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Continents_26.2_v1.1.14.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8396/863/Continents_26.2_v1.1.14.jar",
+                    "id": "8396863",
+                    "parent_id": "682515",
+                    "hashes": {
+                        "sha1": "8c2f1a5483b453b5cdb341da3aa36670d402336d",
+                        "md5": "9c862f346f8b8b6f51bc806fad31eb94"
+                    },
+                    "required_dependencies": [],
+                    "size": 60529,
+                    "date_published": "2026-07-08T22:04:56.380Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "cuwbYPTGUPjYYhzt",
             "pakku_links": [
                 "rpXuqwdchyMoYPro"
@@ -306,6 +389,43 @@
                     ],
                     "size": 115280,
                     "date_published": "2023-07-16T04:39:22.697Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NrcTN2g67W4lMgBx",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "coroutil"
+            },
+            "name": {
+                "curseforge": "CoroUtil"
+            },
+            "id": {
+                "curseforge": "237749"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "coroutil-forge-1.20.1-1.3.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5096/38/coroutil-forge-1.20.1-1.3.7.jar",
+                    "id": "5096038",
+                    "parent_id": "237749",
+                    "hashes": {
+                        "sha1": "7f5f0b62a638b6053c95919cbe8c2bea2e0c93d0",
+                        "md5": "6fb9ccbe8c05c1da61c224d1127e9643"
+                    },
+                    "required_dependencies": [],
+                    "size": 64187,
+                    "date_published": "2024-02-10T13:46:20.167Z"
                 }
             ]
         },
@@ -423,6 +543,272 @@
             ]
         },
         {
+            "pakku_id": "UmM3H61QyYFHARcG",
+            "pakku_links": [
+                "Ir1oUXSfqpcPd5Gi",
+                "i0hBSKAIkwLpOAOc"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-carry-on"
+            },
+            "name": {
+                "curseforge": "EMF Compat: Carry On"
+            },
+            "id": {
+                "curseforge": "1605159"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_carry_on_forge_1.20.1_2.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9205/860/emf_compat_carry_on_forge_1.20.1_2.1.1.jar",
+                    "id": "9205860",
+                    "parent_id": "1605159",
+                    "hashes": {
+                        "sha1": "d7d4f48a1b616b68310b7ee3a495c44536636935",
+                        "md5": "1d2299bbad63411dde5ddd857fc792e5"
+                    },
+                    "required_dependencies": [
+                        "1605113",
+                        "844662"
+                    ],
+                    "size": 226437,
+                    "date_published": "2026-10-16T10:12:16.573Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Ir1oUXSfqpcPd5Gi",
+            "pakku_links": [
+                "i0hBSKAIkwLpOAOc"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-core"
+            },
+            "name": {
+                "curseforge": "EMF Compat: Core"
+            },
+            "id": {
+                "curseforge": "1605113"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_core_forge_1.20.1_2.3.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9205/844/emf_compat_core_forge_1.20.1_2.3.2.jar",
+                    "id": "9205844",
+                    "parent_id": "1605113",
+                    "hashes": {
+                        "sha1": "d0cb76377adbd45a16ac6aea138a997b9277b6e6",
+                        "md5": "26df8924d27c6927be63b98e46d401f5"
+                    },
+                    "required_dependencies": [
+                        "844662"
+                    ],
+                    "size": 176330,
+                    "date_published": "2026-10-16T10:11:54.703Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "GxBWzfRG7W1vuGfE",
+            "pakku_links": [
+                "DvIs6IeP24bTol5J",
+                "RX1M7YiFVyvV0ec0",
+                "i0hBSKAIkwLpOAOc",
+                "Ir1oUXSfqpcPd5Gi"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-exposure"
+            },
+            "name": {
+                "curseforge": "EMF Compat: Exposure"
+            },
+            "id": {
+                "curseforge": "1629285"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_exposure_1.20.1_1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8539/969/emf_compat_exposure_1.20.1_1.0.0.jar",
+                    "id": "8539969",
+                    "parent_id": "1629285",
+                    "hashes": {
+                        "sha1": "c99069c7abc1fdb66712de561a80eb16badfac12",
+                        "md5": "1be4051f10ebb50d8c9c739f2fc38e06"
+                    },
+                    "required_dependencies": [
+                        "871755",
+                        "568563",
+                        "844662",
+                        "1605113"
+                    ],
+                    "size": 125160,
+                    "date_published": "2026-07-30T11:40:27.427Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2nbO0qWP0fi9z9R4",
+            "pakku_links": [
+                "RX1M7YiFVyvV0ec0",
+                "i0hBSKAIkwLpOAOc",
+                "Ir1oUXSfqpcPd5Gi"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-gliders"
+            },
+            "name": {
+                "curseforge": "EMF Compat: Gliders"
+            },
+            "id": {
+                "curseforge": "1629264"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_gliders_1.20.1_2.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8793/940/emf_compat_gliders_1.20.1_2.0.0.jar",
+                    "id": "8793940",
+                    "parent_id": "1629264",
+                    "hashes": {
+                        "sha1": "e2ed377540d8510b4dcafef9af34c79cf8ca3efd",
+                        "md5": "d6c95d5d74ee7a9c05f82246e19f25b4"
+                    },
+                    "required_dependencies": [
+                        "568563",
+                        "844662",
+                        "1605113"
+                    ],
+                    "size": 181795,
+                    "date_published": "2026-09-02T16:48:03.173Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "vfjSoQqIygw6oaC8",
+            "pakku_links": [
+                "i0hBSKAIkwLpOAOc",
+                "Ir1oUXSfqpcPd5Gi"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-immersive-melodies"
+            },
+            "name": {
+                "curseforge": "EMF Compat: Immersive Melodies"
+            },
+            "id": {
+                "curseforge": "1605177"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_immersive_melodies_forge_1.20.1_1.2.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9205/882/emf_compat_immersive_melodies_forge_1.20.1_1.2.1.jar",
+                    "id": "9205882",
+                    "parent_id": "1605177",
+                    "hashes": {
+                        "sha1": "2b1927411acd505b27877bdfb86776069a43d473",
+                        "md5": "7fd531a5030e6d628215a8a061a014c8"
+                    },
+                    "required_dependencies": [
+                        "844662",
+                        "1605113"
+                    ],
+                    "size": 127269,
+                    "date_published": "2026-10-16T10:12:41.773Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "sERUksFqnFVLVuV7",
+            "pakku_links": [
+                "RX1M7YiFVyvV0ec0",
+                "i0hBSKAIkwLpOAOc",
+                "wLvV7Tbl1dMqv4mC",
+                "Ir1oUXSfqpcPd5Gi"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emf-compat-watut"
+            },
+            "name": {
+                "curseforge": "EMF Compat: WATUT"
+            },
+            "id": {
+                "curseforge": "1629292"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emf_compat_watut_1.20.1_1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8539/980/emf_compat_watut_1.20.1_1.0.0.jar",
+                    "id": "8539980",
+                    "parent_id": "1629292",
+                    "hashes": {
+                        "sha1": "019787c26dac572d91a342843e36d437a73ff99d",
+                        "md5": "b4e1c79175c202569afa66bc0b76d153"
+                    },
+                    "required_dependencies": [
+                        "568563",
+                        "844662",
+                        "945479",
+                        "1605113"
+                    ],
+                    "size": 172805,
+                    "date_published": "2026-07-30T11:41:41.553Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "2tsaie60xPCUp1X3",
             "type": "MOD",
             "slug": {
@@ -530,6 +916,42 @@
                     "required_dependencies": [],
                     "size": 477884,
                     "date_published": "2025-10-30T19:05:50.793Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "DvIs6IeP24bTol5J",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "exposure"
+            },
+            "name": {
+                "curseforge": "Exposure"
+            },
+            "id": {
+                "curseforge": "871755"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "exposure-forge-1.20.1-1.9.22.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8957/244/exposure-forge-1.20.1-1.9.22.jar",
+                    "id": "8957244",
+                    "parent_id": "871755",
+                    "hashes": {
+                        "sha1": "3724310c2e7940844f7bb2dbb89e0730c074028e",
+                        "md5": "e960daf9d2588164dc04fc30d99f297d"
+                    },
+                    "required_dependencies": [],
+                    "size": 2249463,
+                    "date_published": "2026-09-23T17:27:14.197Z"
                 }
             ]
         },
@@ -816,6 +1238,133 @@
             ]
         },
         {
+            "pakku_id": "QhVxmnZoDUEpZxwR",
+            "pakku_links": [
+                "RX1M7YiFVyvV0ec0",
+                "i0hBSKAIkwLpOAOc"
+            ],
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "fa-player-extension"
+            },
+            "name": {
+                "curseforge": "Fresh Animations: Player Extension"
+            },
+            "id": {
+                "curseforge": "1281029"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "FA+Player-v1.1.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8245/230/FA+Player-v1.1.zip",
+                    "id": "8245230",
+                    "parent_id": "1281029",
+                    "hashes": {
+                        "sha1": "122e397af111e3dc5fb6b60004aad9464980f13a",
+                        "md5": "8b7d38c1f46a1152e240cb91a95abf1a"
+                    },
+                    "required_dependencies": [
+                        "568563",
+                        "844662"
+                    ],
+                    "size": 110203,
+                    "date_published": "2026-06-14T02:15:44.367Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "kN1RUQvBM6VERrU8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "geophilic"
+            },
+            "name": {
+                "curseforge": "Geophilic – Vanilla Biome Overhauls"
+            },
+            "id": {
+                "curseforge": "711216"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Geophilic v3.7.mod.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "forge",
+                        "neoforge",
+                        "quilt"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8966/202/Geophilic v3.7.mod.jar",
+                    "id": "8966202",
+                    "parent_id": "711216",
+                    "hashes": {
+                        "sha1": "4d668978e18b450c030ed4be096fce52d3a9ceca",
+                        "md5": "27ea4d1eae1961cd0800556de4098d0b"
+                    },
+                    "required_dependencies": [],
+                    "size": 1115993,
+                    "date_published": "2026-09-24T18:30:56.523Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "w0a9lg947NecS3yD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gliders"
+            },
+            "name": {
+                "curseforge": "Gliders"
+            },
+            "id": {
+                "curseforge": "828331"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gliders-forge-1.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7349/611/gliders-forge-1.2.0.jar",
+                    "id": "7349611",
+                    "parent_id": "828331",
+                    "hashes": {
+                        "sha1": "4698bea8e7a3edb4a2556a3dafdda8ccb935e917",
+                        "md5": "aa8491845f392f750b05628e7a3729be"
+                    },
+                    "required_dependencies": [],
+                    "size": 745598,
+                    "date_published": "2025-12-18T11:47:47.400Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "70bcFKFwHnklDTec",
             "type": "MOD",
             "slug": {
@@ -849,6 +1398,42 @@
                     "required_dependencies": [],
                     "size": 134551,
                     "date_published": "2024-10-23T17:31:24.767Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "OQYewA6xkVw0RFjP",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "immersive-melodies"
+            },
+            "name": {
+                "curseforge": "Immersive Melodies"
+            },
+            "id": {
+                "curseforge": "904471"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "immersive_melodies-0.8.0+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8842/209/immersive_melodies-0.8.0+1.20.1-forge.jar",
+                    "id": "8842209",
+                    "parent_id": "904471",
+                    "hashes": {
+                        "sha1": "02f8ea1f93fe6603671884fd81ffc94c3c914457",
+                        "md5": "5f2d914524e0593128bf03982b88d170"
+                    },
+                    "required_dependencies": [],
+                    "size": 5563706,
+                    "date_published": "2026-09-09T06:11:33.597Z"
                 }
             ]
         },
@@ -963,6 +1548,47 @@
                     "required_dependencies": [],
                     "size": 1408557,
                     "date_published": "2025-11-16T14:45:04.230Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "O2MAFXzWqCxkHI0m",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "kotlin-for-forge"
+            },
+            "name": {
+                "curseforge": "Kotlin for Forge"
+            },
+            "id": {
+                "curseforge": "351264"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "kotlinforforge-4.12.0-all.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7291/67/kotlinforforge-4.12.0-all.jar",
+                    "id": "7291067",
+                    "parent_id": "351264",
+                    "hashes": {
+                        "sha1": "962fdb760409d6d71cbf079235f1ca94e3863a22",
+                        "md5": "d6a40dede74edbe646b34a1bafd53b4d"
+                    },
+                    "required_dependencies": [],
+                    "size": 7442998,
+                    "date_published": "2025-12-03T19:47:08.457Z"
                 }
             ]
         },
@@ -1361,6 +1987,42 @@
             ]
         },
         {
+            "pakku_id": "JUXLHVXO6DEbcVM5",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "punchy"
+            },
+            "name": {
+                "curseforge": "Punchy! - First person animations"
+            },
+            "id": {
+                "curseforge": "1374153"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "punchy-2.8g-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9239/893/punchy-2.8g-forge-1.20.1.jar",
+                    "id": "9239893",
+                    "parent_id": "1374153",
+                    "hashes": {
+                        "sha1": "2d8ad4be13a5f53edc709d14c188e1561f493a02",
+                        "md5": "0314b0078797cd03577d7388262a6044"
+                    },
+                    "required_dependencies": [],
+                    "size": 2082513,
+                    "date_published": "2026-10-18T13:29:55.177Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "sW8dqhMhXyx9vV25",
             "type": "MOD",
             "slug": {
@@ -1394,6 +2056,48 @@
                     "required_dependencies": [],
                     "size": 713454,
                     "date_published": "2024-09-09T08:07:43.540Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "CApCZdxUHgEZBBER",
+            "pakku_links": [
+                "O2MAFXzWqCxkHI0m"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "resourcify"
+            },
+            "name": {
+                "curseforge": "Resourcify"
+            },
+            "id": {
+                "curseforge": "870076"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Resourcify (1.20.1-forge)-1.8.7.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9001/234/Resourcify (1.20.1-forge)-1.8.7.jar",
+                    "id": "9001234",
+                    "parent_id": "870076",
+                    "hashes": {
+                        "sha1": "9069186c0ee5b7f81bc78ddd2fc9855f96f5b249",
+                        "md5": "93652216cbab5064010adb48af107200"
+                    },
+                    "required_dependencies": [
+                        "351264"
+                    ],
+                    "size": 2953633,
+                    "date_published": "2026-09-28T16:14:53.773Z"
                 }
             ]
         },
@@ -1507,6 +2211,42 @@
             ]
         },
         {
+            "pakku_id": "8pgYJEI535Hmlf2p",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "streams-reflowing"
+            },
+            "name": {
+                "curseforge": "Streams Reflowing"
+            },
+            "id": {
+                "curseforge": "1581408"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "StreamsReflowing-1.20.1-forge-2.14.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9060/292/StreamsReflowing-1.20.1-forge-2.14.4.jar",
+                    "id": "9060292",
+                    "parent_id": "1581408",
+                    "hashes": {
+                        "sha1": "0b36195cb78f2b32b4c5ab6fc91d17ce97be015f",
+                        "md5": "772e53e2c145932401f74f679d117845"
+                    },
+                    "required_dependencies": [],
+                    "size": 3038039,
+                    "date_published": "2026-10-04T16:01:30.330Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "bDnTYAJhSPkLsDib",
             "type": "MOD",
             "slug": {
@@ -1583,6 +2323,91 @@
             ]
         },
         {
+            "pakku_id": "pPMCpYONarpw70WP",
+            "pakku_links": [
+                "Ir1oUXSfqpcPd5Gi",
+                "i0hBSKAIkwLpOAOc"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "touch-and-motion"
+            },
+            "name": {
+                "curseforge": "Touch'n Motion"
+            },
+            "id": {
+                "curseforge": "1734204"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "touch_n_motion_forge_1.20.1_1.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9205/892/touch_n_motion_forge_1.20.1_1.0.4.jar",
+                    "id": "9205892",
+                    "parent_id": "1734204",
+                    "hashes": {
+                        "sha1": "b028aa5853a3aeb394542e295a32588fdc3a95f7",
+                        "md5": "cd9fb5f1b980be2e36263642818ad89c"
+                    },
+                    "required_dependencies": [
+                        "1605113",
+                        "844662"
+                    ],
+                    "size": 991635,
+                    "date_published": "2026-10-16T10:13:40.360Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wLvV7Tbl1dMqv4mC",
+            "pakku_links": [
+                "NrcTN2g67W4lMgBx"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "what-are-they-up-to"
+            },
+            "name": {
+                "curseforge": "What Are They Up To (Watut)"
+            },
+            "id": {
+                "curseforge": "945479"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "watut-forge-1.20.1-1.2.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6315/241/watut-forge-1.20.1-1.2.3.jar",
+                    "id": "6315241",
+                    "parent_id": "945479",
+                    "hashes": {
+                        "sha1": "d376debf1f96f37dbedf56919baeb7da2dcef9ab",
+                        "md5": "345d3ecdf94dffaa0e3ba55538c65f80"
+                    },
+                    "required_dependencies": [
+                        "237749"
+                    ],
+                    "size": 435496,
+                    "date_published": "2025-03-17T12:36:07.270Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "SiiXll99zYM0ylcS",
             "type": "MOD",
             "slug": {
@@ -1615,6 +2440,85 @@
                     "required_dependencies": [],
                     "size": 568278,
                     "date_published": "2023-08-03T18:04:25.470Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "i0hBSKAIkwLpOAOc",
+            "pakku_links": [
+                "RX1M7YiFVyvV0ec0"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "entity-model-features"
+            },
+            "name": {
+                "curseforge": "[EMF] Entity Model Features [Fabric & Forge]"
+            },
+            "id": {
+                "curseforge": "844662"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "entity_model_features-3.3.12-1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9188/522/entity_model_features-3.3.12-1.20.1-forge.jar",
+                    "id": "9188522",
+                    "parent_id": "844662",
+                    "hashes": {
+                        "sha1": "adcec598039ec59a805a974de9d23ff5eede8299",
+                        "md5": "90ff1d598cd44db0a54697c9db30b582"
+                    },
+                    "required_dependencies": [
+                        "568563"
+                    ],
+                    "size": 840669,
+                    "date_published": "2026-10-15T07:13:03.697Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RX1M7YiFVyvV0ec0",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "entity-texture-features-fabric"
+            },
+            "name": {
+                "curseforge": "[ETF] Entity Texture Features - [Fabric & Forge]"
+            },
+            "id": {
+                "curseforge": "568563"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "entity_texture_features-7.2.6-1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9188/405/entity_texture_features-7.2.6-1.20.1-forge.jar",
+                    "id": "9188405",
+                    "parent_id": "568563",
+                    "hashes": {
+                        "sha1": "61f8c27ea487064f674a587780f3b6f24f22a74f",
+                        "md5": "656c1aa1b7f5444ac4483222fbcd7bd9"
+                    },
+                    "required_dependencies": [],
+                    "size": 999570,
+                    "date_published": "2026-10-15T06:55:40.083Z"
                 }
             ]
         },

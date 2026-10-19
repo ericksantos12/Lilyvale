@@ -1,9 +1,8 @@
 {
-    "name": "PanPack Template",
+    "name": "Lilyvale",
     "version": "DEV",
-    "release_type": "release",
-    "description": "A template pack",
-    "author": "Pansmith",
+    "description": "A cozy and satisfying modpack for SMP",
+    "author": "ericksantos12",
     "overrides": [
         "config",
         "defaultconfigs",
