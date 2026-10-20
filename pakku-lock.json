@@ -235,6 +235,44 @@
             ]
         },
         {
+            "pakku_id": "Ew9cPPM6QM8JphV8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "camerapture"
+            },
+            "name": {
+                "curseforge": "Camerapture"
+            },
+            "id": {
+                "curseforge": "1051342"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Camerapture-1.10.12+mc1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7519/87/Camerapture-1.10.12+mc1.20.1-forge.jar",
+                    "id": "7519087",
+                    "parent_id": "1051342",
+                    "hashes": {
+                        "sha1": "32be993335016cd0ed02573c580b8f094240b311",
+                        "md5": "00d360065f2bca5f0304391137c1b17d"
+                    },
+                    "required_dependencies": [],
+                    "size": 2157918,
+                    "date_published": "2026-01-24T17:17:03.583Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "1z3fAsplcLVDAbv5",
             "type": "MOD",
             "slug": {
@@ -747,53 +785,6 @@
             ]
         },
         {
-            "pakku_id": "GxBWzfRG7W1vuGfE",
-            "pakku_links": [
-                "DvIs6IeP24bTol5J",
-                "RX1M7YiFVyvV0ec0",
-                "i0hBSKAIkwLpOAOc",
-                "Ir1oUXSfqpcPd5Gi"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "emf-compat-exposure"
-            },
-            "name": {
-                "curseforge": "EMF Compat: Exposure"
-            },
-            "id": {
-                "curseforge": "1629285"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "emf_compat_exposure_1.20.1_1.0.0.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8539/969/emf_compat_exposure_1.20.1_1.0.0.jar",
-                    "id": "8539969",
-                    "parent_id": "1629285",
-                    "hashes": {
-                        "sha1": "c99069c7abc1fdb66712de561a80eb16badfac12",
-                        "md5": "1be4051f10ebb50d8c9c739f2fc38e06"
-                    },
-                    "required_dependencies": [
-                        "871755",
-                        "568563",
-                        "844662",
-                        "1605113"
-                    ],
-                    "size": 125160,
-                    "date_published": "2026-07-30T11:40:27.427Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "2nbO0qWP0fi9z9R4",
             "pakku_links": [
                 "RX1M7YiFVyvV0ec0",
@@ -1130,42 +1121,6 @@
                     "required_dependencies": [],
                     "size": 477884,
                     "date_published": "2025-10-30T19:05:50.793Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "DvIs6IeP24bTol5J",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "exposure"
-            },
-            "name": {
-                "curseforge": "Exposure"
-            },
-            "id": {
-                "curseforge": "871755"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "exposure-forge-1.20.1-1.9.22.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8957/244/exposure-forge-1.20.1-1.9.22.jar",
-                    "id": "8957244",
-                    "parent_id": "871755",
-                    "hashes": {
-                        "sha1": "3724310c2e7940844f7bb2dbb89e0730c074028e",
-                        "md5": "e960daf9d2588164dc04fc30d99f297d"
-                    },
-                    "required_dependencies": [],
-                    "size": 2249463,
-                    "date_published": "2026-09-23T17:27:14.197Z"
                 }
             ]
         },
