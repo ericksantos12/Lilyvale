@@ -12,6 +12,8 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+mod_data/
+.mixin.out/
 
 icon.png
 options.txt
