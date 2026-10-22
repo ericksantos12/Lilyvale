@@ -1,0 +1,1323 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "create_mod"
+	group: "1DA3993DEE28D0C0"
+	icon: "create:wrench"
+	id: "6C10000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Andesita com pepitas de ferro ou zinco vira liga. Consulte a receita no JEI; a engenharia começa com uma pedrinha ambiciosa."]
+			icon: "create:andesite_alloy"
+			id: "6C11000000000001"
+			rewards: [{
+				count: 8
+				id: "6C13000000000001"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				id: "6C12000000000001"
+				item: "create:andesite_alloy"
+				title: "Obtenha uma liga de andesita"
+				type: "item"
+			}]
+			title: "&7&lLiga de andesita"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000001"]
+			description: ["No Lilyvale, 1 liga de andesita + qualquer tronco rende 2 revestimentos. Veja no JEI e guarde ambos para as próximas máquinas."]
+			icon: "create:andesite_casing"
+			id: "6C11000000000002"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000002"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000003"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "6C14000000000001"
+				item: "create:andesite_casing"
+				title: "Obtenha 2 revestimentos de andesita"
+				type: "item"
+			}]
+			title: "&7Oficina revestida"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000001"]
+			description: ["Fabrique uma roda d'água para começar a gerar rotação. Depois, instale-a na corrente e segure W para ver o Ponder; a quest só pede a roda no inventário."]
+			icon: "create:water_wheel"
+			id: "6C11000000000003"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000004"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000005"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000002"
+				item: "create:water_wheel"
+				title: "Obtenha uma roda d'água"
+				type: "item"
+			}]
+			title: "&b&lÁgua em movimento"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000001"]
+			description: ["Fabrique o windmill bearing. O Ponder mostra como montar as velas e aproveitar o vento quando quiser aumentar a produção."]
+			icon: "create:windmill_bearing"
+			id: "6C11000000000004"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000006"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000007"
+					item: "create:gearbox"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000003"
+				item: "create:windmill_bearing"
+				title: "Obtenha um rolamento de moinho de vento"
+				type: "item"
+			}]
+			title: "&bVento a favor"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C11000000000002"]
+			description: ["Fabrique uma prensa mecânica. Para funcionar, ela precisa de rotação: escolha uma roda d'água ou um moinho de vento. Depois, use-a para fazer chapas de cobre, ouro e ferro; consulte o JEI."]
+			icon: "create:mechanical_press"
+			id: "6C11000000000005"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000008"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000009"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000004"
+				item: "create:mechanical_press"
+				title: "Obtenha uma prensa mecânica"
+				type: "item"
+			}]
+			title: "&7&lPrimeira prensa"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Faça uma chave inglesa, óculos de engenheiro e stressometer. A chave ajusta blocos; os óculos e o medidor ajudam a achar o culpado quando a fábrica para."]
+			icon: "create:wrench"
+			id: "6C11000000000006"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000000A"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1300000000000B"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000006"
+					item: "create:wrench"
+					title: "Obtenha uma chave inglesa"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000007"
+					item: "create:goggles"
+					title: "Obtenha óculos de engenheiro"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000008"
+					item: "create:stressometer"
+					title: "Obtenha um medidor de estresse"
+					type: "item"
+				}
+			]
+			title: "&eFerramentas do engenheiro"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Reúna um conector de esteira, um funil de andesita e um chute. O Ponder mostra como ligar eixos e transportar itens sem contratar carregadores."]
+			icon: "create:belt_connector"
+			id: "6C11000000000007"
+			rewards: [
+				{
+					count: 4
+					id: "6C1300000000000C"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1300000000000D"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C14000000000005"
+					item: "create:belt_connector"
+					title: "Obtenha um conector de esteira"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000006"
+					item: "create:andesite_funnel"
+					title: "Obtenha um funil de andesita"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000000B"
+					item: "create:chute"
+					title: "Obtenha um chute"
+					type: "item"
+				}
+			]
+			title: "&eEsteira de produção"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C11000000000002"]
+			description: ["Fabrique um millstone. Ele pode moer pedregulho em cascalho; use as amostras da recompensa para experimentar a lavagem com ventilador quando quiser."]
+			icon: "create:millstone"
+			id: "6C11000000000008"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000000E"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6C1300000000000F"
+					item: "minecraft:red_sand"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000007"
+				item: "create:millstone"
+				title: "Obtenha um moinho de pedra"
+				type: "item"
+			}]
+			title: "&7Moinho de pedra"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique um encased fan. Na lavagem, cascalho pode render pepitas de ferro ou pederneira; areia vermelha, pepitas de ouro ou arbusto seco. As saídas são aleatórias."]
+			icon: "create:encased_fan"
+			id: "6C11000000000009"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000010"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000011"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000008"
+				item: "create:encased_fan"
+				title: "Obtenha um ventilador"
+				type: "item"
+			}]
+			title: "&bVento que processa"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique uma serra mecânica e uma broca. O Ponder mostra como processar itens com a serra apontada para cima e como prender ambas a contraptions."]
+			icon: "create:mechanical_saw"
+			id: "6C1100000000000A"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000012"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000013"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C14000000000009"
+					item: "create:mechanical_saw"
+					title: "Obtenha uma serra mecânica"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000000F"
+					item: "create:mechanical_drill"
+					title: "Obtenha uma broca mecânica"
+					type: "item"
+				}
+			]
+			title: "&7Serra e broca"
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique um misturador e uma bacia; a prensa anterior também compacta receitas sobre ela. A massa do Farmer's Delight vira a massa do Create neste pack; confira no JEI."]
+			icon: "create:mechanical_mixer"
+			id: "6C1100000000000B"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000014"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000015"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000000A"
+					item: "create:mechanical_mixer"
+					title: "Obtenha um misturador mecânico"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1400000000000B"
+					item: "create:basin"
+					title: "Obtenha uma bacia"
+					type: "item"
+				}
+			]
+			title: "&6Misturar e compactar"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C1100000000000B"]
+			description: ["Capture um blaze com o queimador, aqueça a bacia e misture cobre com zinco para obter latão. JEI para a receita; Ponder para não cozinhar a oficina."]
+			icon: "create:blaze_burner"
+			id: "6C1100000000000C"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000016"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000017"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000012"
+					item: "create:blaze_burner"
+					title: "Obtenha um queimador de blaze"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000013"
+					item: "create:brass_ingot"
+					title: "Obtenha um lingote de latão"
+					type: "item"
+				}
+			]
+			title: "&6&lFogo e latão"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["A receita local usa 1 chapa de cobre + qualquer tronco e entrega 2 revestimentos de cobre. A prensa faz a chapa; o JEI confirma a montagem."]
+			icon: "create:copper_casing"
+			id: "6C1100000000000D"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000018"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000019"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "6C1400000000000C"
+				item: "create:copper_casing"
+				title: "Obtenha 2 revestimentos de cobre"
+				type: "item"
+			}]
+			title: "&6Revestimento de cobre"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique um tubo e uma bomba mecânica. Ligue-os para mover fluidos; o Ponder ajuda a acertar a direção da água teimosa."]
+			icon: "create:mechanical_pump"
+			id: "6C1100000000000E"
+			rewards: [
+				{
+					count: 8
+					id: "6C1300000000001A"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6C1300000000001B"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000015"
+					item: "create:fluid_pipe"
+					title: "Obtenha um tubo de fluido"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1400000000000D"
+					item: "create:mechanical_pump"
+					title: "Obtenha uma bomba mecânica"
+					type: "item"
+				}
+			]
+			title: "&6Tubos sob pressão"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6C1100000000000D"]
+			description: ["Fabrique um tanque e uma hose pulley. O Ponder mostra como guardar fluidos e baixar a mangueira no reservatório."]
+			icon: "create:fluid_tank"
+			id: "6C1100000000000F"
+			rewards: [
+				{
+					count: 4
+					id: "6C1300000000001C"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1300000000001D"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000017"
+					item: "create:fluid_tank"
+					title: "Obtenha um tanque de fluidos"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1400000000000E"
+					item: "create:hose_pulley"
+					title: "Obtenha uma mangueira de transferência"
+					type: "item"
+				}
+			]
+			title: "&6Reservatório"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C1100000000000D"]
+			description: ["Fabrique um spout e um item drain. Um enche itens, o outro os esvazia; o JEI mostra quais receitas aproveitam cada operação."]
+			icon: "create:spout"
+			id: "6C11000000000010"
+			rewards: [
+				{
+					count: 6
+					id: "6C1300000000001E"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C1300000000001F"
+					item: "create:golden_sheet"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000000F"
+					item: "create:spout"
+					title: "Obtenha um spout"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000010"
+					item: "create:item_drain"
+					title: "Obtenha um dreno de itens"
+					type: "item"
+				}
+			]
+			title: "&6Encher e esvaziar"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique um motor a vapor. Para gerar rotação depois, aqueça uma caldeira abastecida de água; o Ponder mostra a estrutura."]
+			icon: "create:steam_engine"
+			id: "6C11000000000011"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000020"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000021"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000011"
+				item: "create:steam_engine"
+				title: "Obtenha um motor a vapor"
+				type: "item"
+			}]
+			title: "&6&lVapor"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6C1100000000000C"]
+			description: ["No Lilyvale, 1 chapa de latão + qualquer tronco produz 2 revestimentos de latão. Prense o lingote e confira o craft no JEI."]
+			icon: "create:brass_casing"
+			id: "6C11000000000012"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000022"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000023"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "6C14000000000012"
+				item: "create:brass_casing"
+				title: "Obtenha 2 revestimentos de latão"
+				type: "item"
+			}]
+			title: "&6&lEra do latão"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000012"]
+			description: ["Fabrique um deployer. O Ponder ensina a dar rotação e posicionar essa mão mecânica muito obediente."]
+			icon: "create:deployer"
+			id: "6C11000000000013"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000024"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000025"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000026"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000013"
+				item: "create:deployer"
+				title: "Obtenha um deployer"
+				type: "item"
+			}]
+			title: "&6Braço que trabalha"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000013"]
+			description: ["Monte a sequência na esteira: deployers aplicam peças sobre uma chapa de ouro. A receita completa está no JEI; precisão pede uma linha de produção, não sorte."]
+			icon: "create:precision_mechanism"
+			id: "6C11000000000014"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000027"
+					item: "create:brass_sheet"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000028"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "6C14000000000014"
+				item: "create:precision_mechanism"
+				title: "Obtenha um mecanismo de precisão"
+				type: "item"
+			}]
+			title: "&6Mecanismo de precisão"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000014"]
+			description: ["Fabrique um controlador de velocidade e um braço mecânico. O Ponder mostra como regular a rotação e definir os pontos de entrada e saída do braço."]
+			icon: "create:rotation_speed_controller"
+			id: "6C11000000000015"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000029"
+					item: "create:brass_casing"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1300000000002A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1200000000001F"
+					item: "create:rotation_speed_controller"
+					title: "Obtenha um controlador de velocidade"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000015"
+					item: "create:mechanical_arm"
+					title: "Obtenha um braço mecânico"
+					type: "item"
+				}
+			]
+			title: "&6Controle fino"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000012"]
+			description: ["Reúna três mechanical crafters e duas crushing wheels. São as quantidades de suas receitas; o Ponder ajuda a montar as máquinas sem quebrar a cabeça."]
+			icon: "create:mechanical_crafter"
+			id: "6C11000000000016"
+			rewards: [{
+				count: 4
+				id: "6C1300000000002B"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: false
+					count: 3L
+					id: "6C14000000000016"
+					item: "create:mechanical_crafter"
+					title: "Obtenha 3 crafters mecânicos"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "6C14000000000017"
+					item: "create:crushing_wheel"
+					title: "Obtenha 2 rodas de esmagamento"
+					type: "item"
+				}
+			]
+			title: "&7&lMontagem pesada"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6C11000000000016"
+				"6C11000000000010"
+			]
+			description: ["Esmague obsidiana: a receita local dá powdered obsidian, sem devolver o bloco. Depois, siga no JEI as etapas de lava e prensa para fazer uma sturdy sheet."]
+			icon: "create:sturdy_sheet"
+			id: "6C11000000000017"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000002C"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1300000000002D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C14000000000018"
+					item: "create:powdered_obsidian"
+					title: "Obtenha obsidiana em pó"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000024"
+					item: "create:sturdy_sheet"
+					title: "Obtenha uma chapa resistente"
+					type: "item"
+				}
+			]
+			title: "&8Obsidiana trabalhada"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C11000000000012"]
+			description: ["Fabrique dois redstone links e um display link. Frequências iguais conversam; frequências diferentes só se encaram."]
+			icon: "create:display_link"
+			id: "6C11000000000018"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000002E"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1300000000002F"
+					item: "create:transmitter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					count: 2L
+					id: "6C12000000000025"
+					item: "create:redstone_link"
+					title: "Obtenha 2 links de redstone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000019"
+					item: "create:display_link"
+					title: "Obtenha um display link"
+					type: "item"
+				}
+			]
+			title: "&cSinais e informação"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Fabrique super glue e um mechanical bearing. O Ponder mostra como colar blocos e girar a estrutura sem perder peças pelo caminho."]
+			icon: "create:mechanical_bearing"
+			id: "6C11000000000019"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000030"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000031"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000001A"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Obtenha super glue"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000028"
+					item: "create:mechanical_bearing"
+					title: "Obtenha um mechanical bearing"
+					type: "item"
+				}
+			]
+			title: "&aConstrução móvel"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6C11000000000007"]
+			description: ["Reúna uma portable storage interface, uma rope pulley e um cart assembler. O Ponder mostra como passar itens entre contraptions e a base."]
+			icon: "create:portable_storage_interface"
+			id: "6C1100000000001A"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000032"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000033"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000001B"
+					item: "create:portable_storage_interface"
+					title: "Obtenha uma interface portátil de armazenamento"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000002A"
+					item: "create:rope_pulley"
+					title: "Obtenha uma rope pulley"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000002B"
+					item: "create:cart_assembler"
+					title: "Obtenha um cart assembler"
+					type: "item"
+				}
+			]
+			title: "&aContraption com inventário"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: ["Registre uma estrutura na schematic table e alimente o schematicannon com materiais e pólvora. A planta cuida das medidas; o canhão cuida da bagunça."]
+			icon: "create:schematicannon"
+			id: "6C1100000000001B"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000034"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6C13000000000035"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1200000000002C"
+					item: "create:schematic_table"
+					title: "Obtenha uma mesa de esquemáticos"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000002D"
+					item: "create:schematicannon"
+					title: "Obtenha um canhão de esquemáticos"
+					type: "item"
+				}
+			]
+			title: "&a&lPlanta e canhão"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["A receita local usa 1 chapa de ouro + 1 deepslate e entrega 2 railway casings. Ela substitui a receita padrão; consulte o JEI."]
+			icon: "create:railway_casing"
+			id: "6C1100000000001C"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000036"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000037"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "6C1400000000001C"
+				item: "create:railway_casing"
+				title: "Obtenha 2 revestimentos ferroviários"
+				type: "item"
+			}]
+			title: "&eRevestimento ferroviário"
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"6C1100000000001C"
+				"6C11000000000013"
+			]
+			description: ["Use deployers na montagem dos trilhos e coloque uma estação junto à linha. O JEI mostra a sequência; o Ponder mostra curvas e conexões."]
+			icon: "create:track_station"
+			id: "6C1100000000001D"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000038"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000039"
+					item: "create:white_seat"
+					type: "item"
+				}
+				{
+					id: "6C1300000000003A"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1200000000002F"
+					item: "create:track"
+					title: "Obtenha trilhos do Create"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000030"
+					item: "create:track_station"
+					title: "Obtenha uma estação ferroviária"
+					type: "item"
+				}
+			]
+			title: "&eTrilhos e estação"
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6C1100000000001D"]
+			description: ["Monte vagões sobre os trilhos, marque a estação e conclua a montagem do trem. Assentos e controles já estão na recompensa anterior; falta o maquinista."]
+			icon: "create:controls"
+			id: "6C1100000000001E"
+			rewards: [
+				{
+					count: 2
+					id: "6C1300000000003B"
+					item: "create:track_signal"
+					type: "item"
+				}
+				{
+					id: "6C1300000000003C"
+					item: "create:schedule"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				advancement: "lilyvale:create_mod/progresso"
+				criterion: "trem"
+				id: "6C12000000000031"
+				title: "Monte um trem na estação"
+				type: "advancement"
+			}]
+			title: "&e&lTodos a bordo"
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"6C1100000000001E"
+				"6C11000000000018"
+			]
+			description: ["Instale um sinal, dê um schedule ao condutor e mostre a chegada em um display board. O Ponder de cada bloco ajuda a não transformar a linha em engarrafamento."]
+			icon: "create:track_signal"
+			id: "6C1100000000001F"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000003D"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1300000000003E"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "sinal"
+					id: "6C12000000000032"
+					title: "Instale um sinal ferroviário"
+					type: "advancement"
+				}
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "condutor"
+					id: "6C12000000000033"
+					title: "Entregue um horário ao condutor"
+					type: "advancement"
+				}
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "painel"
+					id: "6C12000000000034"
+					title: "Mostre uma chegada no painel"
+					type: "advancement"
+				}
+			]
+			title: "&eRede ferroviária"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C1100000000000B"]
+			description: ["No mixer, misture 4 itens entre bambu, cana-de-açúcar e mudas com água para fazer polpa. A prensa faz papelão; 4 viram o bloco do packager. O Ponder cuida dos endereços."]
+			icon: "create:packager"
+			id: "6C11000000000020"
+			rewards: [
+				{
+					count: 2
+					id: "6C1300000000003F"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000040"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000041"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000001D"
+					item: "create:cardboard"
+					title: "Obtenha papelão"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1400000000001E"
+					item: "create:packager"
+					title: "Obtenha um packager"
+					type: "item"
+				}
+			]
+			title: "&6Papelão que viaja"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000020"]
+			description: ["Pendure um chain conveyor e use o frogport para receber um pacote da corrente. É uma entrega expressa, desde que você tenha indicado para onde ela vai."]
+			icon: "create:package_frogport"
+			id: "6C11000000000021"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000042"
+					item: "create:transmitter"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000043"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000037"
+					item: "create:chain_conveyor"
+					title: "Obtenha um chain conveyor"
+					type: "item"
+				}
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "frogport"
+					id: "6C12000000000038"
+					title: "Receba um pacote pelo frogport"
+					type: "advancement"
+				}
+			]
+			title: "&6Entrega suspensa"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000020"]
+			description: ["Ligue um stock link ao estoque, coloque um funcionário no stock ticker e faça um pedido. Etiquete os pacotes: a fábrica entende pedidos, mas não lê pensamentos."]
+			icon: "create:stock_ticker"
+			id: "6C11000000000022"
+			rewards: [
+				{
+					count: 2
+					id: "6C13000000000044"
+					item: "create:stock_link"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000045"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000039"
+					item: "create:stock_link"
+					title: "Obtenha um stock link"
+					type: "item"
+				}
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "pedido"
+					id: "6C1200000000003A"
+					title: "Faça um pedido no stock ticker"
+					type: "advancement"
+				}
+			]
+			title: "&6Pedidos da fábrica"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"6C11000000000022"
+				"6C11000000000014"
+			]
+			description: ["Configure o factory gauge para disparar um pedido automático e monte um redstone requester. Agora a oficina consegue pedir reposição sem interromper a produção."]
+			icon: "create:factory_gauge"
+			id: "6C11000000000023"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000046"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000047"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "lilyvale:create_mod/progresso"
+					criterion: "medidor"
+					id: "6C1200000000003B"
+					title: "Dispare um pedido automático no factory gauge"
+					type: "advancement"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000003C"
+					item: "create:redstone_requester"
+					title: "Obtenha um redstone requester"
+					type: "item"
+				}
+			]
+			title: "&6&lEstoque automático"
+			x: 12.0d
+			y: 16.0d
+		}
+	]
+	title: "&b&lCreate Mod"
+}
