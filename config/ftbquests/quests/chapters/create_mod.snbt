@@ -1045,11 +1045,6 @@
 					item: "create:white_seat"
 					type: "item"
 				}
-				{
-					id: "6C1300000000003A"
-					item: "create:controls"
-					type: "item"
-				}
 			]
 			tasks: [
 				{
@@ -1073,30 +1068,18 @@
 		}
 		{
 			dependencies: ["6C1100000000001D"]
-			description: ["Monte vagões sobre os trilhos, marque a estação e conclua a montagem do trem. Assentos e controles já estão na recompensa anterior; falta o maquinista."]
+			description: ["Obtenha controles de trem. Com os assentos da recompensa anterior, monte vagões sobre os trilhos e conclua a montagem na estação. O Ponder mostra como preparar a viagem."]
 			icon: "create:controls"
 			id: "6C1100000000001E"
-			rewards: [
-				{
-					count: 2
-					id: "6C1300000000003B"
-					item: "create:track_signal"
-					type: "item"
-				}
-				{
-					id: "6C1300000000003C"
-					item: "create:schedule"
-					type: "item"
-				}
-			]
+			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				advancement: "lilyvale:create_mod/progresso"
-				criterion: "trem"
+				consume_items: false
 				id: "6C12000000000031"
-				title: "Monte um trem na estação"
-				type: "advancement"
+				item: "create:controls"
+				title: "Obtenha controles de trem"
+				type: "item"
 			}]
 			title: "&e&lTodos a bordo"
 			x: 18.0d
@@ -1107,7 +1090,7 @@
 				"6C1100000000001E"
 				"6C11000000000018"
 			]
-			description: ["Instale um sinal, dê um schedule ao condutor e mostre a chegada em um display board. O Ponder de cada bloco ajuda a não transformar a linha em engarrafamento."]
+			description: ["Obtenha um sinal ferroviário, um schedule e um display board. Depois, use-os para sinalizar a linha, instruir o condutor e mostrar chegadas. O Ponder ajuda a não transformar a linha em engarrafamento."]
 			icon: "create:track_signal"
 			id: "6C1100000000001F"
 			rewards: [
@@ -1126,25 +1109,25 @@
 			]
 			tasks: [
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "sinal"
+					consume_items: false
 					id: "6C12000000000032"
-					title: "Instale um sinal ferroviário"
-					type: "advancement"
+					item: "create:track_signal"
+					title: "Obtenha um sinal ferroviário"
+					type: "item"
 				}
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "condutor"
+					consume_items: false
 					id: "6C12000000000033"
-					title: "Entregue um horário ao condutor"
-					type: "advancement"
+					item: "create:schedule"
+					title: "Obtenha um horário de trem"
+					type: "item"
 				}
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "painel"
+					consume_items: false
 					id: "6C12000000000034"
-					title: "Mostre uma chegada no painel"
-					type: "advancement"
+					item: "create:display_board"
+					title: "Obtenha um painel de exibição"
+					type: "item"
 				}
 			]
 			title: "&eRede ferroviária"
@@ -1198,7 +1181,7 @@
 		}
 		{
 			dependencies: ["6C11000000000020"]
-			description: ["Pendure um chain conveyor e use o frogport para receber um pacote da corrente. É uma entrega expressa, desde que você tenha indicado para onde ela vai."]
+			description: ["Obtenha um chain conveyor e um frogport. Pendure o transportador e use o frogport para receber pacotes da corrente. É uma entrega expressa, desde que você tenha indicado para onde ela vai."]
 			icon: "create:package_frogport"
 			id: "6C11000000000021"
 			rewards: [
@@ -1224,11 +1207,11 @@
 					type: "item"
 				}
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "frogport"
+					consume_items: false
 					id: "6C12000000000038"
-					title: "Receba um pacote pelo frogport"
-					type: "advancement"
+					item: "create:package_frogport"
+					title: "Obtenha um frogport"
+					type: "item"
 				}
 			]
 			title: "&6Entrega suspensa"
@@ -1237,7 +1220,7 @@
 		}
 		{
 			dependencies: ["6C11000000000020"]
-			description: ["Ligue um stock link ao estoque, coloque um funcionário no stock ticker e faça um pedido. Etiquete os pacotes: a fábrica entende pedidos, mas não lê pensamentos."]
+			description: ["Obtenha um stock link e um stock ticker. Para fazer pedidos, ligue o link ao estoque e coloque um funcionário no ticker. Etiquete os pacotes: a fábrica entende pedidos, mas não lê pensamentos."]
 			icon: "create:stock_ticker"
 			id: "6C11000000000022"
 			rewards: [
@@ -1263,11 +1246,11 @@
 					type: "item"
 				}
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "pedido"
+					consume_items: false
 					id: "6C1200000000003A"
-					title: "Faça um pedido no stock ticker"
-					type: "advancement"
+					item: "create:stock_ticker"
+					title: "Obtenha um stock ticker"
+					type: "item"
 				}
 			]
 			title: "&6Pedidos da fábrica"
@@ -1279,7 +1262,7 @@
 				"6C11000000000022"
 				"6C11000000000014"
 			]
-			description: ["Configure o factory gauge para disparar um pedido automático e monte um redstone requester. Agora a oficina consegue pedir reposição sem interromper a produção."]
+			description: ["Obtenha um factory gauge e um redstone requester. Configure-os para pedir reposição automaticamente, sem interromper a produção. O Ponder explica como ligar os pedidos ao estoque."]
 			icon: "create:factory_gauge"
 			id: "6C11000000000023"
 			rewards: [
@@ -1300,11 +1283,11 @@
 			size: 1.25d
 			tasks: [
 				{
-					advancement: "lilyvale:create_mod/progresso"
-					criterion: "medidor"
+					consume_items: false
 					id: "6C1200000000003B"
-					title: "Dispare um pedido automático no factory gauge"
-					type: "advancement"
+					item: "create:factory_gauge"
+					title: "Obtenha um factory gauge"
+					type: "item"
 				}
 				{
 					consume_items: false

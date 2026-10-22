@@ -21,12 +21,18 @@
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
-				advancement: "lilyvale:primeiros_passos/madeira"
-				criterion: ""
+				consume_items: false
 				icon: "minecraft:oak_log"
 				id: "376843515C080F10"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
 				title: "Pegue 1 tronco de qualquer árvore"
-				type: "advancement"
+				type: "item"
 			}]
 			title: "&aContrato com a floresta"
 			x: 0.0d
@@ -240,7 +246,7 @@
 		{
 			dependencies: ["04719CFB10027CB6"]
 			description: [
-				"Coloque um bloco de pedra, agache e clique nele com o botão direito usando o martelo para transformá-lo em bigorna."
+				"Coloque um bloco de pedra, agache e clique nele com o botão direito usando o martelo para transformá-lo em bigorna. Depois, olhe diretamente para a bigorna para concluir a tarefa de observação."
 				"Faça pinças de madeira antes de tocar no cobre quente. O JEI mostra a receita; metal incandescente não aceita aperto de mão."
 			]
 			icon: "overgeared:stone_anvil"
@@ -263,11 +269,12 @@
 			size: 1.15d
 			tasks: [
 				{
-					advancement: "lilyvale:primeiros_passos/bigorna"
-					criterion: ""
 					id: "3A1CB4A8F9882950"
-					title: "Transforme pedra em bigorna"
-					type: "advancement"
+					observe_type: 0
+					timer: 0L
+					title: "Observe uma bigorna de pedra"
+					to_observe: "overgeared:stone_anvil"
+					type: "observation"
 				}
 				{
 					consume_items: false
@@ -318,11 +325,11 @@
 			size: 1.35d
 			tasks: [
 				{
-					advancement: "lilyvale:primeiros_passos/primeira_forja"
-					criterion: ""
+					consume_items: false
 					id: "1E8AC814D25C4B39"
-					title: "Forje uma peça na bigorna"
-					type: "advancement"
+					item: "overgeared:heated_copper_ingot"
+					title: "Obtenha um lingote de cobre aquecido"
+					type: "item"
 				}
 				{
 					consume_items: false

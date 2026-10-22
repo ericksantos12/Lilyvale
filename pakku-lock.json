@@ -1487,6 +1487,49 @@
             ]
         },
         {
+            "pakku_id": "REPZqg1n9AVbvoWP",
+            "pakku_links": [
+                "FXNKMvH6JiRMbecG",
+                "sZo9lF1AMRdTa1sf"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-xmod-compat"
+            },
+            "name": {
+                "curseforge": "FTB XMod Compat"
+            },
+            "id": {
+                "curseforge": "889915"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-xmod-compat-forge-2.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6402/486/ftb-xmod-compat-forge-2.1.3.jar",
+                    "id": "6402486",
+                    "parent_id": "889915",
+                    "hashes": {
+                        "sha1": "0584f628d2bc6a612d79dee368324357ebae1423",
+                        "md5": "6d01bd4bc73c6ce36d0d91c56bb27772"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "404465"
+                    ],
+                    "size": 129725,
+                    "date_published": "2025-04-09T10:47:38.837Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "YdZfL9Lg1tGQPYlC",
             "type": "MOD",
             "slug": {
@@ -1910,6 +1953,47 @@
                     ],
                     "size": 401514,
                     "date_published": "2024-12-26T00:49:48.313Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "L2YZxV2mC0LLjgsT",
+            "pakku_links": [
+                "FXNKMvH6JiRMbecG"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "item-filters"
+            },
+            "name": {
+                "curseforge": "Item Filters"
+            },
+            "id": {
+                "curseforge": "309674"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "item-filters-forge-2001.1.0-build.59.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/4838/266/item-filters-forge-2001.1.0-build.59.jar",
+                    "id": "4838266",
+                    "parent_id": "309674",
+                    "hashes": {
+                        "sha1": "55a7f032c59489eca96069a7841601de2ff97590",
+                        "md5": "4155fd7faf7daf46f9dcb914e93893e1"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 110191,
+                    "date_published": "2023-11-03T18:45:29.927Z"
                 }
             ]
         },

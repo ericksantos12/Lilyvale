@@ -48,6 +48,12 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
+        },
+        "item-filters": {
+            "side": "BOTH"
+        },
+        "ftb-xmod-compat": {
+            "side": "BOTH"
         }
     }
 }
