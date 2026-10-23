@@ -25,7 +25,7 @@
 				icon: "minecraft:oak_log"
 				id: "376843515C080F10"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:logs"
@@ -104,7 +104,7 @@
 		{
 			dependencies: ["2F7BB906F78CB017"]
 			description: [
-				"Use as rochas na interface de lascagem. Veja no JEI o desenho da cabeça de picareta de pedra."
+				"Use as rochas na interface de lascagem. Veja no EMI o desenho da cabeça de picareta de pedra."
 				"Depois, junte a cabeça a um graveto. Seus punhos agradecem."
 			]
 			icon: {
@@ -193,7 +193,7 @@
 		{
 			dependencies: ["306193A63C4C5CC3"]
 			description: [
-				"Funda três cobres brutos. Use dois lingotes e dois gravetos para fazer o martelo de ferreiro; confira a disposição no JEI."
+				"Funda três cobres brutos. Use dois lingotes e dois gravetos para fazer o martelo de ferreiro; confira a disposição no EMI."
 				"Guarde o lingote restante. A pedra será sua bigorna, e a água servirá para resfriar a primeira peça."
 			]
 			icon: {
@@ -247,7 +247,7 @@
 			dependencies: ["04719CFB10027CB6"]
 			description: [
 				"Coloque um bloco de pedra, agache e clique nele com o botão direito usando o martelo para transformá-lo em bigorna. Depois, olhe diretamente para a bigorna para concluir a tarefa de observação."
-				"Faça pinças de madeira antes de tocar no cobre quente. O JEI mostra a receita; metal incandescente não aceita aperto de mão."
+				"Faça pinças de madeira antes de tocar no cobre quente. O EMI mostra a receita; metal incandescente não aceita aperto de mão."
 			]
 			icon: "overgeared:stone_anvil"
 			id: "1CD23A4BBBF8E16B"
@@ -296,8 +296,59 @@
 		{
 			dependencies: ["1CD23A4BBBF8E16B"]
 			description: [
-				"Aqueça três lingotes de cobre na fornalha, leve-os à bigorna com as pinças e siga no JEI a receita da cabeça de picareta."
-				"Use o martelo para forjar, resfrie a peça na água e encaixe um graveto. Agora sim: uma picareta com história!"
+				"Aqueça três lingotes de cobre na fornalha, leve-os à bigorna com as pinças e siga no EMI a receita da cabeça de picareta."
+				"Use o martelo para forjar e resfrie a cabeça na água antes de polir. Polir a peça ainda quente reduz sua qualidade."
+				"Obtenha e coloque uma pedra de amolar (grindstone). Segure a cabeça na mão principal, agache e clique com o botão direito mirando a grindstone. O polimento acontece diretamente no bloco."
+				"Guarde a cabeça de cobre polida para a próxima etapa. Os gravetos da recompensa serão o cabo da picareta."
+			]
+			icon: "minecraft:grindstone"
+			id: "79E58B9DB040B4BA"
+			rewards: [{
+				count: 4
+				id: "5CFB1CFA2257723A"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "7520FD53E96DB21B"
+					item: "minecraft:grindstone"
+					title: "Obtenha uma pedra de amolar"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1E8AC814D25C4B39"
+					item: "overgeared:heated_copper_ingot"
+					title: "Obtenha um lingote de cobre aquecido"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0DB962591004A937"
+					item: {
+						Count: 1
+						id: "overgeared:copper_pickaxe_head"
+						tag: {
+							Polished: 1b
+						}
+					}
+					match_nbt: true
+					title: "Obtenha uma cabeça de picareta de cobre polida"
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "&6O brilho vem depois"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["79E58B9DB040B4BA"]
+			description: [
+				"Com a cabeça de cobre já resfriada e polida, junte-a a um graveto para montar a picareta. Confira a receita no EMI."
+				"Agora sim: uma picareta com história!"
 			]
 			icon: {
 				Count: 1
@@ -323,36 +374,20 @@
 			]
 			shape: "hexagon"
 			size: 1.35d
-			tasks: [
-				{
-					consume_items: false
-					id: "1E8AC814D25C4B39"
-					item: "overgeared:heated_copper_ingot"
-					title: "Obtenha um lingote de cobre aquecido"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "0DB962591004A937"
-					item: "overgeared:copper_pickaxe_head"
-					title: "Obtenha uma cabeça de picareta de cobre"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "0C61A66CBCC4E527"
-					item: {
-						Count: 1
-						id: "overgeared:copper_pickaxe"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				consume_items: false
+				id: "0C61A66CBCC4E527"
+				item: {
+					Count: 1
+					id: "overgeared:copper_pickaxe"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "&6&lPrimeira obra de metal"
-			x: 0.0d
+			x: -2.0d
 			y: 3.0d
 		}
 	]

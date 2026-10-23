@@ -1,6 +1,7 @@
 {
 	chapter_groups: [
 		{ id: "048ED71F33A9801E", title: "&6Começando" }
+		{ id: "6F00000000000001", title: "&bProgressão" }
 		{ id: "2F3E0F43CC0404AB", title: "&aAgricultura" }
 		{ id: "7E05AF36547A02F8", title: "&eAnimais" }
 		{ id: "1DA3993DEE28D0C0", title: "&bConstrução" }

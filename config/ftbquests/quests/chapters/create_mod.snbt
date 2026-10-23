@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "create_mod"
-	group: "1DA3993DEE28D0C0"
+	group: "6F00000000000001"
 	icon: "create:wrench"
 	id: "6C10000000000001"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Andesita com pepitas de ferro ou zinco vira liga. Consulte a receita no JEI; a engenharia começa com uma pedrinha ambiciosa."]
+			description: ["Andesita com pepitas de ferro ou zinco vira liga. Consulte a receita no EMI; a engenharia começa com uma pedrinha ambiciosa."]
 			icon: "create:andesite_alloy"
 			id: "6C11000000000001"
 			rewards: [{
@@ -33,7 +33,7 @@
 		}
 		{
 			dependencies: ["6C11000000000001"]
-			description: ["No Lilyvale, 1 liga de andesita + qualquer tronco rende 2 revestimentos. Veja no JEI e guarde ambos para as próximas máquinas."]
+			description: ["No Lilyvale, 1 liga de andesita + qualquer tronco rende 2 revestimentos. Veja no EMI e guarde ambos para as próximas máquinas."]
 			icon: "create:andesite_casing"
 			id: "6C11000000000002"
 			rewards: [
@@ -126,7 +126,7 @@
 		}
 		{
 			dependencies: ["6C11000000000002"]
-			description: ["Fabrique uma prensa mecânica. Para funcionar, ela precisa de rotação: escolha uma roda d'água ou um moinho de vento. Depois, use-a para fazer chapas de cobre, ouro e ferro; consulte o JEI."]
+			description: ["Fabrique uma prensa mecânica. Para funcionar, ela precisa de rotação: escolha uma roda d'água ou um moinho de vento. Depois, use-a para fazer chapas de cobre, ouro e ferro; consulte o EMI."]
 			icon: "create:mechanical_press"
 			id: "6C11000000000005"
 			rewards: [
@@ -349,7 +349,7 @@
 		}
 		{
 			dependencies: ["6C11000000000005"]
-			description: ["Fabrique um misturador e uma bacia; a prensa anterior também compacta receitas sobre ela. A massa do Farmer's Delight vira a massa do Create neste pack; confira no JEI."]
+			description: ["Fabrique um misturador e uma bacia; a prensa anterior também compacta receitas sobre ela. A massa do Farmer's Delight vira a massa do Create neste pack; confira no EMI."]
 			icon: "create:mechanical_mixer"
 			id: "6C1100000000000B"
 			rewards: [
@@ -388,7 +388,7 @@
 		}
 		{
 			dependencies: ["6C1100000000000B"]
-			description: ["Capture um blaze com o queimador, aqueça a bacia e misture cobre com zinco para obter latão. JEI para a receita; Ponder para não cozinhar a oficina."]
+			description: ["Capture um blaze com o queimador, aqueça a bacia e misture cobre com zinco para obter latão. EMI para a receita; Ponder para não cozinhar a oficina."]
 			icon: "create:blaze_burner"
 			id: "6C1100000000000C"
 			rewards: [
@@ -429,7 +429,7 @@
 		}
 		{
 			dependencies: ["6C11000000000005"]
-			description: ["A receita local usa 1 chapa de cobre + qualquer tronco e entrega 2 revestimentos de cobre. A prensa faz a chapa; o JEI confirma a montagem."]
+			description: ["A receita local usa 1 chapa de cobre + qualquer tronco e entrega 2 revestimentos de cobre. A prensa faz a chapa; o EMI confirma a montagem."]
 			icon: "create:copper_casing"
 			id: "6C1100000000000D"
 			rewards: [
@@ -538,7 +538,7 @@
 		}
 		{
 			dependencies: ["6C1100000000000D"]
-			description: ["Fabrique um spout e um item drain. Um enche itens, o outro os esvazia; o JEI mostra quais receitas aproveitam cada operação."]
+			description: ["Fabrique um spout e um item drain. Um enche itens, o outro os esvazia; o EMI mostra quais receitas aproveitam cada operação."]
 			icon: "create:spout"
 			id: "6C11000000000010"
 			rewards: [
@@ -609,7 +609,7 @@
 		}
 		{
 			dependencies: ["6C1100000000000C"]
-			description: ["No Lilyvale, 1 chapa de latão + qualquer tronco produz 2 revestimentos de latão. Prense o lingote e confira o craft no JEI."]
+			description: ["No Lilyvale, 1 chapa de latão + qualquer tronco produz 2 revestimentos de latão. Prense o lingote e confira o craft no EMI."]
 			icon: "create:brass_casing"
 			id: "6C11000000000012"
 			rewards: [
@@ -678,7 +678,7 @@
 		}
 		{
 			dependencies: ["6C11000000000013"]
-			description: ["Monte a sequência na esteira: deployers aplicam peças sobre uma chapa de ouro. A receita completa está no JEI; precisão pede uma linha de produção, não sorte."]
+			description: ["Monte a sequência na esteira: deployers aplicam peças sobre uma chapa de ouro. A receita completa está no EMI; precisão pede uma linha de produção, não sorte."]
 			icon: "create:precision_mechanism"
 			id: "6C11000000000014"
 			rewards: [
@@ -785,7 +785,7 @@
 				"6C11000000000016"
 				"6C11000000000010"
 			]
-			description: ["Esmague obsidiana: a receita local dá powdered obsidian, sem devolver o bloco. Depois, siga no JEI as etapas de lava e prensa para fazer uma sturdy sheet."]
+			description: ["Esmague obsidiana: a receita local dá powdered obsidian, sem devolver o bloco. Depois, siga no EMI as etapas de lava e prensa para fazer uma sturdy sheet."]
 			icon: "create:sturdy_sheet"
 			id: "6C11000000000017"
 			rewards: [
@@ -995,7 +995,7 @@
 		}
 		{
 			dependencies: ["6C11000000000005"]
-			description: ["A receita local usa 1 chapa de ouro + 1 deepslate e entrega 2 railway casings. Ela substitui a receita padrão; consulte o JEI."]
+			description: ["A receita local usa 1 chapa de ouro + 1 deepslate e entrega 2 railway casings. Ela substitui a receita padrão; consulte o EMI."]
 			icon: "create:railway_casing"
 			id: "6C1100000000001C"
 			rewards: [
@@ -1029,7 +1029,7 @@
 				"6C1100000000001C"
 				"6C11000000000013"
 			]
-			description: ["Use deployers na montagem dos trilhos e coloque uma estação junto à linha. O JEI mostra a sequência; o Ponder mostra curvas e conexões."]
+			description: ["Use deployers na montagem dos trilhos e coloque uma estação junto à linha. O EMI mostra a sequência; o Ponder mostra curvas e conexões."]
 			icon: "create:track_station"
 			id: "6C1100000000001D"
 			rewards: [
@@ -1071,7 +1071,6 @@
 			description: ["Obtenha controles de trem. Com os assentos da recompensa anterior, monte vagões sobre os trilhos e conclua a montagem na estação. O Ponder mostra como preparar a viagem."]
 			icon: "create:controls"
 			id: "6C1100000000001E"
-			rewards: [ ]
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{

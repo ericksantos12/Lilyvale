@@ -1,0 +1,1019 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "overgeared"
+	group: "6F00000000000001"
+	icon: "overgeared:smithing_hammer"
+	id: "6F10000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"3D531CC1B4F13F97"
+			]
+			description: [
+				"Sua picareta de cobre abriu o caminho; agora reúna oito lingotes de ferro. Minere o ferro bruto e funda-o na fornalha."
+				"O ferro vai virar ferramentas, estações e peças de forja. A tarefa pede os oito lingotes juntos no inventário, sem consumi-los."
+			]
+			icon: "minecraft:iron_ingot"
+			id: "6F11000000000001"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000001"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:iron_ingot"
+					title: "Obtenha 8 lingotes de ferro"
+					type: "item"
+					count: 8L
+					id: "6F12000000000001"
+				}
+			]
+			title: "&7&lFerro para a oficina"
+			x: 0.0d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F1100000000000B"
+			]
+			description: [
+				"Aqueça lingotes de ferro no alto-forno para obter a versão aquecida. Separe três para a cabeça da próxima picareta; a receita está no EMI."
+				"Use as pinças para manusear o metal quente e levá-lo à bigorna. As pinças de madeira do início ainda servem; a versão de ferro tem uma trilha própria."
+				"O metal esfria depois de um tempo. Deixe a bancada organizada antes de começar: a fornalha não espera você procurar o martelo."
+			]
+			icon: "overgeared:heated_iron_ingot"
+			id: "6F11000000000002"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000002"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:heated_iron_ingot"
+					title: "Obtenha 3 lingotes de ferro aquecidos"
+					type: "item"
+					count: 3L
+					id: "6F12000000000002"
+				}
+			]
+			title: "&6Ferro no ponto"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000002"
+			]
+			description: [
+				"Na bigorna de pedra, distribua os três lingotes de ferro aquecidos conforme a receita de cabeça de picareta no EMI e trabalhe a peça com o martelo."
+				"Resfrie a cabeça na água antes de polir. Depois, segure-a na mão principal, agache e clique com o botão direito mirando a grindstone."
+				"Obtenha a cabeça polida antes de colocar o cabo. A qualidade da forja pode variar; esta etapa exige apenas o polimento."
+			]
+			icon: "overgeared:iron_pickaxe_head"
+			id: "6F11000000000003"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000003"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:iron_pickaxe_head"
+						tag: {
+							Polished: 1b
+						}
+					}
+					title: "Obtenha uma cabeça de picareta de ferro polida"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F12000000000003"
+				}
+			]
+			title: "&7Cabeça de ferro, acabamento fino"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000003"
+			]
+			description: [
+				"Junte a cabeça de ferro resfriada e polida a um graveto para montar a picareta. Confira a receita no EMI."
+				"Guarde a grindstone e as pinças: o aço ainda vai passar pela mesma oficina. Sua coleção de ferramentas acaba de ganhar peso."
+			]
+			icon: "minecraft:iron_pickaxe"
+			id: "6F11000000000004"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000004"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:iron_pickaxe"
+					title: "Obtenha uma picareta de ferro"
+					type: "item"
+					id: "6F12000000000004"
+				}
+			]
+			title: "&7&lUm cabo, novos caminhos"
+			x: 6.0d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F11000000000002"
+			]
+			description: [
+				"Para melhorar suas pinças, forje duas metades de ferro (iron tong) usando ferro aquecido na bigorna de pedra. O EMI mostra o desenho de cada metade."
+				"Resfrie as peças e junte as duas para obter iron tongs. Esta melhoria é opcional: as pinças de madeira continuam sendo uma entrada válida para a oficina."
+			]
+			icon: "overgeared:iron_tongs"
+			id: "6F11000000000005"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000005"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:iron_tongs"
+					title: "Obtenha pinças de ferro"
+					type: "item"
+					id: "6F12000000000005"
+				}
+			]
+			title: "&7Pinças com mais fôlego"
+			x: 2.0d
+			y: -2.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F11000000000001"
+			]
+			description: [
+				"Faça uma bigorna vanilla com blocos e lingotes de ferro; veja a montagem no EMI. Pegue-a no inventário antes de colocá-la no chão."
+				"Agache e clique com o botão direito na bigorna usando um martelo de ferreiro para convertê-la na bigorna de ferreiro do Overgeared. Olhe diretamente para o bloco convertido para concluir a observação."
+				"Esta é a estação exigida pelas receitas de aço e pela forja de netherita. As bigornas Tier A e B estão desativadas neste pack; a oficina segue com esta versão."
+			]
+			icon: "overgeared:smithing_anvil"
+			id: "6F11000000000006"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000006"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:anvil"
+					title: "Obtenha uma bigorna"
+					type: "item"
+					id: "6F12000000000006"
+				}
+				{
+					observe_type: 0
+					timer: 0L
+					title: "Observe uma bigorna de ferreiro"
+					to_observe: "overgeared:smithing_anvil"
+					type: "observation"
+					id: "6F12000000000007"
+				}
+			]
+			title: "&7Uma bigorna para ficar"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000001"
+			]
+			description: [
+				"Faça um projeto vazio com três papéis e corante azul. Um projeto vazio junto de uma bancada de trabalho produz a drafting table; confirme ambas as receitas no EMI."
+				"Obtenha o projeto vazio antes de gastá-lo na mesa. Se preferir, prepare um segundo para começar seu primeiro desenho."
+				"Esta ramificação ensina blueprints e qualidade. Você pode continuar explorando os materiais enquanto pratica a forja."
+			]
+			icon: "overgeared:drafting_table"
+			id: "6F11000000000007"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000007"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:empty_blueprint"
+					title: "Obtenha um projeto vazio"
+					type: "item"
+					id: "6F12000000000008"
+				}
+				{
+					consume_items: false
+					item: "overgeared:drafting_table"
+					title: "Obtenha uma mesa de projetos"
+					type: "item"
+					id: "6F12000000000009"
+				}
+			]
+			title: "&9Projetos sobre a mesa"
+			x: 0.0d
+			y: -4.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F11000000000007"
+			]
+			description: [
+				"Use a drafting table para preparar um blueprint de picareta. O projeto guarda o tipo de ferramenta, a qualidade e os usos de treino."
+				"Use o projeto correspondente na forja da cabeça. Neste pack, os usos de treino avançam quando o resultado do minigame é Expert ou melhor; repetir bons resultados faz o projeto evoluir."
+				"O EMI também mostra como clonar blueprints. Guarde uma cópia de seus projetos úteis e confira a qualidade da cópia antes de gastar o original."
+			]
+			icon: "overgeared:blueprint"
+			id: "6F11000000000008"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000008"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:blueprint"
+						tag: {
+							ToolType: "pickaxe"
+						}
+					}
+					title: "Obtenha um projeto de picareta"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F1200000000000A"
+				}
+			]
+			title: "&9Um desenho que aprende"
+			x: 4.0d
+			y: -4.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F11000000000003"
+				"6F11000000000008"
+			]
+			description: [
+				"Desafio opcional: pratique a forja de uma cabeça de picareta de ferro com o blueprint de picareta até obter a qualidade Perfect. Resfrie e faça o polimento na grindstone."
+				"O resultado pedido é uma cabeça polida com o selo Perfect. Os materiais seguintes não dependem desta medalha; deixe a prática para quando sua oficina estiver abastecida."
+				"Masterwork pode surgir como bônus aleatório de uma forja perfeita, com chance de 5% neste pack. Nenhuma quest deste capítulo exige esse resultado."
+			]
+			icon: "overgeared:iron_pickaxe_head"
+			id: "6F11000000000009"
+			rewards: [
+				{
+					count: 1
+					id: "6F13000000000009"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:iron_pickaxe_head"
+						tag: {
+							Polished: 1b
+							ForgingQuality: "perfect"
+						}
+					}
+					title: "Obtenha uma cabeça de ferro polida de qualidade Perfect"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F1200000000000B"
+				}
+			]
+			title: "&e&lAcabamento de respeito"
+			x: 4.0d
+			y: -2.0d
+			optional: true
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F11000000000001"
+			]
+			description: [
+				"Use uma cabeça de martelo como modelo para preparar um molde cru de argila. A cabeça de pedra pode ser feita por lascagem; consulte o EMI para o desenho e a disposição da argila."
+				"Aqueça o molde cru para obter o molde de argila cozido. As duas tarefas pedem moldes do tipo martelo; mantenha cada etapa no inventário antes de continuar."
+				"Depois da queima, o molde pode receber metal e produzir outra cabeça por fundição. O EMI mostra as quantidades e os fornos compatíveis; a rota avançada de fundição fica em outra ramificação."
+			]
+			icon: "overgeared:clay_tool_cast"
+			id: "6F1100000000000A"
+			rewards: [
+				{
+					count: 4
+					id: "6F1300000000000A"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:unfired_tool_cast"
+						tag: {
+							ToolType: "hammer"
+						}
+					}
+					title: "Obtenha um molde cru de martelo"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F1200000000000C"
+				}
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:clay_tool_cast"
+						tag: {
+							ToolType: "hammer"
+						}
+					}
+					title: "Obtenha um molde de argila cozido de martelo"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F1200000000000D"
+				}
+			]
+			title: "&6O metal ganha um molde"
+			x: -4.0d
+			y: 0.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F11000000000001"
+			]
+			description: [
+				"Obtenha um alto-forno. A receita usa uma fornalha, ferro e pedra lisa; o EMI mostra a montagem e as opções de processamento."
+				"Ele também entra nas receitas das estações de liga e fundição. Pegue-o no inventário antes de aproveitá-lo como ingrediente."
+			]
+			icon: "minecraft:blast_furnace"
+			id: "6F1100000000000B"
+			rewards: [
+				{
+					count: 4
+					id: "6F1300000000000B"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:blast_furnace"
+					title: "Obtenha um alto-forno"
+					type: "item"
+					id: "6F1200000000000E"
+				}
+			]
+			title: "&7Mais calor na oficina"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F1100000000000B"
+			]
+			description: [
+				"Cerque um alto-forno com blocos de tijolos para criar a alloy furnace. Confira a montagem no EMI: o forno agora tem trabalho de equipe."
+				"Use esta estação para misturar os materiais da liga de aço bruto. Ela prepara a matéria-prima; o acabamento do aço acontece na bigorna."
+			]
+			icon: "overgeared:alloy_furnace"
+			id: "6F1100000000000C"
+			rewards: [
+				{
+					count: 4
+					id: "6F1300000000000C"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:alloy_furnace"
+					title: "Obtenha um forno de ligas"
+					type: "item"
+					id: "6F1200000000000F"
+				}
+			]
+			title: "&6Um forno para misturar"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F1100000000000C"
+			]
+			description: [
+				"Na alloy furnace, a receita local combina três lingotes de ferro e um carvão para entregar quatro aços brutos. Abasteça a estação e confira a receita no EMI."
+				"Aço bruto ainda precisa de refino. Separe os quatro itens antes de aquecê-los: esta tarefa pede o lote no inventário."
+			]
+			icon: "overgeared:crude_steel"
+			id: "6F1100000000000D"
+			rewards: [
+				{
+					count: 4
+					id: "6F1300000000000D"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:crude_steel"
+					title: "Obtenha 4 aços brutos"
+					type: "item"
+					count: 4L
+					id: "6F12000000000010"
+				}
+			]
+			title: "&8Aço ainda em rascunho"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F1100000000000D"
+				"6F11000000000006"
+			]
+			description: [
+				"Aqueça o aço bruto no alto-forno para obter heated crude steel e leve-o à bigorna de ferreiro. A receita de refino transforma o material em lingote de aço aquecido com três marteladas; veja o EMI."
+				"Obtenha pelo menos um lingote de aço aquecido e resfrie o lote na água para reunir quatro lingotes de aço. As pinças ajudam a levar tudo ao lugar certo."
+				"Este refino exige a bigorna de ferro do Overgeared. A bigorna de pedra serviu ao começo da jornada e continua útil para as receitas indicadas para ela."
+			]
+			icon: "overgeared:steel_ingot"
+			id: "6F1100000000000E"
+			rewards: [
+				{
+					count: 4
+					id: "6F1300000000000E"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:heated_steel_ingot"
+					title: "Obtenha um lingote de aço aquecido"
+					type: "item"
+					id: "6F12000000000011"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_ingot"
+					title: "Obtenha 4 lingotes de aço"
+					type: "item"
+					count: 4L
+					id: "6F12000000000012"
+				}
+			]
+			title: "&7Do bruto ao lingote"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F1100000000000E"
+			]
+			description: [
+				"Aqueça três lingotes de aço e forje a cabeça da picareta na bigorna de ferreiro. O desenho da receita está no EMI."
+				"Resfrie a cabeça, faça o polimento na grindstone e pegue a peça pronta antes de juntar o graveto. As tarefas pedem a cabeça polida e a picareta montada."
+				"Qualquer qualidade de forja serve para esta etapa. A picareta de aço será a base da melhoria de diamante."
+			]
+			icon: "overgeared:steel_pickaxe"
+			id: "6F1100000000000F"
+			rewards: [
+				{
+					count: 8
+					id: "6F1300000000000F"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:steel_pickaxe_head"
+						tag: {
+							Polished: 1b
+						}
+					}
+					title: "Obtenha uma cabeça de picareta de aço polida"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F12000000000013"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_pickaxe"
+					title: "Obtenha uma picareta de aço"
+					type: "item"
+					id: "6F12000000000014"
+				}
+			]
+			title: "&7&lAço na ponta da picareta"
+			x: 8.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F1100000000000E"
+			]
+			description: [
+				"Forje uma cabeça de martelo de aço, resfrie a peça e junte-a a um graveto para obter o smithing hammer. Confira o desenho no EMI."
+				"Para as pinças de aço, forje duas metades (steel tong), resfrie-as e una as peças. O conjunto melhora seus utensílios de trabalho."
+				"A exigência de martelos por tier está desativada neste pack. Esta melhoria é uma ramificação da oficina e não bloqueia os materiais seguintes."
+			]
+			icon: "overgeared:smithing_hammer"
+			id: "6F11000000000010"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000010"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:smithing_hammer"
+					title: "Obtenha um martelo de ferreiro de aço"
+					type: "item"
+					id: "6F12000000000015"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_tongs"
+					title: "Obtenha pinças de aço"
+					type: "item"
+					id: "6F12000000000016"
+				}
+			]
+			title: "&7Ferramentas da própria oficina"
+			x: 6.0d
+			y: 8.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F1100000000000E"
+			]
+			description: [
+				"Na bigorna de ferreiro, transforme lingotes de aço em chapas. Obtenha uma chapa antes de aproveitar o material nas peças de armadura."
+				"As receitas de capacete, peitoral, calças e botas usam chapas de aço. Siga os desenhos do EMI e reúna as quatro peças no inventário."
+				"Esta trilha é opcional. A recompensa ajuda a abastecer o ferreiro depois de fabricar um guarda-roupa tão pesado."
+			]
+			icon: "overgeared:steel_chestplate"
+			id: "6F11000000000011"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000011"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:steel_plate"
+					title: "Obtenha uma chapa de aço"
+					type: "item"
+					id: "6F12000000000017"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_helmet"
+					title: "Obtenha um capacete de aço"
+					type: "item"
+					id: "6F12000000000018"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_chestplate"
+					title: "Obtenha um peitoral de aço"
+					type: "item"
+					id: "6F12000000000019"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_leggings"
+					title: "Obtenha calças de aço"
+					type: "item"
+					id: "6F1200000000001A"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_boots"
+					title: "Obtenha botas de aço"
+					type: "item"
+					id: "6F1200000000001B"
+				}
+			]
+			title: "&7Uma armadura feita em casa"
+			x: 8.0d
+			y: 8.0d
+			optional: true
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F1100000000000F"
+			]
+			description: [
+				"Obtenha uma mesa de ferraria (smithing table) e procure o molde de melhoria de diamante do Overgeared em baús de estruturas. Tesouros enterrados, pirâmides e postos de saqueadores estão entre as fontes deste pack."
+				"A receita mostrada no EMI duplica um molde existente: ela usa o próprio molde, diamantes e um lingote de aço. Encontre o primeiro exemplar e guarde uma cópia antes de fazer as melhorias."
+				"A melhoria de diamante usa uma ferramenta de aço como base. Esta tarefa pede a estação e o molde; a picareta melhorada vem a seguir."
+			]
+			icon: "overgeared:diamond_upgrade_smithing_template"
+			id: "6F11000000000012"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000012"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:smithing_table"
+					title: "Obtenha uma mesa de ferraria"
+					type: "item"
+					id: "6F1200000000001C"
+				}
+				{
+					consume_items: false
+					item: "overgeared:diamond_upgrade_smithing_template"
+					title: "Obtenha um molde de melhoria de diamante"
+					type: "item"
+					id: "6F1200000000001D"
+				}
+			]
+			title: "&bUm molde encontrado pelo caminho"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000012"
+			]
+			description: [
+				"Na mesa de ferraria, combine a picareta de aço, um molde de melhoria de diamante do Overgeared e um diamante. Confira a receita no EMI."
+				"Guarde a picareta de diamante: ela será a base da melhoria de netherita. O mesmo sistema de diamante também aparece nas receitas das outras ferramentas e armaduras de aço."
+			]
+			icon: "minecraft:diamond_pickaxe"
+			id: "6F11000000000013"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000013"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:diamond_pickaxe"
+					title: "Obtenha uma picareta de diamante"
+					type: "item"
+					id: "6F1200000000001E"
+				}
+			]
+			title: "&b&lDiamante sobre aço"
+			x: 12.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F1100000000000A"
+				"6F1100000000000B"
+			]
+			description: [
+				"A casting furnace usa um alto-forno, tijolos vermelhos do Nether e um diamante. A montagem está no EMI; esta estação aprofunda a rota de fundição com moldes."
+				"Prepare também um molde de martelo do Nether (nether tool cast). Use uma cabeça de martelo como modelo e confira no EMI os materiais da versão do Nether."
+				"Os moldes guardam o tipo da peça e a quantidade de metal. Confira no EMI como preencher o molde na bancada e processá-lo no forno de fundição. Esta tarefa pede a estação e o molde; obter uma cabeça por forja continua sendo outra rota disponível."
+			]
+			icon: "overgeared:casting_furnace"
+			id: "6F11000000000014"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000014"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:casting_furnace"
+					title: "Obtenha um forno de fundição"
+					type: "item"
+					id: "6F1200000000001F"
+				}
+				{
+					consume_items: false
+					item: {
+						Count: 1
+						id: "overgeared:nether_tool_cast"
+						tag: {
+							ToolType: "hammer"
+						}
+					}
+					title: "Obtenha um molde de martelo do Nether"
+					type: "item"
+					match_nbt: true
+					weak_nbt_match: true
+					id: "6F12000000000020"
+				}
+			]
+			title: "&cFundição com sotaque do Nether"
+			x: -4.0d
+			y: 6.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F1100000000000B"
+			]
+			description: [
+				"Cerque um alto-forno com blocos de tijolos do Nether para obter a nether alloy furnace. Confira no EMI a receita desta estação."
+				"Ela prepara a liga usada na forja da netherita. Reserve ouro e fragmentos de netherita para o próximo trabalho; agora sua oficina pede material de uma viagem mais quente."
+			]
+			icon: "overgeared:nether_alloy_furnace"
+			id: "6F11000000000015"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000015"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:nether_alloy_furnace"
+					title: "Obtenha um forno de ligas do Nether"
+					type: "item"
+					id: "6F12000000000021"
+				}
+			]
+			title: "&cUm forno para ligas do Nether"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000006"
+				"6F11000000000015"
+			]
+			description: [
+				"Na nether alloy furnace, combine quatro fragmentos de netherita e quatro lingotes de ouro para obter liga de netherita aquecida. Confira a receita no EMI e pegue o resultado antes da forja."
+				"Leve a liga aquecida à bigorna de ferreiro. A receita instalada exige dez marteladas e o minigame de dificuldade Master para produzir o lingote de netherita."
+				"Uma tentativa que falha nessa receita devolve quatro fragmentos de netherita. Prepare uma área segura e pratique o ritmo antes de comprometer outra liga."
+				"Esta tarefa pede o material aquecido e o lingote pronto. A receita do lingote não atribui qualidade à peça; o desafio opcional de qualidade Perfect continua em sua própria ramificação."
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "6F11000000000016"
+			rewards: [
+				{
+					count: 4
+					id: "6F13000000000016"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:heated_netherite_alloy"
+					title: "Obtenha uma liga de netherita aquecida"
+					type: "item"
+					id: "6F12000000000022"
+				}
+				{
+					consume_items: false
+					item: "minecraft:netherite_ingot"
+					title: "Obtenha um lingote de netherita"
+					type: "item"
+					id: "6F12000000000023"
+				}
+			]
+			title: "&5A liga pede firmeza"
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"6F11000000000013"
+				"6F11000000000016"
+			]
+			description: [
+				"Encontre um molde de melhoria de netherita nas estruturas do Nether e guarde cópias antes de usá-lo. O EMI mostra a receita de duplicação."
+				"Na mesa de ferraria, combine o molde, a picareta de diamante e um lingote de netherita. Obtenha o molde no inventário antes de gastá-lo na melhoria."
+				"Sua picareta começou com uma pedra lascada e passou por uma oficina inteira. Agora falta decidir qual montanha terá o privilégio da estreia."
+			]
+			icon: "minecraft:netherite_pickaxe"
+			id: "6F11000000000017"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000017"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:netherite_upgrade_smithing_template"
+					title: "Obtenha um molde de melhoria de netherita"
+					type: "item"
+					id: "6F12000000000024"
+				}
+				{
+					consume_items: false
+					item: "minecraft:netherite_pickaxe"
+					title: "Obtenha uma picareta de netherita"
+					type: "item"
+					id: "6F12000000000025"
+				}
+			]
+			title: "&5&lDa oficina à netherita"
+			x: 16.0d
+			y: 6.0d
+			shape: "hexagon"
+			size: 1.15d
+		}
+		{
+			dependencies: [
+				"6F1100000000000E"
+			]
+			description: [
+				"Obtenha uma mesa de flechas (fletching table). O Overgeared acrescenta funções à estação para montar flechas; confira as receitas no EMI."
+				"Forje pontas de ferro e de aço conforme os desenhos do EMI e combine-as com gravetos e penas. Reúna oito flechas de cada metal no inventário."
+				"A modificação também permite aplicar poções em tipos de flecha compatíveis. Esta ramificação pede as flechas comuns de ferro e aço; deixe as poções para os experimentos da sua oficina."
+			]
+			icon: "minecraft:fletching_table"
+			id: "6F11000000000018"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000018"
+					item: "minecraft:feather"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "minecraft:fletching_table"
+					title: "Obtenha uma mesa de flechas"
+					type: "item"
+					id: "6F12000000000026"
+				}
+				{
+					consume_items: false
+					item: "overgeared:iron_arrow"
+					title: "Obtenha 8 flechas de ferro"
+					type: "item"
+					count: 8L
+					id: "6F12000000000027"
+				}
+				{
+					consume_items: false
+					item: "overgeared:steel_arrow"
+					title: "Obtenha 8 flechas de aço"
+					type: "item"
+					count: 8L
+					id: "6F12000000000028"
+				}
+			]
+			title: "&6A oficina também faz pontaria"
+			x: 4.0d
+			y: 8.0d
+			optional: true
+		}
+		{
+			dependencies: [
+				"6F11000000000018"
+			]
+			description: [
+				"Use um diamante na grindstone para obter uma lasca de diamante (diamond shard). Segure o material na mão principal, agache e clique com o botão direito mirando o bloco."
+				"Use a lasca como ponta de flecha, com graveto e pena. A receita do EMI entrega quatro flechas por montagem; reúna oito para concluir a tarefa."
+				"As penas da recompensa ajudam a repor a munição. Marque seus alvos com cuidado: agora cada disparo tem acabamento de joalheria."
+			]
+			icon: "overgeared:diamond_arrow"
+			id: "6F11000000000019"
+			rewards: [
+				{
+					count: 8
+					id: "6F13000000000019"
+					item: "minecraft:feather"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					item: "overgeared:diamond_shard"
+					title: "Obtenha uma lasca de diamante"
+					type: "item"
+					id: "6F12000000000029"
+				}
+				{
+					consume_items: false
+					item: "overgeared:diamond_arrow"
+					title: "Obtenha 8 flechas de diamante"
+					type: "item"
+					count: 8L
+					id: "6F1200000000002A"
+				}
+			]
+			title: "&bUma ponta que vale um diamante"
+			x: 2.0d
+			y: 8.0d
+			optional: true
+		}
+	]
+	title: "&6&lOvergeared"
+}
