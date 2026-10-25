@@ -1,0 +1,395 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "primeiros_passos"
+	group: "048ED71F33A9801E"
+	icon: "minecraft:oak_sapling"
+	id: "5C01DCD466AAB2FD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Um tronco nas mãos e já estamos negociando com a floresta. Vale madeira de qualquer árvore."]
+			icon: "minecraft:oak_log"
+			id: "2A131A7DE90EBD8A"
+			rewards: [{
+				count: 8
+				id: "2D4F27D7D0C563D8"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				icon: "minecraft:oak_log"
+				id: "376843515C080F10"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Pegue 1 tronco de qualquer árvore"
+				type: "item"
+			}]
+			title: "&aContrato com a floresta"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A131A7DE90EBD8A"]
+			description: [
+				"Quatro tábuas, uma bancada e planos ligeiramente ambiciosos."
+				"O cascalho da recompensa pode virar pederneira. Talvez ele precise de um pouco de convencimento."
+			]
+			icon: "minecraft:crafting_table"
+			id: "21CB186D99292665"
+			rewards: [{
+				count: 32
+				id: "33A17F8A41BC43B8"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1699D50BAF4485E5"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "&aOficina portátil"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21CB186D99292665"]
+			description: [
+				"Encontre pederneira no cascalho. Com ela na mão, clique repetidamente com o botão direito em pedra comum para soltar uma rocha."
+				"Talvez a pederneira reclame primeiro. As duas rochas extras completam as três necessárias para a cabeça da picareta."
+			]
+			icon: "overgeared:knappable_rock"
+			id: "2F7BB906F78CB017"
+			rewards: [
+				{
+					count: 2
+					id: "2EBF5D9435DD7DB9"
+					item: "overgeared:knappable_rock"
+					type: "item"
+				}
+				{
+					id: "17715B58EA698C38"
+					item: "minecraft:flint"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "2702D4B4D2E43036"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "077FDF4B760FA150"
+					item: "overgeared:knappable_rock"
+					type: "item"
+				}
+			]
+			title: "&7Pedra teimosa"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F7BB906F78CB017"]
+			description: [
+				"Use as rochas na interface de lascagem. Veja no EMI o desenho da cabeça de picareta de pedra."
+				"Depois, junte a cabeça a um graveto. Seus punhos agradecem."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0B46EB803FB4BBA3"
+			rewards: [
+				{
+					count: 16
+					id: "3B356E92D1AA4F58"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "12B246E4CDFAC02C"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					consume_items: false
+					id: "1C0C672C90C5FE38"
+					item: "overgeared:stone_pickaxe_head"
+					title: "Obtenha uma cabeça de picareta de pedra"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2168088611F80DB7"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&7Picareta sob medida"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B46EB803FB4BBA3"]
+			description: [
+				"Mine oito pedregulhos para montar uma fornalha e procure cobre com sua picareta nova."
+				"Traga pelo menos três cobres brutos. Marque o caminho de volta com as tochas!"
+			]
+			icon: "minecraft:raw_copper"
+			id: "306193A63C4C5CC3"
+			rewards: [{
+				count: 8
+				id: "1879859C4ED3F4B3"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "35332BCC83EC6C9C"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "03CA852E3C730E01"
+					item: "minecraft:raw_copper"
+					title: "Obtenha 3 cobres brutos"
+					type: "item"
+				}
+			]
+			title: "&6Primeira expedição"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["306193A63C4C5CC3"]
+			description: [
+				"Funda três cobres brutos. Use dois lingotes e dois gravetos para fazer o martelo de ferreiro; confira a disposição no EMI."
+				"Guarde o lingote restante. A pedra será sua bigorna, e a água servirá para resfriar a primeira peça."
+			]
+			icon: {
+				Count: 1
+				id: "overgeared:copper_smithing_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "04719CFB10027CB6"
+			rewards: [
+				{
+					count: 4
+					id: "174CFE3B34235E8F"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "3BA5B5CF49289E01"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					count: 3L
+					id: "222E67D4BD9C723D"
+					item: "minecraft:copper_ingot"
+					title: "Obtenha 3 lingotes de cobre"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2B5CD3409C9ADAFA"
+					item: {
+						Count: 1
+						id: "overgeared:copper_smithing_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6Fogo de oficina"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04719CFB10027CB6"]
+			description: [
+				"Coloque um bloco de pedra, agache e clique nele com o botão direito usando o martelo para transformá-lo em bigorna. Depois, olhe diretamente para a bigorna para concluir a tarefa de observação."
+				"Faça pinças de madeira antes de tocar no cobre quente. O EMI mostra a receita; metal incandescente não aceita aperto de mão."
+			]
+			icon: "overgeared:stone_anvil"
+			id: "1CD23A4BBBF8E16B"
+			rewards: [
+				{
+					count: 2
+					id: "0AAA3ADE4BE3A78C"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A1F8BF581BDEB12"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					id: "3A1CB4A8F9882950"
+					observe_type: 0
+					timer: 0L
+					title: "Observe uma bigorna de pedra"
+					to_observe: "overgeared:stone_anvil"
+					type: "observation"
+				}
+				{
+					consume_items: false
+					id: "2950629EA88DAABC"
+					item: {
+						Count: 1
+						id: "overgeared:wooden_tongs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6Pedra que aguenta pancada"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1CD23A4BBBF8E16B"]
+			description: [
+				"Aqueça três lingotes de cobre na fornalha, leve-os à bigorna com as pinças e siga no EMI a receita da cabeça de picareta."
+				"Use o martelo para forjar e resfrie a cabeça na água antes de polir. Polir a peça ainda quente reduz sua qualidade."
+				"Obtenha e coloque uma pedra de amolar (grindstone). Segure a cabeça na mão principal, agache e clique com o botão direito mirando a grindstone. O polimento acontece diretamente no bloco."
+				"Guarde a cabeça de cobre polida para a próxima etapa. Os gravetos da recompensa serão o cabo da picareta."
+			]
+			icon: "minecraft:grindstone"
+			id: "79E58B9DB040B4BA"
+			rewards: [{
+				count: 4
+				id: "5CFB1CFA2257723A"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "7520FD53E96DB21B"
+					item: "minecraft:grindstone"
+					title: "Obtenha uma pedra de amolar"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1E8AC814D25C4B39"
+					item: "overgeared:heated_copper_ingot"
+					title: "Obtenha um lingote de cobre aquecido"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0DB962591004A937"
+					item: {
+						Count: 1
+						id: "overgeared:copper_pickaxe_head"
+						tag: {
+							Polished: 1b
+						}
+					}
+					match_nbt: true
+					title: "Obtenha uma cabeça de picareta de cobre polida"
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "&6O brilho vem depois"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["79E58B9DB040B4BA"]
+			description: [
+				"Com a cabeça de cobre já resfriada e polida, junte-a a um graveto para montar a picareta. Confira a receita no EMI."
+				"Agora sim: uma picareta com história!"
+			]
+			icon: {
+				Count: 1
+				id: "overgeared:copper_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3D531CC1B4F13F97"
+			rewards: [
+				{
+					count: 4
+					id: "0F951347185F9D60"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "262CD448925AAFD8"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [{
+				consume_items: false
+				id: "0C61A66CBCC4E527"
+				item: {
+					Count: 1
+					id: "overgeared:copper_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lPrimeira obra de metal"
+			x: -2.0d
+			y: 3.0d
+		}
+	]
+	title: "&6&lPrimeiros Passos"
+}
