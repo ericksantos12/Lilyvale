@@ -17,6 +17,8 @@ This skill covers FTB Quests SNBT, chapter design, tasks, rewards, and KubeJS in
 
 For this repository's Minecraft 1.20.1 pack, read [Lilyvale 1.20.1 and Create chapter lessons](references/lilyvale-1201-create.md) first. It records the installed format, recipe and task checks, dependency rules, layout conventions, and the limits of static verification. The existing chapter and installed recipes remain the source of truth if the pack changes.
 
+For category organization, new chapters, and progression design, follow [Lilyvale's optional journey design](references/lilyvale-quest-design.md). Categories are themes, not mandatory stages; learning, milestones, and optional challenges coexist within them.
+
 ## Quick Orientation
 
 FTB Quests stores all configuration as **SNBT files** (Stringified NBT) under:
