@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "overgeared"
-	group: "6F00000000000001"
+	group: "6E00000000000002"
 	icon: "overgeared:smithing_hammer"
 	id: "6F10000000000001"
 	order_index: 0
