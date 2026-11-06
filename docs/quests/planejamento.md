@@ -37,6 +37,7 @@ Formas são uma proposta visual a verificar no editor instalado. Texto A/M/C aco
 - **L — local:** dimensão, bioma ou estrutura confirmados. Visitar uma dungeon não equivale a concluí-la.
 - **K — combate:** derrota real do alvo. Ajustar crédito de equipe e não exigir matar de novo um chefe já vencido.
 - **P — projeto pessoal:** checkmark transparente, com checklist de sugestão, sem valor econômico alto.
+- **D — orientação documental:** abreviação usada em alguns nós para referência R ou texto de apoio; não é outro tipo de atividade nem um tipo técnico de task.
 - **Q — catálogo:** regra de expansão em uma quest independente por identidade elegível; modo I por padrão. Se o texto disser “preparei/cozinhei/capturei”, exige E correspondente ou marcação manual explícita, nunca apenas uma task I renomeada.
 
 Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastreamento persistente são possibilidades futuras, não requisitos silenciosamente adicionados por este plano. Falta de detector não autoriza prometer uma validação que não existe.
@@ -304,14 +305,18 @@ Dois sistemas podem ter receitas relacionadas sem uma dependência editorial de 
 
 ## 9. Recompensas e cooperação
 
-- **A:** pequena ajuda relacionada ao processo, sem fornecer o objetivo seguinte pronto; sugestão de 25–50 pontos de XP.
-- **M:** reconhecimento maior, equivalente entre fazenda, casa, ferrovia e aventura; sugestão de 100–250 pontos de XP ou lembrança cosmética aprovada.
-- **C/Q:** recompensa simbólica, sem economia baseada em repetir checkmarks; sugestão de 10–25 pontos de XP por nova folha, com orçamento por álbum a aprovar.
-- **P autodeclarado:** preferir reconhecimento sem item valioso. Honestidade e criatividade não devem virar uma estratégia de farm de recompensas.
-- Números são uma proposta para conteúdo novo. Não mudar os 50 XP atuais das coleções nem o total histórico do armazenamento sem aprovação de balanceamento e regra de migração.
+- **Política de conteúdo novo aprovada pelo usuário na F00:** somente pontos de XP, sem brindes de itens adicionados por padrão.
+- **A:** 50 pontos de XP por aprendizado novo.
+- **M:** 150 pontos de XP por marco novo, com o mesmo reconhecimento editorial para fazenda, casa, ferrovia e aventura.
+- **C/Q:** 25 pontos de XP por desafio ou folha de coleção nova.
+- **P autodeclarado:** não repetível e sem item valioso; quando for quest nova, o XP segue o tipo editorial A/M/C. P não é um quarto tipo de atividade.
+- **R/D:** não criar uma recompensa adicional apenas por uma nota de referência.
+- **Legado preservado:** não mudar os 50 XP atuais das coleções, as recompensas de item existentes ou o total histórico do armazenamento sem autorização e regra de migração específicas.
 - Não dar companheiros/artefatos raros ou equipamento final como atalhos de recompensa. Não sortear uma recompensa que conclua a próxima folha de um álbum.
-- Decidir explicitamente quais conquistas são individuais e quais são de equipe. Chefes e construções compartilhadas devem reconhecer colaboração; o diário pessoal de receitas/fotos pode continuar individual se o sistema suportar.
+- **Alvo de equipe aprovado na F00:** coleções pessoais e marcos compartilhados, se tecnicamente viável. A configuração de recompensa de equipe não comprova suporte a progresso pessoal; não publicar essa promessa nem converter progresso coletivo antigo sem validar EQ-01/EQ-02. Se a solução exigir nova integração ou fallback coletivo, obter decisão explícita antes de implementar.
 - Não converter checkmarks de projeto em requisitos de outras atividades; não há obrigação de provar beleza, tamanho de casa ou qualidade musical a um sistema automático.
+
+As escolhas de descoberta por posse (com troca/presente), recompensas e alvo de equipe estão registradas nos [contratos e na auditoria da F00](fases/registros/f00-contratos-e-auditoria.md). A viabilidade técnica permanece um gate local; nenhuma configuração do jogo foi alterada para aplicar essas políticas nesta fase.
 
 ## 10. Migração do que já existe
 
@@ -350,7 +355,7 @@ Não gerar IDs finais agora. Na implementação, novos IDs devem ser hexadecimai
 
 O plano é executável em **19 fases, F00–F18**, com entregas menores, gates locais, testes e fichas de passagem. A numeração é prioridade de trabalho, não ordem obrigatória para o jogador.
 
-[Índice completo, estados e protocolo de execução](fases/README.md). Todas as fases começam **não iniciadas**; esta edição só separa documentos.
+[Índice completo, estados e protocolo de execução](fases/README.md). O índice registra o estado atual de cada fase; a execução da F00 é documental e não inicia automaticamente F01 ou implementação de capítulos.
 
 | Fase | Entrega | Capítulos |
 | --- | --- | --- |

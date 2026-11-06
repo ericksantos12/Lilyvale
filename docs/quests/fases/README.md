@@ -1,6 +1,6 @@
 # Execução incremental das quests de Lilyvale
 
-**Estado inicial: todas as fases abaixo estão não iniciadas.** A existência de quests legadas e de pesquisa documental não é conclusão de uma fase desta reformulação.
+**Estado atual: F00 concluída com aceite explícito; demais fases não iniciadas.** A existência de quests legadas e de pesquisa documental não é conclusão de uma fase desta reformulação.
 
 [Plano editorial e regras comuns](../planejamento.md) · [Catálogos candidatos](../catalogos-candidatos.md)
 
@@ -11,7 +11,7 @@
 3. Confirmar os pré-requisitos daquele lote; executar apenas o escopo correspondente e preservar os demais capítulos/IDs.
 4. Cada entrega de conteúdo inclui um corte vertical: objetivo, critério honesto, texto, dependências, recompensa, layout e validação. Não publicar só uma árvore de ícones como fase concluída.
 5. Manter o livro utilizável após cada lote: nenhuma referência para ID ausente, nenhum capítulo legado apagado antes da migração completa e nenhum duplicado temporário de recompensa.
-6. Aplicar validações e registrar evidências/aceite. Se faltar acesso ao jogo, marcar “aguardando validação em jogo”, não concluída.
+6. Aplicar validações e registrar evidências/aceite. Em lotes que alteram o jogo, se faltar acesso ao jogo, marcar “aguardando validação em jogo”, não concluída. A F00 documental não exige teste de gameplay de conteúdo que não implementou.
 7. Atualizar a tabela e a ficha da fase; parar no limite autorizado. Commit/push só quando solicitado.
 
 ## Ordem sugerida e pré-requisitos reais
@@ -28,7 +28,7 @@
 
 | Fase | Entrega | Capítulos responsáveis | Estado |
 | --- | --- | --- | --- |
-| [F00](./00-contratos-e-preparacao.md) | Contratos e preparação | Preparação | Não iniciada |
+| [F00](./00-contratos-e-preparacao.md) | Contratos e preparação | Preparação | Concluída — aceite explícito |
 | [F01](./01-fundacao-e-legado.md) | Fundação e legado | PD01, FL01 | Não iniciada |
 | [F02](./02-inventario-e-melhorias.md) | Inventário e melhorias | PD02, PD03 | Não iniciada |
 | [F03](./03-tips-and-tricks.md) | Tips & Tricks | PD04 | Não iniciada |
@@ -49,6 +49,8 @@
 | [F18](./18-catalogos-e-aceite-integrado.md) | Catálogos e aceite integrado | Aceite integrado | Não iniciada |
 
 ## Protocolo comum de validação
+
+**Registro da F00:** [contratos, divergências e gates locais](registros/f00-contratos-e-auditoria.md) · [inventário e fichas estruturadas](registros/f00-inventario.json). Coleções pessoais são o alvo aprovado, condicionado à viabilidade EQ-01/EQ-02; não confundir recompensa individual com progresso individual nem aplicar fallback coletivo silencioso.
 
 - **Estado inicial:** snapshot e inventário dos arquivos/IDs envolvidos. Não confundir a contagem histórica de 290 quests com uma auditoria atual; conferir novamente.
 - **Migração:** cada ID mantém dono/destino único. Referências e recompensas já reconhecidas devem sobreviver ao movimento; testar cópia de equipe com progresso.
