@@ -2,14 +2,17 @@
 
 ## Primeiros Dias
 
+- Sophisticated Backpacks
+- Sophisticated Storage
+- Tom's Simple Storage
+
+#### Tips &amp; Tricks
+
 - Gliders
 - Camerapture
 - Comforts
 - Nature's Compass
 - Carry On
-- Sophisticated Backpacks
-- Sophisticated Storage
-- Tom's Simple Storage
 
 ## Vida no Campo
 
