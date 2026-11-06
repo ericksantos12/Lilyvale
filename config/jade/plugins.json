@@ -75,6 +75,9 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "aether_redux": {
+    "logicator": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

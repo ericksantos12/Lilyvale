@@ -1,0 +1,8 @@
+#The default difficulty selected for newly created worlds.
+#Allowed Values: PEACEFUL, EASY, NORMAL, HARD
+defaultDifficulty = "NORMAL"
+#Resource pack IDs to have enabled by default on the first run.
+defaultResourcePacks = ["vanilla", "mod_resources", "mod/punchy:punchy", "Moonlight Mods Dynamic Assets", "fabric", "file/Better_Cats_V0.09.zip", "file/BDxDTN.zip", "file/Created Simple Storage 1.3.zip", "file/FA+Player-v1.1.zip", "file/[Moonsu] Better GUI Tom's S.S. 2.0.1.zip", "file/§3Blue's §fBetter Monsters §3LITE Beyond Cosmo.zip", "file/§eEatingAnimationsMoreCompat1.20-26.x.zip", "file/CreateSophBackpacks.zip"]
+#Set to true if the difficulty for new world's should be locked to the specific default. This cannot be unlocked by players without external tools! Probably a bad idea. I don't recommend. Why am I adding this option?
+lockDifficulty = false
+
