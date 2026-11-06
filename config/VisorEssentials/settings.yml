@@ -1,0 +1,4 @@
+features:
+  better_inventory: true
+  better_bow: true
+  overlay_focus_visualizer: true

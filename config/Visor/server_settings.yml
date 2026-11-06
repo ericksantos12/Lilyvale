@@ -1,0 +1,30 @@
+serverDebug: false
+vrOnly: false
+twoHandedVR: true
+betterSwinging: true
+# Block with a raised shield without holding use
+roomscaleShieldBlocking: true
+attacksWhileBlocking: true
+swingingRepairDelay: 400
+swingingMiningSpeed: 1.5
+roomCrawlingSupported: true
+roomClimbingSupported: true
+pvpVRvsVanilla: true
+pvpVRvsVR: true
+notifyPvpBlocked: false
+creeperSwellDistance: 1.75
+# Movement allowed for VR players: CONTROLLER, TELEPORT or BOTH
+supportedMovement: BOTH
+# Teleport distance limits in blocks
+teleportUpLimit: 1
+teleportDownLimit: 4
+teleportForwardLimit: 16
+# Height mode allowed for VR players: MATCH_MODEL (player model scale not modified), REAL_SIZE (player model scale modified) or BOTH
+supportedHeightMode: BOTH
+# [TRACKERS] - Potentially, more network consumption when enabled
+bodyTrackersSupported: true
+handTrackersSupported: true
+# Send body tracker data to other players (if enabled, players with Visor mod and within VR player visibility range receive such data)
+bodyTrackersSendToOthers: true
+# Send hand tracking data to other players (if enabled, players with Visor mod and within VR player visibility range receive such data)
+handTrackersSendToOthers: true
