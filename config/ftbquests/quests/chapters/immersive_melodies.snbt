@@ -1,0 +1,244 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "immersive_melodies"
+	group: "4DFBF6E45E6929B8"
+	icon: "immersive_melodies:lute"
+	id: "6D10000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Dois gravetos e um osso já dão outro som à mochila. Obtenha uma flauta; a receita está no EMI."]
+			icon: "immersive_melodies:flute"
+			id: "6D11000000000001"
+			rewards: [{
+				id: "6D13000000000001"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000001"
+				item: "immersive_melodies:flute"
+				match_nbt: false
+				title: "Obtenha uma flauta"
+				type: "item"
+			}]
+			title: "&dFlauta"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Tábuas, linha e um graveto podem virar o começo de uma serenata. Obtenha um alaúde e consulte a montagem no EMI."]
+			icon: "immersive_melodies:lute"
+			id: "6D11000000000002"
+			rewards: [{
+				id: "6D13000000000002"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000002"
+				item: "immersive_melodies:lute"
+				match_nbt: false
+				title: "Obtenha um alaúde"
+				type: "item"
+			}]
+			title: "&dAlaúde"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["A coleção de cordas merece uma vielle. Separe troncos, linha e um graveto; o EMI mostra como transformar a madeira em música."]
+			icon: "immersive_melodies:vielle"
+			id: "6D11000000000003"
+			rewards: [{
+				id: "6D13000000000003"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000003"
+				item: "immersive_melodies:vielle"
+				match_nbt: false
+				title: "Obtenha uma vielle"
+				type: "item"
+			}]
+			title: "&dVielle"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["Um som grave para acompanhar a paisagem. Obtenha um didgeridoo; a receita com tábuas e lápis-lazúli está no EMI."]
+			icon: "immersive_melodies:didgeridoo"
+			id: "6D11000000000004"
+			rewards: [{
+				id: "6D13000000000004"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000004"
+				item: "immersive_melodies:didgeridoo"
+				match_nbt: false
+				title: "Obtenha um didgeridoo"
+				type: "item"
+			}]
+			title: "&dDidgeridoo"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: ["Pequeno no nome, pronto para marcar o ritmo. Obtenha um tambor minúsculo; confira a receita de couro, linha e tronco no EMI."]
+			icon: "immersive_melodies:tiny_drum"
+			id: "6D11000000000005"
+			rewards: [{
+				id: "6D13000000000005"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000005"
+				item: "immersive_melodies:tiny_drum"
+				match_nbt: false
+				title: "Obtenha um tambor minúsculo"
+				type: "item"
+			}]
+			title: "&dTambor minúsculo"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["Um pouco de cobre e um toque na hora certa. Obtenha um triângulo; o EMI mostra a montagem deste instrumento de percussão."]
+			icon: "immersive_melodies:triangle"
+			id: "6D11000000000006"
+			rewards: [{
+				id: "6D13000000000006"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000006"
+				item: "immersive_melodies:triangle"
+				match_nbt: false
+				title: "Obtenha um triângulo"
+				type: "item"
+			}]
+			title: "&dTriângulo"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["A vila está pronta para ouvir sua chegada. Obtenha um trompete; consulte no EMI a receita que combina cobre e ferro."]
+			icon: "immersive_melodies:trumpet"
+			id: "6D11000000000007"
+			rewards: [{
+				id: "6D13000000000007"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000007"
+				item: "immersive_melodies:trumpet"
+				match_nbt: false
+				title: "Obtenha um trompete"
+				type: "item"
+			}]
+			title: "&dTrompete"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: ["O cobre encontrou um ritmo tranquilo. Obtenha um handpan; confira no EMI a receita com lingotes e blocos de cobre."]
+			icon: "immersive_melodies:handpan"
+			id: "6D11000000000008"
+			rewards: [{
+				id: "6D13000000000008"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000008"
+				item: "immersive_melodies:handpan"
+				match_nbt: false
+				title: "Obtenha um handpan"
+				type: "item"
+			}]
+			title: "&dHandpan"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: ["A coleção ganhou teclas. Obtenha um piano; o EMI mostra como combinar ossos e blocos musicais para preparar o próximo recital."]
+			icon: "immersive_melodies:piano"
+			id: "6D11000000000009"
+			rewards: [{
+				id: "6D13000000000009"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D12000000000009"
+				item: "immersive_melodies:piano"
+				match_nbt: false
+				title: "Obtenha um piano"
+				type: "item"
+			}]
+			title: "&dPiano"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: ["Três flautas e couro se juntam para formar uma gaita de foles. Consulte a disposição no EMI e prepare o fôlego para a apresentação."]
+			icon: "immersive_melodies:bagpipe"
+			id: "6D1100000000000A"
+			rewards: [{
+				id: "6D1300000000000A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D1200000000000A"
+				item: "immersive_melodies:bagpipe"
+				match_nbt: false
+				title: "Obtenha uma gaita de foles"
+				type: "item"
+			}]
+			title: "&dGaita de foles"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["Graves de outro mundo para fechar a banda. Obtenha um Ender Bass; a receita com blocos musicais e pérola do Ender está no EMI."]
+			icon: "immersive_melodies:ender_bass"
+			id: "6D1100000000000B"
+			rewards: [{
+				id: "6D1300000000000B"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D1200000000000B"
+				item: "immersive_melodies:ender_bass"
+				match_nbt: false
+				title: "Obtenha um Ender Bass"
+				type: "item"
+			}]
+			title: "&dEnder Bass"
+			x: 4.0d
+			y: 4.0d
+		}
+	]
+	title: "&d&lImmersive Melodies"
+}

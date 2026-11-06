@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "ftb-quests": {
+      "source": "particleg/ftb-quests",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "0c3727fc86ec184e5903153e16ca54a68c6f809084f38e63103b54651869b662"
+    },
+    "kubejs-modding": {
+      "source": "siredvin/minecraft-modding-skills",
+      "sourceType": "github",
+      "skillPath": "skills/kubejs-modding/SKILL.md",
+      "computedHash": "c94302ec5154eb72c26911fc60325893c52b1348d1d9051736589d5234c1a539"
+    }
+  }
+}

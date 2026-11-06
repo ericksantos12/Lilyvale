@@ -1,0 +1,106 @@
+vr_body:
+  body_haptics: false
+  height:
+    units: METRIC
+    standing: -1.0
+    mode: MATCH_MODEL
+    auto: true
+    adjustment: CAMERA_OFFSET
+  fbt: false
+  hand_tracking: false
+rendering:
+  mixed_reality:
+    with_first_person: true
+    keyColor: 0;0;0;255
+    render_hands: false
+    aspectRatio: 1.7777778
+    alpha_mask: false
+    fov: 40.0
+    as_grid_2_x_2: true
+  scaling_filter: LANCZOS
+  effects:
+    eye_effects:
+      low_health_indicator: true
+      freeze: true
+      pumpkin: true
+      hit_indicator: true
+    self_shadow: true
+  graphics_api: AUTO
+  shaders:
+    per_eye_pipelines: true
+    shared_ssbo: true
+    shared_shadows: false
+  dh_mirror_passes: false
+  third_person:
+    camera:
+      rotation: 0.2246;0.1873;0.044;-0.9552
+      blockPos:
+        z: 2.75
+        y: 2.4
+        x: -1.0
+    fov: 40.0
+  render_scale: 1.0
+  mirror_eye: LEFT
+  world_scale: 1.0
+  mirror_mode: CROPPED
+movement:
+  world_rotation:
+    smooth_sensitivity: 0.06
+    step: 45.0
+  rotation_mode: HMD
+  treadmill:
+    speed_scale: 1.0
+    enabled: false
+  walk_up: true
+  mode: CONTROLLER
+  auto_sprint: true
+  compatible_look_direction: true
+  rotation_fly_mode: OFFHAND
+  sprintThreshold: 0.9
+immersion:
+  room_jump: true
+  advanced:
+    room_sneak:
+      threshold: 0.85
+    room_crawl:
+      threshold: 0.7
+    swing:
+      in_creative: true
+      speed_threshold: 3.0
+    room_jump:
+      threshold: 1.05
+  room_consume: true
+  room_dismount_vehicle: true
+  room_climb: true
+  room_boat_rowing: true
+  room_crawl: true
+  room_sneak: true
+  room_swim: true
+controls:
+  left_handed: false
+gui:
+  hotbar:
+    slot_numbers: false
+    center_radius: 50.0
+    hysteresis_margin: 7.0
+    hud_disabled: true
+  keyboard:
+    layouts: ENGLISH
+    auto_layout: true
+  settings_text_scale: 0.85
+  scale: 0.0
+main_menu:
+  panorama:
+    up: visor:textures/mainmenu/panorama_up.png
+    below: visor:textures/mainmenu/panorama_below.png
+    back: visor:textures/mainmenu/panorama_back.png
+    left: visor:textures/mainmenu/panorama_left.png
+    front: visor:textures/mainmenu/panorama_front.png
+    right: visor:textures/mainmenu/panorama_right.png
+  scene: SKY
+  floor: minecraft:textures/block/moss_block.png
+playerModelArmsScale: 0.5
+playerModelLegScale: 1.0
+defaultVrBody: hands_only
+playerModelBodyScale: 1.0
+vrPlayMode: DISABLED

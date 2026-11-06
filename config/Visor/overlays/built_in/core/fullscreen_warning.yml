@@ -1,0 +1,18 @@
+POSE:
+  tick: true
+  position:
+    type: HMD
+    offset:
+      x: 0.0
+      y: 0.0
+      z: -1.0
+  rotation:
+    type: HMD
+    aim: true
+    quaternion:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+  scale: 0.5
+RESIZING: {}

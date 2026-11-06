@@ -36,8 +36,16 @@
   "enableBlurGlowAtDark": false,
   "firstPersonModelHideEnabled": true,
   "firstPersonModelHidePitch": 60.0,
-  "itemBlacklist": [],
-  "blacklistApplyDualHanded": {},
+  "itemBlacklist": [
+    "camerapture:album",
+    "camerapture:picture",
+    "camerapture:camera"
+  ],
+  "blacklistApplyDualHanded": {
+    "camerapture:album": false,
+    "camerapture:picture": false,
+    "camerapture:camera": false
+  },
   "animationPackSelections": {},
   "animationPackTypeSelections": {},
   "mixSpecificForceOverride": {}

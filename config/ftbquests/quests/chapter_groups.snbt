@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "048ED71F33A9801E", title: "&6Primeiros Dias" }
+		{ id: "2F3E0F43CC0404AB", title: "&aVida no campo" }
+		{ id: "6F00000000000001", title: "&bEngenhos e Ferrovias" }
+		{ id: "2E622CDAB0B6B1F2", title: "&3O mundo lá fora" }
+		{ id: "6E00000000000001", title: "&5Além do horizonte" }
+		{ id: "6E00000000000002", title: "&6Forja e legado" }
+		{ id: "4DFBF6E45E6929B8", title: "&dCompanheiros e coleções" }
+		{ id: "1DA3993DEE28D0C0", title: "&eCriando seu Lar" }
+	]
+}

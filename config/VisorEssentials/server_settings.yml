@@ -1,0 +1,3 @@
+# Allow VR players to use the roomscale bow
+# (arrow power is taken from the real draw distance)
+betterBow: true
