@@ -1,7 +1,9 @@
 # Changelog
 
-## 0.1.0
+## [0.1.0]
 
-Initial Release
+Changes
 
-- Main mod structure and features
+- Initial Release
+
+- Added main mod structure and features
