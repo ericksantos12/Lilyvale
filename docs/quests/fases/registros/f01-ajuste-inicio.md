@@ -1,6 +1,6 @@
 # F01 — Ajuste de apresentação: Início
 
-**Estado:** implementado e validado estaticamente; aparência e interação no jogo pendentes. Este ajuste foi solicitado pelo usuário após a primeira entrega da F01 e substitui a orientação extensa e os hyperlinks na quest do tronco.
+**Estado:** aceito após o usuário informar “validação realizada, siga para a proxima fase”. A validação em jogo foi relatada pelo usuário, sem evidência por cenário observada pelo agente. Este ajuste foi solicitado após a primeira entrega da F01 e substitui a orientação extensa e os hyperlinks na quest do tronco.
 
 ## Alterações
 
@@ -30,4 +30,4 @@ O [mapa da primeira entrega](f01-mapa-de-ids.json) permanece como snapshot hist�
 
 **Validador do estado atual:** `python build/inicio-guide/verify.py`; evidência em `build/inicio-guide/result.json`. Os validadores `build/f01-foundation/verify_phase.py` e `verify_handoff.py` estão presos à primeira entrega e seus totais/atalhos antigos; não representam este ajuste.
 
-Aplicar com `/ftbquests reload` e conferir o capítulo antes de Primeiros Passos. Não houve teste no jogo, alteração de progresso, commit ou push. A F01 permanece aguardando validação em jogo e aceite.
+Na entrega original, o agente orientou aplicar com `/ftbquests reload` e deixou a validação pendente, sem teste no jogo, alteração de progresso, commit ou push. Depois o usuário informou a validação e autorizou a F02; a F01 está encerrada conforme o aceite registrado no cabeçalho.

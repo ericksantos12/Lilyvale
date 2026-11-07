@@ -1,6 +1,6 @@
 # F01 — Fundação e legado
 
-**Estado: aguardando validação em jogo e aceite.** A execução foi autorizada explicitamente pelo usuário; F01.1–F01.3 foram implementadas e verificadas estaticamente. O checkpoint de migração F01.1 ainda não está aprovado e a fase não está concluída.
+**Estado: concluída — validação e aceite informados pelo usuário.** Após os ajustes de Início, o usuário informou “validação realizada, siga para a proxima fase”. F01.1 fica aprovado para a execução da F02. A validação em jogo foi relatada pelo usuário, não executada ou observada pelo agente; não foram fornecidas evidências por cenário. EQ-01/EQ-02 continuam como gates técnicos independentes, sem promessa de progresso individual.
 
 [Registro de execução e gates](registros/f01-fundacao-e-legado.md) · [Mapa real de IDs](registros/f01-mapa-de-ids.json)
 
@@ -35,11 +35,11 @@ Capítulos sob responsabilidade desta fase: **PD01, FL01**. Executar um lote coe
 ## Validação e aceite
 
 - [x] Executar parser nativo, unicidade/faixa dos IDs, referências e ciclos antes e depois da migração.
-- [ ] Testar no mundo copiado o progresso de cobre/polimento e ferro/aço; não retirar recompensas já reconhecidas.
-- [x] Registrar F01.1 separadamente como aprovado ou pendente; não chamar toda a fase de concluída com testes de FL01 faltando. **F01.1 pendente da validação em jogo da migração.**
+- [x] Validação da F01 informada pelo usuário após os ajustes; aceite para avançar. O relato não detalha mundo/cenários, portanto não há prova individual de cada caso registrada pelo agente.
+- [x] Registrar F01.1 separadamente como aprovado ou pendente. **F01.1 aprovado pelo aceite do usuário.**
 
-- [ ] Aplicar o protocolo comum do índice: integridade de arquivos/IDs, contratos de conclusão, visual e teste em jogo correspondente ao lote.
-- [ ] Registrar testes executados, evidências, falhas, pendências e aceite do usuário. Validação estática não substitui validação no jogo.
+- [x] Protocolo comum: verificações estáticas executadas pelo agente e validação em jogo informada pelo usuário, sem detalhamento por cenário.
+- [x] Registrar testes executados, limites das evidências e aceite do usuário. Validação estática não foi apresentada como teste no jogo.
 - [x] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. Marcar parcial/em espera conforme o caso.
 
 ## Como encerrar ou retomar
@@ -48,14 +48,14 @@ Atualizar a linha desta fase no índice e preencher a ficha de passagem abaixo. 
 
 | Registro | Preencher durante a execução |
 | --- | --- |
-| Lote executado | F01.1–F01.3: implementação e validação estática; aceite ainda pendente |
+| Lote executado | F01.1–F01.3 e ajustes de Início; encerrados com aceite do usuário |
 | Arquivos e IDs envolvidos | Quatro SNBT; nove grupos, seis capítulos, 294 quests, 343 tasks e 328 recompensas; [mapa original](registros/f01-mapa-de-ids.json) e [IDs da introdução](registros/f01-ajuste-inicio.md) |
 | Decisões e fontes conferidas | Contratos F00, receitas Overgeared e classes FTB instaladas; [registro](registros/f01-fundacao-e-legado.md) |
 | Testes estáticos | Oito arquivos no parser/roundtrip nativos; IDs, referências, ciclos, preservação do legado e NBT aprovados |
-| Testes no jogo / evidência | Não executados; duas cópias jogáveis com dados reais preparadas |
-| Pendências e bloqueios locais | Migração/claims, visual, cobre/polimento, ferro/aço e equipe; pré-lançamento original executa Pakku fetch e foi preservado |
-| Próximo lote seguro | Validar F01 nas cópias; não iniciar F02–F18 por inferência |
-| Aceite do usuário | Execução autorizada; aceite final não solicitado enquanto os testes estiverem pendentes |
+| Testes no jogo / evidência | Validação informada pelo usuário; sem logs, capturas ou detalhamento de cenários entregues ao agente |
+| Pendências e bloqueios locais | EQ-01/EQ-02 não foram comprovados nem implementados; hook original do Prism preservado |
+| Próximo lote seguro | F02, explicitamente solicitada na mesma mensagem de aceite |
+| Aceite do usuário | “validação realizada, siga para a proxima fase” |
 
 ## Especificações dos capítulos
 

@@ -1,7 +1,9 @@
 {
   "phase": "F01",
   "created_at": "2026-11-06T19:11:51.545922-03:00",
-  "status": "aguardando_validação_em_jogo",
+  "status": "concluída_aceite_do_usuário",
+  "user_acceptance": "validação realizada, siga para a proxima fase",
+  "validation_evidence": "Relato geral do usuário; teste em jogo não executado/observado pelo agente nem detalhado por cenário. Inventário abaixo preserva o snapshot da primeira entrega.",
   "baseline_git_status": "",
   "baseline_commit": "24e302776b92e6b13cfd5db45791a37126af1b96",
   "snapshot_directory": "build/f01-foundation/20261106-191148",

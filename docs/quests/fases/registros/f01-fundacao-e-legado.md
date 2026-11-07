@@ -2,7 +2,7 @@
 
 **Ajuste posterior solicitado pelo usuário:** a orientação inicial foi movida para o capítulo auxiliar **Início**, com quatro checks de leitura sem recompensas, e os hyperlinks foram removidos. Os totais e testes abaixo descrevem a primeira entrega; consulte o [registro do ajuste e validador atual](f01-ajuste-inicio.md) para o estado atualizado.
 
-**Data:** 2026-11-06. **Estado:** implementação e validação estática executadas; aguardando validação em jogo e aceite. **F01.1:** preparado, ainda pendente de aprovação da migração em runtime. A fase não está concluída.
+**Data:** 2026-11-06. **Estado atual:** concluída com validação e aceite informados pelo usuário: “validação realizada, siga para a proxima fase”. **F01.1 aprovado para avançar à F02.** O agente executou as verificações estáticas; não observou o teste no jogo nem recebeu evidências por cenário. As pendências/checklists abaixo são o registro histórico anterior ao aceite, não novas exigências para reiniciar a F01. EQ-01/EQ-02 não foram comprovados por esse relato geral.
 
 Autorização: solicitação explícita do usuário para prosseguir à fase 1, após o encerramento aprovado da F00. Nenhuma fase posterior, commit ou push foi executado.
 
