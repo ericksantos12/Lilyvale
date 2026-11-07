@@ -7,16 +7,16 @@ Use estas notas ao editar quests deste repositório. Elas descrevem o Create 6.0
 - O arquivo pode ter nome legível: `filename: "create_mod"` corresponde a `create_mod.snbt`. O `id` do capítulo, das quests, tasks e recompensas continua sendo hexadecimal único de 16 caracteres.
 - Títulos, descrições e títulos de tasks ficam no próprio capítulo (`title`, `description: ["..."]`). Ícones e itens simples são strings, por exemplo `icon: "create:wrench"` e `item: "create:water_wheel"`. Não copie o formato de componentes de item de 1.21+ para este pack.
 - Para reconhecer posse no inventário sem consumir, use `type: "item"`, `item: "namespace:id"` e `consume_items: false`. Para quantidades, acrescente `count: 2L` na task. Isso verifica o item possuído; não prova que o jogador o fabricou pessoalmente. Escreva o título como “Obtenha” quando houver outras fontes possíveis.
-- No FTB Quests 2001.4.22 instalado, a task `item` lê um ID de item, não uma tag como `#minecraft:logs`. O filtro de tag da interface requer FTB Filter System e FTB XMod Compat, ausentes neste pack. Para “qualquer tronco”, preserve o avanço `minecraft:inventory_changed` com a tag `minecraft:logs`; ele detecta a posse sem consumir o item. Não substitua por `item: "#minecraft:logs"` nem por uma espécie específica.
+- No FTB Quests 2001.4.22 instalado, a task `item` lê um ID de item, não uma tag como `#minecraft:logs`. O pack agora tem Item Filters e FTB XMod Compat: para qualquer tronco, preserve o filtro existente `item: { Count: 1, id: "itemfilters:tag", tag: { value: "minecraft:logs" } }` e `consume_items: false`. Não reintroduza o advancement KubeJS removido nem substitua o filtro por `item: "#minecraft:logs"` ou uma espécie específica.
 - Recompensas de item usam `type: "item"`, `item: "namespace:id"` e `count` inteiro quando necessário. O capítulo usa `default_hide_dependency_lines: false` para mostrar as ligações.
-- Para uma ação real, use task de avanço com `advancement: "lilyvale:create_mod/progresso"` e `criterion: "nome"`. O JSON correspondente em `kubejs/data/lilyvale/advancements/create_mod/progresso.json` reúne os critérios sem `parent`; cada task aponta para seu próprio critério. Use gatilhos confirmados na versão instalada e retire critérios sem tasks. No capítulo atual são sete ações: montar trem, instalar sinal, instruir condutor, mostrar chegada, receber pacote no frogport, fazer pedido no stock ticker e disparar pedido no factory gauge.
+- A migração posterior removeu os advancements KubeJS e usa tasks nativas. As antigas tarefas de ação de Create hoje verificam itens; controles, sinais, horários e máquinas no inventário não comprovam montagem, viagem ou operação. Não reintroduza referências para `lilyvale:create_mod/progresso`, que não existe mais. Nas F12/F13, revise esses objetivos com detector real validado ou projeto pessoal transparente; não prometa uma ação só porque a task de item passou.
 
 Exemplos mínimos deste formato:
 
 ```snbt
 { id: "6C14000000000002", type: "item", item: "create:water_wheel", consume_items: false }
 { id: "6C14000000000001", type: "item", item: "create:andesite_casing", count: 2L, consume_items: false }
-{ id: "6C12000000000031", type: "advancement", advancement: "lilyvale:create_mod/progresso", criterion: "trem", title: "Monte um trem na estação" }
+{ id: "6C12000000000031", type: "item", item: "create:controls", consume_items: false, title: "Obtenha controles de trem" }
 { id: "6C13000000000004", type: "item", item: "minecraft:iron_ingot", count: 8 }
 ```
 
@@ -24,8 +24,8 @@ Exemplos mínimos deste formato:
 
 - Prefira tasks de item não consumíveis para máquinas e materiais. Reserve avanços para ações que ter o item no inventário não demonstra. Evite checklists manuais para etapas verificáveis.
 - Ligue uma quest à anterior quando seu objetivo exige um ingrediente dela, a máquina necessária para produzir um ingrediente intermediário ou uma ação anterior necessária ao uso pedido. Se a task só pede **obter** uma máquina, não exija outra máquina que serve apenas para operá-la depois. Deixe trilhas independentes começarem sem dependência e remova ligações transitivas redundantes.
-- Confira a cadeia completa no jar instalado e nos scripts que removem/substituem receitas. O JEI e o Ponder são boas dicas para o jogador, mas não substituem a verificação da receita usada pelo pack.
-- Dê recompensas úteis para a próxima etapa da trilha, em quantidades coerentes. Não entregue como recompensa o próprio resultado exigido pela quest seguinte se isso a concluir automaticamente ao desbloquear. Separe na descrição o que conclui a task do que é apenas orientação de uso.
+- Confira a cadeia completa no jar instalado e nos scripts que removem/substituem receitas. O EMI e o Ponder são boas dicas para o jogador, mas não substituem a verificação da receita usada pelo pack.
+- Siga os contratos da F00: conteúdo novo recebe somente pontos de XP, A=50, M=150 e C/Q=25. Preserve recompensas legadas de item e XP sem rebalanceamento implícito. Não entregue o próprio objetivo seguinte como recompensa nem duplique claims ao mover uma quest. Separe na descrição o que conclui a task do que é orientação de uso.
 - Preserve IDs de quests, tasks e recompensas ao corrigir ordem, texto ou layout para não descartar progresso existente. Crie IDs novos apenas para novos objetos ou para uma task realmente substituída.
 
 ## Receitas que decidiram o grafo do Create
@@ -44,5 +44,15 @@ Exemplos mínimos deste formato:
 ## Layout e checagem
 
 - Planeje um grafo acíclico antes de posicionar ícones. No capítulo Create, use coordenadas em múltiplos de 2 e posições únicas; cada dependência visível deve compartilhar `x` ou `y` com a quest predecessora para produzir linha reta horizontal ou vertical. Muitas ramificações de um mesmo nó podem fazer linhas passarem atrás de outros ícones; avalie cruzamentos e legibilidade em vez de criar bloqueios artificiais apenas para simplificar o desenho.
-- Confira estaticamente IDs únicos, referências existentes, ausência de ciclos, quantidades, itens do jar, critérios JSON, coordenadas e linhas. Preserve a preferência do usuário quanto ao teste no jogo: neste trabalho, a inspeção visual e dos gatilhos ficou para os prints dele. Não trate a checagem estática como prova de comportamento no mundo.
-- O capítulo aceito aqui tem 35 quests, 53 tasks de item sem consumo, sete tasks de ação e 37 dependências. O layout em grade de 2 tem um cruzamento entre trem e logística. Consulte o próprio SNBT para o grafo e as coordenadas atuais, pois esses números podem mudar com novas quests.
+- Confira estaticamente IDs únicos, referências existentes, ausência de ciclos, quantidades, itens do jar, critérios quando usados, coordenadas e linhas. Siga o gate de cada fase para os testes em jogo, incluindo cópia de mundo/equipe com progresso. Não trate checagem estática ou roundtrip como prova de comportamento no mundo.
+- O capítulo atual mantém 35 quests e 60 tasks nativas de item sem consumo. Consulte o próprio SNBT para dependências, coordenadas e classificações; a revisão editorial de Create pertence às F12/F13, não à F01.
+
+## Fundação e migração da F01
+
+- Consulte `docs/quests/fases/registros/f01-fundacao-e-legado.md` e `f01-mapa-de-ids.json` antes de continuar uma migração. O mapa registra origem/destino atual e candidatos futuros; armazenamento e Create ainda não foram repartidos.
+- Reserve `0000000000000001` ao livro: o construtor `BaseQuestFile` do JAR instalado usa esse ID interno. Não aloque o ID a grupos, capítulos, quests, tasks ou recompensas.
+- Para identidade editorial em 1.20.1, use `subtitle`, `shape`, `hide_details_until_startable: false` e `hide_text_until_complete: false`, confirmados no JAR. A usa círculo azul, M hexágono dourado e C quadrado lilás com texto Opcional; um ramal A também pode continuar tecnicamente opcional.
+- Classifique somente capítulos efetivamente revisados e valide os códigos A/M/C. Subtítulos legados de armazenamento são texto livre: extrair uma letra por posição produz classificações falsas. No inventário, deixe a classificação não revisada como `null`.
+- Concentre boas-vindas, escolha de trilhas, funcionamento das tasks e legenda A/M/C no capítulo `inicio.snbt`, com cartões curtos, checks manuais opcionais e sem recompensas/dependências. O usuário prefere essa apresentação a uma descrição inicial extensa e dispensou hyperlinks entre capítulos. Mantenha a primeira quest de Primeiros Passos dedicada ao tronco. Esses cartões são informação/confirmação de leitura, não provas de gameplay nem um novo tipo de atividade.
+- Evite subtítulos redundantes como “leitura opcional” ou “confirmação manual”. Os cartões de Início não precisam de subtítulo; mantenha os títulos diretos e reserve explicações necessárias à descrição.
+- Antes de lançar pelo Prism para testar, examine o pré-lançamento da instância. Nesta instância ele executa Pakku `fetch`; não use o teste de quests para autorizar implicitamente download/resolução de mods. Prefira teste isolado com esse hook desabilitado e sem alterar a configuração original.

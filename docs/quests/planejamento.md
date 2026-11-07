@@ -1,6 +1,6 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado: proposta para implementação futura. Nenhuma quest, receita, configuração ou progresso é alterado por este documento.**
+**Estado: arquitetura aprovada na F00; F01 implementada e aguardando validação em jogo/aceite; F02–F18 permanecem futuras.** Consulte o índice e os registros de execução para distinguir o plano do conteúdo realmente entregue. Este documento não é prova de implementação dos 30 capítulos.
 
 **Execução incremental:** consulte [as fases F00–F18](fases/README.md). As especificações detalhadas de cada capítulo ficam nos arquivos de sua fase; este documento preserva arquitetura, layout comum, políticas e critérios de aceite.
 

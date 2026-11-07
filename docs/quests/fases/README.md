@@ -1,6 +1,6 @@
 # Execução incremental das quests de Lilyvale
 
-**Estado atual: F00 concluída com aceite explícito; demais fases não iniciadas.** A existência de quests legadas e de pesquisa documental não é conclusão de uma fase desta reformulação.
+**Estado atual: F00 concluída com aceite explícito; F01 implementada e aguardando validação em jogo/aceite; F02–F18 não iniciadas.** O checkpoint de migração F01.1 ainda está pendente de aprovação. A existência de quests legadas ou validação estática não conclui uma fase.
 
 [Plano editorial e regras comuns](../planejamento.md) · [Catálogos candidatos](../catalogos-candidatos.md)
 
@@ -29,7 +29,7 @@
 | Fase | Entrega | Capítulos responsáveis | Estado |
 | --- | --- | --- | --- |
 | [F00](./00-contratos-e-preparacao.md) | Contratos e preparação | Preparação | Concluída — aceite explícito |
-| [F01](./01-fundacao-e-legado.md) | Fundação e legado | PD01, FL01 | Não iniciada |
+| [F01](./01-fundacao-e-legado.md) | Fundação e legado | PD01, FL01 | Aguardando validação em jogo e aceite; F01.1 pendente |
 | [F02](./02-inventario-e-melhorias.md) | Inventário e melhorias | PD02, PD03 | Não iniciada |
 | [F03](./03-tips-and-tricks.md) | Tips & Tricks | PD04 | Não iniciada |
 | [F04](./04-fazenda-e-cozinha.md) | Fazenda e cozinha | VC01, VC02 | Não iniciada |

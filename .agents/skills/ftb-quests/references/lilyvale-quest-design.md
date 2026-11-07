@@ -6,7 +6,7 @@ Organize o livro por experiências do jogador, não por uma sequência obrigató
 
 ## Categorias e fronteiras
 
-Preserve os nomes solicitados e esta ordem em `chapter_groups.snbt`:
+O plano versionado e os contratos da F00 prevalecem sobre a organização histórica. Preserve os IDs existentes e esta ordem em `chapter_groups.snbt`; a F01 acrescenta a nona categoria sem antecipar seus capítulos:
 
 | Categoria | ID | Conteúdo e fronteira |
 | --- | --- | --- |
@@ -18,6 +18,7 @@ Preserve os nomes solicitados e esta ordem em `chapter_groups.snbt`:
 | Forja e legado | `6E00000000000002` | Overgeared, metalurgia, equipamentos e feitos de combate. Marcos de expedição permanecem na categoria da expedição para evitar duplicação. |
 | Companheiros e coleções | `4DFBF6E45E6929B8` | Pets, instrumentos, pelúcias, artefatos e outras coleções; animais de produção pertencem principalmente a Vida no campo. |
 | Criando seu Lar | `1DA3993DEE28D0C0` | Construção, decoração, conforto e organização da casa/depósito. |
+| A Jornada até o End | `6E00000000000003` | Olhos do Mundo, O Último Voo e Ilhas do Vazio nas fases responsáveis; não é chave de desbloqueio para fazenda/casa. |
 
 Economia é transversal: trate vendas e produção na trilha correspondente, sem recriar uma categoria separada. Um mod pode aparecer em mais de um tema quando as atividades forem distintas; evite duplicar a mesma task de obtenção.
 
@@ -61,6 +62,7 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 - Armazenamento passa para Criando seu Lar. Preserve por enquanto o catálogo, recompensas e layout compacto. Numa revisão de conteúdo, diferencie o aprendizado inicial da mochila/depósito e a consulta ou coleção de upgrades; não exija os 210 objetivos como progressão principal.
 - As demais categorias são espaços para expansão; registrar uma categoria não implementa seu conteúdo nem garante que grupos vazios sejam visíveis na interface.
 - A reorganização de categorias não classifica automaticamente cada quest nos três tipos. Faça a revisão editorial por capítulo, preservando progresso e validando os gatilhos propostos.
+- A F01 classifica somente PD01 e FL01; Overgeared conserva o arquivo e os IDs, com título Fogo, Martelo e Aço. Os demais capítulos continuam legados até suas fases. Consulte o registro da F01 para o estado de validação; não deduza conclusão de gameplay a partir dessa classificação.
 
 ## Critérios de revisão
 

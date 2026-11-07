@@ -19,17 +19,22 @@
 			description: [
 				"Sua picareta de cobre abriu o caminho; agora reúna oito lingotes de ferro. Minere o ferro bruto e funda-o na fornalha."
 				"O ferro vai virar ferramentas, estações e peças de forja. A tarefa pede os oito lingotes juntos no inventário, sem consumi-los."
+				"As tarefas de item deste capítulo registram posse, inclusive peças recebidas de outra pessoa; o texto ensina a produção, mas o detector não prova autoria. Observação pede olhar para a bigorna indicada. Consulte as receitas no EMI."
+				"&bA — Aprendizado: círculo.&r &6M — Marco local: hexágono.&r &dC — Opcional: quadrado.&r Projetos, moldes e especializações têm ramais próprios; não é preciso completar a oficina inteira para seguir outra trilha."
 			]
 			icon: "minecraft:iron_ingot"
 			id: "6F11000000000001"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000001"
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 1.15d
+			shape: "circle"
+			size: 1.0d
 			tasks: [{
 				consume_items: false
 				count: 8L
@@ -51,6 +56,9 @@
 			]
 			icon: "overgeared:heated_iron_ingot"
 			id: "6F11000000000002"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000002"
@@ -78,6 +86,9 @@
 			]
 			icon: "overgeared:iron_pickaxe_head"
 			id: "6F11000000000003"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000003"
@@ -117,6 +128,9 @@
 				}
 			}
 			id: "6F11000000000004"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000004"
@@ -156,6 +170,10 @@
 				}
 			}
 			id: "6F11000000000005"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -189,6 +207,9 @@
 			]
 			icon: "overgeared:smithing_anvil"
 			id: "6F11000000000006"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000006"
@@ -217,7 +238,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6F11000000000001"]
 			description: [
 				"Faça um projeto vazio com três papéis e corante azul. Um projeto vazio junto de uma bancada de trabalho produz a drafting table; confirme ambas as receitas no EMI."
 				"Obtenha o projeto vazio antes de gastá-lo na mesa. Se preferir, prepare um segundo para começar seu primeiro desenho."
@@ -225,6 +245,9 @@
 			]
 			icon: "overgeared:drafting_table"
 			id: "6F11000000000007"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -261,6 +284,9 @@
 			]
 			icon: "overgeared:blueprint"
 			id: "6F11000000000008"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -296,16 +322,20 @@
 				"Desafio opcional: pratique a forja de uma cabeça de picareta de ferro com o blueprint de picareta até obter a qualidade Perfect. Resfrie e faça o polimento na grindstone."
 				"O resultado pedido é uma cabeça polida com o selo Perfect. Os materiais seguintes não dependem desta medalha; deixe a prática para quando sua oficina estiver abastecida."
 				"Masterwork pode surgir como bônus aleatório de uma forja perfeita, com chance de 5% neste pack. Nenhuma quest deste capítulo exige esse resultado."
+				"A tarefa confere o estado da cabeça: polida e com qualidade Perfect. Não verifica quem a forjou; uma peça recebida também conta."
 			]
 			icon: "overgeared:iron_pickaxe_head"
 			id: "6F11000000000009"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&dC — Opcional: qualidade Perfect"
 			optional: true
 			rewards: [{
 				id: "6F13000000000009"
 				item: "minecraft:golden_apple"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "square"
 			size: 1.15d
 			tasks: [{
 				consume_items: false
@@ -342,6 +372,9 @@
 				}
 			}
 			id: "6F1100000000000A"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -394,6 +427,9 @@
 			]
 			icon: "minecraft:blast_furnace"
 			id: "6F1100000000000B"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000B"
@@ -419,6 +455,9 @@
 			]
 			icon: "overgeared:alloy_furnace"
 			id: "6F1100000000000C"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000C"
@@ -444,6 +483,9 @@
 			]
 			icon: "overgeared:crude_steel"
 			id: "6F1100000000000D"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000D"
@@ -474,6 +516,9 @@
 			]
 			icon: "overgeared:steel_ingot"
 			id: "6F1100000000000E"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000E"
@@ -516,6 +561,9 @@
 				}
 			}
 			id: "6F1100000000000F"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F1300000000000F"
@@ -573,6 +621,10 @@
 				}
 			}
 			id: "6F11000000000010"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -627,6 +679,9 @@
 				}
 			}
 			id: "6F11000000000011"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 8
@@ -634,7 +689,7 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "square"
 			size: 1.15d
 			tasks: [
 				{
@@ -702,7 +757,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["6F1100000000000F"]
 			description: [
 				"Obtenha uma mesa de ferraria (smithing table) e procure o molde de melhoria de diamante do Overgeared em baús de estruturas. Tesouros enterrados, pirâmides e postos de saqueadores estão entre as fontes deste pack."
 				"A receita mostrada no EMI duplica um molde existente: ela usa o próprio molde, diamantes e um lingote de aço. Encontre o primeiro exemplar e guarde uma cópia antes de fazer as melhorias."
@@ -710,6 +764,9 @@
 			]
 			icon: "overgeared:diamond_upgrade_smithing_template"
 			id: "6F11000000000012"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000012"
@@ -737,7 +794,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6F11000000000012"]
+			dependencies: [
+				"6F1100000000000F"
+				"6F11000000000012"
+			]
 			description: [
 				"Na mesa de ferraria, combine a picareta de aço, um molde de melhoria de diamante do Overgeared e um diamante. Confira a receita no EMI."
 				"Guarde a picareta de diamante: ela será a base da melhoria de netherita. O mesmo sistema de diamante também aparece nas receitas das outras ferramentas e armaduras de aço."
@@ -750,6 +810,10 @@
 				}
 			}
 			id: "6F11000000000013"
+			hide_dependency_lines: true
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000013"
@@ -787,6 +851,9 @@
 			]
 			icon: "overgeared:casting_furnace"
 			id: "6F11000000000014"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -830,6 +897,9 @@
 			]
 			icon: "overgeared:nether_alloy_furnace"
 			id: "6F11000000000015"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000015"
@@ -860,6 +930,9 @@
 			]
 			icon: "minecraft:netherite_ingot"
 			id: "6F11000000000016"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "6F13000000000016"
@@ -904,6 +977,9 @@
 				}
 			}
 			id: "6F11000000000017"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000017"
@@ -947,6 +1023,10 @@
 			]
 			icon: "minecraft:fletching_table"
 			id: "6F11000000000018"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 8
@@ -984,14 +1064,17 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["6F11000000000018"]
 			description: [
 				"Use um diamante na grindstone para obter uma lasca de diamante (diamond shard). Segure o material na mão principal, agache e clique com o botão direito mirando o bloco."
-				"Use a lasca como ponta de flecha, com graveto e pena. A receita do EMI entrega quatro flechas por montagem; reúna oito para concluir a tarefa."
+				"Use a lasca como ponta de flecha, com graveto e pena. Há receita na bancada e na mesa de flechas; o EMI mostra ambas. Cada montagem entrega quatro flechas; reúna oito para concluir a tarefa. Não é preciso obter flechas de ferro ou aço antes destas."
 				"As penas da recompensa ajudam a repor a munição. Marque seus alvos com cuidado: agora cada disparo tem acabamento de joalheria."
 			]
 			icon: "overgeared:diamond_arrow"
 			id: "6F11000000000019"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 8
@@ -1021,5 +1104,5 @@
 			y: 8.0d
 		}
 	]
-	title: "&6&lOvergeared"
+	title: "&6&lFogo, Martelo e Aço"
 }

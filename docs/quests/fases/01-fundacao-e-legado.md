@@ -1,6 +1,10 @@
 # F01 — Fundação e legado
 
-**Estado: não iniciada.** Este documento autoriza apenas o planejamento; implementar esta fase exige solicitação explícita do usuário.
+**Estado: aguardando validação em jogo e aceite.** A execução foi autorizada explicitamente pelo usuário; F01.1–F01.3 foram implementadas e verificadas estaticamente. O checkpoint de migração F01.1 ainda não está aprovado e a fase não está concluída.
+
+[Registro de execução e gates](registros/f01-fundacao-e-legado.md) · [Mapa real de IDs](registros/f01-mapa-de-ids.json)
+
+**Revisão de apresentação aprovada pelo pedido do usuário:** [Início](registros/f01-ajuste-inicio.md), capítulo auxiliar com quatro checks informativos, substitui a orientação extensa e os atalhos na primeira quest de PD01. Não cria bloqueios ou recompensas.
 
 [Índice de execução](README.md) · [Regras e arquitetura do plano](../planejamento.md) · [Catálogos candidatos](../catalogos-candidatos.md)
 
@@ -14,13 +18,13 @@ Capítulos sob responsabilidade desta fase: **PD01, FL01**. Executar um lote coe
 - As fases de conteúdo exigem apenas o checkpoint F01.1 validado. Uma pendência na revisão de FL01 não trava o restante do pack; F01 permanece parcial até seus outros lotes passarem.
 - Nenhum ID novo é alocado por estes documentos; só durante a implementação efetiva.
 
-## Checklist de execução futura
+## Checklist de execução
 
-- [ ] F01.1 — checkpoint estrutural: capturar snapshot de arquivos e IDs reais, preservar estado sujo do Git e preparar cópia de mundo/equipe para testar a migração.
-- [ ] F01.1 — inventariar as 290 quests históricas como referência, sem assumir que o número permaneceu igual; montar mapa de IDs de capítulo/quest/task/recompensa e origem/destino.
-- [ ] F01.1 — preparar somente as categorias/identidade visual e regras comuns necessárias à entrega incremental, preservando IDs reutilizáveis; não criar quests ou links quebrados para capítulos futuros.
-- [ ] F01.2 — revisar PD01 e seus nove objetivos existentes sem duplicar o tutorial vanilla ou bloquear o restante do livro.
-- [ ] F01.3 — revisar FL01 preservando o processo de Overgeared, qualidade opcional e ausência das bigornas desativadas.
+- [x] F01.1 — checkpoint estrutural: capturar snapshot de arquivos e IDs reais, preservar estado sujo do Git e preparar cópia de mundo/equipe para testar a migração.
+- [x] F01.1 — inventariar as 290 quests históricas como referência, sem assumir que o número permaneceu igual; montar mapa de IDs de capítulo/quest/task/recompensa e origem/destino.
+- [x] F01.1 — preparar somente as categorias/identidade visual e regras comuns necessárias à entrega incremental, preservando IDs reutilizáveis; não criar quests ou links quebrados para capítulos futuros.
+- [x] F01.2 — revisar PD01 e seus nove objetivos existentes sem duplicar o tutorial vanilla ou bloquear o restante do livro.
+- [x] F01.3 — revisar FL01 preservando o processo de Overgeared, qualidade opcional e ausência das bigornas desativadas.
 
 ## Fora do escopo
 
@@ -30,13 +34,13 @@ Capítulos sob responsabilidade desta fase: **PD01, FL01**. Executar um lote coe
 
 ## Validação e aceite
 
-- [ ] Executar parser nativo, unicidade/faixa dos IDs, referências e ciclos antes e depois da migração.
+- [x] Executar parser nativo, unicidade/faixa dos IDs, referências e ciclos antes e depois da migração.
 - [ ] Testar no mundo copiado o progresso de cobre/polimento e ferro/aço; não retirar recompensas já reconhecidas.
-- [ ] Registrar F01.1 separadamente como aprovado ou pendente; não chamar toda a fase de concluída com testes de FL01 faltando.
+- [x] Registrar F01.1 separadamente como aprovado ou pendente; não chamar toda a fase de concluída com testes de FL01 faltando. **F01.1 pendente da validação em jogo da migração.**
 
 - [ ] Aplicar o protocolo comum do índice: integridade de arquivos/IDs, contratos de conclusão, visual e teste em jogo correspondente ao lote.
 - [ ] Registrar testes executados, evidências, falhas, pendências e aceite do usuário. Validação estática não substitui validação no jogo.
-- [ ] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. Marcar parcial/em espera conforme o caso.
+- [x] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. Marcar parcial/em espera conforme o caso.
 
 ## Como encerrar ou retomar
 
@@ -44,14 +48,14 @@ Atualizar a linha desta fase no índice e preencher a ficha de passagem abaixo. 
 
 | Registro | Preencher durante a execução |
 | --- | --- |
-| Lote executado | — |
-| Arquivos e IDs envolvidos | — |
-| Decisões e fontes conferidas | — |
-| Testes estáticos | — |
-| Testes no jogo / evidência | — |
-| Pendências e bloqueios locais | — |
-| Próximo lote seguro | — |
-| Aceite do usuário | — |
+| Lote executado | F01.1–F01.3: implementação e validação estática; aceite ainda pendente |
+| Arquivos e IDs envolvidos | Quatro SNBT; nove grupos, seis capítulos, 294 quests, 343 tasks e 328 recompensas; [mapa original](registros/f01-mapa-de-ids.json) e [IDs da introdução](registros/f01-ajuste-inicio.md) |
+| Decisões e fontes conferidas | Contratos F00, receitas Overgeared e classes FTB instaladas; [registro](registros/f01-fundacao-e-legado.md) |
+| Testes estáticos | Oito arquivos no parser/roundtrip nativos; IDs, referências, ciclos, preservação do legado e NBT aprovados |
+| Testes no jogo / evidência | Não executados; duas cópias jogáveis com dados reais preparadas |
+| Pendências e bloqueios locais | Migração/claims, visual, cobre/polimento, ferro/aço e equipe; pré-lançamento original executa Pakku fetch e foi preservado |
+| Próximo lote seguro | Validar F01 nas cópias; não iniciar F02–F18 por inferência |
+| Aceite do usuário | Execução autorizada; aceite final não solicitado enquanto os testes estiverem pendentes |
 
 ## Especificações dos capítulos
 
@@ -66,7 +70,7 @@ Os blocos abaixo foram movidos do plano original sem reescrever quests, relaçõ
 | A1–A4 | Contrato com a floresta → Oficina portátil → Pedra teimosa → Picareta sob medida; manter os quatro objetivos atuais I/O e IDs | Sequência inicial já existente, reavaliada apenas se as receitas mudarem |
 | A5–A8 | Primeira expedição → Fogo de oficina → Pedra que aguenta pancada → O brilho vem depois; ensinar aquecimento, bigorna e polimento sem antecipar aço | Mesma trilha técnica atual |
 | M1 | Primeira obra de metal — picareta de cobre; I, não prova de autoria | Final local, não chave universal do livro |
-| R1 | “Escolha seu caminho”: links para fazenda, casa, companheiros, engenharia e exploração | Sem task adicional, chefes ou recompensa de desbloqueio |
+| R1 | Orientações transferidas para o capítulo auxiliar Início: quatro cartões de leitura com checks manuais, sem hyperlinks | Independentes, opcionais, sem recompensas ou desbloqueios; ajuste solicitado pelo usuário |
 
 As nove quests atuais permanecem reconhecíveis. A experiência inicial é a única pequena sequência geral; PD02, PD04 e os demais temas não devem ser trancados por sua conclusão.
 

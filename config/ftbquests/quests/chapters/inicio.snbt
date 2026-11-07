@@ -1,0 +1,100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "inicio"
+	group: "048ED71F33A9801E"
+	icon: "minecraft:book"
+	id: "6B10000000000001"
+	order_index: -1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			description: [
+				"Bem-vindo a Lilyvale! Este capítulo reúne algumas dicas para aproveitar o livro de quests."
+				"Os checks daqui são apenas uma confirmação de leitura. Não dão recompensas e não são necessários para abrir os outros capítulos."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:book"
+			id: "6B11000000000001"
+			optional: true
+			rewards: [ ]
+			tasks: [{
+				id: "6B12000000000001"
+				title: "Li as boas-vindas"
+				type: "checkmark"
+			}]
+			title: "&6Bem-vindo a Lilyvale"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: false
+			description: [
+				"O livro é um convite, não uma lista obrigatória. Escolha entre fazenda, casa, companheiros, engenharia ou exploração: você não precisa concluir todas as trilhas."
+				"Primeiros Passos ensina a pequena oficina de cobre. Seu final não é uma chave universal para o livro; cada tema tem seu próprio caminho."
+				"Novos capítulos serão acrescentados aos poucos. Categorias ainda vazias podem não aparecer no menu."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:compass"
+			id: "6B11000000000002"
+			optional: true
+			rewards: [ ]
+			tasks: [{
+				id: "6B12000000000002"
+				title: "Li sobre as trilhas"
+				type: "checkmark"
+			}]
+			title: "&6Escolha seu caminho"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: false
+			description: [
+				"Tarefas de item verificam posse, sem consumir os itens nem provar quem os fabricou. Trocas e presentes também contam. Consulte as receitas no EMI."
+				"Tarefas de observação pedem que você olhe para o bloco indicado. Checks manuais, como estes, registram apenas sua própria confirmação."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:spyglass"
+			id: "6B11000000000003"
+			optional: true
+			rewards: [ ]
+			tasks: [{
+				id: "6B12000000000003"
+				title: "Li como as tarefas funcionam"
+				type: "checkmark"
+			}]
+			title: "&6Como registrar seu progresso"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: false
+			description: [
+				"&bA — Aprendizado: círculo.&r Uma orientação para aprender um sistema ou processo."
+				"&6M — Marco: hexágono.&r Uma conquista importante dentro da trilha escolhida."
+				"&dC — Opcional: quadrado.&r Desafios, coleções e especializações para quem quiser ir além."
+				"As letras e formas acompanham a cor. Esta identificação está sendo aplicada aos capítulos aos poucos; os cartões de Início são apenas informações."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:paper"
+			id: "6B11000000000004"
+			optional: true
+			rewards: [ ]
+			tasks: [{
+				id: "6B12000000000004"
+				title: "Li a legenda das atividades"
+				type: "checkmark"
+			}]
+			title: "&6Entenda as atividades"
+			x: 4.0d
+			y: 4.0d
+		}
+	]
+	title: "&6&lInício"
+}
