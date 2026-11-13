@@ -45,11 +45,11 @@ Exemplos mínimos deste formato:
 
 - Planeje um grafo acíclico antes de posicionar ícones. No capítulo Create, use coordenadas em múltiplos de 2 e posições únicas; cada dependência visível deve compartilhar `x` ou `y` com a quest predecessora para produzir linha reta horizontal ou vertical. Muitas ramificações de um mesmo nó podem fazer linhas passarem atrás de outros ícones; avalie cruzamentos e legibilidade em vez de criar bloqueios artificiais apenas para simplificar o desenho.
 - Confira estaticamente IDs únicos, referências existentes, ausência de ciclos, quantidades, itens do jar, critérios quando usados, coordenadas e linhas. Siga o gate de cada fase para os testes em jogo, incluindo cópia de mundo/equipe com progresso. Não trate checagem estática ou roundtrip como prova de comportamento no mundo.
-- O capítulo atual mantém 35 quests e 60 tasks nativas de item sem consumo. Consulte o próprio SNBT para dependências, coordenadas e classificações; a revisão editorial de Create pertence às F12/F13, não à F01.
+- As 35 quests originais estão divididas em `create_mod.snbt` (EF01, 24), `logistica_em_movimento.snbt` (EF02) e `estacoes_e_ferrovias.snbt` (EF03), com payloads idênticos; só `x`/`y` mudaram. EF02/EF03 acrescentam quests novas de addons. A revisão dos títulos que prometem ação ainda não foi feita.
 
 ## Fundação e migração da F01
 
-- Consulte os registros e mapas de IDs em `docs/quests/fases/registros/` antes de continuar uma migração. A F01 registra a fundação; a revisão atual da F02 está em `f02-simplificacao.md`; a divisão PD02/PD03 foi cancelada. O mapa da F01 é histórico; a divisão de Create continua pendente das F12/F13.
+- Consulte os registros e mapas de IDs em `docs/quests/fases/registros/` antes de continuar uma migração. A F01 registra a fundação; a revisão atual da F02 está em `f02-simplificacao.md`; a divisão PD02/PD03 foi cancelada. O mapa da F01 é histórico; a divisão de Create foi feita pelo gerador do livro (veja abaixo).
 - Reserve `0000000000000001` ao livro: o construtor `BaseQuestFile` do JAR instalado usa esse ID interno. Não aloque o ID a grupos, capítulos, quests, tasks ou recompensas.
 - Para identidade editorial em 1.20.1, use `subtitle`, `shape`, `hide_details_until_startable: false` e `hide_text_until_complete: false`, confirmados no JAR. A usa círculo azul, M hexágono dourado e C quadrado lilás com texto Opcional; um ramal A também pode continuar tecnicamente opcional.
 - Classifique somente capítulos efetivamente revisados e valide os códigos A/M/C. Subtítulos legados de armazenamento são texto livre: extrair uma letra por posição produz classificações falsas. No inventário, deixe a classificação não revisada como `null`.
@@ -64,3 +64,12 @@ Exemplos mínimos deste formato:
 - A árvore atual tem três ramais compactos sem dependências entre mods. Baú e barril são alternativas: o aplicador exige `one_completed`, não ambos. Mochila antecede o módulo; conector Tom’s antecede o terminal. São relações de aprendizado/uso, não uma alegação sobre ingredientes da receita.
 - Consulte `config/sophisticatedcore-common.toml` programaticamente para as flags `enabledItems`. Não despeje a linha inteira no contexto. Em Storage, `dropPacked = false` exige cuidado ao ensinar transporte: quebrar um recipiente não garante um pacote com conteúdo; consulte a fita e teste cópia antes de operar um depósito real.
 - Use `python build/f02-simplificacao/verify.py` para a revisão atual; o validador `f02-storage-migration/verify.py` é histórico; preparadores de checkpoint são de execução única. Caso haja processos Java ativos, não copie um save em uso: reutilize uma cópia imutável verificada e explicite que ela não representa o progresso atual.
+
+## Livro gerado
+
+- Desde 2026-11-13 os capítulos novos saem de `build/quest-book/` (ignorado pelo git): `python build/quest-book/gen.py` e `python build/quest-book/verify.py`, da raiz. Edite os scripts `chapters_*.py`, não o SNBT gerado. Tabela de capítulos, decisões e pendências em `docs/quests/planejamento.md`, seção 14.
+- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. O gerador reconstrói `create_mod` e `immersive_melodies` a partir de `git show HEAD:`; depois do commit da divisão, troque para os arquivos de trabalho.
+- IDs novos seguem `7A` + capítulo + tipo + sequência na ordem do script. Inserir ou remover uma quest no meio renumera as seguintes e perde progresso: acrescente no fim.
+- Tasks confirmadas no JAR do FTB Quests 2001.4.22: `advancement` (`advancement`, `criterion: ""`), `dimension`, `biome` (aceita `#tag`, ainda não testado em jogo), `structure`, `observation` (`observe_type` 0 = bloco, 5 = entidade), `checkmark` e `item` com `itemfilters:tag`. Antes de usar um avanço, inspecione os critérios: muitos são só `inventory_changed` e provam posse, não ação.
+- Um `&` literal seguido de espaço quebra o título com “Invalid formatting”; escreva `\&`.
+- `farm_and_charm:supply_cart` e `farm_and_charm:plow` foram retirados em `kubejs/server_scripts/farm_carts.js`: não use em quests.

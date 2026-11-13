@@ -1,0 +1,1056 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "pequenos_e_grandes_companheiros"
+	group: "4DFBF6E45E6929B8"
+	icon: "crittersandcompanions:pearl_necklace_1"
+	id: "7A11000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"A rede do Naturalist recolhe criaturas pequenas, como borboletas, vaga-lumes e caracóis, sem machucar. Solte-as no jardim de casa."
+				"A fauna de Lilyvale é para conviver: nenhuma página deste capítulo pede caça. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:capture_net"
+			id: "7A11100000000001"
+			rewards: [{
+				id: "7A11300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A11200000000001"
+				item: "naturalist:capture_net"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dRede de captura"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Hamsters aparecem em campos e florestas. Sementes de trigo, beterraba ou abóbora conquistam a confiança deles."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:wheat_seeds"
+			id: "7A11100000000002"
+			rewards: [{
+				id: "7A11300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				id: "7A11200000000002"
+				observe_type: 5
+				timer: 0L
+				title: "Observe um hamster de perto"
+				to_observe: "hamsters:hamster"
+				type: "observation"
+			}]
+			title: "&dBolinha de pelo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A11100000000002"]
+			description: [
+				"Uma roda de exercícios e um cercadinho seguro fazem um lar de hamster. Eles sobem em escadas e túneis."
+				"A tarefa pede a roda; o resto do habitat é projeto seu."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "hamsters:hamster_wheel"
+			id: "7A11100000000003"
+			rewards: [{
+				id: "7A11300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A11200000000003"
+				item: "hamsters:hamster_wheel"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dCantinho do hamster"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ursos adoram favo de mel. Jogue um favo perto e espere o urso pegar. De longe: urso com fome não é bom vizinho."
+				"A tarefa detecta o urso pegando o favo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:honeycomb"
+			id: "7A11100000000004"
+			optional: true
+			rewards: [{
+				id: "7A11300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "naturalist:husbandry/feed_bear_honeycomb"
+				criterion: ""
+				id: "7A11200000000004"
+				title: "Dê um favo de mel a um urso"
+				type: "advancement"
+			}]
+			title: "&dDoce para o urso"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Hipopótamos comem melancias inteiras de uma bocada só. Ofereça uma e veja com os próprios olhos."
+				"A tarefa detecta a interação."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:melon"
+			id: "7A11100000000005"
+			optional: true
+			rewards: [{
+				id: "7A11300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "naturalist:husbandry/feed_hippo_melon"
+				criterion: ""
+				id: "7A11200000000005"
+				title: "Dê uma melancia a um hipopótamo"
+				type: "advancement"
+			}]
+			title: "&dMelancia inteira"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Lá de cima da girafa se enxerga longe. Leve um mapa na mão, como todo bom explorador."
+				"A tarefa detecta a montaria com o mapa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:map"
+			id: "7A11100000000006"
+			optional: true
+			rewards: [{
+				id: "7A11300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "naturalist:husbandry/ride_giraffe_with_map"
+				criterion: ""
+				id: "7A11200000000006"
+				title: "Monte uma girafa segurando um mapa"
+				type: "advancement"
+			}]
+			title: "&dVista do alto"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:otter_spawn_egg"
+			id: "7A11100000000007"
+			optional: true
+			rewards: [{
+				id: "7A11300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000007"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Lontra"
+				to_observe: "crittersandcompanions:otter"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:ferret_spawn_egg"
+			id: "7A11100000000008"
+			optional: true
+			rewards: [{
+				id: "7A11300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000008"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Furão"
+				to_observe: "crittersandcompanions:ferret"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:red_panda_spawn_egg"
+			id: "7A11100000000009"
+			optional: true
+			rewards: [{
+				id: "7A11300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000009"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Panda-vermelho"
+				to_observe: "crittersandcompanions:red_panda"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:shima_enaga_spawn_egg"
+			id: "7A1110000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000A"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Shima enaga"
+				to_observe: "crittersandcompanions:shima_enaga"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:dumbo_octopus_spawn_egg"
+			id: "7A1110000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000B"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Polvo-dumbo"
+				to_observe: "crittersandcompanions:dumbo_octopus"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:sea_bunny_spawn_egg"
+			id: "7A1110000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000C"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Coelho-do-mar"
+				to_observe: "crittersandcompanions:sea_bunny"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:koi_fish_spawn_egg"
+			id: "7A1110000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000D"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Carpa koi"
+				to_observe: "crittersandcompanions:koi_fish"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:dragonfly_spawn_egg"
+			id: "7A1110000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000E"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Libélula"
+				to_observe: "crittersandcompanions:dragonfly"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:snail_spawn_egg"
+			id: "7A1110000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1130000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000000F"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Caracol"
+				to_observe: "crittersandcompanions:snail"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:leaf_insect_spawn_egg"
+			id: "7A11100000000010"
+			optional: true
+			rewards: [{
+				id: "7A11300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000010"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Bicho-folha"
+				to_observe: "crittersandcompanions:leaf_insect"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:jumping_spider_spawn_egg"
+			id: "7A11100000000011"
+			optional: true
+			rewards: [{
+				id: "7A11300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000011"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Aranha-saltadora"
+				to_observe: "crittersandcompanions:jumping_spider"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um encontro com os pequenos do Critters and Companions. Cada um vive em seu canto: rios, florestas, recifes, jardins."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "crittersandcompanions:ladybug_spawn_egg"
+			id: "7A11100000000012"
+			optional: true
+			rewards: [{
+				id: "7A11300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000012"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Joaninha"
+				to_observe: "crittersandcompanions:ladybug"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:deer_spawn_egg"
+			id: "7A11100000000013"
+			optional: true
+			rewards: [{
+				id: "7A11300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000013"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Cervo"
+				to_observe: "naturalist:deer"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:bear_spawn_egg"
+			id: "7A11100000000014"
+			optional: true
+			rewards: [{
+				id: "7A11300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000014"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Urso"
+				to_observe: "naturalist:bear"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:boar_spawn_egg"
+			id: "7A11100000000015"
+			optional: true
+			rewards: [{
+				id: "7A11300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000015"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Javali"
+				to_observe: "naturalist:boar"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:elephant_spawn_egg"
+			id: "7A11100000000016"
+			optional: true
+			rewards: [{
+				id: "7A11300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000016"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Elefante"
+				to_observe: "naturalist:elephant"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:giraffe_spawn_egg"
+			id: "7A11100000000017"
+			optional: true
+			rewards: [{
+				id: "7A11300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000017"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Girafa"
+				to_observe: "naturalist:giraffe"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:zebra_spawn_egg"
+			id: "7A11100000000018"
+			optional: true
+			rewards: [{
+				id: "7A11300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000018"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Zebra"
+				to_observe: "naturalist:zebra"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:lion_spawn_egg"
+			id: "7A11100000000019"
+			optional: true
+			rewards: [{
+				id: "7A11300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000019"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Leão"
+				to_observe: "naturalist:lion"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:hippo_spawn_egg"
+			id: "7A1110000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001A"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Hipopótamo"
+				to_observe: "naturalist:hippo"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:rhino_spawn_egg"
+			id: "7A1110000000001B"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001B"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Rinoceronte"
+				to_observe: "naturalist:rhino"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:capybara_spawn_egg"
+			id: "7A1110000000001C"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001C"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Capivara"
+				to_observe: "naturalist:capybara"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:tortoise_spawn_egg"
+			id: "7A1110000000001D"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001D"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Jabuti"
+				to_observe: "naturalist:tortoise"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:duck_spawn_egg"
+			id: "7A1110000000001E"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001E"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Pato"
+				to_observe: "naturalist:duck"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:butterfly_spawn_egg"
+			id: "7A1110000000001F"
+			optional: true
+			rewards: [{
+				id: "7A1130000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1120000000001F"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Borboleta"
+				to_observe: "naturalist:butterfly"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:firefly_spawn_egg"
+			id: "7A11100000000020"
+			optional: true
+			rewards: [{
+				id: "7A11300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000020"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Vaga-lume"
+				to_observe: "naturalist:firefly"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:hedgehog_spawn_egg"
+			id: "7A11100000000021"
+			optional: true
+			rewards: [{
+				id: "7A11300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000021"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Ouriço"
+				to_observe: "naturalist:hedgehog"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:alligator_spawn_egg"
+			id: "7A11100000000022"
+			optional: true
+			rewards: [{
+				id: "7A11300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000022"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Jacaré"
+				to_observe: "naturalist:alligator"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:ostrich_spawn_egg"
+			id: "7A11100000000023"
+			optional: true
+			rewards: [{
+				id: "7A11300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000023"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Avestruz"
+				to_observe: "naturalist:ostrich"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Vida selvagem do Naturalist. Savanas, florestas e pântanos têm moradores próprios; alguns são mansos, outros pedem distância."
+				"Chegue perto e mire no animal até a tarefa registrar. Observar basta: nada de capturar, domar ou machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturalist:snake_spawn_egg"
+			id: "7A11100000000024"
+			optional: true
+			rewards: [{
+				id: "7A11300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A11200000000024"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Cobra"
+				to_observe: "naturalist:snake"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+	]
+	title: "&d&lPequenos e Grandes Companheiros"
+}

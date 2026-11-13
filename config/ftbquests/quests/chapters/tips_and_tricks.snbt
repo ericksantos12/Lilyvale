@@ -1,0 +1,270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "tips_and_tricks"
+	group: "048ED71F33A9801E"
+	icon: "vc_gliders:paraglider_wood"
+	id: "7A01000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Um planador de madeira transforma qualquer morro em atalho. Equipe-o, salte e segure o pulo para abrir as asas."
+				"Ele plana, não sobe: escolha um ponto alto e poupe a durabilidade. A receita está no EMI. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vc_gliders:paraglider_wood"
+			id: "7A01100000000001"
+			rewards: [{
+				id: "7A01300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A01200000000001"
+				item: "vc_gliders:paraglider_wood"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6Asas de pano"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A01100000000001"]
+			description: [
+				"O planador de ferro aguenta voos mais longos. Há melhorias de cobre e do Nether para quem quiser brincar com correntes de ar e calor."
+				"Sugestão de passeio: saltar do ponto mais alto da sua base e pousar na horta sem amassar nada. Só o planador é detectado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vc_gliders:paraglider_iron"
+			id: "7A01100000000002"
+			optional: true
+			rewards: [{
+				id: "7A01300000000002"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A01200000000002"
+				item: "vc_gliders:paraglider_iron"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dVento mais firme"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A câmera do Camerapture tira fotos de verdade do seu mundo. Leve papel no inventário: cada clique gasta uma folha."
+				"As fotos podem ir para molduras ou para um álbum. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "camerapture:camera"
+			id: "7A01100000000003"
+			rewards: [{
+				id: "7A01300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A01200000000003"
+				item: "camerapture:camera"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6Diga xis"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A01100000000003"]
+			description: [
+				"Uma foto revelada e um álbum para guardá-la. Fotografe a casa, a colheita, o trem ou aquele pôr do sol que ninguém acreditou."
+				"Qualquer foto serve; o livro não avalia enquadramento. Ainda bem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "camerapture:picture"
+			id: "7A01100000000004"
+			optional: true
+			rewards: [{
+				id: "7A01300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A01200000000004"
+				item: "camerapture:picture"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A01200000000005"
+				item: "camerapture:album"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dPrimeira revelação"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O saco de dormir pula a noite sem mudar seu ponto de renascimento. Perfeito para expedições longas."
+				"Qualquer cor vale. Ele se desgasta com o uso; confira a receita no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "comforts:sleeping_bag_white"
+			id: "7A01100000000005"
+			rewards: [{
+				id: "7A01300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A01200000000006"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+				title: "Obtenha um saco de dormir de qualquer cor"
+				type: "item"
+			}]
+			title: "&6Dormir sem voltar pra casa"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A01100000000005"]
+			description: [
+				"A rede serve para dormir de dia e acordar à noite. Prenda duas cordas com prego em blocos frente a frente e pendure a rede entre elas."
+				"A tarefa pede a rede e as duas cordas; montar e cochilar ficam por sua conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "comforts:hammock_white"
+			id: "7A01100000000006"
+			optional: true
+			rewards: [{
+				id: "7A01300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A01200000000007"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:hammocks"
+					}
+				}
+				title: "Obtenha uma rede de qualquer cor"
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 2L
+				id: "7A01200000000008"
+				item: "comforts:rope_and_nail"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dSoneca da tarde"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A Bússola da Natureza procura biomas pelo nome. Clique com o botão direito, escolha o destino e siga a agulha."
+				"Combina bem com o Atlas de Descobertas, mas nenhum bioma é obrigatório. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "naturescompass:naturescompass"
+			id: "7A01100000000007"
+			rewards: [{
+				id: "7A01300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A01200000000009"
+				item: "naturescompass:naturescompass"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6Para que lado fica?"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Com as duas mãos vazias, agache e clique com o botão direito em um baú, barril ou animal pequeno para carregá-lo no colo, com todo o conteúdo."
+				"Você anda mais devagar enquanto carrega e alguns blocos e criaturas são bloqueados pela configuração do pack. Solte com o botão direito no chão."
+				"Este cartão é só leitura: não há item para detectar, então o check é uma confirmação manual, sem recompensa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:chest"
+			id: "7A01100000000008"
+			optional: true
+			rewards: [ ]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&7Dica de leitura"
+			tasks: [{
+				id: "7A0120000000000A"
+				title: "Li a dica do Carry On"
+				type: "checkmark"
+			}]
+			title: "&6Mãos à obra"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "&6&lTips \\& Tricks"
+}

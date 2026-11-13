@@ -1,0 +1,252 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "ilhas_do_vazio"
+	group: "6E00000000000003"
+	icon: "minecraft:chorus_flower"
+	id: "7A19000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Os portais de passagem levam às ilhas externas. Jogue uma pérola do Ender dentro dele para atravessar."
+				"O Endercon redesenha o End: ilhas maiores, cavernas, pilares e ruínas. A tarefa detecta a travessia."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:ender_pearl"
+			id: "7A19100000000001"
+			rewards: [{
+				id: "7A19300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+				id: "7A19200000000001"
+				title: "Atravesse um portal de passagem do End"
+				type: "advancement"
+			}]
+			title: "&ePortal de passagem"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Os Hallows são as terras altas do novo End: pilares, lâmpadas pendentes e um silêncio comprido."
+				"A tarefa detecta a visita ao bioma."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:end_stone"
+			id: "7A19100000000002"
+			optional: true
+			rewards: [{
+				id: "7A19300000000002"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "endercon:end_hallows"
+				id: "7A19200000000002"
+				title: "Visite os End Hallows"
+				type: "biome"
+			}]
+			title: "&dCampos pálidos"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Na fronteira, as ilhas se desfazem em pedaços sobre o nada. Leve blocos, pérolas e cuidado."
+				"A tarefa detecta a visita ao bioma."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:purpur_block"
+			id: "7A19100000000003"
+			optional: true
+			rewards: [{
+				id: "7A19300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "endercon:end_border"
+				id: "7A19200000000003"
+				title: "Visite a fronteira do End"
+				type: "biome"
+			}]
+			title: "&dA borda do mapa"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ruínas espalhadas pelas ilhas guardam barris com suprimentos de outros viajantes."
+				"A tarefa detecta a chegada à estrutura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:end_stone_bricks"
+			id: "7A19100000000004"
+			optional: true
+			rewards: [{
+				id: "7A19300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A19200000000004"
+				structure: "endercon:end_ruins"
+				title: "Encontre ruínas do End"
+				type: "structure"
+			}]
+			title: "&dRuínas de quem veio antes"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Torres roxas, shulkers nas paredes e, com sorte, um navio ancorado no ar."
+				"A tarefa detecta a chegada à estrutura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:purpur_pillar"
+			id: "7A19100000000005"
+			optional: true
+			rewards: [{
+				id: "7A19300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A19200000000005"
+				structure: "minecraft:end_city"
+				title: "Encontre uma cidade do End"
+				type: "structure"
+			}]
+			title: "&dCidade nas alturas"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A19100000000005"]
+			description: [
+				"A élitra espera no navio do End. Depois dela, o mundo inteiro fica a um salto de distância."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:elytra"
+			id: "7A19100000000006"
+			optional: true
+			rewards: [{
+				id: "7A19300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A19200000000006"
+				item: "minecraft:elytra"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dAsas próprias"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Duas cascas e um baú fazem uma caixa de shulker, que guarda o conteúdo ao ser quebrada."
+				"A tarefa pede as duas cascas."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:shulker_box"
+			id: "7A19100000000007"
+			optional: true
+			rewards: [{
+				id: "7A19300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "7A19200000000007"
+				item: "minecraft:shulker_shell"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dCaixa que viaja"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Flores de coro crescem em pedra do End em qualquer dimensão. Leve as duas para casa e plante um pomar esquisito."
+				"Projeto sugerido: uma ponte entre ilhas ou um observatório sobre o vazio. O livro não mede a obra; a vista é a recompensa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:chorus_flower"
+			id: "7A19100000000008"
+			optional: true
+			rewards: [{
+				id: "7A19300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A19200000000008"
+				item: "minecraft:chorus_flower"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 16L
+				id: "7A19200000000009"
+				item: "minecraft:end_stone"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dPomar do vazio"
+			x: 2.0d
+			y: 2.0d
+		}
+	]
+	title: "&e&lIlhas do Vazio"
+}

@@ -1,0 +1,268 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "da_planta_a_fachada"
+	group: "1DA3993DEE28D0C0"
+	icon: "chipped:mason_table"
+	id: "7A14000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"As bancadas do Chipped transformam um bloco comum em dezenas de variações, sem custo extra. A do pedreiro cuida de pedras e tijolos; a do carpinteiro, de madeiras."
+				"Escolha uma paleta de três ou quatro variações e repita pela construção. O livro não cataloga texturas: a coleção é a sua casa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "chipped:mason_table"
+			id: "7A14100000000001"
+			rewards: [{
+				id: "7A14300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A14200000000001"
+				item: "chipped:mason_table"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A14200000000002"
+				item: "chipped:carpenters_table"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&eMil jeitos de ser pedra"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A14100000000001"]
+			description: [
+				"Tear para lãs e tapetes, bancada de botânica para plantas, mesa de engenhocas para redstone e lanternas, e bancada de alquimia para vidros e brilhos."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "chipped:loom_table"
+			id: "7A14100000000002"
+			optional: true
+			rewards: [{
+				id: "7A14300000000002"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A14200000000003"
+				item: "chipped:loom_table"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A14200000000004"
+				item: "chipped:botanist_workbench"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A14200000000005"
+				item: "chipped:tinkering_table"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A14200000000006"
+				item: "chipped:alchemy_bench"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dOficina de acabamentos"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"A vareta estende a face para a qual você olha, usando blocos do inventário. Paredes, pisos e telhados sobem em poucos cliques."
+				"A de madeira já ajuda; materiais melhores alcançam mais blocos por vez. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "constructionstick:wooden_stick"
+			id: "7A14100000000003"
+			rewards: [{
+				id: "7A14300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A14200000000007"
+				item: "constructionstick:wooden_stick"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&eVareta de construção"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A14100000000003"]
+			description: [
+				"Mais alcance, mais durabilidade e espaço para melhorias."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "constructionstick:iron_stick"
+			id: "7A14100000000004"
+			optional: true
+			rewards: [{
+				id: "7A14300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A14200000000008"
+				item: "constructionstick:iron_stick"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dVareta de ferro"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A14100000000004"]
+			description: [
+				"O molde angelical coloca blocos no ar, sem apoio. O de substituição troca o material de uma parede inteira sem derrubá-la: perfeito para mudar de paleta."
+				"Moldes se aplicam à vareta de ferro ou melhor. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "constructionstick:template_replacement"
+			id: "7A14100000000005"
+			optional: true
+			rewards: [{
+				id: "7A14300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A14200000000009"
+				item: "constructionstick:template_angel"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1420000000000A"
+				item: "constructionstick:template_replacement"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dKit de reforma"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O Amendments melhora blocos que você já conhece. Lanternas podem ser presas na parede, vasos podem ser pendurados no teto e tapetes cobrem escadas e lajes."
+				"Também dá para misturar corantes no caldeirão e empilhar bolos. A tarefa pede só uma lanterna e um vaso para experimentar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:lantern"
+			id: "7A14100000000006"
+			rewards: [{
+				id: "7A14300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A1420000000000B"
+				item: "minecraft:lantern"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1420000000000C"
+				item: "minecraft:flower_pot"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&eDetalhes que mudam tudo"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A14100000000006"]
+			description: [
+				"Coloque um bolo sobre outro para montar um bolo de dois andares. Uma vela em cima e está pronta a festa."
+				"A tarefa confere dois bolos no inventário; empilhar é a parte divertida."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:cake"
+			id: "7A14100000000007"
+			optional: true
+			rewards: [{
+				id: "7A14300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "7A1420000000000D"
+				item: "minecraft:cake"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dBolo de dois andares"
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+	title: "&e&lDa Planta à Fachada"
+}

@@ -1,0 +1,350 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "logistica_em_movimento"
+	group: "6F00000000000001"
+	icon: "create:packager"
+	id: "7A08000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["Reúna um conector de esteira, um funil de andesita e um chute. O Ponder mostra como ligar eixos e transportar itens sem contratar carregadores."]
+			icon: "create:belt_connector"
+			id: "6C11000000000007"
+			rewards: [
+				{
+					count: 4
+					id: "6C1300000000000C"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1300000000000D"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C14000000000005"
+					item: "create:belt_connector"
+					title: "Obtenha um conector de esteira"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000006"
+					item: "create:andesite_funnel"
+					title: "Obtenha um funil de andesita"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000000B"
+					item: "create:chute"
+					title: "Obtenha um chute"
+					type: "item"
+				}
+			]
+			title: "&eEsteira de produção"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C11000000000007"]
+			description: ["Reúna uma portable storage interface, uma rope pulley e um cart assembler. O Ponder mostra como passar itens entre contraptions e a base."]
+			icon: "create:portable_storage_interface"
+			id: "6C1100000000001A"
+			rewards: [
+				{
+					count: 8
+					id: "6C13000000000032"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000033"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000001B"
+					item: "create:portable_storage_interface"
+					title: "Obtenha uma interface portátil de armazenamento"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000002A"
+					item: "create:rope_pulley"
+					title: "Obtenha uma rope pulley"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000002B"
+					item: "create:cart_assembler"
+					title: "Obtenha um cart assembler"
+					type: "item"
+				}
+			]
+			title: "&aContraption com inventário"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C1100000000000B"]
+			description: ["No mixer, misture 4 itens entre bambu, cana-de-açúcar e mudas com água para fazer polpa. A prensa faz papelão; 4 viram o bloco do packager. O Ponder cuida dos endereços."]
+			icon: "create:packager"
+			id: "6C11000000000020"
+			rewards: [
+				{
+					count: 2
+					id: "6C1300000000003F"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000040"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000041"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1400000000001D"
+					item: "create:cardboard"
+					title: "Obtenha papelão"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1400000000001E"
+					item: "create:packager"
+					title: "Obtenha um packager"
+					type: "item"
+				}
+			]
+			title: "&6Papelão que viaja"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000020"]
+			description: ["Obtenha um chain conveyor e um frogport. Pendure o transportador e use o frogport para receber pacotes da corrente. É uma entrega expressa, desde que você tenha indicado para onde ela vai."]
+			icon: "create:package_frogport"
+			id: "6C11000000000021"
+			rewards: [
+				{
+					count: 4
+					id: "6C13000000000042"
+					item: "create:transmitter"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C13000000000043"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000037"
+					item: "create:chain_conveyor"
+					title: "Obtenha um chain conveyor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000038"
+					item: "create:package_frogport"
+					title: "Obtenha um frogport"
+					type: "item"
+				}
+			]
+			title: "&6Entrega suspensa"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C11000000000020"]
+			description: ["Obtenha um stock link e um stock ticker. Para fazer pedidos, ligue o link ao estoque e coloque um funcionário no ticker. Etiquete os pacotes: a fábrica entende pedidos, mas não lê pensamentos."]
+			icon: "create:stock_ticker"
+			id: "6C11000000000022"
+			rewards: [
+				{
+					count: 2
+					id: "6C13000000000044"
+					item: "create:stock_link"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000045"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000039"
+					item: "create:stock_link"
+					title: "Obtenha um stock link"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000003A"
+					item: "create:stock_ticker"
+					title: "Obtenha um stock ticker"
+					type: "item"
+				}
+			]
+			title: "&6Pedidos da fábrica"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6C11000000000022"
+				"6C11000000000014"
+			]
+			description: ["Obtenha um factory gauge e um redstone requester. Configure-os para pedir reposição automaticamente, sem interromper a produção. O Ponder explica como ligar os pedidos ao estoque."]
+			icon: "create:factory_gauge"
+			id: "6C11000000000023"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000046"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000047"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1200000000003B"
+					item: "create:factory_gauge"
+					title: "Obtenha um factory gauge"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C1200000000003C"
+					item: "create:redstone_requester"
+					title: "Obtenha um redstone requester"
+					type: "item"
+				}
+			]
+			title: "&6&lEstoque automático"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C11000000000012"]
+			description: ["Fabrique dois redstone links e um display link. Frequências iguais conversam; frequências diferentes só se encaram."]
+			icon: "create:display_link"
+			id: "6C11000000000018"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000002E"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1300000000002F"
+					item: "create:transmitter"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					count: 2L
+					id: "6C12000000000025"
+					item: "create:redstone_link"
+					title: "Obtenha 2 links de redstone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C14000000000019"
+					item: "create:display_link"
+					title: "Obtenha um display link"
+					type: "item"
+				}
+			]
+			title: "&cSinais e informação"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C1100000000001A"]
+			description: [
+				"Com o Create Contraption Terminals, o terminal do Tom's enxerga cofres do Create e continua funcionando depois que a estrutura vira uma contraption: trem, elevador ou perfuratriz com depósito pesquisável."
+				"Encoste o terminal no cofre antes de montar. A tarefa pede apenas ter um terminal e um cofre de itens; a montagem não é detectada. O Ponder do terminal mostra o encaixe."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "toms_storage:ts.storage_terminal"
+			id: "7A08100000000001"
+			rewards: [{
+				id: "7A08300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A08200000000001"
+				item: "toms_storage:ts.storage_terminal"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A08200000000002"
+				item: "create:item_vault"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&bTerminal a bordo"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "&b&lLogística em Movimento"
+}

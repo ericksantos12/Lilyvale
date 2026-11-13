@@ -1,0 +1,178 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "o_ultimo_voo"
+	group: "6E00000000000003"
+	icon: "minecraft:dragon_head"
+	id: "7A18000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Com o True Ending, a dragoa tem novos ataques, fases e uma trilha sonora à altura. Não é a luta que você lembra."
+				"Kit sugerido: balde de água para as quedas, flechas para os cristais e maçãs douradas para os sustos. A tarefa só confere a mochila; ir ou não ir é decisão sua."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:water_bucket"
+			id: "7A18100000000001"
+			rewards: [{
+				id: "7A18300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A18200000000001"
+				item: "minecraft:water_bucket"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 64L
+				id: "7A18200000000002"
+				item: "minecraft:arrow"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 2L
+				id: "7A18200000000003"
+				item: "minecraft:golden_apple"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&eAntes de pular"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A18100000000001"]
+			description: [
+				"O céu do End fica em silêncio. Seja qual for o seu jeito de jogar, isto é uma história para contar na volta."
+				"O marco usa o avanço do True Ending: quem já venceu não precisa repetir. O resto do livro continua aberto antes e depois deste combate."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:dragon_egg"
+			id: "7A18100000000002"
+			rewards: [{
+				id: "7A18300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "true_ending:kill_dragon"
+				criterion: ""
+				id: "7A18200000000004"
+				title: "Derrote a Ender Dragon"
+				type: "advancement"
+			}]
+			title: "&6&lO último voo"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A18100000000002"]
+			description: [
+				"Recolha o sopro da dragoa em garrafas de vidro durante o combate. Serve para poções persistentes e para contar vantagem."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:dragon_breath"
+			id: "7A18100000000003"
+			optional: true
+			rewards: [{
+				id: "7A18300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A18200000000005"
+				item: "minecraft:dragon_breath"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dFôlego engarrafado"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A18100000000002"]
+			description: [
+				"O ovo teleporta quando tocado. Um pistão ou uma tocha embaixo resolvem. Fica lindo sobre a lareira."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:dragon_egg"
+			id: "7A18100000000004"
+			optional: true
+			rewards: [{
+				id: "7A18300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A18200000000006"
+				item: "minecraft:dragon_egg"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dLembrança de viagem"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A18100000000004"]
+			description: [
+				"Quatro cristais em volta do portal de saída chamam a dragoa de volta. Para quem achou pouco."
+				"A tarefa detecta um cristal colocado sobre a rocha-mãe."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:end_crystal"
+			id: "7A18100000000005"
+			optional: true
+			rewards: [{
+				id: "7A18300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "true_ending:place_end_crystal_on_bedrock"
+				criterion: ""
+				id: "7A18200000000007"
+				title: "Coloque um cristal do End no portal de saída"
+				type: "advancement"
+			}]
+			title: "&dDe novo?"
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+	title: "&e&lO Último Voo"
+}

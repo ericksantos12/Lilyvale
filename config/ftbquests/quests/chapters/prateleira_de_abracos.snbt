@@ -1,0 +1,1316 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "prateleira_de_abracos"
+	group: "1DA3993DEE28D0C0"
+	icon: "perfectplushies:red_panda_plushie"
+	id: "7A16000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Pelúcias do Perfect Plushies não têm receita: aparecem em baús de vilas e nas mãos de comerciantes. Colocadas no mundo, fazem um barulhinho ao serem apertadas."
+				"Qualquer pelúcia de animal conta. A coleção é para passear e trocar, não para repetir a mesma vila até cansar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:dog_plushie"
+			id: "7A16100000000001"
+			rewards: [{
+				id: "7A16300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000001"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "perfectplushieapi:village_plushies"
+					}
+				}
+				title: "Obtenha uma pelúcia de animal"
+				type: "item"
+			}]
+			title: "&ePrimeiro abraço"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:aye_aye_plushie"
+			id: "7A16100000000002"
+			optional: true
+			rewards: [{
+				id: "7A16300000000002"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000002"
+				item: "perfectplushies:aye_aye_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:bear_plushie"
+			id: "7A16100000000003"
+			optional: true
+			rewards: [{
+				id: "7A16300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000003"
+				item: "perfectplushies:bear_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:brown_rabbit_plushie"
+			id: "7A16100000000004"
+			optional: true
+			rewards: [{
+				id: "7A16300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000004"
+				item: "perfectplushies:brown_rabbit_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:capybara_plushie"
+			id: "7A16100000000005"
+			optional: true
+			rewards: [{
+				id: "7A16300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000005"
+				item: "perfectplushies:capybara_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:cat_plushie"
+			id: "7A16100000000006"
+			optional: true
+			rewards: [{
+				id: "7A16300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000006"
+				item: "perfectplushies:cat_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:doe_plushie"
+			id: "7A16100000000007"
+			optional: true
+			rewards: [{
+				id: "7A16300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000007"
+				item: "perfectplushies:doe_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:dog_plushie"
+			id: "7A16100000000008"
+			optional: true
+			rewards: [{
+				id: "7A16300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000008"
+				item: "perfectplushies:dog_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:dolphin_plushie"
+			id: "7A16100000000009"
+			optional: true
+			rewards: [{
+				id: "7A16300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000009"
+				item: "perfectplushies:dolphin_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:duck_plushie"
+			id: "7A1610000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000A"
+				item: "perfectplushies:duck_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:elephant_plushie"
+			id: "7A1610000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000B"
+				item: "perfectplushies:elephant_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:fennec_fox_plushie"
+			id: "7A1610000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000C"
+				item: "perfectplushies:fennec_fox_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:frog_plushie"
+			id: "7A1610000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000D"
+				item: "perfectplushies:frog_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:goose_plushie"
+			id: "7A1610000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000E"
+				item: "perfectplushies:goose_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:hedgehog_plushie"
+			id: "7A1610000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1630000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000000F"
+				item: "perfectplushies:hedgehog_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:hippo_plushie"
+			id: "7A16100000000010"
+			optional: true
+			rewards: [{
+				id: "7A16300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000010"
+				item: "perfectplushies:hippo_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:hummingbird_plushie"
+			id: "7A16100000000011"
+			optional: true
+			rewards: [{
+				id: "7A16300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000011"
+				item: "perfectplushies:hummingbird_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:koala_plushie"
+			id: "7A16100000000012"
+			optional: true
+			rewards: [{
+				id: "7A16300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000012"
+				item: "perfectplushies:koala_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:lion_cub_plushie"
+			id: "7A16100000000013"
+			optional: true
+			rewards: [{
+				id: "7A16300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000013"
+				item: "perfectplushies:lion_cub_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:monkey_plushie"
+			id: "7A16100000000014"
+			optional: true
+			rewards: [{
+				id: "7A16300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000014"
+				item: "perfectplushies:monkey_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:mouse_plushie"
+			id: "7A16100000000015"
+			optional: true
+			rewards: [{
+				id: "7A16300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000015"
+				item: "perfectplushies:mouse_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:panda_plushie"
+			id: "7A16100000000016"
+			optional: true
+			rewards: [{
+				id: "7A16300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000016"
+				item: "perfectplushies:panda_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:quokka_plushie"
+			id: "7A16100000000017"
+			optional: true
+			rewards: [{
+				id: "7A16300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000017"
+				item: "perfectplushies:quokka_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:raccoon_plushie"
+			id: "7A16100000000018"
+			optional: true
+			rewards: [{
+				id: "7A16300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000018"
+				item: "perfectplushies:raccoon_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:red_fox_plushie"
+			id: "7A16100000000019"
+			optional: true
+			rewards: [{
+				id: "7A16300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000019"
+				item: "perfectplushies:red_fox_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:red_panda_plushie"
+			id: "7A1610000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001A"
+				item: "perfectplushies:red_panda_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:red_ruffed_lemur_plushie"
+			id: "7A1610000000001B"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001B"
+				item: "perfectplushies:red_ruffed_lemur_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:reindeer_plushie"
+			id: "7A1610000000001C"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001C"
+				item: "perfectplushies:reindeer_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:robin_plushie"
+			id: "7A1610000000001D"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001D"
+				item: "perfectplushies:robin_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:rubber_duck_plushie"
+			id: "7A1610000000001E"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001E"
+				item: "perfectplushies:rubber_duck_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:seal_plushie"
+			id: "7A1610000000001F"
+			optional: true
+			rewards: [{
+				id: "7A1630000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000001F"
+				item: "perfectplushies:seal_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:snow_fox_plushie"
+			id: "7A16100000000020"
+			optional: true
+			rewards: [{
+				id: "7A16300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000020"
+				item: "perfectplushies:snow_fox_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:turtle_plushie"
+			id: "7A16100000000021"
+			optional: true
+			rewards: [{
+				id: "7A16300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000021"
+				item: "perfectplushies:turtle_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:white_rabbit_plushie"
+			id: "7A16100000000022"
+			optional: true
+			rewards: [{
+				id: "7A16300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000022"
+				item: "perfectplushies:white_rabbit_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:daniel_plushie"
+			id: "7A16100000000023"
+			optional: true
+			rewards: [{
+				id: "7A16300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000023"
+				item: "perfectplushies:daniel_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:gamerpotion_plushie"
+			id: "7A16100000000024"
+			optional: true
+			rewards: [{
+				id: "7A16300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000024"
+				item: "perfectplushies:gamerpotion_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:geode_plushie"
+			id: "7A16100000000025"
+			optional: true
+			rewards: [{
+				id: "7A16300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000025"
+				item: "perfectplushies:geode_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:joosh_plushie"
+			id: "7A16100000000026"
+			optional: true
+			rewards: [{
+				id: "7A16300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000026"
+				item: "perfectplushies:joosh_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:june_plushie"
+			id: "7A16100000000027"
+			optional: true
+			rewards: [{
+				id: "7A16300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000027"
+				item: "perfectplushies:june_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:nyf_plushie"
+			id: "7A16100000000028"
+			optional: true
+			rewards: [{
+				id: "7A16300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000028"
+				item: "perfectplushies:nyf_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:rocris_plushie"
+			id: "7A16100000000029"
+			optional: true
+			rewards: [{
+				id: "7A16300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000029"
+				item: "perfectplushies:rocris_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:silk_plushie"
+			id: "7A1610000000002A"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002A"
+				item: "perfectplushies:silk_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:sirjain_plushie"
+			id: "7A1610000000002B"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002B"
+				item: "perfectplushies:sirjain_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:sizableshrimp_plushie"
+			id: "7A1610000000002C"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002C"
+				item: "perfectplushies:sizableshrimp_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:tslat_plushie"
+			id: "7A1610000000002D"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002D"
+				item: "perfectplushies:tslat_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:dumbo_blob_plushie"
+			id: "7A1610000000002E"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002E"
+				item: "perfectplushies:dumbo_blob_plushie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:gamerpotion_plushie_rare"
+			id: "7A1610000000002F"
+			optional: true
+			rewards: [{
+				id: "7A1630000000002F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1620000000002F"
+				item: "perfectplushies:gamerpotion_plushie_rare"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "perfectplushies:sirjain_plushie_rare"
+			id: "7A16100000000030"
+			optional: true
+			rewards: [{
+				id: "7A16300000000030"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A16200000000030"
+				item: "perfectplushies:sirjain_plushie_rare"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+	]
+	title: "&e&lPrateleira de Abraços"
+}

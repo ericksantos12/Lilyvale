@@ -1,0 +1,397 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "a_beira_dagua"
+	group: "2F3E0F43CC0404AB"
+	icon: "tide:fishing_journal"
+	id: "7A07000000000001"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Com o Tide, cada rio, lago, caverna e oceano tem seus próprios peixes, e clima, hora e profundidade mudam o que morde."
+				"Qualquer vara de pesca serve para começar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:fishing_rod"
+			id: "7A07100000000001"
+			rewards: [{
+				id: "7A07300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "tide:root"
+				criterion: ""
+				id: "7A07200000000001"
+				title: "Obtenha uma vara de pesca"
+				type: "advancement"
+			}]
+			title: "&aLinha na água"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A07100000000001"]
+			description: [
+				"O primeiro peixe do dia. Daqui em diante é paciência, isca e conversa fiada na beira d'água."
+				"O marco detecta a fisgada de verdade."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:cod"
+			id: "7A07100000000002"
+			rewards: [{
+				id: "7A07300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "minecraft:husbandry/fishy_business"
+				criterion: ""
+				id: "7A07200000000002"
+				title: "Pesque um peixe"
+				type: "advancement"
+			}]
+			title: "&6&lFisgou!"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A07100000000001"]
+			description: [
+				"Iscas aceleram a fisgada e algumas atraem peixes específicos. Elas vão no compartimento da vara, pela mesa de pesca."
+				"Qualquer isca do Tide conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:bait"
+			id: "7A07100000000003"
+			rewards: [{
+				id: "7A07300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "tide:get_bait"
+				criterion: ""
+				id: "7A07200000000003"
+				title: "Obtenha uma isca"
+				type: "advancement"
+			}]
+			title: "&aIsca boa"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O diário do Tide registra cada espécie, onde vive e do que gosta. É o álbum oficial da pescaria: este livro não repete a lista de peixes."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:fishing_journal"
+			id: "7A07100000000004"
+			rewards: [{
+				id: "7A07300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000004"
+				item: "tide:fishing_journal"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aDiário de pesca"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A07100000000004"]
+			description: [
+				"Metade das espécies registradas. Você já sabe ler a água melhor que muita gaivota."
+				"O marco usa o avanço do próprio Tide."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:fishing_journal"
+			id: "7A07100000000005"
+			rewards: [{
+				id: "7A07300000000005"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "tide:journal_halfway_completed"
+				criterion: ""
+				id: "7A07200000000005"
+				title: "Complete metade do diário de pesca"
+				type: "advancement"
+			}]
+			title: "&6&lMeio diário"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A07100000000005"]
+			description: [
+				"Todas as espécies, de todos os lugares. Um projeto para muitas estações, sem pressa nenhuma."
+				"Usa o avanço do próprio Tide. Nada no livro depende disso."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:fishing_journal"
+			id: "7A07100000000006"
+			optional: true
+			rewards: [{
+				id: "7A07300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "tide:journal_completed"
+				criterion: ""
+				id: "7A07200000000006"
+				title: "Complete o diário de pesca"
+				type: "advancement"
+			}]
+			title: "&dDiário completo"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Na mesa de pesca você troca linha, anzol e boia da vara e guarda iscas nela."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:angling_table"
+			id: "7A07100000000007"
+			rewards: [{
+				id: "7A07300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000007"
+				item: "tide:angling_table"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aMesa de pesca"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A07100000000007"]
+			description: [
+				"Linhas e anzóis mudam o comportamento da vara: mais sorte, mais alcance, resistência a lava. Boias são só charme, e charme conta."
+				"A tarefa pede uma linha e um anzol básicos."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:fishing_hook"
+			id: "7A07100000000008"
+			rewards: [{
+				id: "7A07300000000008"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A07200000000008"
+				item: "tide:fishing_line"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A07200000000009"
+				item: "tide:fishing_hook"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aLinha e anzol"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Às vezes o que vem na linha não é peixe. Caixotes trazem materiais e surpresas do fundo."
+				"A tarefa detecta o caixote fisgado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:wooden_crate"
+			id: "7A07100000000009"
+			optional: true
+			rewards: [{
+				id: "7A07300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "tide:pull_crate"
+				criterion: ""
+				id: "7A0720000000000A"
+				title: "Pesque um caixote"
+				type: "advancement"
+			}]
+			title: "&dTesouro encharcado"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Peixes lendários existem, por mais que ninguém acredite na sua história. O diário dá pistas de onde e quando."
+				"A tarefa detecta a fisgada de qualquer lendário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:coelacanth"
+			id: "7A0710000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "tide:catch_legendary"
+				criterion: ""
+				id: "7A0720000000000B"
+				title: "Pesque um peixe lendário"
+				type: "advancement"
+			}]
+			title: "&dHistória de pescador"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um expositor para pendurar a melhor pescaria na parede da sala. Tamanho do peixe a critério do narrador."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:fish_display"
+			id: "7A0710000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000000C"
+				item: "tide:fish_display"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dTroféu na parede"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Com o equipamento certo dá para pescar em lava. Os peixes de lá são exatamente tão esquisitos quanto você imagina."
+				"Especialização opcional: envolve o Nether e anzol à prova de lava."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:lavaproof_hook"
+			id: "7A0710000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "tide:fish_in_lava"
+				criterion: ""
+				id: "7A0720000000000D"
+				title: "Pesque na lava"
+				type: "advancement"
+			}]
+			title: "&dPescaria quente"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Pescar no vazio do End é para quem já pescou em todo o resto. Segure-se bem na borda."
+				"Especialização opcional: exige chegar ao End."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:void_hook"
+			id: "7A0710000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "tide:fish_in_void"
+				criterion: ""
+				id: "7A0720000000000E"
+				title: "Pesque no vazio"
+				type: "advancement"
+			}]
+			title: "&dLinha no nada"
+			x: 10.0d
+			y: 6.0d
+		}
+	]
+	title: "&a&lÀ Beira d'Água"
+}

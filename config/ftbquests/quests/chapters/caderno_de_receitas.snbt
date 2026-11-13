@@ -1,0 +1,2356 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "caderno_de_receitas"
+	group: "2F3E0F43CC0404AB"
+	icon: "farmersdelight:cooking_pot"
+	id: "7A02000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"A faca do Farmer's Delight colhe palha do capim, corta bolos e é a ferramenta da tábua de corte. A de pederneira já resolve."
+				"Qualquer faca conta. O livro registra a posse, não quem a afiou."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:flint_knife"
+			id: "7A02100000000001"
+			rewards: [{
+				id: "7A02300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/craft_knife"
+				criterion: ""
+				id: "7A02200000000001"
+				title: "Obtenha uma faca de qualquer material"
+				type: "advancement"
+			}]
+			title: "&aFaca na mão"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A02100000000001"]
+			description: [
+				"Coloque um ingrediente na tábua e clique com a faca. Carnes viram cortes, repolhos viram folhas e troncos podem ser descascados com machado."
+				"Aqui a tarefa detecta o corte de verdade. O EMI mostra o que cada ferramenta faz na tábua."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cutting_board"
+			id: "7A02100000000002"
+			rewards: [{
+				id: "7A02300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/use_cutting_board"
+				criterion: ""
+				id: "7A02200000000002"
+				title: "Corte algo na tábua de corte"
+				type: "advancement"
+			}]
+			title: "&aTábua de corte"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"A panela precisa de calor por baixo: fogão, fogueira ou magma. Junte os ingredientes, o recipiente pedido pela receita (tigela, garrafa...) e espere."
+				"A tarefa detecta a panela colocada no mundo. O fogão do Farmer's Delight também assa direto na chapa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cooking_pot"
+			id: "7A02100000000003"
+			rewards: [{
+				id: "7A02300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/place_cooking_pot"
+				criterion: ""
+				id: "7A02200000000003"
+				title: "Coloque uma panela de cozinha"
+				type: "advancement"
+			}]
+			title: "&aPanela no fogo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"A frigideira frita no chão sobre uma fonte de calor ou na mão, perto do fogo. Também é uma arma surpreendentemente convincente."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:skillet"
+			id: "7A02100000000004"
+			rewards: [{
+				id: "7A02300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000004"
+				item: "farmersdelight:skillet"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aFrigideira de respeito"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A02100000000003"]
+			description: [
+				"Refeições completas dão Nutrição: a fome para de cair por um tempo. É o jeito do campo de dizer que você comeu direito."
+				"O marco detecta o efeito, então alguém precisa mesmo sentar e comer. Quem cozinhou é assunto da mesa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:beef_stew"
+			id: "7A02100000000005"
+			rewards: [{
+				id: "7A02300000000005"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "farmersdelight:main/eat_nourishing_food"
+				criterion: ""
+				id: "7A02200000000005"
+				title: "Receba o efeito Nutrição de uma refeição"
+				type: "advancement"
+			}]
+			title: "&6&lBarriga cheia, dia ganho"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A02100000000005"]
+			description: [
+				"Banquetes são pratos grandes colocados como bloco e servidos em porções: frango assado, presunto glaceado, abóbora recheada, torta do pastor..."
+				"A tarefa detecta qualquer banquete colocado. Convidar os vizinhos é opcional, mas recomendado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:roast_chicken_block"
+			id: "7A02100000000006"
+			optional: true
+			rewards: [{
+				id: "7A02300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "farmersdelight:main/place_feast"
+				criterion: ""
+				id: "7A02200000000006"
+				title: "Sirva um banquete na mesa"
+				type: "advancement"
+			}]
+			title: "&dMesa posta"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O composto orgânico amadurece sozinho até virar solo rico, mais rápido com água e cogumelos por perto. Plantas crescem melhor nele."
+				"São duas tarefas: colocar o composto e ter um bloco de solo rico."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:rich_soil"
+			id: "7A02100000000007"
+			optional: true
+			rewards: [{
+				id: "7A02300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				advancement: "farmersdelight:main/place_organic_compost"
+				criterion: ""
+				id: "7A02200000000007"
+				title: "Coloque composto orgânico"
+				type: "advancement"
+			}
+			{
+				consume_items: false
+				id: "7A02200000000008"
+				item: "farmersdelight:rich_soil"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dTerra que devolve"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Pimentão, brócolis, couve-flor, alho, batata-doce, nabo, abobrinha e companhia nascem selvagens pelo mundo. Colha, replante e varie o cardápio."
+				"Este desafio usa o avanço do próprio mod, que pede um exemplar de cada vegetal no inventário ao longo do tempo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:bellpepper"
+			id: "7A02100000000008"
+			optional: true
+			rewards: [{
+				id: "7A02300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "veggiesdelight:main/r_all_veggies"
+				criterion: ""
+				id: "7A02200000000009"
+				title: "Tenha todos os vegetais do Veggies Delight"
+				type: "advancement"
+			}]
+			title: "&dHorta sortida"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A chaleira do Farmer's Respite prepara chás e café. Como a panela, precisa de calor por baixo e de água dentro."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:kettle"
+			id: "7A02100000000009"
+			rewards: [{
+				id: "7A02300000000009"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000000A"
+				item: "farmersrespite:kettle"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aChaleira no fogo"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A02100000000009"]
+			description: [
+				"Arbustos de chá e de café crescem selvagens. As folhas verdes podem secar e escurecer; os grãos de café pedem torra."
+				"A tarefa registra folhas de chá verde e grãos de café. As infusões em si ficam no álbum abaixo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:green_tea_leaves"
+			id: "7A0210000000000A"
+			rewards: [{
+				id: "7A0230000000000A"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A0220000000000B"
+				item: "farmersrespite:green_tea_leaves"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A0220000000000C"
+				item: "farmersrespite:coffee_beans"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aFolhas no ponto"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O Vintage Delight guarda a colheita em conserva. O pote de fermentação transforma ingredientes com tempo e paciência, sem fogo."
+				"A tarefa detecta o pote colocado. As receitas e os tempos estão no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:fermenting_jar"
+			id: "7A0210000000000B"
+			rewards: [{
+				id: "7A0230000000000B"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vintagedelight:main/place_fermenting_jar"
+				criterion: ""
+				id: "7A0220000000000D"
+				title: "Coloque um pote de fermentação"
+				type: "advancement"
+			}]
+			title: "&aPote de fermentar"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0210000000000B"]
+			description: [
+				"Uma despensa com conservas atravessa qualquer inverno. Beterraba, cebola, ovo, pimenta: escolha a sua."
+				"Qualquer conserva em picles conta; o avanço do mod aceita alternativas."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:pickled_onion"
+			id: "7A0210000000000C"
+			rewards: [{
+				id: "7A0230000000000C"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "vintagedelight:main/pickled_item"
+				criterion: ""
+				id: "7A0220000000000E"
+				title: "Obtenha uma conserva em picles"
+				type: "advancement"
+			}]
+			title: "&6&lDespensa viva"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O evaporador tira sal da água; o minério de sal também aparece em cavernas. Sal é a base de queijos curados e conservas."
+				"São duas tarefas: o evaporador colocado e um punhado de sal."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:evaporator"
+			id: "7A0210000000000D"
+			rewards: [{
+				id: "7A0230000000000D"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				advancement: "vintagedelight:main/evaporator"
+				criterion: ""
+				id: "7A0220000000000F"
+				title: "Coloque um evaporador"
+				type: "advancement"
+			}
+			{
+				consume_items: false
+				id: "7A02200000000010"
+				item: "vintagedelight:salt_dust"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aSal da casa"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:bacon_and_eggs"
+			id: "7A0210000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0230000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000011"
+				item: "farmersdelight:bacon_and_eggs"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:bacon_sandwich"
+			id: "7A0210000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0230000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000012"
+				item: "farmersdelight:bacon_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:baked_cod_stew"
+			id: "7A02100000000010"
+			optional: true
+			rewards: [{
+				id: "7A02300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000013"
+				item: "farmersdelight:baked_cod_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:barbecue_stick"
+			id: "7A02100000000011"
+			optional: true
+			rewards: [{
+				id: "7A02300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000014"
+				item: "farmersdelight:barbecue_stick"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:beef_stew"
+			id: "7A02100000000012"
+			optional: true
+			rewards: [{
+				id: "7A02300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000015"
+				item: "farmersdelight:beef_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:bone_broth"
+			id: "7A02100000000013"
+			optional: true
+			rewards: [{
+				id: "7A02300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000016"
+				item: "farmersdelight:bone_broth"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cabbage_rolls"
+			id: "7A02100000000014"
+			optional: true
+			rewards: [{
+				id: "7A02300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000017"
+				item: "farmersdelight:cabbage_rolls"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:chicken_sandwich"
+			id: "7A02100000000015"
+			optional: true
+			rewards: [{
+				id: "7A02300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000018"
+				item: "farmersdelight:chicken_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:chicken_soup"
+			id: "7A02100000000016"
+			optional: true
+			rewards: [{
+				id: "7A02300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000019"
+				item: "farmersdelight:chicken_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cod_roll"
+			id: "7A02100000000017"
+			optional: true
+			rewards: [{
+				id: "7A02300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001A"
+				item: "farmersdelight:cod_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:dumplings"
+			id: "7A02100000000018"
+			optional: true
+			rewards: [{
+				id: "7A02300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001B"
+				item: "farmersdelight:dumplings"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:egg_sandwich"
+			id: "7A02100000000019"
+			optional: true
+			rewards: [{
+				id: "7A02300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001C"
+				item: "farmersdelight:egg_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:fish_stew"
+			id: "7A0210000000001A"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001D"
+				item: "farmersdelight:fish_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:fried_rice"
+			id: "7A0210000000001B"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001E"
+				item: "farmersdelight:fried_rice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:fruit_salad"
+			id: "7A0210000000001C"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000001F"
+				item: "farmersdelight:fruit_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:grilled_salmon"
+			id: "7A0210000000001D"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000020"
+				item: "farmersdelight:grilled_salmon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:hamburger"
+			id: "7A0210000000001E"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000021"
+				item: "farmersdelight:hamburger"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:honey_glazed_ham"
+			id: "7A0210000000001F"
+			optional: true
+			rewards: [{
+				id: "7A0230000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000022"
+				item: "farmersdelight:honey_glazed_ham"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:kelp_roll"
+			id: "7A02100000000020"
+			optional: true
+			rewards: [{
+				id: "7A02300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000023"
+				item: "farmersdelight:kelp_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:mixed_salad"
+			id: "7A02100000000021"
+			optional: true
+			rewards: [{
+				id: "7A02300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000024"
+				item: "farmersdelight:mixed_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:mushroom_rice"
+			id: "7A02100000000022"
+			optional: true
+			rewards: [{
+				id: "7A02300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000025"
+				item: "farmersdelight:mushroom_rice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:mutton_wrap"
+			id: "7A02100000000023"
+			optional: true
+			rewards: [{
+				id: "7A02300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000026"
+				item: "farmersdelight:mutton_wrap"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:nether_salad"
+			id: "7A02100000000024"
+			optional: true
+			rewards: [{
+				id: "7A02300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000027"
+				item: "farmersdelight:nether_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:noodle_soup"
+			id: "7A02100000000025"
+			optional: true
+			rewards: [{
+				id: "7A02300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000028"
+				item: "farmersdelight:noodle_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:onion_soup"
+			id: "7A02100000000026"
+			optional: true
+			rewards: [{
+				id: "7A02300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000029"
+				item: "farmersdelight:onion_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:pasta_with_meatballs"
+			id: "7A02100000000027"
+			optional: true
+			rewards: [{
+				id: "7A02300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002A"
+				item: "farmersdelight:pasta_with_meatballs"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:pasta_with_mutton_chop"
+			id: "7A02100000000028"
+			optional: true
+			rewards: [{
+				id: "7A02300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002B"
+				item: "farmersdelight:pasta_with_mutton_chop"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:pumpkin_soup"
+			id: "7A02100000000029"
+			optional: true
+			rewards: [{
+				id: "7A02300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002C"
+				item: "farmersdelight:pumpkin_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:ratatouille"
+			id: "7A0210000000002A"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002D"
+				item: "farmersdelight:ratatouille"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:roast_chicken"
+			id: "7A0210000000002B"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002E"
+				item: "farmersdelight:roast_chicken"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:roasted_mutton_chops"
+			id: "7A0210000000002C"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000002F"
+				item: "farmersdelight:roasted_mutton_chops"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:salmon_roll"
+			id: "7A0210000000002D"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000030"
+				item: "farmersdelight:salmon_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:shepherds_pie"
+			id: "7A0210000000002E"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000031"
+				item: "farmersdelight:shepherds_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:squid_ink_pasta"
+			id: "7A0210000000002F"
+			optional: true
+			rewards: [{
+				id: "7A0230000000002F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000032"
+				item: "farmersdelight:squid_ink_pasta"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:steak_and_potatoes"
+			id: "7A02100000000030"
+			optional: true
+			rewards: [{
+				id: "7A02300000000030"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000033"
+				item: "farmersdelight:steak_and_potatoes"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:stuffed_potato"
+			id: "7A02100000000031"
+			optional: true
+			rewards: [{
+				id: "7A02300000000031"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000034"
+				item: "farmersdelight:stuffed_potato"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:apple_pie"
+			id: "7A02100000000032"
+			optional: true
+			rewards: [{
+				id: "7A02300000000032"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000035"
+				item: "farmersdelight:apple_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:chocolate_pie"
+			id: "7A02100000000033"
+			optional: true
+			rewards: [{
+				id: "7A02300000000033"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000036"
+				item: "farmersdelight:chocolate_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:sweet_berry_cheesecake"
+			id: "7A02100000000034"
+			optional: true
+			rewards: [{
+				id: "7A02300000000034"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000037"
+				item: "farmersdelight:sweet_berry_cheesecake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:glow_berry_custard"
+			id: "7A02100000000035"
+			optional: true
+			rewards: [{
+				id: "7A02300000000035"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000038"
+				item: "farmersdelight:glow_berry_custard"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:hot_cocoa"
+			id: "7A02100000000036"
+			optional: true
+			rewards: [{
+				id: "7A02300000000036"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000039"
+				item: "farmersdelight:hot_cocoa"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:apple_cider"
+			id: "7A02100000000037"
+			optional: true
+			rewards: [{
+				id: "7A02300000000037"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003A"
+				item: "farmersdelight:apple_cider"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:green_tea"
+			id: "7A02100000000038"
+			optional: true
+			rewards: [{
+				id: "7A02300000000038"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003B"
+				item: "farmersrespite:green_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:black_tea"
+			id: "7A02100000000039"
+			optional: true
+			rewards: [{
+				id: "7A02300000000039"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003C"
+				item: "farmersrespite:black_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:coffee"
+			id: "7A0210000000003A"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003D"
+				item: "farmersrespite:coffee"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:rose_hip_tea"
+			id: "7A0210000000003B"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003E"
+				item: "farmersrespite:rose_hip_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:coffee_cake"
+			id: "7A0210000000003C"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000003F"
+				item: "farmersrespite:coffee_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:rose_hip_pie"
+			id: "7A0210000000003D"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000040"
+				item: "farmersrespite:rose_hip_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:tea_curry"
+			id: "7A0210000000003E"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000041"
+				item: "farmersrespite:tea_curry"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersrespite:blazing_chili"
+			id: "7A0210000000003F"
+			optional: true
+			rewards: [{
+				id: "7A0230000000003F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000042"
+				item: "farmersrespite:blazing_chili"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:seagrass_salad"
+			id: "7A02100000000040"
+			optional: true
+			rewards: [{
+				id: "7A02300000000040"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000043"
+				item: "oceansdelight:seagrass_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:squid_rings"
+			id: "7A02100000000041"
+			optional: true
+			rewards: [{
+				id: "7A02300000000041"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000044"
+				item: "oceansdelight:squid_rings"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:honey_fried_kelp"
+			id: "7A02100000000042"
+			optional: true
+			rewards: [{
+				id: "7A02300000000042"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000045"
+				item: "oceansdelight:honey_fried_kelp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:braised_sea_pickle"
+			id: "7A02100000000043"
+			optional: true
+			rewards: [{
+				id: "7A02300000000043"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000046"
+				item: "oceansdelight:braised_sea_pickle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:fugu_roll"
+			id: "7A02100000000044"
+			optional: true
+			rewards: [{
+				id: "7A02300000000044"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000047"
+				item: "oceansdelight:fugu_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "oceansdelight:bowl_of_guardian_soup"
+			id: "7A02100000000045"
+			optional: true
+			rewards: [{
+				id: "7A02300000000045"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000048"
+				item: "oceansdelight:bowl_of_guardian_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:cacciatore"
+			id: "7A02100000000046"
+			optional: true
+			rewards: [{
+				id: "7A02300000000046"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000049"
+				item: "veggiesdelight:cacciatore"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:broccoli_soup"
+			id: "7A02100000000047"
+			optional: true
+			rewards: [{
+				id: "7A02300000000047"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004A"
+				item: "veggiesdelight:broccoli_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:cauliflower_kuku"
+			id: "7A02100000000048"
+			optional: true
+			rewards: [{
+				id: "7A02300000000048"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004B"
+				item: "veggiesdelight:cauliflower_kuku"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:garlic_bread"
+			id: "7A02100000000049"
+			optional: true
+			rewards: [{
+				id: "7A02300000000049"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004C"
+				item: "veggiesdelight:garlic_bread"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:sweet_potato_pancakes"
+			id: "7A0210000000004A"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004D"
+				item: "veggiesdelight:sweet_potato_pancakes"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:turnip_beef_stew"
+			id: "7A0210000000004B"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004E"
+				item: "veggiesdelight:turnip_beef_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:stuffed_zucchini_boat"
+			id: "7A0210000000004C"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0220000000004F"
+				item: "veggiesdelight:stuffed_zucchini_boat"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "veggiesdelight:vegetarian_burger"
+			id: "7A0210000000004D"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000050"
+				item: "veggiesdelight:vegetarian_burger"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:kimchi"
+			id: "7A0210000000004E"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000051"
+				item: "vintagedelight:kimchi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:pickle"
+			id: "7A0210000000004F"
+			optional: true
+			rewards: [{
+				id: "7A0230000000004F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000052"
+				item: "vintagedelight:pickle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:century_egg"
+			id: "7A02100000000050"
+			optional: true
+			rewards: [{
+				id: "7A02300000000050"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000053"
+				item: "vintagedelight:century_egg"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:pad_thai"
+			id: "7A02100000000051"
+			optional: true
+			rewards: [{
+				id: "7A02300000000051"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000054"
+				item: "vintagedelight:pad_thai"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:stuffed_burrito"
+			id: "7A02100000000052"
+			optional: true
+			rewards: [{
+				id: "7A02300000000052"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000055"
+				item: "vintagedelight:stuffed_burrito"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:overnight_oats"
+			id: "7A02100000000053"
+			optional: true
+			rewards: [{
+				id: "7A02300000000053"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000056"
+				item: "vintagedelight:overnight_oats"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:cheese_pasta"
+			id: "7A02100000000054"
+			optional: true
+			rewards: [{
+				id: "7A02300000000054"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000057"
+				item: "vintagedelight:cheese_pasta"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vintagedelight:surstromming"
+			id: "7A02100000000055"
+			optional: true
+			rewards: [{
+				id: "7A02300000000055"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A02200000000058"
+				item: "vintagedelight:surstromming"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 26.0d
+			y: 18.0d
+		}
+	]
+	title: "&a&lCaderno de Receitas"
+}

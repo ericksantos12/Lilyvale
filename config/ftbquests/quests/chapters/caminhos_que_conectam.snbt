@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "caminhos_que_conectam"
+	group: "2E622CDAB0B6B1F2"
+	icon: "via_romana:charting_map"
+	id: "7A0C000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"No Via Romana, estradas de verdade viram rotas de viagem. Com o mapa de traçado na mão, caminhe pela estrada para registrá-la."
+				"Só vale chão trabalhado: trilha de terra, tijolos, madeira e outros blocos de infraestrutura. Grama solta não é estrada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "via_romana:charting_map"
+			id: "7A0C100000000001"
+			rewards: [{
+				id: "7A0C300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0C200000000001"
+				item: "via_romana:charting_map"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&3Mapa de traçado"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0C100000000001"]
+			description: [
+				"Placas perto de um ponto do caminho viram destinos. Clique nela para ligar ao traçado e dar nome ao lugar."
+				"Com dois destinos ligados pela mesma estrada, dá para viajar de um ao outro. A tarefa pede apenas a placa."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:oak_sign"
+			id: "7A0C100000000002"
+			rewards: [{
+				id: "7A0C300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0C200000000002"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:signs"
+					}
+				}
+				title: "Obtenha uma placa de qualquer madeira"
+				type: "item"
+			}]
+			title: "&3Placa no entroncamento"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0C100000000002"]
+			description: [
+				"Casa e vila, fazenda e porto, estação e mina: a primeira ligação muda o jeito de morar no mundo."
+				"O marco usa o avanço do próprio Via Romana, concedido ao conectar caminhos."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:lodestone"
+			id: "7A0C100000000003"
+			rewards: [{
+				id: "7A0C300000000003"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "via_romana:story/a_strand_type_game"
+				criterion: ""
+				id: "7A0C200000000003"
+				title: "Conecte lugares com um caminho traçado"
+				type: "advancement"
+			}]
+			title: "&6&lO mundo ficou menor"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Uma malha de estradas de respeito. Pontes, calçadas e postes de luz são por conta do seu bom gosto."
+				"Usa o avanço do próprio mod. Não depende de ferrovia nem de nenhum outro capítulo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:dirt_path"
+			id: "7A0C100000000004"
+			optional: true
+			rewards: [{
+				id: "7A0C300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "via_romana:story/straight_up_pathing_it"
+				criterion: ""
+				id: "7A0C200000000004"
+				title: "Trace 5 km de caminhos"
+				type: "advancement"
+			}]
+			title: "&dCinco quilômetros de estrada"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Estrada boa é estrada usada. Viaje pelos seus caminhos até somar cinco quilômetros."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:leather_boots"
+			id: "7A0C100000000005"
+			optional: true
+			rewards: [{
+				id: "7A0C300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "via_romana:story/i_just_felt_like_running"
+				criterion: ""
+				id: "7A0C200000000005"
+				title: "Viaje 5 km por caminhos traçados"
+				type: "advancement"
+			}]
+			title: "&dPé na estrada"
+			x: 2.0d
+			y: 4.0d
+		}
+	]
+	title: "&3&lCaminhos que Conectam"
+}

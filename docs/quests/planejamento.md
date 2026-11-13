@@ -1,8 +1,8 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado: arquitetura aprovada na F00; F01 concluída com validação e aceite informados pelo usuário; F02 implementada e aguardando validação em jogo/aceite; F03–F18 permanecem futuras.** Consulte o índice e os registros de execução para distinguir o plano do conteúdo realmente entregue. Este documento não é prova de implementação de todos os capítulos.
+**Estado (2026-11-13): os 29 capítulos-base e o Início existem no livro — 30 capítulos, 607 quests — gerados por `build/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
 
-**Execução incremental:** consulte [as fases F00–F18](fases/README.md). As especificações detalhadas de cada capítulo ficam nos arquivos de sua fase; este documento preserva arquitetura, layout comum, políticas e critérios de aceite.
+**Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
 Fonte de escopo: `quest-mods.md`. O plano cobre seus 49 mods em **29 capítulos-base**, organizados nas nove categorias do arquivo atual. Catálogos usam regras de expansão descritas abaixo; o número final de quests só deve ser fechado depois da auditoria de obtenção no survival. Não se trata de 30 mods escolhidos: vários capítulos reúnem mods, enquanto Create e a jornada ao End são divididos por experiência.
 
@@ -159,7 +159,7 @@ P — Projeto:         inspiração / ferramentas
 
 As especificações detalhadas foram **movidas, sem reescrever seu conteúdo**, para os arquivos de execução incremental. Cada capítulo tem uma única fase responsável; as regras comuns deste documento continuam valendo para todas elas.
 
-[Comece pelo índice de execução e seus critérios de passagem](fases/README.md). Nenhuma fase foi implementada por esta reorganização documental.
+[Índice histórico das fases](fases/README.md). As especificações de nós ali não foram seguidas na geração do livro; a seção 14 mapeia cada capítulo ao arquivo entregue.
 
 | Capítulo | Especificação e fase responsável |
 | --- | --- |
@@ -352,7 +352,7 @@ Não gerar IDs finais agora. Na implementação, novos IDs devem ser hexadecimai
 
 ## 12. Plano incremental de execução
 
-O plano é executável em **19 fases, F00–F18**, com entregas menores, gates locais, testes e fichas de passagem. A numeração é prioridade de trabalho, não ordem obrigatória para o jogador.
+O plano original previa **19 fases, F00–F18**. O livro gerado entregou o conteúdo de F03–F17 de uma só vez, sem passar pelos gates de cada fase; os testes em jogo e o aceite integrado (F18) continuam pendentes. Plano original, com entregas menores, gates locais, testes e fichas de passagem. A numeração é prioridade de trabalho, não ordem obrigatória para o jogador.
 
 [Índice completo, estados e protocolo de execução](fases/README.md). O índice registra o estado atual de cada fase; a execução da F00 é documental e não inicia automaticamente F01 ou implementação de capítulos.
 
@@ -404,6 +404,69 @@ Este é um projeto editorial apoiado em inspeção estática, não um relatório
 - Final de jornada: `endrem_forge-5.3.3-R-1.20.1.jar`, `tru.e-ending-v1.1.0c.jar`, `endercon-1.0.2 [Forge-Neoforge].jar`; considerar a configuração local, não versões novas das páginas públicas.
 
 A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo instalado, não para um arquivo extraído que este plano exige criar. Wikia/documentação recente serve de contexto: se divergir do JAR, configuração ou receita carregada, a versão do pack prevalece. As fontes públicas citadas abaixo foram consultadas por resultados de pesquisa; detalhes numéricos de duração, idade ou balanceamento não foram importados como regra do Lilyvale.
+
+## 14. Livro gerado (2026-11-13)
+
+### Como regenerar
+
+- Fonte: `build/quest-book/`, pasta ignorada pelo git. `core.py` escreve SNBT e lê itens, avanços, biomas, estruturas, entidades e dimensões dos JARs; `chapters_a.py` (PD04, VC), `chapters_b.py` (EF, MF, AH, FL02) e `chapters_c.py` (CC, LR, JE) têm o conteúdo; `gen.py` monta e valida; `verify.py` faz o parse estrutural.
+- Da raiz: `python build/quest-book/gen.py` e depois `python build/quest-book/verify.py`. Edite o conteúdo nos scripts, não nos SNBT gerados.
+- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. O gerador reconstrói `create_mod` e `immersive_melodies` a partir de `git show HEAD:`. Depois que a divisão for commitada, troque essa leitura pelos arquivos de trabalho; senão o próximo `gen.py` falha ou duplica quests.
+- IDs novos: `7A` + capítulo (2 hex) + tipo (0 capítulo, 1 quest, 2 task, 3 recompensa) + sequência. A sequência segue a ordem do script: **inserir ou remover uma quest no meio renumera as seguintes e apaga o progresso delas**. Acrescente no fim. Uma remoção já ocorreu em VC02.
+- Tags de apoio em `kubejs/data/lilyvale/tags/`: famílias de bioma do Regions Unexplored, uma peça de cada liga do Advanced Netherite e os 16 olhos do End Remastered.
+- Um `&` literal seguido de espaço precisa de `\&` no SNBT; `esc()` faz isso.
+
+### Capítulos e arquivos
+
+| Capítulo | Arquivo | Quests |
+| --- | --- | --- |
+| Início | `inicio.snbt` | 4 |
+| PD01 Primeiros Passos | `primeiros_passos.snbt` | 9 |
+| PD02 Mochila e Organização | `mochila_e_organizacao.snbt` | 7 |
+| PD04 Tips & Tricks | `tips_and_tricks.snbt` | 8 |
+| VC01 Caderno de Receitas | `caderno_de_receitas.snbt` | 85 |
+| VC02 Rotina da Fazenda | `rotina_da_fazenda.snbt` | 39 |
+| VC03 Sabores do Prado | `sabores_do_prado.snbt` | 21 |
+| VC04 Vinhedos e Adegas | `vinhedos_e_adegas.snbt` | 41 |
+| VC05 Pães e Confeitaria | `paes_e_confeitaria.snbt` | 48 |
+| VC06 À Beira d'Água | `a_beira_dagua.snbt` | 13 |
+| EF01 Oficina de Engenhos | `create_mod.snbt` | 24 |
+| EF02 Logística em Movimento | `logistica_em_movimento.snbt` | 8 |
+| EF03 Estações e Ferrovias | `estacoes_e_ferrovias.snbt` | 15 |
+| MF01 Atlas de Descobertas | `atlas_de_descobertas.snbt` | 11 |
+| MF02 Memórias Sob a Terra | `memorias_sob_a_terra.snbt` | 15 |
+| MF03 Caminhos que Conectam | `caminhos_que_conectam.snbt` | 5 |
+| AH01 Entre as Nuvens | `entre_as_nuvens.snbt` | 18 |
+| AH02 Ecos das Profundezas | `ecos_das_profundezas.snbt` | 11 |
+| AH03 Diário de Bordo | `diario_de_bordo.snbt` | 21 |
+| FL01 Fogo, Martelo e Aço | `overgeared.snbt` | 25 |
+| FL02 Além da Netherita | `alem_da_netherita.snbt` | 9 |
+| CC01 Pequenos e Grandes Companheiros | `pequenos_e_grandes_companheiros.snbt` | 36 |
+| CC02 Vida no Estábulo | `vida_no_estabulo.snbt` | 26 |
+| CC03 Música para Lilyvale | `immersive_melodies.snbt` | 12 |
+| LR01 Da Planta à Fachada | `da_planta_a_fachada.snbt` | 7 |
+| LR02 Um Lar com Vida | `um_lar_com_vida.snbt` | 10 |
+| LR03 Prateleira de Abraços | `prateleira_de_abracos.snbt` | 48 |
+| JE01 Olhos do Mundo | `olhos_do_mundo.snbt` | 18 |
+| JE02 O Último Voo | `o_ultimo_voo.snbt` | 5 |
+| JE03 Ilhas do Vazio | `ilhas_do_vazio.snbt` | 8 |
+
+### Decisões que diferem ou completam o plano
+
+- **Detectores:** além de item, os marcos usam avanços nativos dos mods (critérios inspecionados no JAR), `dimension`, `biome` (inclusive tag `#lilyvale:...`), `structure` e `observation` de entidade (`observe_type: 5`). Encontros com animais são observação, nunca caça ou ovo.
+- **Create:** dividido em EF01–EF03 movendo blocos inteiros; os 35 payloads ficaram idênticos e só `x`/`y` mudaram. EF02 e EF03 ganharam quests novas de Contraption Terminals, Steam 'n' Rails e Railways Navigator. A revisão de títulos que prometem ação continua pendente.
+- **Instrumentos:** as 11 folhas ganharam identidade C e `optional`, com IDs e os 50 XP legados mantidos, e um cartão A de orientação.
+- **Catálogos:** VC01 tem 72 folhas curadas (36 de Farmer's Delight e 36 dos addons), sem cobrir todo prato. Pelúcias usam as tags do próprio mod: as de vila na galeria principal, as de tesouro e raras num canto separado.
+- **Checks:** fora do Início, só o cartão de Carry On, sem recompensa, por não haver item a detectar.
+- **Farm & Charm:** carroça de mantimentos e arado perderam a receita e foram ocultados do EMI em `kubejs/server_scripts/farm_carts.js`, porque não funcionam com os cavalos do Icy's; as quests deles saíram de VC02.
+- **Arqueologia:** o artefato identificado não está no registro de modelos; o marco pede a mesa e um artefato não identificado, e o texto diz que a identificação não é detectada.
+
+### Pendências antes do aceite
+
+- Teste em jogo de todos os capítulos novos, em mundo novo e em cópia com progresso, incluindo equipe (EQ-01/EQ-02).
+- Confirmar no jogo: task `biome` com tag, observação de entidade, título com `\&` e ocultação da carroça no EMI.
+- Integração Advanced Netherite × Overgeared; fonte de survival das pelúcias; quantidade real de olhos pedida pelo portal.
+- Linhas diagonais legadas em Overgeared e Mochila (8 avisos do validador).
 
 ## Sources
 

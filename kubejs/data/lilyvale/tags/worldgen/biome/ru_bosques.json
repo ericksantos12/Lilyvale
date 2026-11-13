@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "regions_unexplored:autumnal_maple_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:maple_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:deciduous_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:silver_birch_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:magnolia_woodland",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:orchard",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:willow_forest",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:temperate_grove",
+            "required": false
+        },
+        {
+            "id": "regions_unexplored:cold_deciduous_forest",
+            "required": false
+        }
+    ]
+}

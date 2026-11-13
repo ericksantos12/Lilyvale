@@ -1,0 +1,1166 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vinhedos_e_adegas"
+	group: "2F3E0F43CC0404AB"
+	icon: "vinery:red_wine"
+	id: "7A05000000000001"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Arbustos de uva selvagem crescem em planícies, savanas, taigas e selvas, cada região com suas variedades tinta e branca."
+				"Qualquer semente serve para começar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:red_grape_seeds"
+			id: "7A05100000000001"
+			rewards: [{
+				id: "7A05300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/wild_harvest"
+				criterion: ""
+				id: "7A05200000000001"
+				title: "Obtenha sementes de uva de qualquer variedade"
+				type: "advancement"
+			}]
+			title: "&aSementes da safra"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A05100000000001"]
+			description: [
+				"Finque estacas de parreira e plante as sementes nelas. Com o tempo a videira sobe e dá cachos; treliças deixam o vinhedo mais bonito."
+				"A tarefa detecta o plantio na estaca."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:grapevine_stem"
+			id: "7A05100000000002"
+			rewards: [{
+				id: "7A05300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/sowing_the_future"
+				criterion: ""
+				id: "7A05200000000002"
+				title: "Plante sementes em uma estaca de parreira"
+				type: "advancement"
+			}]
+			title: "&aParreira de pé"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A05100000000002"]
+			description: [
+				"Encha o pote com uvas e pule em cima até virar suco. Recolha com garrafas de vinho vazias."
+				"A tarefa detecta o pote colocado. Pular é com você."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:grapevine_pot"
+			id: "7A05100000000003"
+			rewards: [{
+				id: "7A05300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/juice_it_up"
+				criterion: ""
+				id: "7A05200000000003"
+				title: "Coloque um pote de pisar uvas"
+				type: "advancement"
+			}]
+			title: "&aPés na uva"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A05100000000003"]
+			description: [
+				"O suco é a base de todo vinho. A variedade da uva decide quais rótulos você poderá fermentar."
+				"Qualquer suco de uva conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:red_grapejuice"
+			id: "7A05100000000004"
+			rewards: [{
+				id: "7A05300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/juicy_success"
+				criterion: ""
+				id: "7A05200000000004"
+				title: "Obtenha suco de uva de qualquer variedade"
+				type: "advancement"
+			}]
+			title: "&aSuco de uva"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A05100000000004"]
+			description: [
+				"No barril de fermentação o suco encontra os outros ingredientes da receita e vira vinho. Tenha garrafas vazias por perto."
+				"A tarefa detecta o barril colocado. Cada rótulo tem sua receita no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:fermentation_barrel"
+			id: "7A05100000000005"
+			rewards: [{
+				id: "7A05300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/the_magic_of_the_barrel"
+				criterion: ""
+				id: "7A05200000000005"
+				title: "Coloque um barril de fermentação"
+				type: "advancement"
+			}]
+			title: "&aA mágica do barril"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A05100000000005"]
+			description: [
+				"Da semente à rolha. Vinhos dão efeitos ao serem bebidos e ficam ótimos em adegas e estantes."
+				"Qualquer rótulo conta. O marco registra a garrafa nas suas mãos."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:red_wine"
+			id: "7A05100000000006"
+			rewards: [{
+				id: "7A05300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "vinery:main/the_noble_drop"
+				criterion: ""
+				id: "7A05200000000006"
+				title: "Obtenha uma garrafa de vinho de qualquer rótulo"
+				type: "advancement"
+			}]
+			title: "&6&lPrimeira garrafa"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Maçãs não se pisam: vão para a prensa. É um ramal à parte, que não depende das uvas."
+				"A tarefa detecta a prensa colocada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_press"
+			id: "7A05100000000007"
+			rewards: [{
+				id: "7A05300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/the_first_press"
+				criterion: ""
+				id: "7A05200000000007"
+				title: "Coloque uma prensa de maçãs"
+				type: "advancement"
+			}]
+			title: "&aPrensa de maçãs"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A05100000000007"]
+			description: [
+				"A prensa esmaga as maçãs em polpa. Cerejeiras e macieiras do Vinery também dão frutas para a adega."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_mash"
+			id: "7A05100000000008"
+			rewards: [{
+				id: "7A05300000000008"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/mashy_success"
+				criterion: ""
+				id: "7A05200000000008"
+				title: "Obtenha polpa de maçã"
+				type: "advancement"
+			}]
+			title: "&aPolpa de maçã"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A05100000000008"]
+			description: [
+				"A polpa prensada vira suco de maçã, pronto para o barril."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_juice"
+			id: "7A05100000000009"
+			rewards: [{
+				id: "7A05300000000009"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "vinery:main/purely_apple"
+				criterion: ""
+				id: "7A05200000000009"
+				title: "Obtenha suco de maçã"
+				type: "advancement"
+			}]
+			title: "&aSuco de maçã"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A05100000000009"]
+			description: [
+				"Suco de maçã fermentado vira sidra. Leve, dourada e perfeita para depois da colheita."
+				"O marco registra a garrafa de sidra no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_cider"
+			id: "7A0510000000000A"
+			rewards: [{
+				id: "7A0530000000000A"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000000A"
+				item: "vinery:apple_cider"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lSidra da casa"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Treliças recebem folhas de videira e viram cercas vivas, pérgolas e fachadas de adega."
+				"A tarefa detecta a videira aplicada na treliça."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:oak_lattice"
+			id: "7A0510000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0530000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "vinery:main/overgrown_lattices"
+				criterion: ""
+				id: "7A0520000000000B"
+				title: "Cubra uma treliça com videira"
+				type: "advancement"
+			}]
+			title: "&dTreliça coberta"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Estantes de vinho e caixas de garrafas guardam a safra à vista. Há versões em várias madeiras."
+				"A tarefa pede a estante grande de carvalho e uma caixa de vinho como exemplo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:oak_wine_rack_big"
+			id: "7A0510000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0530000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A0520000000000C"
+				item: "vinery:oak_wine_rack_big"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A0520000000000D"
+				item: "vinery:wine_box"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dAdega organizada"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"As cerejeiras escuras do Vinery dão frutas para vinhos próprios e uma madeira avermelhada muito bonita."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:cherry"
+			id: "7A0510000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0530000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "vinery:main/cherry_picker"
+				criterion: ""
+				id: "7A0520000000000E"
+				title: "Colha cerejas"
+				type: "advancement"
+			}]
+			title: "&dTempo das cerejas"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"As uvas da selva crescem como cipós, não em estacas. Alguns dos rótulos mais curiosos começam nelas."
+				"O avanço pede as duas cores."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:jungle_grapes_red"
+			id: "7A0510000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0530000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "vinery:main/budding_grapes"
+				criterion: ""
+				id: "7A0520000000000F"
+				title: "Obtenha uvas da selva tintas e brancas"
+				type: "advancement"
+			}]
+			title: "&dUvas da selva"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Chapéu de palha e avental de vinicultor: o uniforme oficial de quem passa o dia entre parreiras."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:straw_hat"
+			id: "7A0510000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0530000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A05200000000010"
+				item: "vinery:straw_hat"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A05200000000011"
+				item: "vinery:winemaker_apron"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dTraje de vindima"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:red_wine"
+			id: "7A05100000000010"
+			optional: true
+			rewards: [{
+				id: "7A05300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000012"
+				item: "vinery:red_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:noir_wine"
+			id: "7A05100000000011"
+			optional: true
+			rewards: [{
+				id: "7A05300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000013"
+				item: "vinery:noir_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:bolvar_wine"
+			id: "7A05100000000012"
+			optional: true
+			rewards: [{
+				id: "7A05300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000014"
+				item: "vinery:bolvar_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:chenet_wine"
+			id: "7A05100000000013"
+			optional: true
+			rewards: [{
+				id: "7A05300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000015"
+				item: "vinery:chenet_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:cristel_wine"
+			id: "7A05100000000014"
+			optional: true
+			rewards: [{
+				id: "7A05300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000016"
+				item: "vinery:cristel_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:clark_wine"
+			id: "7A05100000000015"
+			optional: true
+			rewards: [{
+				id: "7A05300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000017"
+				item: "vinery:clark_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:strad_wine"
+			id: "7A05100000000016"
+			optional: true
+			rewards: [{
+				id: "7A05300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000018"
+				item: "vinery:strad_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:stal_wine"
+			id: "7A05100000000017"
+			optional: true
+			rewards: [{
+				id: "7A05300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000019"
+				item: "vinery:stal_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:solaris_wine"
+			id: "7A05100000000018"
+			optional: true
+			rewards: [{
+				id: "7A05300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001A"
+				item: "vinery:solaris_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:aegis_wine"
+			id: "7A05100000000019"
+			optional: true
+			rewards: [{
+				id: "7A05300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001B"
+				item: "vinery:aegis_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:jellie_wine"
+			id: "7A0510000000001A"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001C"
+				item: "vinery:jellie_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:lilitu_wine"
+			id: "7A0510000000001B"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001D"
+				item: "vinery:lilitu_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:mellohi_wine"
+			id: "7A0510000000001C"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001E"
+				item: "vinery:mellohi_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:magnetic_wine"
+			id: "7A0510000000001D"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000001F"
+				item: "vinery:magnetic_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:glowing_wine"
+			id: "7A0510000000001E"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000020"
+				item: "vinery:glowing_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:chorus_wine"
+			id: "7A0510000000001F"
+			optional: true
+			rewards: [{
+				id: "7A0530000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000021"
+				item: "vinery:chorus_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:eiswein"
+			id: "7A05100000000020"
+			optional: true
+			rewards: [{
+				id: "7A05300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000022"
+				item: "vinery:eiswein"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:cherry_wine"
+			id: "7A05100000000021"
+			optional: true
+			rewards: [{
+				id: "7A05300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000023"
+				item: "vinery:cherry_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_wine"
+			id: "7A05100000000022"
+			optional: true
+			rewards: [{
+				id: "7A05300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000024"
+				item: "vinery:apple_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:apple_cider"
+			id: "7A05100000000023"
+			optional: true
+			rewards: [{
+				id: "7A05300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000025"
+				item: "vinery:apple_cider"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:kelp_cider"
+			id: "7A05100000000024"
+			optional: true
+			rewards: [{
+				id: "7A05300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000026"
+				item: "vinery:kelp_cider"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:mead"
+			id: "7A05100000000025"
+			optional: true
+			rewards: [{
+				id: "7A05300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000027"
+				item: "vinery:mead"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:jo_special_mixture"
+			id: "7A05100000000026"
+			optional: true
+			rewards: [{
+				id: "7A05300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000028"
+				item: "vinery:jo_special_mixture"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:creepers_crush"
+			id: "7A05100000000027"
+			optional: true
+			rewards: [{
+				id: "7A05300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A05200000000029"
+				item: "vinery:creepers_crush"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:villagers_fright"
+			id: "7A05100000000028"
+			optional: true
+			rewards: [{
+				id: "7A05300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000002A"
+				item: "vinery:villagers_fright"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Um rótulo para a adega. A receita de fermentação, com a variedade de suco necessária, está no EMI. Idade da safra não importa aqui: registrar exige apenas ter a garrafa uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vinery:bottle_mojang_noir"
+			id: "7A05100000000029"
+			optional: true
+			rewards: [{
+				id: "7A05300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0520000000002B"
+				item: "vinery:bottle_mojang_noir"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.0d
+		}
+	]
+	title: "&a&lVinhedos e Adegas"
+}

@@ -34,7 +34,7 @@
 			description: [
 				"O livro é um convite, não uma lista obrigatória. Escolha entre fazenda, casa, companheiros, engenharia ou exploração: você não precisa concluir todas as trilhas."
 				"Primeiros Passos ensina a pequena oficina de cobre. Seu final não é uma chave universal para o livro; cada tema tem seu próprio caminho."
-				"Novos capítulos serão acrescentados aos poucos. Categorias ainda vazias podem não aparecer no menu."
+				"São nove categorias: Primeiros Dias, Vida no Campo, Engenhos e Ferrovias, O Mundo Lá Fora, Além do Horizonte, Forja e Legado, Companheiros e Coleções, Criando seu Lar e A Jornada até o End. A ordem é só navegação."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
@@ -55,7 +55,7 @@
 			can_repeat: false
 			description: [
 				"Tarefas de item verificam posse, sem consumir os itens nem provar quem os fabricou. Trocas e presentes também contam. Consulte as receitas no EMI."
-				"Tarefas de observação pedem que você olhe para o bloco indicado. Checks manuais, como estes, registram apenas sua própria confirmação."
+				"Tarefas de observação pedem que você olhe de perto para o bloco ou animal indicado. Outras acompanham avanços dos próprios mods, visitas a biomas e dimensões. Checks manuais, como estes, registram apenas sua própria confirmação."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
@@ -78,7 +78,7 @@
 				"&bA — Aprendizado: círculo.&r Uma orientação para aprender um sistema ou processo."
 				"&6M — Marco: hexágono.&r Uma conquista importante dentro da trilha escolhida."
 				"&dC — Opcional: quadrado.&r Desafios, coleções e especializações para quem quiser ir além."
-				"As letras e formas acompanham a cor. Esta identificação está sendo aplicada aos capítulos aos poucos; os cartões de Início são apenas informações."
+				"As letras e formas acompanham a cor. Álbuns de pratos, vinhos, pelúcias e encontros são sempre opcionais e não bloqueiam nada. Os cartões de Início são apenas informações."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false

@@ -1,0 +1,442 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "memorias_sob_a_terra"
+	group: "2E622CDAB0B6B1F2"
+	icon: "minecraft:brush"
+	id: "7A0B000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Areia, cascalho e terra suspeitos escondem achados. Escove sem quebrar o bloco: quem tem pressa perde a relíquia."
+				"O Better Archeology espalha acampamentos, ruínas, tumbas e fósseis pelo mundo. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:brush"
+			id: "7A0B100000000001"
+			rewards: [{
+				id: "7A0B300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0B200000000001"
+				item: "minecraft:brush"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&3Pincel e paciência"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0B100000000001"]
+			description: [
+				"Fragmentos de artefato saem das escavações e são material para pincéis melhores e para a mesa de arqueologia."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:artifact_shards"
+			id: "7A0B100000000002"
+			rewards: [{
+				id: "7A0B300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "betterarcheology:artifact_shards"
+				criterion: ""
+				id: "7A0B200000000002"
+				title: "Obtenha fragmentos de artefato"
+				type: "advancement"
+			}]
+			title: "&3Cacos com história"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0B100000000002"]
+			description: [
+				"Pincéis melhores escovam mais rápido e duram mais. Há versões de ferro, diamante e netherita."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:iron_brush"
+			id: "7A0B100000000003"
+			optional: true
+			rewards: [{
+				id: "7A0B300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B200000000003"
+				item: "betterarcheology:iron_brush"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dPincel de ferro"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A0B100000000001"]
+			description: [
+				"Fragmentos reunidos formam um artefato que ninguém sabe o que é. Guarde: a mesa de arqueologia revela o segredo."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:unidentified_artifact"
+			id: "7A0B100000000004"
+			rewards: [{
+				id: "7A0B300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "betterarcheology:unidentified_artifact"
+				criterion: ""
+				id: "7A0B200000000004"
+				title: "Obtenha um artefato não identificado"
+				type: "advancement"
+			}]
+			title: "&3O que será isso?"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0B100000000004"]
+			description: [
+				"Na mesa, o artefato é limpo e estudado até revelar um encantamento antigo que não existe em mesa de encantar nenhuma."
+				"O marco registra a mesa e um artefato esperando por ela. A identificação em si não tem detector: qual segredo sair é sorte de arqueólogo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:archeology_table"
+			id: "7A0B100000000005"
+			rewards: [{
+				id: "7A0B300000000005"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A0B200000000005"
+				item: "betterarcheology:archeology_table"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A0B200000000006"
+				item: "betterarcheology:unidentified_artifact"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&6&lGabinete de arqueologia"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Vasos antigos em ruínas guardam moedas, cacos e surpresas. Estes pode quebrar sem culpa."
+				"A tarefa detecta o vaso quebrado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:loot_vase"
+			id: "7A0B100000000006"
+			optional: true
+			rewards: [{
+				id: "7A0B300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "betterarcheology:loot_vase_broken"
+				criterion: ""
+				id: "7A0B200000000007"
+				title: "Quebre um vaso de saque"
+				type: "advancement"
+			}]
+			title: "&dVaso de saque"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Totens são relíquias de templos e tumbas. O do crescimento acelera as plantas ao redor: um presente e tanto para a horta."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:growth_totem"
+			id: "7A0B100000000007"
+			optional: true
+			rewards: [{
+				id: "7A0B300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B200000000008"
+				item: "betterarcheology:growth_totem"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dTotem do crescimento"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Terra fossilífera escovada revela cabeças e corpos de fósseis. Junte as duas partes para montar o esqueleto completo."
+				"Qualquer parte de fóssil conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:fossiliferous_dirt"
+			id: "7A0B100000000008"
+			rewards: [{
+				id: "7A0B300000000008"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "betterarcheology:fossil_found"
+				criterion: ""
+				id: "7A0B200000000009"
+				title: "Obtenha uma parte de fóssil"
+				type: "advancement"
+			}]
+			title: "&6&lOsso de verdade"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:chicken_fossil"
+			id: "7A0B100000000009"
+			optional: true
+			rewards: [{
+				id: "7A0B300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000A"
+				item: "betterarcheology:chicken_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:sheep_fossil"
+			id: "7A0B10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000B"
+				item: "betterarcheology:sheep_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:wolf_fossil"
+			id: "7A0B10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000C"
+				item: "betterarcheology:wolf_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:ocelot_fossil"
+			id: "7A0B10000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000D"
+				item: "betterarcheology:ocelot_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:villager_fossil"
+			id: "7A0B10000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000E"
+				item: "betterarcheology:villager_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:creeper_fossil"
+			id: "7A0B10000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B20000000000F"
+				item: "betterarcheology:creeper_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "betterarcheology:guardian_fossil"
+			id: "7A0B10000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0B30000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0B200000000010"
+				item: "betterarcheology:guardian_fossil"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+	]
+	title: "&3&lMemórias Sob a Terra"
+}

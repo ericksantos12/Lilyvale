@@ -56,13 +56,13 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 ## Aplicação aos capítulos existentes
 
 - Primeiros Passos permanece em Primeiros Dias.
-- Create Mod permanece no grupo renomeado para engenhos e ferrovias.
+- Create está dividido em Oficina de Engenhos, Logística em Movimento e Estações e Ferrovias, em Engenhos e Ferrovias.
 - Overgeared passa para Forja e legado.
-- Immersive Melodies permanece no grupo renomeado para Companheiros e coleções.
+- Immersive Melodies virou Música para Lilyvale, em Companheiros e coleções, com as 11 folhas como C.
 - Na revisão F02, somente `mochila_e_organizacao.snbt` permanece, com sete aquisições e três ramais compactos: mochila → coleta; baú ou barril → aplicador; conector Tom’s → terminal. Caderno de Melhorias e seus 203 objetivos foram retirados explicitamente pelo usuário, assim como os quatro checks de gameplay. Consulte `docs/quests/fases/registros/f02-simplificacao.md` antes de restaurar qualquer material histórico.
-- As demais categorias são espaços para expansão; registrar uma categoria não implementa seu conteúdo nem garante que grupos vazios sejam visíveis na interface.
+- As nove categorias têm capítulos (30 no total, gerados por `build/quest-book/gen.py`); veja `docs/quests/planejamento.md`, seção 14. O conteúdo gerado passou só na validação estática.
 - A reorganização de categorias não classifica automaticamente cada quest nos três tipos. Faça a revisão editorial por capítulo, preservando progresso e validando os gatilhos propostos.
-- A F01 classifica PD01 e FL01; Overgeared conserva o arquivo e os IDs, com título Fogo, Martelo e Aço. A revisão F02 mantém somente PD02; Create e instrumentos continuam legados até suas fases. Consulte os registros de cada fase para o estado de validação; não deduza conclusão de gameplay a partir da classificação.
+- A F01 classifica PD01 e FL01; Overgeared conserva o arquivo e os IDs, com título Fogo, Martelo e Aço. A revisão F02 mantém somente PD02. Os capítulos gerados já trazem subtítulo, forma e recompensa A/M/C; o Create dividido ainda não teve os títulos revisados. Consulte os registros de cada fase para o estado de validação; não deduza conclusão de gameplay a partir da classificação.
 
 ## Checks e capítulos informativos
 
