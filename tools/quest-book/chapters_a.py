@@ -407,7 +407,7 @@ def build():
     ], deps=['dough'])
     c.q('stove', 'A', '&aForno aceso', 'bakery:brick_stove', 3, 0,
         ['adv:bakery:main/place_stove|Coloque um forno de padaria de qualquer material'], [
-        'O forno de padaria assa pães, tortas e bolos. Há versões em tijolo, pedra, arenito e outros materiais: escolha o que combina com a cozinha.',
+        'O forno de padaria assa pães, tortas, croissants e bolos de forma. Há versões em tijolo, pedra, arenito e outros materiais: escolha o que combina com a cozinha.',
         'Qualquer forno do Bakery conta.',
     ], deps=['station'])
     c.q('bread', 'M', '&6&lFornada do dia', 'bakery:bread', 3, 1, ['adv:bakery:main/eat_bread|Coma um pão da padaria'], [
@@ -419,13 +419,13 @@ def build():
         'O tacho pequeno cozinha geleias e cremes sobre o forno. Tenha potes vazios para envasar.',
         'São duas tarefas: o tacho colocado e um pote vazio.',
     ])
-    c.q('cake', 'A', '&aMassa de bolo', 'bakery:blank_cake', 0, 2, ['bakery:cake_dough', 'bakery:blank_cake'], [
-        'Bolos têm ramal próprio: a massa doce vai ao forno e sai um bolo liso, pronto para receber cobertura.',
-        POSSE,
+    c.q('cake', 'A', '&aMassa de bolo', 'bakery:cake_dough', 0, 2, ['bakery:cake_dough'], [
+        'Bolos têm ramal próprio e não vão ao forno. Na tigela de preparo, trigo, açúcar, ovo e leite rendem uma boa leva de massa de bolo.',
+        'Depois, na bancada do padeiro, a massa recebe uma geleia e vira bolo. ' + POSSE,
     ])
     c.q('cut', 'M', '&6&lA primeira fatia', 'bakery:strawberry_cake', 1, 2,
         ['adv:bakery:main/cut_strawberry_cake|Corte um bolo de morango com a faca de pão'], [
-        'Cubra o bolo com geleia de morango, coloque-o na mesa e corte com a faca de pão. Fatias e bolo inteiro contam como a mesma receita no álbum.',
+        'Na bancada do padeiro, junte massa de bolo e geleia de morango. Coloque o bolo na mesa e corte com a faca de pão. Fatias e bolo inteiro contam como a mesma receita no álbum.',
         'O marco detecta o corte do bolo de morango colocado.',
     ], deps=['cake'])
     c.q('crate', 'C', '&dCaixote de pães', 'bakery:bread_crate', 0, 4,
@@ -449,7 +449,7 @@ def build():
     ])
     c.gallery('bk', [
         'bakery:crusty_bread', 'bakery:bread', 'bakery:braided_bread', 'bakery:bun', 'bakery:baguette', 'bakery:toast',
-        'bakery:croissant', 'bakery:waffle', 'bakery:cornet', 'bakery:donut', 'bakery:sandwich', 'bakery:vegetable_sandwich',
+        'bakery:croissant', 'bakery:waffle', 'bakery:cornet', 'bakery:sandwich', 'bakery:vegetable_sandwich',
         'bakery:apple_pie', 'bakery:glowberry_tart', 'bakery:chocolate_tart', 'bakery:linzer_tart', 'bakery:bundt_cake', 'bakery:pudding',
         'bakery:strawberry_cake', 'bakery:chocolate_cake', 'bakery:sweetberry_cake', 'bakery:chocolate_gateau', 'bakery:jam_roll', 'bakery:chocolate_truffle',
         'bakery:strawberry_cupcake', 'bakery:sweetberry_cupcake', 'bakery:apple_cupcake', 'bakery:strawberry_glazed_cookie', 'bakery:chocolate_glazed_cookie', 'bakery:sweetberry_glazed_cookie',

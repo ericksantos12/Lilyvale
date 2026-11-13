@@ -106,7 +106,7 @@
 		{
 			dependencies: ["7A06100000000003"]
 			description: [
-				"O forno de padaria assa pães, tortas e bolos. Há versões em tijolo, pedra, arenito e outros materiais: escolha o que combina com a cozinha."
+				"O forno de padaria assa pães, tortas, croissants e bolos de forma. Há versões em tijolo, pedra, arenito e outros materiais: escolha o que combina com a cozinha."
 				"Qualquer forno do Bakery conta."
 			]
 			hide_details_until_startable: false
@@ -200,12 +200,12 @@
 		}
 		{
 			description: [
-				"Bolos têm ramal próprio: a massa doce vai ao forno e sai um bolo liso, pronto para receber cobertura."
-				"A tarefa registra posse, sem consumir: troca e presente também valem."
+				"Bolos têm ramal próprio e não vão ao forno. Na tigela de preparo, trigo, açúcar, ovo e leite rendem uma boa leva de massa de bolo."
+				"Depois, na bancada do padeiro, a massa recebe uma geleia e vira bolo. A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:blank_cake"
+			icon: "bakery:cake_dough"
 			id: "7A06100000000007"
 			rewards: [{
 				id: "7A06300000000007"
@@ -215,22 +215,13 @@
 			shape: "circle"
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
-			tasks: [
-			{
+			tasks: [{
 				consume_items: false
 				id: "7A06200000000009"
 				item: "bakery:cake_dough"
 				match_nbt: false
 				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0620000000000A"
-				item: "bakery:blank_cake"
-				match_nbt: false
-				type: "item"
-			}
-			]
+			}]
 			title: "&aMassa de bolo"
 			x: 0.0d
 			y: 4.0d
@@ -238,7 +229,7 @@
 		{
 			dependencies: ["7A06100000000007"]
 			description: [
-				"Cubra o bolo com geleia de morango, coloque-o na mesa e corte com a faca de pão. Fatias e bolo inteiro contam como a mesma receita no álbum."
+				"Na bancada do padeiro, junte massa de bolo e geleia de morango. Coloque o bolo na mesa e corte com a faca de pão. Fatias e bolo inteiro contam como a mesma receita no álbum."
 				"O marco detecta o corte do bolo de morango colocado."
 			]
 			hide_details_until_startable: false
@@ -256,7 +247,7 @@
 			tasks: [{
 				advancement: "bakery:main/cut_strawberry_cake"
 				criterion: ""
-				id: "7A0620000000000B"
+				id: "7A0620000000000A"
 				title: "Corte um bolo de morango com a faca de pão"
 				type: "advancement"
 			}]
@@ -285,7 +276,7 @@
 			tasks: [{
 				advancement: "bakery:main/place_bread_crate"
 				criterion: ""
-				id: "7A0620000000000C"
+				id: "7A0620000000000B"
 				title: "Coloque um caixote de pães"
 				type: "advancement"
 			}]
@@ -314,7 +305,7 @@
 			tasks: [{
 				advancement: "bakery:main/use_bread_on_wall_display"
 				criterion: ""
-				id: "7A0620000000000D"
+				id: "7A0620000000000C"
 				title: "Exponha um pão na vitrine de parede"
 				type: "advancement"
 			}]
@@ -343,7 +334,7 @@
 			tasks: [{
 				advancement: "bakery:main/place_sign"
 				criterion: ""
-				id: "7A0620000000000E"
+				id: "7A0620000000000D"
 				title: "Coloque uma placa de rua"
 				type: "advancement"
 			}]
@@ -372,7 +363,7 @@
 			tasks: [{
 				advancement: "bakery:main/spyglass_at_baker"
 				criterion: ""
-				id: "7A0620000000000F"
+				id: "7A0620000000000E"
 				title: "Observe o padeiro viajante pela luneta"
 				type: "advancement"
 			}]
@@ -399,7 +390,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000010"
+				id: "7A0620000000000F"
 				item: "bakery:crusty_bread"
 				match_nbt: false
 				type: "item"
@@ -426,7 +417,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000011"
+				id: "7A06200000000010"
 				item: "bakery:bread"
 				match_nbt: false
 				type: "item"
@@ -453,7 +444,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000012"
+				id: "7A06200000000011"
 				item: "bakery:braided_bread"
 				match_nbt: false
 				type: "item"
@@ -480,7 +471,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000013"
+				id: "7A06200000000012"
 				item: "bakery:bun"
 				match_nbt: false
 				type: "item"
@@ -507,7 +498,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000014"
+				id: "7A06200000000013"
 				item: "bakery:baguette"
 				match_nbt: false
 				type: "item"
@@ -534,7 +525,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000015"
+				id: "7A06200000000014"
 				item: "bakery:toast"
 				match_nbt: false
 				type: "item"
@@ -561,7 +552,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000016"
+				id: "7A06200000000015"
 				item: "bakery:croissant"
 				match_nbt: false
 				type: "item"
@@ -588,7 +579,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000017"
+				id: "7A06200000000016"
 				item: "bakery:waffle"
 				match_nbt: false
 				type: "item"
@@ -615,7 +606,7 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000018"
+				id: "7A06200000000017"
 				item: "bakery:cornet"
 				match_nbt: false
 				type: "item"
@@ -629,7 +620,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:donut"
+			icon: "bakery:sandwich"
 			id: "7A06100000000016"
 			optional: true
 			rewards: [{
@@ -642,8 +633,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000019"
-				item: "bakery:donut"
+				id: "7A06200000000018"
+				item: "bakery:sandwich"
 				match_nbt: false
 				type: "item"
 			}]
@@ -656,7 +647,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:sandwich"
+			icon: "bakery:vegetable_sandwich"
 			id: "7A06100000000017"
 			optional: true
 			rewards: [{
@@ -669,8 +660,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001A"
-				item: "bakery:sandwich"
+				id: "7A06200000000019"
+				item: "bakery:vegetable_sandwich"
 				match_nbt: false
 				type: "item"
 			}]
@@ -683,7 +674,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:vegetable_sandwich"
+			icon: "bakery:apple_pie"
 			id: "7A06100000000018"
 			optional: true
 			rewards: [{
@@ -696,8 +687,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001B"
-				item: "bakery:vegetable_sandwich"
+				id: "7A0620000000001A"
+				item: "bakery:apple_pie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -710,7 +701,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:apple_pie"
+			icon: "bakery:glowberry_tart"
 			id: "7A06100000000019"
 			optional: true
 			rewards: [{
@@ -723,8 +714,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001C"
-				item: "bakery:apple_pie"
+				id: "7A0620000000001B"
+				item: "bakery:glowberry_tart"
 				match_nbt: false
 				type: "item"
 			}]
@@ -737,7 +728,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:glowberry_tart"
+			icon: "bakery:chocolate_tart"
 			id: "7A0610000000001A"
 			optional: true
 			rewards: [{
@@ -750,8 +741,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001D"
-				item: "bakery:glowberry_tart"
+				id: "7A0620000000001C"
+				item: "bakery:chocolate_tart"
 				match_nbt: false
 				type: "item"
 			}]
@@ -764,7 +755,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_tart"
+			icon: "bakery:linzer_tart"
 			id: "7A0610000000001B"
 			optional: true
 			rewards: [{
@@ -777,8 +768,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001E"
-				item: "bakery:chocolate_tart"
+				id: "7A0620000000001D"
+				item: "bakery:linzer_tart"
 				match_nbt: false
 				type: "item"
 			}]
@@ -791,7 +782,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:linzer_tart"
+			icon: "bakery:bundt_cake"
 			id: "7A0610000000001C"
 			optional: true
 			rewards: [{
@@ -804,8 +795,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000001F"
-				item: "bakery:linzer_tart"
+				id: "7A0620000000001E"
+				item: "bakery:bundt_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -818,7 +809,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:bundt_cake"
+			icon: "bakery:pudding"
 			id: "7A0610000000001D"
 			optional: true
 			rewards: [{
@@ -831,8 +822,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000020"
-				item: "bakery:bundt_cake"
+				id: "7A0620000000001F"
+				item: "bakery:pudding"
 				match_nbt: false
 				type: "item"
 			}]
@@ -845,7 +836,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:pudding"
+			icon: "bakery:strawberry_cake"
 			id: "7A0610000000001E"
 			optional: true
 			rewards: [{
@@ -858,8 +849,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000021"
-				item: "bakery:pudding"
+				id: "7A06200000000020"
+				item: "bakery:strawberry_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -872,7 +863,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:strawberry_cake"
+			icon: "bakery:chocolate_cake"
 			id: "7A0610000000001F"
 			optional: true
 			rewards: [{
@@ -885,8 +876,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000022"
-				item: "bakery:strawberry_cake"
+				id: "7A06200000000021"
+				item: "bakery:chocolate_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -899,7 +890,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_cake"
+			icon: "bakery:sweetberry_cake"
 			id: "7A06100000000020"
 			optional: true
 			rewards: [{
@@ -912,8 +903,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000023"
-				item: "bakery:chocolate_cake"
+				id: "7A06200000000022"
+				item: "bakery:sweetberry_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -926,7 +917,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:sweetberry_cake"
+			icon: "bakery:chocolate_gateau"
 			id: "7A06100000000021"
 			optional: true
 			rewards: [{
@@ -939,8 +930,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000024"
-				item: "bakery:sweetberry_cake"
+				id: "7A06200000000023"
+				item: "bakery:chocolate_gateau"
 				match_nbt: false
 				type: "item"
 			}]
@@ -953,7 +944,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_gateau"
+			icon: "bakery:jam_roll"
 			id: "7A06100000000022"
 			optional: true
 			rewards: [{
@@ -966,8 +957,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000025"
-				item: "bakery:chocolate_gateau"
+				id: "7A06200000000024"
+				item: "bakery:jam_roll"
 				match_nbt: false
 				type: "item"
 			}]
@@ -980,7 +971,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:jam_roll"
+			icon: "bakery:chocolate_truffle"
 			id: "7A06100000000023"
 			optional: true
 			rewards: [{
@@ -993,8 +984,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000026"
-				item: "bakery:jam_roll"
+				id: "7A06200000000025"
+				item: "bakery:chocolate_truffle"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1007,7 +998,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_truffle"
+			icon: "bakery:strawberry_cupcake"
 			id: "7A06100000000024"
 			optional: true
 			rewards: [{
@@ -1020,8 +1011,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000027"
-				item: "bakery:chocolate_truffle"
+				id: "7A06200000000026"
+				item: "bakery:strawberry_cupcake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1034,7 +1025,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:strawberry_cupcake"
+			icon: "bakery:sweetberry_cupcake"
 			id: "7A06100000000025"
 			optional: true
 			rewards: [{
@@ -1047,8 +1038,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000028"
-				item: "bakery:strawberry_cupcake"
+				id: "7A06200000000027"
+				item: "bakery:sweetberry_cupcake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1061,7 +1052,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:sweetberry_cupcake"
+			icon: "bakery:apple_cupcake"
 			id: "7A06100000000026"
 			optional: true
 			rewards: [{
@@ -1074,8 +1065,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000029"
-				item: "bakery:sweetberry_cupcake"
+				id: "7A06200000000028"
+				item: "bakery:apple_cupcake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1088,7 +1079,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:apple_cupcake"
+			icon: "bakery:strawberry_glazed_cookie"
 			id: "7A06100000000027"
 			optional: true
 			rewards: [{
@@ -1101,8 +1092,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002A"
-				item: "bakery:apple_cupcake"
+				id: "7A06200000000029"
+				item: "bakery:strawberry_glazed_cookie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1115,7 +1106,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:strawberry_glazed_cookie"
+			icon: "bakery:chocolate_glazed_cookie"
 			id: "7A06100000000028"
 			optional: true
 			rewards: [{
@@ -1128,8 +1119,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002B"
-				item: "bakery:strawberry_glazed_cookie"
+				id: "7A0620000000002A"
+				item: "bakery:chocolate_glazed_cookie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1142,7 +1133,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_glazed_cookie"
+			icon: "bakery:sweetberry_glazed_cookie"
 			id: "7A06100000000029"
 			optional: true
 			rewards: [{
@@ -1155,8 +1146,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002C"
-				item: "bakery:chocolate_glazed_cookie"
+				id: "7A0620000000002B"
+				item: "bakery:sweetberry_glazed_cookie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1169,7 +1160,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:sweetberry_glazed_cookie"
+			icon: "bakery:strawberry_jam"
 			id: "7A0610000000002A"
 			optional: true
 			rewards: [{
@@ -1182,8 +1173,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002D"
-				item: "bakery:sweetberry_glazed_cookie"
+				id: "7A0620000000002C"
+				item: "bakery:strawberry_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1196,7 +1187,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:strawberry_jam"
+			icon: "bakery:sweetberry_jam"
 			id: "7A0610000000002B"
 			optional: true
 			rewards: [{
@@ -1209,8 +1200,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002E"
-				item: "bakery:strawberry_jam"
+				id: "7A0620000000002D"
+				item: "bakery:sweetberry_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1223,7 +1214,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:sweetberry_jam"
+			icon: "bakery:apple_jam"
 			id: "7A0610000000002C"
 			optional: true
 			rewards: [{
@@ -1236,8 +1227,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0620000000002F"
-				item: "bakery:sweetberry_jam"
+				id: "7A0620000000002E"
+				item: "bakery:apple_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1250,7 +1241,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:apple_jam"
+			icon: "bakery:glowberry_jam"
 			id: "7A0610000000002D"
 			optional: true
 			rewards: [{
@@ -1263,8 +1254,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000030"
-				item: "bakery:apple_jam"
+				id: "7A0620000000002F"
+				item: "bakery:glowberry_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1277,7 +1268,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:glowberry_jam"
+			icon: "bakery:chocolate_jam"
 			id: "7A0610000000002E"
 			optional: true
 			rewards: [{
@@ -1290,8 +1281,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000031"
-				item: "bakery:glowberry_jam"
+				id: "7A06200000000030"
+				item: "bakery:chocolate_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -1304,7 +1295,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "bakery:chocolate_jam"
+			icon: "bakery:misslilitu_biscuit"
 			id: "7A0610000000002F"
 			optional: true
 			rewards: [{
@@ -1317,39 +1308,12 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A06200000000032"
-				item: "bakery:chocolate_jam"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 8.0d
-			y: 22.0d
-		}
-		{
-			description: [
-				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "bakery:misslilitu_biscuit"
-			id: "7A06100000000030"
-			optional: true
-			rewards: [{
-				id: "7A06300000000030"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A06200000000033"
+				id: "7A06200000000031"
 				item: "bakery:misslilitu_biscuit"
 				match_nbt: false
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 22.0d
 		}
 	]
