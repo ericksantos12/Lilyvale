@@ -1,6 +1,6 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado (2026-11-13): os 29 capítulos-base e o Início existem no livro — 30 capítulos, 607 quests — gerados por `build/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
+**Estado (2026-11-13): os 29 capítulos-base e o Início existem no livro — 30 capítulos, 607 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
 
 **Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
@@ -409,9 +409,9 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 
 ### Como regenerar
 
-- Fonte: `build/quest-book/`, pasta ignorada pelo git. `core.py` escreve SNBT e lê itens, avanços, biomas, estruturas, entidades e dimensões dos JARs; `chapters_a.py` (PD04, VC), `chapters_b.py` (EF, MF, AH, FL02) e `chapters_c.py` (CC, LR, JE) têm o conteúdo; `gen.py` monta e valida; `verify.py` faz o parse estrutural.
-- Da raiz: `python build/quest-book/gen.py` e depois `python build/quest-book/verify.py`. Edite o conteúdo nos scripts, não nos SNBT gerados.
-- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. O gerador reconstrói `create_mod` e `immersive_melodies` a partir de `git show HEAD:`. Depois que a divisão for commitada, troque essa leitura pelos arquivos de trabalho; senão o próximo `gen.py` falha ou duplica quests.
+- Fonte: `tools/quest-book/`. `core.py` escreve SNBT e lê itens, avanços, biomas, estruturas, entidades e dimensões dos JARs; `chapters_a.py` (PD04, VC), `chapters_b.py` (EF, MF, AH, FL02) e `chapters_c.py` (CC, LR, JE) têm o conteúdo; `gen.py` monta e valida; `verify.py` faz o parse estrutural.
+- Da raiz: `python tools/quest-book/gen.py` e depois `python tools/quest-book/verify.py`. Edite o conteúdo nos scripts, não nos SNBT gerados.
+- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. Nos capítulos gerados, blocos com IDs legados (fora de `7A`) — o Create e os instrumentos — são relidos dos arquivos atuais e copiados sem alteração; só as quests `7A` são reescritas. Editar no jogo uma quest `7A` e depois rodar `gen.py` desfaz a edição.
 - IDs novos: `7A` + capítulo (2 hex) + tipo (0 capítulo, 1 quest, 2 task, 3 recompensa) + sequência. A sequência segue a ordem do script: **inserir ou remover uma quest no meio renumera as seguintes e apaga o progresso delas**. Acrescente no fim. Uma remoção já ocorreu em VC02.
 - Tags de apoio em `kubejs/data/lilyvale/tags/`: famílias de bioma do Regions Unexplored, uma peça de cada liga do Advanced Netherite e os 16 olhos do End Remastered.
 - Um `&` literal seguido de espaço precisa de `\&` no SNBT; `esc()` faz isso.

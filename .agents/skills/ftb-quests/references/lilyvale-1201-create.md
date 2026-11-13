@@ -67,8 +67,8 @@ Exemplos mínimos deste formato:
 
 ## Livro gerado
 
-- Desde 2026-11-13 os capítulos novos saem de `build/quest-book/` (ignorado pelo git): `python build/quest-book/gen.py` e `python build/quest-book/verify.py`, da raiz. Edite os scripts `chapters_*.py`, não o SNBT gerado. Tabela de capítulos, decisões e pendências em `docs/quests/planejamento.md`, seção 14.
-- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. O gerador reconstrói `create_mod` e `immersive_melodies` a partir de `git show HEAD:`; depois do commit da divisão, troque para os arquivos de trabalho.
+- Desde 2026-11-13 os capítulos novos saem de `tools/quest-book/`: `python tools/quest-book/gen.py` e `python tools/quest-book/verify.py`, da raiz. Edite os scripts `chapters_*.py`, não o SNBT gerado. Tabela de capítulos, decisões e pendências em `docs/quests/planejamento.md`, seção 14.
+- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. Blocos com IDs legados (fora de `7A`) são relidos dos arquivos atuais e copiados verbatim; só quests `7A` são reescritas, então edições feitas no jogo nelas são perdidas ao regenerar.
 - IDs novos seguem `7A` + capítulo + tipo + sequência na ordem do script. Inserir ou remover uma quest no meio renumera as seguintes e perde progresso: acrescente no fim.
 - Tasks confirmadas no JAR do FTB Quests 2001.4.22: `advancement` (`advancement`, `criterion: ""`), `dimension`, `biome` (aceita `#tag`, ainda não testado em jogo), `structure`, `observation` (`observe_type` 0 = bloco, 5 = entidade), `checkmark` e `item` com `itemfilters:tag`. Antes de usar um avanço, inspecione os critérios: muitos são só `inventory_changed` e provam posse, não ação.
 - Um `&` literal seguido de espaço quebra o título com “Invalid formatting”; escreva `\&`.
