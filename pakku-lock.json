@@ -1173,6 +1173,9 @@
         },
         {
             "pakku_id": "KZvK1rlapJMit1QJ",
+            "pakku_links": [
+                "EQybSCanzMmBn6Ke"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "connectivity"
@@ -1821,7 +1824,7 @@
             ]
         },
         {
-            "pakku_id": "P7WLyaK0X2ZiNCWW",
+            "pakku_id": "EQybSCanzMmBn6Ke",
             "type": "MOD",
             "slug": {
                 "curseforge": "cupboard"
@@ -1835,25 +1838,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "cupboard-1.20.1-2.7.jar",
+                    "file_name": "cupboard-1.20.1-4.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
-                        "forge"
+                        "forge",
+                        "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5470/32/cupboard-1.20.1-2.7.jar",
-                    "id": "5470032",
+                    "url": "https://edge.forgecdn.net/files/8889/41/cupboard-1.20.1-4.2.jar",
+                    "id": "8889041",
                     "parent_id": "326652",
                     "hashes": {
-                        "sha1": "204bc8aa83e8a685f64311b72d55505ab2eca867",
-                        "md5": "3620912474f47bf58d1fe5bfe133763a"
+                        "sha1": "db25dfc4935b7f1bde62c69f13a7b70e2ecd9f2f",
+                        "md5": "c44e0bbce8481bdc54cd859669bc3930"
                     },
                     "required_dependencies": [],
-                    "size": 25983,
-                    "date_published": "2024-06-24T20:50:03.140Z"
+                    "size": 33422,
+                    "date_published": "2026-09-15T19:17:18.607Z"
                 }
             ]
         },
@@ -2081,6 +2084,49 @@
                     "required_dependencies": [],
                     "size": 2631747,
                     "date_published": "2026-10-10T16:37:02.747Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "jMqdZnbBTsCDBo42",
+            "pakku_links": [
+                "cAae8JYEuMWuvPQm"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "dungeon-and-taverns"
+            },
+            "name": {
+                "curseforge": "Dungeons and Taverns"
+            },
+            "id": {
+                "curseforge": "853794"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dungeons-and-taverns-3.0.3.f[Forge].jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5206/484/dungeons-and-taverns-3.0.3.f[Forge].jar",
+                    "id": "5206484",
+                    "parent_id": "853794",
+                    "hashes": {
+                        "sha1": "3f324242f3daf4785a8b9338f228679418f4870a",
+                        "md5": "0ee71a2bc5cd3f81f155a57960b05dd9"
+                    },
+                    "required_dependencies": [
+                        "832882"
+                    ],
+                    "size": 13161907,
+                    "date_published": "2024-03-23T23:01:29.910Z"
                 }
             ]
         },
@@ -2508,6 +2554,43 @@
                     ],
                     "size": 1973021,
                     "date_published": "2026-09-27T19:05:29.323Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NjXBuSU2cXBHLJ78",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "effortless-building"
+            },
+            "name": {
+                "curseforge": "Effortless Building"
+            },
+            "id": {
+                "curseforge": "302113"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "effortlessbuilding-1.20.1-3.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7944/965/effortlessbuilding-1.20.1-3.11.jar",
+                    "id": "7944965",
+                    "parent_id": "302113",
+                    "hashes": {
+                        "sha1": "8009529f3c3baf1db92049dfffd81ba5813bf829",
+                        "md5": "7ee1517f0b5072e760a258b03b93aa5a"
+                    },
+                    "required_dependencies": [],
+                    "size": 2326090,
+                    "date_published": "2026-04-18T12:43:48.350Z"
                 }
             ]
         },
@@ -2994,6 +3077,49 @@
                     ],
                     "size": 248592,
                     "date_published": "2025-01-27T16:07:52.110Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "EFqOEVXNQvLofJ7T",
+            "pakku_links": [
+                "sZo9lF1AMRdTa1sf",
+                "FXNKMvH6JiRMbecG"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-ultimine-forge"
+            },
+            "name": {
+                "curseforge": "FTB Ultimine (NeoForge)"
+            },
+            "id": {
+                "curseforge": "386134"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-ultimine-forge-2001.1.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7880/472/ftb-ultimine-forge-2001.1.8.jar",
+                    "id": "7880472",
+                    "parent_id": "386134",
+                    "hashes": {
+                        "sha1": "c2a1eb72c36ad067faafbff4e1618c4db906de74",
+                        "md5": "a96e4705c8ce3bcac03608153ecceb05"
+                    },
+                    "required_dependencies": [
+                        "404465",
+                        "419699"
+                    ],
+                    "size": 129653,
+                    "date_published": "2026-04-05T17:09:50.693Z"
                 }
             ]
         },
@@ -4639,6 +4765,44 @@
             ]
         },
         {
+            "pakku_id": "hHF0LYa5aty1nVYQ",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "oculus"
+            },
+            "name": {
+                "curseforge": "Oculus"
+            },
+            "id": {
+                "curseforge": "581495"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "oculus-mc1.20.1-1.8.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar",
+                    "id": "6020952",
+                    "parent_id": "581495",
+                    "hashes": {
+                        "sha1": "984f774e71790deaec674c7587bd24e0711871b2",
+                        "md5": "1dd891634ac21591b5a692471f112572"
+                    },
+                    "required_dependencies": [],
+                    "size": 2851119,
+                    "date_published": "2024-12-24T23:33:51.040Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "K7rHEBAjyQ1jKwwu",
             "type": "MOD",
             "slug": {
@@ -4709,6 +4873,42 @@
                     "required_dependencies": [],
                     "size": 1654544,
                     "date_published": "2026-10-01T12:08:09.187Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "r2RA1g5iI9VLl6TD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "patchouli"
+            },
+            "name": {
+                "curseforge": "Patchouli"
+            },
+            "id": {
+                "curseforge": "306770"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Patchouli-1.20.1-85-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7731/17/Patchouli-1.20.1-85-FORGE.jar",
+                    "id": "7731017",
+                    "parent_id": "306770",
+                    "hashes": {
+                        "sha1": "d4614507d6e4c7cb464bba5eca891978272062ef",
+                        "md5": "78bd223d069fa9491e940d99a8f426b3"
+                    },
+                    "required_dependencies": [],
+                    "size": 642732,
+                    "date_published": "2026-03-08T21:08:44.413Z"
                 }
             ]
         },
@@ -5638,6 +5838,49 @@
             ]
         },
         {
+            "pakku_id": "cAae8JYEuMWuvPQm",
+            "pakku_links": [
+                "P7WLyaK0X2ZiNCWW",
+                "EQybSCanzMmBn6Ke"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "structure-essentials-forge-fabric"
+            },
+            "name": {
+                "curseforge": "Structure Essentials"
+            },
+            "id": {
+                "curseforge": "832882"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "structureessentials-1.20.1-5.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9278/573/structureessentials-1.20.1-5.1.jar",
+                    "id": "9278573",
+                    "parent_id": "832882",
+                    "hashes": {
+                        "sha1": "a902167c4c3009d7271f60708b9f29f5d6a9a4ca",
+                        "md5": "60cffd66370e0233f98176686b717694"
+                    },
+                    "required_dependencies": [
+                        "326652"
+                    ],
+                    "size": 63216,
+                    "date_published": "2026-10-21T16:17:18.300Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "AaycJhGQfNOYf79A",
             "type": "MOD",
             "slug": {
@@ -6306,6 +6549,132 @@
                     "required_dependencies": [],
                     "size": 370524,
                     "date_published": "2024-09-30T06:13:49.387Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "U3AWxHeUTudrR354",
+            "pakku_links": [
+                "qhgtQCXVib0BSjVe"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yungs-better-dungeons"
+            },
+            "name": {
+                "curseforge": "YUNG's Better Dungeons (Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "510089"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5271/360/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+                    "id": "5271360",
+                    "parent_id": "510089",
+                    "hashes": {
+                        "sha1": "67a9e1c2ff126ab54cea8e0709d178915243039e",
+                        "md5": "2de2f1be8f528ad139003bb5c73d49f3"
+                    },
+                    "required_dependencies": [
+                        "421850"
+                    ],
+                    "size": 792381,
+                    "date_published": "2024-04-18T05:10:09.167Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "kORtjVhAUhPuKijA",
+            "pakku_links": [
+                "qhgtQCXVib0BSjVe"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yungs-better-mineshafts-forge"
+            },
+            "name": {
+                "curseforge": "YUNG's Better Mineshafts (Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "389665"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4769/63/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+                    "id": "4769063",
+                    "parent_id": "389665",
+                    "hashes": {
+                        "sha1": "e2cbc574807a994bb9610184eb4bbfe29a6c0774",
+                        "md5": "fe8d205c98cb02840d46646fb7cf5ab8"
+                    },
+                    "required_dependencies": [
+                        "421850"
+                    ],
+                    "size": 492998,
+                    "date_published": "2023-09-25T20:44:23.630Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PPcuABQAaxLd19A8",
+            "pakku_links": [
+                "qhgtQCXVib0BSjVe"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yungs-better-strongholds"
+            },
+            "name": {
+                "curseforge": "YUNG's Better Strongholds (Forge/NeoForge)"
+            },
+            "id": {
+                "curseforge": "465575"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4769/83/YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+                    "id": "4769083",
+                    "parent_id": "465575",
+                    "hashes": {
+                        "sha1": "3730238c56edca4bb5b2238e1314aec572ced385",
+                        "md5": "8c00ed5d2bab232040a1d4d0ef746ae6"
+                    },
+                    "required_dependencies": [
+                        "421850"
+                    ],
+                    "size": 473564,
+                    "date_published": "2023-09-25T20:59:25.073Z"
                 }
             ]
         },

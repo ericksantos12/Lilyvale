@@ -13,13 +13,18 @@
 - Immersive Melodies becomes "Música para Lilyvale", with a new card explaining how to play.
 - New rewards are experience points only.
 
+### New mods
+
+- **YUNG's Better Dungeons**, **YUNG's Better Mineshafts** and **YUNG's Better Strongholds**: redesigned dungeons, mineshafts and strongholds.
+- **Dungeons and Taverns**: taverns, towers and small dungeons in a vanilla style.
+- **Effortless Building**: mirror, array and shape tools that make walls, floors and roofs quicker to build.
+- **FTB Ultimine**: mine or harvest connected blocks in one go.
+- **Oculus**: shader support.
+- **Structure Essentials** and **Patchouli** as supporting libraries.
+
 ### Gameplay
 
 - Removed the Farm & Charm supply cart and plow recipes, since they do not work with Icy's Better Horses. Use the Icy's horse cart gear instead. Existing carts in your world keep working.
-
-### Fixes
-
-- Fixed the "Invalid formatting" chapter name in the quest book.
 
 ## [0.1.0]
 
