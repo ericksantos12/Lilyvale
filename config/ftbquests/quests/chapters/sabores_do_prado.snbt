@@ -1,0 +1,607 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "sabores_do_prado"
+	group: "2F3E0F43CC0404AB"
+	icon: "meadow:cheese_block"
+	id: "7A04000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"No prado alpino até o balde é de madeira. Ele serve para água e, principalmente, para ordenhar."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:wooden_bucket"
+			id: "7A04100000000001"
+			rewards: [{
+				id: "7A04300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000001"
+				item: "meadow:wooden_bucket"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aBalde de madeira"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A04100000000001"]
+			description: [
+				"Ordenhe uma vaca com o balde de madeira. Ovelhas, cabras e búfalos-d'água dão leites diferentes, e cada leite vira um queijo próprio."
+				"A tarefa pede leite de vaca no balde de madeira; os outros leites ficam para a coleção de queijos."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:wooden_milk_bucket"
+			id: "7A04100000000002"
+			rewards: [{
+				id: "7A04300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000002"
+				item: "meadow:wooden_milk_bucket"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aLeite fresco"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A04100000000002"]
+			description: [
+				"Sem coalho o leite não vira queijo. A receita está no EMI; guarde um pouco para as próximas levas."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:rennet"
+			id: "7A04100000000003"
+			rewards: [{
+				id: "7A04300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "meadow:main/get_rennet"
+				criterion: ""
+				id: "7A04200000000003"
+				title: "Obtenha coalho"
+				type: "advancement"
+			}]
+			title: "&aO segredo do coalho"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A04100000000003"]
+			description: [
+				"O caldeirão de cozinha aquece leite e coalho até formar a massa do queijo. Ele precisa de fogo por baixo."
+				"O mesmo caldeirão prepara outros pratos alpinos. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:cooking_cauldron"
+			id: "7A04100000000004"
+			rewards: [{
+				id: "7A04300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000004"
+				item: "meadow:cooking_cauldron"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aCaldeirão do queijeiro"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A04100000000004"]
+			description: [
+				"A massa vai para a forma e descansa até virar uma roda de queijo. Uma prateleira de cura por perto deixa a queijaria com cara de queijaria."
+				"A tarefa detecta a forma colocada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:cheese_form"
+			id: "7A04100000000005"
+			rewards: [{
+				id: "7A04300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "meadow:main/place_cheese_form"
+				criterion: ""
+				id: "7A04200000000005"
+				title: "Coloque uma forma de queijo"
+				type: "advancement"
+			}]
+			title: "&aNa forma"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A04100000000005"]
+			description: [
+				"Do pasto à forma: sua primeira roda de queijo. Corte em pedaços para comer ou sirva inteira na mesa."
+				"Qualquer queijo conta. O marco registra a roda nas suas mãos; a ordenha fica na memória."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:cheese_block"
+			id: "7A04100000000006"
+			rewards: [{
+				id: "7A04300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "meadow:main/get_cheese"
+				criterion: ""
+				id: "7A04200000000006"
+				title: "Obtenha uma roda de queijo de qualquer tipo"
+				type: "advancement"
+			}]
+			title: "&6&lPrimeira roda"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O minério de sal alpino aparece nas rochas das montanhas. Tempera pratos do prado e conserva carnes."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:alpine_salt"
+			id: "7A04100000000007"
+			optional: true
+			rewards: [{
+				id: "7A04300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/get_salt"
+				criterion: ""
+				id: "7A04200000000007"
+				title: "Obtenha sal alpino"
+				type: "advancement"
+			}]
+			title: "&dSal dos Alpes"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O cortador de lenha transforma troncos em vigas, bancos e peças de chalé com menos desperdício."
+				"A tarefa detecta o bloco colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:woodcutter"
+			id: "7A04100000000008"
+			optional: true
+			rewards: [{
+				id: "7A04300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/place_woodcutter"
+				criterion: ""
+				id: "7A04200000000008"
+				title: "Coloque um cortador de lenha"
+				type: "advancement"
+			}]
+			title: "&dLenha empilhada"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Queijo derretido, pão e gente em volta. O fondue vai na mesa como bloco e serve várias porções."
+				"A tarefa detecta o fondue colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:fondue"
+			id: "7A04100000000009"
+			optional: true
+			rewards: [{
+				id: "7A04300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/place_fondue"
+				criterion: ""
+				id: "7A04200000000009"
+				title: "Coloque um fondue"
+				type: "advancement"
+			}]
+			title: "&dNoite de fondue"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Simples, quente e com cheiro de feno. A cama de palha combina com cabanas de pastor e sótãos de celeiro."
+				"A tarefa detecta a cama colocada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:straw_bed"
+			id: "7A0410000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/place_straw_bed"
+				criterion: ""
+				id: "7A0420000000000A"
+				title: "Coloque uma cama de palha"
+				type: "advancement"
+			}]
+			title: "&dCama de palha"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O conjunto de pele protege do frio das alturas. Quatro peças, um visual de pastor experiente."
+				"O avanço do mod pede as quatro peças no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:fur_chestplate"
+			id: "7A0410000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/fur_armor"
+				criterion: ""
+				id: "7A0420000000000B"
+				title: "Tenha o conjunto de pele completo"
+				type: "advancement"
+			}]
+			title: "&dAgasalho de montanha"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Búfalos-d'água vivem perto de rios e pântanos. Aponte a luneta para um deles sem incomodar."
+				"A tarefa detecta a observação pela luneta. Ninguém precisa se machucar."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:spyglass"
+			id: "7A0410000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/spyglass_at_buffalo"
+				criterion: ""
+				id: "7A0420000000000C"
+				title: "Observe um búfalo-d'água pela luneta"
+				type: "advancement"
+			}]
+			title: "&dDe longe, com respeito"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Prados de montanha são a casa das flores alpinas, das vacas peludas e dos chalés. Um bom lugar para uma segunda casa."
+				"A tarefa detecta a visita ao bioma."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:alpine_poppy"
+			id: "7A0410000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/find_meadow"
+				criterion: ""
+				id: "7A0420000000000D"
+				title: "Visite um prado"
+				type: "advancement"
+			}]
+			title: "&dAr de montanha"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"As ovelhas do Meadow têm pelagens próprias, e cada uma dá uma lã de padrão diferente para tapetes e camas."
+				"Usa o avanço do mod, que registra cada tipo de lã ao longo do tempo. Tosquiar basta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:highland_wool"
+			id: "7A0410000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "meadow:main/wool_collector"
+				criterion: ""
+				id: "7A0420000000000E"
+				title: "Reúna as lãs alpinas"
+				type: "advancement"
+			}]
+			title: "&dLãs do rebanho"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:cheese_block"
+			id: "7A0410000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0430000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0420000000000F"
+				item: "meadow:cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:sheep_cheese_block"
+			id: "7A04100000000010"
+			optional: true
+			rewards: [{
+				id: "7A04300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000010"
+				item: "meadow:sheep_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:goat_cheese_block"
+			id: "7A04100000000011"
+			optional: true
+			rewards: [{
+				id: "7A04300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000011"
+				item: "meadow:goat_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:buffalo_cheese_block"
+			id: "7A04100000000012"
+			optional: true
+			rewards: [{
+				id: "7A04300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000012"
+				item: "meadow:buffalo_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:grain_cheese_block"
+			id: "7A04100000000013"
+			optional: true
+			rewards: [{
+				id: "7A04300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000013"
+				item: "meadow:grain_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:warped_cheese_block"
+			id: "7A04100000000014"
+			optional: true
+			rewards: [{
+				id: "7A04300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000014"
+				item: "meadow:warped_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma roda para a prateleira de cura. Cada queijo nasce de um leite ou ingrediente diferente; alguns pedem viagens. Registrar exige ter a roda inteira uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "meadow:amethyst_cheese_block"
+			id: "7A04100000000015"
+			optional: true
+			rewards: [{
+				id: "7A04300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A04200000000015"
+				item: "meadow:amethyst_cheese_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+	]
+	title: "&a&lSabores do Prado"
+}

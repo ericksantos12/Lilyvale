@@ -1,26 +1,28 @@
 # F02 — Inventário e melhorias
 
-**Estado: não iniciada.** Este documento autoriza apenas o planejamento; implementar esta fase exige solicitação explícita do usuário.
+**Estado: revisão implementada e aguardando validação em jogo/aceite.** O usuário retirou PD03 e os quatro checks de gameplay. O estado atual é somente PD02, com sete aquisições, layout compacto e três ramais com dependências didáticas. [Revisão atual](registros/f02-simplificacao.md) · [IDs retirados/mantidos](registros/f02-simplificacao-ids.json).
+
+[Registro de execução](registros/f02-inventario-e-melhorias.md) · [Mapa conjunto de IDs e evidências](registros/f02-mapa-de-ids.json)
 
 [Índice de execução](README.md) · [Regras e arquitetura do plano](../planejamento.md) · [Catálogos candidatos](../catalogos-candidatos.md)
 
 ## Entrega incremental
 
-Capítulos sob responsabilidade desta fase: **PD02, PD03**. Executar um lote coerente, validar e registrar o resultado antes de ampliar o escopo.
+Capítulo ativo: **PD02 — Mochila e Organização**. **PD03 foi cancelado pelo usuário**, sem transferir seus 203 objetivos de volta a PD02. A divisão inicial em dois capítulos é histórica, não o desenho atual.
 
 ## Entrada e bloqueios locais
 
 - F00 aceita e F01.1 aprovado.
-- Instalação/consulta funcional sem detector confirmado usa projeto pessoal explícito ou texto de obtenção, nunca posse disfarçada de ação.
+- Gameplay exige detector real; se não houver detector, manter orientação em texto, sem check de confirmação nem posse disfarçada de ação. Checkmarks ficam restritos aos capítulos informativos.
 - Não é necessário resolver nenhum conteúdo de fazenda, chefe ou dimensão.
 
-## Checklist de execução futura
+## Checklist da primeira entrega — histórico, superado pela revisão
 
-- [ ] Auditar as quests atuais dos três mods e escolher quais ensinam a entrada prática de mochila, recipientes e rede.
-- [ ] Preparar o mapa conjunto PD02/PD03 antes de mover qualquer quest: cada ID existente tem um único destino ou referência válida.
-- [ ] Entregar as entradas curtas e alternativas de PD02, sem exigir utilizar os três sistemas ao mesmo tempo.
-- [ ] Mover consulta/completismo para PD03 mantendo o layout legado compacto, independência dos conversores e texto acessível.
-- [ ] Aplicar a migração dos dois capítulos no mesmo lote consistente; não deixar metade do catálogo duplicada como solução temporária.
+- [x] Auditar as quests atuais dos três mods e escolher quais ensinam a entrada prática de mochila, recipientes e rede.
+- [x] Preparar o mapa conjunto PD02/PD03 antes de mover qualquer quest: cada ID existente tem um único destino ou referência válida.
+- [x] Entregar as entradas curtas e alternativas de PD02, sem exigir utilizar os três sistemas ao mesmo tempo.
+- [x] Mover consulta/completismo para PD03 mantendo o layout legado compacto, independência dos conversores e texto acessível.
+- [x] Aplicar a migração dos dois capítulos no mesmo lote consistente; não deixar metade do catálogo duplicada como solução temporária.
 
 ## Fora do escopo
 
@@ -30,13 +32,13 @@ Capítulos sob responsabilidade desta fase: **PD02, PD03**. Executar um lote coe
 
 ## Validação e aceite
 
-- [ ] Contabilizar cada uma das entradas históricas de armazenamento e seus IDs/recompensas, incluindo referências.
-- [ ] Testar posse, filtros, upgrades e não consumo; conferir consulta de descrição antes das dependências.
-- [ ] Verificar na cópia de equipe que mover uma quest não exige repeti-la nem permite recompensa duplicada.
+- [x] Registrar a retirada autorizada de 203 objetivos de PD03 e quatro checks; sete aquisições mantêm seus IDs/tasks/recompensas. Não se alega preservação ativa de objetivos descartados.
+- [ ] Testar as sete aquisições, não consumo, desbloqueios alternativos e consulta antes das dependências.
+- [ ] Conferir o reconhecimento do progresso das sete quests mantidas; objetivos retirados não estarão mais visíveis.
 
 - [ ] Aplicar o protocolo comum do índice: integridade de arquivos/IDs, contratos de conclusão, visual e teste em jogo correspondente ao lote.
 - [ ] Registrar testes executados, evidências, falhas, pendências e aceite do usuário. Validação estática não substitui validação no jogo.
-- [ ] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. Marcar parcial/em espera conforme o caso.
+- [x] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. **F02 aguardando validação em jogo.**
 
 ## Como encerrar ou retomar
 
@@ -44,18 +46,18 @@ Atualizar a linha desta fase no índice e preencher a ficha de passagem abaixo. 
 
 | Registro | Preencher durante a execução |
 | --- | --- |
-| Lote executado | — |
-| Arquivos e IDs envolvidos | — |
-| Decisões e fontes conferidas | — |
-| Testes estáticos | — |
-| Testes no jogo / evidência | — |
-| Pendências e bloqueios locais | — |
-| Próximo lote seguro | — |
-| Aceite do usuário | — |
+| Lote executado | Revisão: somente sete aquisições em PD02, sem checks de gameplay |
+| Arquivos e IDs envolvidos | `mochila_e_organizacao.snbt` mantido; `armazenamento.snbt` removido; lista de identidades arquivada no registro da simplificação |
+| Decisões e fontes conferidas | Receitas, tooltips, habilitação e caminhos de NBT dos JARs instalados; posse não prova instalação/uso |
+| Testes estáticos | Oito SNBT no parser/roundtrip; IDs restantes, payloads, referências, ciclos e geometria aprovados |
+| Testes no jogo / evidência | Não executados pelo agente; cópia histórica real preparada em `saves/Lilyvale-F02-Legado` |
+| Pendências e bloqueios locais | Conferir visual, dependências e progresso das quests mantidas; EQ-01/EQ-02 sem nova implementação |
+| Próximo lote seguro | Validar F02 e obter aceite antes da F03 |
+| Aceite do usuário | Execução autorizada; aceite da entrega F02 ainda pendente |
 
-## Especificações dos capítulos
+## Especificações originais — históricas, não implementar checks ou PD03
 
-Os blocos abaixo foram movidos do plano original sem reescrever quests, relações ou ressalvas. As regras comuns das seções 1–4 e 6–11 do plano principal continuam obrigatórias.
+Os blocos abaixo preservam a proposta original. A revisão atual prevalece: mochila → coleta; baú ou barril → aplicador; conector Tom’s → terminal, sem dependências entre sistemas. Os nós A6/M1/M2/C1 manuais e o PD03 abaixo foram cancelados. Consulte o registro da simplificação para coordenadas, IDs e testes atuais.
 
 ### PD02 — Mochila e Organização
 

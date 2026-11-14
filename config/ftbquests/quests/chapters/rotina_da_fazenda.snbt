@@ -1,0 +1,1152 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "rotina_da_fazenda"
+	group: "2F3E0F43CC0404AB"
+	icon: "farm_and_charm:pitchfork"
+	id: "7A03000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Restos de colheita viram composto, e o composto vira fertilizante. É o começo do ciclo do Farm \\& Charm."
+				"O EMI mostra o que pode ser compostado. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:fertilizer"
+			id: "7A03100000000001"
+			rewards: [{
+				id: "7A03300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/get_fertilizer"
+				criterion: ""
+				id: "7A03200000000001"
+				title: "Obtenha fertilizante"
+				type: "advancement"
+			}]
+			title: "&aNada se perde"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A03100000000001"]
+			description: [
+				"O solo fertilizado é um canteiro de luxo. Coloque-o onde a horta vai ficar; o forcado espalha e recolhe o adubo."
+				"A tarefa detecta o bloco colocado no mundo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:fertilized_soil"
+			id: "7A03100000000002"
+			rewards: [{
+				id: "7A03300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/place_fertilized_soil"
+				criterion: ""
+				id: "7A03200000000002"
+				title: "Coloque um bloco de solo fertilizado"
+				type: "advancement"
+			}]
+			title: "&aTerra adubada"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A03100000000002"]
+			description: [
+				"Passe a enxada no solo fertilizado para criar terra arada adubada: as plantas crescem mais rápido e a terra não seca com pisões."
+				"Dica do Harvest with Ease: clique com o botão direito em uma planta madura para colher e replantar de uma vez. Com enxada na mão, a colheita pode alcançar uma área maior."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:iron_hoe"
+			id: "7A03100000000003"
+			rewards: [{
+				id: "7A03300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/use_hoe_on_fertilized_soil"
+				criterion: ""
+				id: "7A03200000000003"
+				title: "Are o solo fertilizado com uma enxada"
+				type: "advancement"
+			}]
+			title: "&aCanteiro pronto"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A03100000000002"]
+			description: [
+				"O regador giratório mantém os canteiros úmidos ao redor sem precisar de valas de água no meio da horta."
+				"A tarefa detecta o regador colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:water_sprinkler"
+			id: "7A03100000000004"
+			rewards: [{
+				id: "7A03300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/place_water_sprinkler"
+				criterion: ""
+				id: "7A03200000000004"
+				title: "Coloque um regador giratório"
+				type: "advancement"
+			}]
+			title: "&aChuva particular"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Uma colheita de respeito para estrear o clique direito do Harvest with Ease: trigo, cenoura e batata sem replantar à mão."
+				"A tarefa só confere os itens no inventário. Como eles chegaram lá é entre você e a horta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:wheat"
+			id: "7A03100000000005"
+			optional: true
+			rewards: [{
+				id: "7A03300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				count: 32L
+				id: "7A03200000000005"
+				item: "minecraft:wheat"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 16L
+				id: "7A03200000000006"
+				item: "minecraft:carrot"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 16L
+				id: "7A03200000000007"
+				item: "minecraft:potato"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dCeleiro cheio"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"A tigela de preparo mistura farinha, água e fermento com algumas mexidas. A farinha vem de grãos moídos."
+				"Neste pack as massas dos mods de cozinha foram unificadas; confira no EMI qual massa cada receita aceita."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:crafting_bowl"
+			id: "7A03100000000006"
+			rewards: [{
+				id: "7A03300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A03200000000008"
+				item: "farm_and_charm:crafting_bowl"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A03200000000009"
+				item: "farm_and_charm:flour"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aMassa na tigela"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O moedor transforma carne em carne moída e grãos em farinha. Coloque o ingrediente e gire a manivela com cliques."
+				"A tarefa detecta o uso do moedor, não só a posse."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:mincer"
+			id: "7A03100000000007"
+			rewards: [{
+				id: "7A03300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/introduction_mincing"
+				criterion: ""
+				id: "7A0320000000000A"
+				title: "Use o moedor"
+				type: "advancement"
+			}]
+			title: "&aGira a manivela"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O silo seca grãos e ervas. Empilhe blocos de silo para aumentar a capacidade e retire o produto seco por baixo."
+				"A tarefa detecta o uso do silo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:silo_wood"
+			id: "7A03100000000008"
+			rewards: [{
+				id: "7A03300000000008"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/introduction_drying"
+				criterion: ""
+				id: "7A0320000000000B"
+				title: "Coloque algo para secar no silo"
+				type: "advancement"
+			}]
+			title: "&aSecar e guardar"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Fogão, panela e assadeira: com as três peças no lugar, a cozinha da fazenda dá conta de pães, sopas e assados."
+				"O marco detecta os três blocos colocados no mundo. Onde fica a mesa é decisão sua."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:stove"
+			id: "7A03100000000009"
+			rewards: [{
+				id: "7A03300000000009"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [
+			{
+				advancement: "farm_and_charm:main/place_stove"
+				criterion: ""
+				id: "7A0320000000000C"
+				title: "Coloque um fogão de fazenda"
+				type: "advancement"
+			}
+			{
+				advancement: "farm_and_charm:main/place_cooking_pot"
+				criterion: ""
+				id: "7A0320000000000D"
+				title: "Coloque uma panela"
+				type: "advancement"
+			}
+			{
+				advancement: "farm_and_charm:main/place_roaster"
+				criterion: ""
+				id: "7A0320000000000E"
+				title: "Coloque uma assadeira"
+				type: "advancement"
+			}
+			]
+			title: "&6&lCozinha da fazenda"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O galinheiro abriga as galinhas e junta os ovos num lugar só. Elas entram sozinhas ao anoitecer se estiverem por perto."
+				"A tarefa detecta o galinheiro colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:chicken_coop"
+			id: "7A0310000000000A"
+			rewards: [{
+				id: "7A0330000000000A"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/place_chicken_coop"
+				criterion: ""
+				id: "7A0320000000000F"
+				title: "Coloque um galinheiro"
+				type: "advancement"
+			}]
+			title: "&aCasa das galinhas"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0310000000000A"]
+			description: [
+				"Ninhos dão às galinhas um lugar para botar. Menos ovos perdidos pelo pasto, mais omeletes."
+				"A tarefa detecta o ninho colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:chicken_nest"
+			id: "7A0310000000000B"
+			rewards: [{
+				id: "7A0330000000000B"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/place_chicken_nest"
+				criterion: ""
+				id: "7A03200000000010"
+				title: "Coloque um ninho"
+				type: "advancement"
+			}]
+			title: "&aNinho arrumado"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O cocho alimenta os animais próximos com o que você deixar dentro. Bom para manter a criação sem correr atrás de cada bicho."
+				"A tarefa detecta o cocho colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:feeding_trough"
+			id: "7A0310000000000C"
+			rewards: [{
+				id: "7A0330000000000C"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farm_and_charm:main/place_feeding_trough"
+				criterion: ""
+				id: "7A03200000000011"
+				title: "Coloque um cocho"
+				type: "advancement"
+			}]
+			title: "&aHora da ração"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0310000000000A"]
+			description: [
+				"Galinheiro montado, ração no cocho e ovos chegando. A criação agora se cuida entre uma visita e outra."
+				"O marco pede ração de galinha e dezesseis ovos. Ele confere a posse, não conta cada ovo no ninho."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:egg"
+			id: "7A0310000000000D"
+			rewards: [{
+				id: "7A0330000000000D"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A03200000000012"
+				item: "farm_and_charm:chicken_feed"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 16L
+				id: "7A03200000000013"
+				item: "minecraft:egg"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&6&lCriação em ordem"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Um espantalho dá personalidade à plantação. Os corvos de Lilyvale são imaginários, mas ele não sabe disso."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:scarecrow"
+			id: "7A0310000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0330000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000014"
+				item: "farm_and_charm:scarecrow"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dGuardião de palha"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um suporte de ferramentas na parede do celeiro e um peitoril florido na janela. Fazenda também é capricho."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:tool_rack"
+			id: "7A0310000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0330000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A03200000000015"
+				item: "farm_and_charm:tool_rack"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A03200000000016"
+				item: "farm_and_charm:window_sill"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dCada ferramenta no lugar"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:simple_tomato_soup"
+			id: "7A03100000000010"
+			optional: true
+			rewards: [{
+				id: "7A03300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000017"
+				item: "farm_and_charm:simple_tomato_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:barley_soup"
+			id: "7A03100000000011"
+			optional: true
+			rewards: [{
+				id: "7A03300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000018"
+				item: "farm_and_charm:barley_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:onion_soup"
+			id: "7A03100000000012"
+			optional: true
+			rewards: [{
+				id: "7A03300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000019"
+				item: "farm_and_charm:onion_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:potato_soup"
+			id: "7A03100000000013"
+			optional: true
+			rewards: [{
+				id: "7A03300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001A"
+				item: "farm_and_charm:potato_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:goulash"
+			id: "7A03100000000014"
+			optional: true
+			rewards: [{
+				id: "7A03300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001B"
+				item: "farm_and_charm:goulash"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:corn_grits"
+			id: "7A03100000000015"
+			optional: true
+			rewards: [{
+				id: "7A03300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001C"
+				item: "farm_and_charm:corn_grits"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:farmer_salad"
+			id: "7A03100000000016"
+			optional: true
+			rewards: [{
+				id: "7A03300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001D"
+				item: "farm_and_charm:farmer_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:pasta_with_onion_sauce"
+			id: "7A03100000000017"
+			optional: true
+			rewards: [{
+				id: "7A03300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001E"
+				item: "farm_and_charm:pasta_with_onion_sauce"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:oatmeal_with_strawberries"
+			id: "7A03100000000018"
+			optional: true
+			rewards: [{
+				id: "7A03300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000001F"
+				item: "farm_and_charm:oatmeal_with_strawberries"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:bacon_with_eggs"
+			id: "7A03100000000019"
+			optional: true
+			rewards: [{
+				id: "7A03300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000020"
+				item: "farm_and_charm:bacon_with_eggs"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:beef_patty_with_vegetables"
+			id: "7A0310000000001A"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000021"
+				item: "farm_and_charm:beef_patty_with_vegetables"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:barley_patties_with_potatoes"
+			id: "7A0310000000001B"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000022"
+				item: "farm_and_charm:barley_patties_with_potatoes"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:sausage_with_oat_patty"
+			id: "7A0310000000001C"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000023"
+				item: "farm_and_charm:sausage_with_oat_patty"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:lamb_with_corn"
+			id: "7A0310000000001D"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000024"
+				item: "farm_and_charm:lamb_with_corn"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:chicken_wrapped_in_bacon"
+			id: "7A0310000000001E"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000025"
+				item: "farm_and_charm:chicken_wrapped_in_bacon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:roasted_corn"
+			id: "7A0310000000001F"
+			optional: true
+			rewards: [{
+				id: "7A0330000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000026"
+				item: "farm_and_charm:roasted_corn"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:potato_with_roast_meat"
+			id: "7A03100000000020"
+			optional: true
+			rewards: [{
+				id: "7A03300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000027"
+				item: "farm_and_charm:potato_with_roast_meat"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:baked_lamb_ham"
+			id: "7A03100000000021"
+			optional: true
+			rewards: [{
+				id: "7A03300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000028"
+				item: "farm_and_charm:baked_lamb_ham"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:stuffed_chicken"
+			id: "7A03100000000022"
+			optional: true
+			rewards: [{
+				id: "7A03300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A03200000000029"
+				item: "farm_and_charm:stuffed_chicken"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:stuffed_rabbit"
+			id: "7A03100000000023"
+			optional: true
+			rewards: [{
+				id: "7A03300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000002A"
+				item: "farm_and_charm:stuffed_rabbit"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:farmers_bread"
+			id: "7A03100000000024"
+			optional: true
+			rewards: [{
+				id: "7A03300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000002B"
+				item: "farm_and_charm:farmers_bread"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:farmers_breakfast"
+			id: "7A03100000000025"
+			optional: true
+			rewards: [{
+				id: "7A03300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000002C"
+				item: "farm_and_charm:farmers_breakfast"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:oat_pancake"
+			id: "7A03100000000026"
+			optional: true
+			rewards: [{
+				id: "7A03300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000002D"
+				item: "farm_and_charm:oat_pancake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farm_and_charm:grandmothers_strawberry_cake"
+			id: "7A03100000000027"
+			optional: true
+			rewards: [{
+				id: "7A03300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0320000000002E"
+				item: "farm_and_charm:grandmothers_strawberry_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+	]
+	title: "&a&lRotina da Fazenda"
+}

@@ -1,10 +1,12 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado: proposta para implementação futura. Nenhuma quest, receita, configuração ou progresso é alterado por este documento.**
+**Estado (2026-11-13): os 29 capítulos-base e o Início existem no livro — 30 capítulos, 607 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
 
-**Execução incremental:** consulte [as fases F00–F18](fases/README.md). As especificações detalhadas de cada capítulo ficam nos arquivos de sua fase; este documento preserva arquitetura, layout comum, políticas e critérios de aceite.
+**Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
-Fonte de escopo: `quest-mods.md`. O plano cobre seus 49 mods em **30 capítulos-base**, organizados nas nove categorias do arquivo atual. Catálogos usam regras de expansão descritas abaixo; o número final de quests só deve ser fechado depois da auditoria de obtenção no survival. Não se trata de 30 mods escolhidos: vários capítulos reúnem mods, enquanto Create e a jornada ao End são divididos por experiência.
+Fonte de escopo: `quest-mods.md`. O plano cobre seus 49 mods em **29 capítulos-base**, organizados nas nove categorias do arquivo atual. Catálogos usam regras de expansão descritas abaixo; o número final de quests só deve ser fechado depois da auditoria de obtenção no survival. Não se trata de 30 mods escolhidos: vários capítulos reúnem mods, enquanto Create e a jornada ao End são divididos por experiência.
+
+**Revisão da F02:** PD03 foi retirado a pedido do usuário. A arquitetura ativa tem 29 capítulos-base, além do guia informativo Início; propostas P/checks de gameplay nas fases futuras são legadas e precisam de reformulação. [Registro atual](fases/registros/f02-simplificacao.md).
 
 ## 1. Decisões centrais
 
@@ -12,7 +14,7 @@ Fonte de escopo: `quest-mods.md`. O plano cobre seus 49 mods em **30 capítulos-
 2. **Aprendizado é curto e proporcional à mecânica nova.** Uma bancada não justifica um tutorial inteiro. Farmer's Delight recebe uma introdução pequena e um grande caderno opcional de pratos; Vinery recebe uma sequência curta de processamento e um catálogo independente de bebidas.
 3. **Marcos reconhecem resultados, não apenas peças.** Possuir uma prensa não comprova uma fábrica; possuir trilhos não comprova uma ferrovia; possuir tanque não comprova oxigênio carregado.
 4. **Coleções registram variedade, não quantidade acumulada.** Um prato por receita final, um vinho por identidade, um instrumento por instrumento. Nada de exigir uma pilha, todas as cores ou todos os ingredientes simultaneamente.
-5. **Projetos criativos podem ser autodeclarados.** Uma casa acolhedora ou um museu não tem um detector objetivo simples. Nesses casos a quest deve dizer “projeto pessoal — marque quando terminar”, sem fingir detecção automática.
+5. **Checkmarks somente em capítulos informativos**, como Início. Para gameplay, exija detector real; sem ele, deixe a inspiração em texto, sem confirmação manual nem posse disfarçada de ação. Esta revisão do usuário substitui propostas antigas de projetos P nos arquivos de fases.
 6. **Sem ligação obrigatória entre estilos de jogo.** Aether, Otherside, Lua e dragão não são pré-requisitos editoriais para plantar, decorar, cozinhar ou cuidar de um companheiro. Receitas reais podem exigir materiais de exploração; isso precisa ser informado, não disfarçado como independência mecânica absoluta.
 7. **Documentação é consultável antes de concluir atividades.** Requisitos reais podem orientar trilhas, mas textos, receitas e dicas não ficam trancados atrás de completismo.
 8. **O escopo atual prevalece sobre a organização anterior.** Armazenamento tem sua entrada em Primeiros Dias. A Jornada até o End é uma nona categoria proposta porque aparece na lista atual; não substituir nem editar os oito grupos já existentes durante o planejamento.
@@ -36,8 +38,9 @@ Formas são uma proposta visual a verificar no editor instalado. Texto A/M/C aco
 - **E — evento:** ação real ou avanço nativo do mod, somente após inspecionar os critérios e testar a versão. Um avanço de inventário continua sendo apenas posse.
 - **L — local:** dimensão, bioma ou estrutura confirmados. Visitar uma dungeon não equivale a concluí-la.
 - **K — combate:** derrota real do alvo. Ajustar crédito de equipe e não exigir matar de novo um chefe já vencido.
-- **P — projeto pessoal:** checkmark transparente, com checklist de sugestão, sem valor econômico alto.
-- **Q — catálogo:** regra de expansão em uma quest independente por identidade elegível; modo I por padrão. Se o texto disser “preparei/cozinhei/capturei”, exige E correspondente ou marcação manual explícita, nunca apenas uma task I renomeada.
+- **P — proposta antiga de projeto:** não implementar como checkmark de gameplay; reformular com detector real ou manter somente como orientação. Checks são exclusivos de capítulos informativos.
+- **D — orientação documental:** abreviação usada em alguns nós para referência R ou texto de apoio; não é outro tipo de atividade nem um tipo técnico de task.
+- **Q — catálogo:** regra de expansão em uma quest independente por identidade elegível; modo I por padrão. Se o texto disser “preparei/cozinhei/capturei”, exige E correspondente; sem detector, reformular a promessa ou manter somente orientação, nunca uma task I renomeada ou um checkmark.
 
 Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastreamento persistente são possibilidades futuras, não requisitos silenciosamente adicionados por este plano. Falta de detector não autoriza prometer uma validação que não existe.
 
@@ -47,7 +50,6 @@ Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastrea
 | --- | --- | --- | --- |
 | Primeiros Dias | PD01 — Primeiros Passos | Sobrevivência inicial e cobre; reutilizar o capítulo atual | A, primeiro M |
 | Primeiros Dias | PD02 — Mochila e Organização | Sophisticated Backpacks, Sophisticated Storage e Tom's Simple Storage; começo prático | A curta, M de uso |
-| Primeiros Dias | PD03 — Caderno de Melhorias | Referência e desafios opcionais dos mesmos três mods | R/C, sem caminho obrigatório |
 | Primeiros Dias | PD04 — Tips & Tricks | Gliders, Camerapture, Comforts, Nature's Compass e Carry On | Dicas A independentes, pequenos C |
 | Vida no Campo | VC01 — Caderno de Receitas | Farmer's Delight, Farmer's Respite, Ocean's Delight, Veggies Delight e Vintage Delight | Predomínio Q; A apenas dos processos novos |
 | Vida no Campo | VC02 — Rotina da Fazenda | Farm & Charm e Harvest with Ease | A de sistemas rurais, M e projetos C |
@@ -87,7 +89,7 @@ Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastrea
 - A em `y = 0` e, se necessário, `y = 4`; M em `y = 8`; C/projetos em `y = 16`. Para uma trilha A com até seis nós, usar `x = 0, 4, 8, 12, 16, 20`. Trilhas maiores viram dois processos paralelos, não uma serpentina com linhas cruzadas.
 - Um marco deve ficar alinhado ao processo que reconhece. Não desenhar linhas apenas para “dar aparência de progressão”. Uma nota ou um link não é dependência.
 - Álbuns: painéis de seis colunas; posição local do item `n`, começando em zero: `x = 4 × (n mod 6)`, `y = 4 × floor(n/6)`. Cada painel começa abaixo de um cabeçalho, com quatro pontos de margem; não ligar seus itens uns aos outros.
-- Até 36 folhas por painel. Até dois painéis lado a lado, com origens `x = 0` e `x = 32`. Se o inventário final exceder 72 folhas em um capítulo, a implementação deverá propor um anexo adicional ou redivisão, **em vez de comprimir ícones**. Os 30 capítulos são a arquitetura-base; anexos só se a auditoria demonstrar necessidade.
+- Até 36 folhas por painel. Até dois painéis lado a lado, com origens `x = 0` e `x = 32`. Se o inventário final exceder 72 folhas em um capítulo, a implementação deverá propor um anexo adicional ou redivisão, **em vez de comprimir ícones**. Os capítulos-base são a arquitetura planejada; anexos só se a auditoria demonstrar necessidade.
 - Grupos de coleção não são desbloqueados ao concluir a trilha A. Podem ser consultados e registrados desde que o jogador encontre o item legitimamente. A trilha A serve para ensinar como obtê-lo.
 - Aprendizado e marcos aparecem na primeira área visível; arquivos de consulta e completismo não devem dominar a primeira tela.
 - Cenas decorativas discretas: sem texto sobre ícones, sem figuras que pareçam objetivos e sem transformar ilustrações em divisórias gigantes.
@@ -116,7 +118,7 @@ X — Expedição:       Preparação → Entrada → Experiência local
 
 P — Projeto:         inspiração / ferramentas
                     Projeto 1       Projeto 2       Projeto 3
-                    [cada um tem sua própria checklist autodeclarada]
+                    [orientação em texto; task somente com detector real]
 ```
 
 ### 4.3 Mapa particular de cada capítulo
@@ -124,8 +126,7 @@ P — Projeto:         inspiração / ferramentas
 | Capítulo | Template e distribuição |
 | --- | --- |
 | PD01 | T, duas linhas curtas: sobrevivência em cima; oficina de cobre embaixo, com ligação interna somente onde necessária |
-| PD02 | B/T: mochila à esquerda, recipientes no centro, rede Tom's à direita; entradas paralelas, três marcos alinhados |
-| PD03 | G legado: três áreas já compactadas — Storage, Backpacks, Tom's; títulos “consulta opcional”; nenhuma linha sai para outro capítulo |
+| PD02 | Três ramais compactos em duas colunas: mochila → coleta; baú ou barril → aplicador; conector Tom’s → terminal |
 | PD04 | B: cinco cartões independentes, em duas linhas; dois projetos pequenos embaixo |
 | VC01 | B+G: balcão de preparação no topo; ilhas curtas “infusões” e “conservas”; álbum por família de prato e etiqueta do mod |
 | VC02 | T/P: canteiros à esquerda, processamento no centro, cuidado rural à direita; projetos de fazenda embaixo |
@@ -158,13 +159,12 @@ P — Projeto:         inspiração / ferramentas
 
 As especificações detalhadas foram **movidas, sem reescrever seu conteúdo**, para os arquivos de execução incremental. Cada capítulo tem uma única fase responsável; as regras comuns deste documento continuam valendo para todas elas.
 
-[Comece pelo índice de execução e seus critérios de passagem](fases/README.md). Nenhuma fase foi implementada por esta reorganização documental.
+[Índice histórico das fases](fases/README.md). As especificações de nós ali não foram seguidas na geração do livro; a seção 14 mapeia cada capítulo ao arquivo entregue.
 
 | Capítulo | Especificação e fase responsável |
 | --- | --- |
 | PD01 — Primeiros Passos | [F01 — Fundação e legado](fases/01-fundacao-e-legado.md) |
 | PD02 — Mochila e Organização | [F02 — Inventário e melhorias](fases/02-inventario-e-melhorias.md) |
-| PD03 — Caderno de Melhorias | [F02 — Inventário e melhorias](fases/02-inventario-e-melhorias.md) |
 | PD04 — Tips & Tricks | [F03 — Tips & Tricks](fases/03-tips-and-tricks.md) |
 | VC01 — Caderno de Receitas | [F04 — Fazenda e cozinha](fases/04-fazenda-e-cozinha.md) |
 | VC02 — Rotina da Fazenda | [F04 — Fazenda e cozinha](fases/04-fazenda-e-cozinha.md) |
@@ -229,9 +229,9 @@ A = merece orientação própria; M = sustenta um marco; C = desafio/coleção; 
 
 | Mod da lista | Capítulo principal | Papel recomendado |
 | --- | --- | --- |
-| Sophisticated Backpacks | PD02 / PD03 | A curta, M de preparo e C/R de melhorias |
-| Sophisticated Storage | PD02 / PD03 | A curta, M de organização e C/R de módulos |
-| Tom's Simple Storage | PD02 / PD03 | A curta de rede, M funcional e R de componentes |
+| Sophisticated Backpacks | PD02 | Mochila e módulo de coleta; obtenção, com dicas de uso |
+| Sophisticated Storage | PD02 | Baú ou barril e aplicador; sem catálogo de módulos |
+| Tom's Simple Storage | PD02 | Conector e terminal; obter peças não prova rede funcionando |
 | Gliders | PD04 | Uma dica A e desafio de passeio C |
 | Camerapture | PD04 | Uma dica A; projetos fotográficos C transversais |
 | Comforts | PD04 | Uma dica A, sem trilha de fabricação |
@@ -304,21 +304,25 @@ Dois sistemas podem ter receitas relacionadas sem uma dependência editorial de 
 
 ## 9. Recompensas e cooperação
 
-- **A:** pequena ajuda relacionada ao processo, sem fornecer o objetivo seguinte pronto; sugestão de 25–50 pontos de XP.
-- **M:** reconhecimento maior, equivalente entre fazenda, casa, ferrovia e aventura; sugestão de 100–250 pontos de XP ou lembrança cosmética aprovada.
-- **C/Q:** recompensa simbólica, sem economia baseada em repetir checkmarks; sugestão de 10–25 pontos de XP por nova folha, com orçamento por álbum a aprovar.
-- **P autodeclarado:** preferir reconhecimento sem item valioso. Honestidade e criatividade não devem virar uma estratégia de farm de recompensas.
-- Números são uma proposta para conteúdo novo. Não mudar os 50 XP atuais das coleções nem o total histórico do armazenamento sem aprovação de balanceamento e regra de migração.
+- **Política de conteúdo novo aprovada pelo usuário na F00:** somente pontos de XP, sem brindes de itens adicionados por padrão.
+- **A:** 50 pontos de XP por aprendizado novo.
+- **M:** 150 pontos de XP por marco novo, com o mesmo reconhecimento editorial para fazenda, casa, ferrovia e aventura.
+- **C/Q:** 25 pontos de XP por desafio ou folha de coleção nova.
+- **Checks informativos:** sem recompensas. Projetos P de gameplay não recebem mais checkmarks; precisam ser reformulados antes de implementar.
+- **R/D:** não criar uma recompensa adicional apenas por uma nota de referência.
+- **Legado preservado:** não mudar os 50 XP atuais das coleções, as recompensas de item existentes ou o total histórico do armazenamento sem autorização e regra de migração específicas.
 - Não dar companheiros/artefatos raros ou equipamento final como atalhos de recompensa. Não sortear uma recompensa que conclua a próxima folha de um álbum.
-- Decidir explicitamente quais conquistas são individuais e quais são de equipe. Chefes e construções compartilhadas devem reconhecer colaboração; o diário pessoal de receitas/fotos pode continuar individual se o sistema suportar.
+- **Alvo de equipe aprovado na F00:** coleções pessoais e marcos compartilhados, se tecnicamente viável. A configuração de recompensa de equipe não comprova suporte a progresso pessoal; não publicar essa promessa nem converter progresso coletivo antigo sem validar EQ-01/EQ-02. Se a solução exigir nova integração ou fallback coletivo, obter decisão explícita antes de implementar.
 - Não converter checkmarks de projeto em requisitos de outras atividades; não há obrigação de provar beleza, tamanho de casa ou qualidade musical a um sistema automático.
+
+As escolhas de descoberta por posse (com troca/presente), recompensas e alvo de equipe estão registradas nos [contratos e na auditoria da F00](fases/registros/f00-contratos-e-auditoria.md). A viabilidade técnica permanece um gate local; nenhuma configuração do jogo foi alterada para aplicar essas políticas nesta fase.
 
 ## 10. Migração do que já existe
 
 | Conteúdo atual | Tratamento planejado |
 | --- | --- |
 | Primeiros Passos: 9 quests | PD01, preservar IDs, conteúdo reconhecível e a etapa de polimento antes do cobre |
-| Armazenamento: 210 quests | Distribuir aprendizado essencial em PD02 e consulta/C em PD03; mapa de migração por ID, sem cópias de aquisição/recompensa |
+| Armazenamento: 210 quests históricas | Revisão autorizada: sete aquisições em PD02; 203 objetivos de PD03 retirados, assim como os quatro novos checks. IDs arquivados no registro da simplificação |
 | Create: 35 quests | Separar em EF01–EF03 preservando IDs de quests/tasks/recompensas; rever cada objetivo que hoje detecta peça mas cujo título sugere ação |
 | Overgeared: 25 quests | FL01; preservar ramos e IDs, qualidade Perfect opcional; adaptar nível editorial sem invalidar progresso |
 | Immersive Melodies: 11 quests | CC03; manter independência e identidades; novos projetos não substituem as folhas |
@@ -348,15 +352,15 @@ Não gerar IDs finais agora. Na implementação, novos IDs devem ser hexadecimai
 
 ## 12. Plano incremental de execução
 
-O plano é executável em **19 fases, F00–F18**, com entregas menores, gates locais, testes e fichas de passagem. A numeração é prioridade de trabalho, não ordem obrigatória para o jogador.
+O plano original previa **19 fases, F00–F18**. O livro gerado entregou o conteúdo de F03–F17 de uma só vez, sem passar pelos gates de cada fase; os testes em jogo e o aceite integrado (F18) continuam pendentes. Plano original, com entregas menores, gates locais, testes e fichas de passagem. A numeração é prioridade de trabalho, não ordem obrigatória para o jogador.
 
-[Índice completo, estados e protocolo de execução](fases/README.md). Todas as fases começam **não iniciadas**; esta edição só separa documentos.
+[Índice completo, estados e protocolo de execução](fases/README.md). O índice registra o estado atual de cada fase; a execução da F00 é documental e não inicia automaticamente F01 ou implementação de capítulos.
 
 | Fase | Entrega | Capítulos |
 | --- | --- | --- |
 | [F00](fases/00-contratos-e-preparacao.md) | Contratos e preparação | Preparação |
 | [F01](fases/01-fundacao-e-legado.md) | Fundação e legado | PD01, FL01 |
-| [F02](fases/02-inventario-e-melhorias.md) | Inventário e melhorias | PD02, PD03 |
+| [F02](fases/02-inventario-e-melhorias.md) | Inventário e melhorias | PD02; PD03 cancelado pelo usuário |
 | [F03](fases/03-tips-and-tricks.md) | Tips & Tricks | PD04 |
 | [F04](fases/04-fazenda-e-cozinha.md) | Fazenda e cozinha | VC01, VC02 |
 | [F05](fases/05-sabores-artesanais.md) | Sabores artesanais | VC03, VC04, VC05 |
@@ -379,7 +383,7 @@ F00 e o checkpoint estrutural F01.1 dão a base comum. Depois disso, as frentes 
 
 - Todos os 49 mods têm um papel claro; mods pequenos não recebem tutoriais artificiais.
 - Fazenda, casa, música e companhia têm marcos relevantes mesmo sem chefes.
-- Toda quest que promete ação funcional realmente a detecta ou declara autodeclaração.
+- Toda quest que promete ação funcional realmente a detecta; sem detector, a sugestão fica somente em texto, sem checkmark de gameplay.
 - Cada prato/vinho elegível é registrável independentemente; não há entrega consumível do álbum completo.
 - Catálogos cosméticos não bloqueiam funcionalidades nem poluem a primeira tela de aprendizado.
 - Ninguém precisa repetir objetivos já concluídos apenas porque uma quest foi movida.
@@ -400,6 +404,69 @@ Este é um projeto editorial apoiado em inspeção estática, não um relatório
 - Final de jornada: `endrem_forge-5.3.3-R-1.20.1.jar`, `tru.e-ending-v1.1.0c.jar`, `endercon-1.0.2 [Forge-Neoforge].jar`; considerar a configuração local, não versões novas das páginas públicas.
 
 A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo instalado, não para um arquivo extraído que este plano exige criar. Wikia/documentação recente serve de contexto: se divergir do JAR, configuração ou receita carregada, a versão do pack prevalece. As fontes públicas citadas abaixo foram consultadas por resultados de pesquisa; detalhes numéricos de duração, idade ou balanceamento não foram importados como regra do Lilyvale.
+
+## 14. Livro gerado (2026-11-13)
+
+### Como regenerar
+
+- Fonte: `tools/quest-book/`. `core.py` escreve SNBT e lê itens, avanços, biomas, estruturas, entidades e dimensões dos JARs; `chapters_a.py` (PD04, VC), `chapters_b.py` (EF, MF, AH, FL02) e `chapters_c.py` (CC, LR, JE) têm o conteúdo; `gen.py` monta e valida; `verify.py` faz o parse estrutural.
+- Da raiz: `python tools/quest-book/gen.py` e depois `python tools/quest-book/verify.py`. Edite o conteúdo nos scripts, não nos SNBT gerados.
+- Mantidos à mão: `inicio`, `primeiros_passos`, `mochila_e_organizacao` e `overgeared`. Nos capítulos gerados, blocos com IDs legados (fora de `7A`) — o Create e os instrumentos — são relidos dos arquivos atuais e copiados sem alteração; só as quests `7A` são reescritas. Editar no jogo uma quest `7A` e depois rodar `gen.py` desfaz a edição.
+- IDs novos: `7A` + capítulo (2 hex) + tipo (0 capítulo, 1 quest, 2 task, 3 recompensa) + sequência. A sequência segue a ordem do script: **inserir ou remover uma quest no meio renumera as seguintes e apaga o progresso delas**. Acrescente no fim. Uma remoção já ocorreu em VC02.
+- Tags de apoio em `kubejs/data/lilyvale/tags/`: famílias de bioma do Regions Unexplored, uma peça de cada liga do Advanced Netherite e os 16 olhos do End Remastered.
+- Um `&` literal seguido de espaço precisa de `\&` no SNBT; `esc()` faz isso.
+
+### Capítulos e arquivos
+
+| Capítulo | Arquivo | Quests |
+| --- | --- | --- |
+| Início | `inicio.snbt` | 4 |
+| PD01 Primeiros Passos | `primeiros_passos.snbt` | 9 |
+| PD02 Mochila e Organização | `mochila_e_organizacao.snbt` | 7 |
+| PD04 Tips & Tricks | `tips_and_tricks.snbt` | 8 |
+| VC01 Caderno de Receitas | `caderno_de_receitas.snbt` | 85 |
+| VC02 Rotina da Fazenda | `rotina_da_fazenda.snbt` | 39 |
+| VC03 Sabores do Prado | `sabores_do_prado.snbt` | 21 |
+| VC04 Vinhedos e Adegas | `vinhedos_e_adegas.snbt` | 41 |
+| VC05 Pães e Confeitaria | `paes_e_confeitaria.snbt` | 48 |
+| VC06 À Beira d'Água | `a_beira_dagua.snbt` | 13 |
+| EF01 Oficina de Engenhos | `create_mod.snbt` | 24 |
+| EF02 Logística em Movimento | `logistica_em_movimento.snbt` | 8 |
+| EF03 Estações e Ferrovias | `estacoes_e_ferrovias.snbt` | 15 |
+| MF01 Atlas de Descobertas | `atlas_de_descobertas.snbt` | 11 |
+| MF02 Memórias Sob a Terra | `memorias_sob_a_terra.snbt` | 15 |
+| MF03 Caminhos que Conectam | `caminhos_que_conectam.snbt` | 5 |
+| AH01 Entre as Nuvens | `entre_as_nuvens.snbt` | 18 |
+| AH02 Ecos das Profundezas | `ecos_das_profundezas.snbt` | 11 |
+| AH03 Diário de Bordo | `diario_de_bordo.snbt` | 21 |
+| FL01 Fogo, Martelo e Aço | `overgeared.snbt` | 25 |
+| FL02 Além da Netherita | `alem_da_netherita.snbt` | 9 |
+| CC01 Pequenos e Grandes Companheiros | `pequenos_e_grandes_companheiros.snbt` | 36 |
+| CC02 Vida no Estábulo | `vida_no_estabulo.snbt` | 26 |
+| CC03 Música para Lilyvale | `immersive_melodies.snbt` | 12 |
+| LR01 Da Planta à Fachada | `da_planta_a_fachada.snbt` | 7 |
+| LR02 Um Lar com Vida | `um_lar_com_vida.snbt` | 10 |
+| LR03 Prateleira de Abraços | `prateleira_de_abracos.snbt` | 48 |
+| JE01 Olhos do Mundo | `olhos_do_mundo.snbt` | 18 |
+| JE02 O Último Voo | `o_ultimo_voo.snbt` | 5 |
+| JE03 Ilhas do Vazio | `ilhas_do_vazio.snbt` | 8 |
+
+### Decisões que diferem ou completam o plano
+
+- **Detectores:** além de item, os marcos usam avanços nativos dos mods (critérios inspecionados no JAR), `dimension`, `biome` (inclusive tag `#lilyvale:...`), `structure` e `observation` de entidade (`observe_type: 5`). Encontros com animais são observação, nunca caça ou ovo.
+- **Create:** dividido em EF01–EF03 movendo blocos inteiros; os 35 payloads ficaram idênticos e só `x`/`y` mudaram. EF02 e EF03 ganharam quests novas de Contraption Terminals, Steam 'n' Rails e Railways Navigator. A revisão de títulos que prometem ação continua pendente.
+- **Instrumentos:** as 11 folhas ganharam identidade C e `optional`, com IDs e os 50 XP legados mantidos, e um cartão A de orientação.
+- **Catálogos:** VC01 tem 72 folhas curadas (36 de Farmer's Delight e 36 dos addons), sem cobrir todo prato. Pelúcias usam as tags do próprio mod: as de vila na galeria principal, as de tesouro e raras num canto separado.
+- **Checks:** fora do Início, só o cartão de Carry On, sem recompensa, por não haver item a detectar.
+- **Farm & Charm:** carroça de mantimentos e arado perderam a receita e foram ocultados do EMI em `kubejs/server_scripts/farm_carts.js`, porque não funcionam com os cavalos do Icy's; as quests deles saíram de VC02.
+- **Arqueologia:** o artefato identificado não está no registro de modelos; o marco pede a mesa e um artefato não identificado, e o texto diz que a identificação não é detectada.
+
+### Pendências antes do aceite
+
+- Teste em jogo de todos os capítulos novos, em mundo novo e em cópia com progresso, incluindo equipe (EQ-01/EQ-02).
+- Confirmar no jogo: task `biome` com tag, observação de entidade, título com `\&` e ocultação da carroça no EMI.
+- Integração Advanced Netherite × Overgeared; fonte de survival das pelúcias; quantidade real de olhos pedida pelo portal.
+- Linhas diagonais legadas em Overgeared e Mochila (8 avisos do validador).
 
 ## Sources
 

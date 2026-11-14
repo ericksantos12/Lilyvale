@@ -1,0 +1,301 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "alem_da_netherita"
+	group: "6E00000000000002"
+	icon: "advancednetherite:netherite_diamond_ingot"
+	id: "7A10000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"O Advanced Netherite continua de onde a forja para: quatro ligas que somam ferro, ouro, esmeralda e diamante à netherita."
+				"Cada liga parte da anterior, na bancada comum. Equipamentos sobem de nível na mesa de ferraria, com molde de melhoria de netherita. Confira no EMI a receita válida neste pack antes de gastar um lingote."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:netherite_ingot"
+			id: "7A10100000000001"
+			rewards: [{
+				id: "7A10300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000001"
+				item: "minecraft:netherite_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6Ponto de partida"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A10100000000001"]
+			description: [
+				"Quatro lingotes de ferro reforçam a netherita. É a liga mais barata e a porta de entrada das outras."
+				"O marco registra um lingote da liga. Você não precisa refazer todo o equipamento a cada nível."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_iron_ingot"
+			id: "7A10100000000002"
+			rewards: [{
+				id: "7A10300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000002"
+				item: "advancednetherite:netherite_iron_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lNetherita com ferro"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A10100000000002"]
+			description: [
+				"Escolha uma única peça para melhorar: a picareta de sempre, a espada preferida ou as botas de estimação."
+				"Qualquer ferramenta ou peça de armadura desta liga conta. O conjunto completo não é pedido em lugar nenhum."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_iron_pickaxe"
+			id: "7A10100000000003"
+			optional: true
+			rewards: [{
+				id: "7A10300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000003"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "lilyvale:advanced_netherite_iron_gear"
+					}
+				}
+				title: "Obtenha uma ferramenta ou peça de armadura desta liga"
+				type: "item"
+			}]
+			title: "&dUma peça à sua escolha"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A10100000000002"]
+			description: [
+				"A liga de ouro parte da de ferro. Piglins respeitam quem a veste, como respeitam o ouro."
+				"O marco registra um lingote da liga. Você não precisa refazer todo o equipamento a cada nível."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_gold_ingot"
+			id: "7A10100000000004"
+			rewards: [{
+				id: "7A10300000000004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000004"
+				item: "advancednetherite:netherite_gold_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lNetherita com ouro"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A10100000000004"]
+			description: [
+				"Escolha uma única peça para melhorar: a picareta de sempre, a espada preferida ou as botas de estimação."
+				"Qualquer ferramenta ou peça de armadura desta liga conta. O conjunto completo não é pedido em lugar nenhum."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_gold_pickaxe"
+			id: "7A10100000000005"
+			optional: true
+			rewards: [{
+				id: "7A10300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000005"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "lilyvale:advanced_netherite_gold_gear"
+					}
+				}
+				title: "Obtenha uma ferramenta ou peça de armadura desta liga"
+				type: "item"
+			}]
+			title: "&dUma peça à sua escolha"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A10100000000004"]
+			description: [
+				"A liga de esmeralda parte da de ouro. Dizem que aldeões olham com outros olhos para quem a carrega."
+				"O marco registra um lingote da liga. Você não precisa refazer todo o equipamento a cada nível."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_emerald_ingot"
+			id: "7A10100000000006"
+			rewards: [{
+				id: "7A10300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000006"
+				item: "advancednetherite:netherite_emerald_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lNetherita com esmeralda"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A10100000000006"]
+			description: [
+				"Escolha uma única peça para melhorar: a picareta de sempre, a espada preferida ou as botas de estimação."
+				"Qualquer ferramenta ou peça de armadura desta liga conta. O conjunto completo não é pedido em lugar nenhum."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_emerald_pickaxe"
+			id: "7A10100000000007"
+			optional: true
+			rewards: [{
+				id: "7A10300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000007"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "lilyvale:advanced_netherite_emerald_gear"
+					}
+				}
+				title: "Obtenha uma ferramenta ou peça de armadura desta liga"
+				type: "item"
+			}]
+			title: "&dUma peça à sua escolha"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A10100000000006"]
+			description: [
+				"A liga de diamante é o topo: parte da de esmeralda e fecha a linha de melhorias."
+				"O marco registra um lingote da liga. Você não precisa refazer todo o equipamento a cada nível."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_diamond_ingot"
+			id: "7A10100000000008"
+			rewards: [{
+				id: "7A10300000000008"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000008"
+				item: "advancednetherite:netherite_diamond_ingot"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lNetherita com diamante"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A10100000000008"]
+			description: [
+				"Escolha uma única peça para melhorar: a picareta de sempre, a espada preferida ou as botas de estimação."
+				"Qualquer ferramenta ou peça de armadura desta liga conta. O conjunto completo não é pedido em lugar nenhum."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "advancednetherite:netherite_diamond_pickaxe"
+			id: "7A10100000000009"
+			optional: true
+			rewards: [{
+				id: "7A10300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A10200000000009"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "lilyvale:advanced_netherite_diamond_gear"
+					}
+				}
+				title: "Obtenha uma ferramenta ou peça de armadura desta liga"
+				type: "item"
+			}]
+			title: "&dUma peça à sua escolha"
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+	title: "&6&lAlém da Netherita"
+}

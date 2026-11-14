@@ -1,0 +1,495 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "estacoes_e_ferrovias"
+	group: "6F00000000000001"
+	icon: "create:track_station"
+	id: "7A09000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6C11000000000005"]
+			description: ["A receita local usa 1 chapa de ouro + 1 deepslate e entrega 2 railway casings. Ela substitui a receita padrão; consulte o EMI."]
+			icon: "create:railway_casing"
+			id: "6C1100000000001C"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000036"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C13000000000037"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "6C1400000000001C"
+				item: "create:railway_casing"
+				title: "Obtenha 2 revestimentos ferroviários"
+				type: "item"
+			}]
+			title: "&eRevestimento ferroviário"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C1100000000001C"
+				"6C11000000000013"
+			]
+			description: ["Use deployers na montagem dos trilhos e coloque uma estação junto à linha. O EMI mostra a sequência; o Ponder mostra curvas e conexões."]
+			icon: "create:track_station"
+			id: "6C1100000000001D"
+			rewards: [
+				{
+					count: 16
+					id: "6C13000000000038"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6C13000000000039"
+					item: "create:white_seat"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C1200000000002F"
+					item: "create:track"
+					title: "Obtenha trilhos do Create"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000030"
+					item: "create:track_station"
+					title: "Obtenha uma estação ferroviária"
+					type: "item"
+				}
+			]
+			title: "&eTrilhos e estação"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C1100000000001D"]
+			description: ["Obtenha controles de trem. Com os assentos da recompensa anterior, monte vagões sobre os trilhos e conclua a montagem na estação. O Ponder mostra como preparar a viagem."]
+			icon: "create:controls"
+			id: "6C1100000000001E"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				consume_items: false
+				id: "6C12000000000031"
+				item: "create:controls"
+				title: "Obtenha controles de trem"
+				type: "item"
+			}]
+			title: "&e&lTodos a bordo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C1100000000001E"
+				"6C11000000000018"
+			]
+			description: ["Obtenha um sinal ferroviário, um schedule e um display board. Depois, use-os para sinalizar a linha, instruir o condutor e mostrar chegadas. O Ponder ajuda a não transformar a linha em engarrafamento."]
+			icon: "create:track_signal"
+			id: "6C1100000000001F"
+			rewards: [
+				{
+					count: 16
+					id: "6C1300000000003D"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1300000000003E"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "6C12000000000032"
+					item: "create:track_signal"
+					title: "Obtenha um sinal ferroviário"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000033"
+					item: "create:schedule"
+					title: "Obtenha um horário de trem"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C12000000000034"
+					item: "create:display_board"
+					title: "Obtenha um painel de exibição"
+					type: "item"
+				}
+			]
+			title: "&eRede ferroviária"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O Steam 'n' Rails acrescenta o quepe de maquinista. Vista você mesmo ou coloque em um Blaze Burner para ele conduzir o trem."
+				"Qualquer cor conta. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:white_conductor_cap"
+			id: "7A09100000000001"
+			rewards: [{
+				id: "7A09300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000001"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "railways:conductor_caps"
+					}
+				}
+				title: "Obtenha um quepe de maquinista de qualquer cor"
+				type: "item"
+			}]
+			title: "&eQuepe de maquinista"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C1100000000001D"]
+			description: [
+				"A agulha escolhe para qual ramo o trem segue em uma bifurcação, à mão ou por redstone. Pátios e desvios ficam muito mais simples."
+				"A tarefa registra posse, sem consumir: troca e presente também valem. O Ponder mostra o posicionamento."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:track_switch_andesite"
+			id: "7A09100000000002"
+			rewards: [{
+				id: "7A09300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000002"
+				item: "railways:track_switch_andesite"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&eAgulha de desvio"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C1100000000001E"]
+			description: [
+				"O acoplador de trilho engata e solta vagões na estação. Dá para deixar vagões carregando enquanto a locomotiva segue viagem."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:track_coupler"
+			id: "7A09100000000003"
+			rewards: [{
+				id: "7A09300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000003"
+				item: "railways:track_coupler"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&eEngate e desengate"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C1100000000001F"]
+			description: [
+				"O semáforo de braço mostra o estado do sinal ferroviário mais próximo de um jeito que se vê de longe. Monte-o em um poste ao lado do sinal."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:semaphore"
+			id: "7A09100000000004"
+			rewards: [{
+				id: "7A09300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000004"
+				item: "railways:semaphore"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&eBraço levantado"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"A draisina anda no braço, sem combustível nem horário. Ótima para inspecionar a linha ou para uma ferrovia bem pequena."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:handcar"
+			id: "7A09100000000005"
+			optional: true
+			rewards: [{
+				id: "7A09300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000005"
+				item: "railways:handcar"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dNo muque"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Chaminés dão cara de locomotiva à locomotiva. Há vários modelos e acabamentos; esta página pede a de carvão como exemplo."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:smokestack_coalburner"
+			id: "7A09100000000006"
+			optional: true
+			rewards: [{
+				id: "7A09300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A09200000000006"
+				item: "railways:smokestack_coalburner"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dFumaça com estilo"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O tanque de combustível alimenta os queimadores do trem com líquidos, e a interface portátil reabastece na estação sem desmontar nada."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:fuel_tank"
+			id: "7A09100000000007"
+			optional: true
+			rewards: [{
+				id: "7A09300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A09200000000007"
+				item: "railways:fuel_tank"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A09200000000008"
+				item: "railways:portable_fuel_interface"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dTanque cheio"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O apito chama o trem conduzido por um maquinista até você, e a lente remota mostra o que ele vê."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "railways:conductor_whistle"
+			id: "7A09100000000008"
+			optional: true
+			rewards: [{
+				id: "7A09300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A09200000000009"
+				item: "railways:conductor_whistle"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A0920000000000A"
+				item: "railways:remote_lens"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dApito na curva"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O navegador do Create Railways Navigator calcula rotas pela rede: de qual estação sair, onde baldear e quanto falta."
+				"Ele precisa de trens com horários configurados para ter o que consultar. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "createrailwaysnavigator:navigator"
+			id: "7A09100000000009"
+			rewards: [{
+				id: "7A09300000000009"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "createrailwaysnavigator:navigator"
+				criterion: ""
+				id: "7A0920000000000B"
+				title: "Obtenha um navegador"
+				type: "advancement"
+			}]
+			title: "&eItinerário na mão"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A09100000000009"]
+			description: [
+				"Painéis avançados mostram partidas, destinos e avisos nas plataformas e dentro dos vagões."
+				"Qualquer formato de painel conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "createrailwaysnavigator:advanced_display"
+			id: "7A0910000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0930000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "createrailwaysnavigator:advanced_display"
+				criterion: ""
+				id: "7A0920000000000C"
+				title: "Obtenha um painel avançado de qualquer formato"
+				type: "advancement"
+			}]
+			title: "&dPainel de plataforma"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Nenhuma estação está pronta sem um relógio. Atrasos continuam sendo responsabilidade do maquinista."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "createrailwaysnavigator:train_station_clock"
+			id: "7A0910000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0930000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0920000000000D"
+				item: "createrailwaysnavigator:train_station_clock"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dHora certa"
+			x: 4.0d
+			y: 6.0d
+		}
+	]
+	title: "&b&lEstações e Ferrovias"
+}

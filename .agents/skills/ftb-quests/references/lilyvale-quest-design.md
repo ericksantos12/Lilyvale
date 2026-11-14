@@ -6,7 +6,7 @@ Organize o livro por experiências do jogador, não por uma sequência obrigató
 
 ## Categorias e fronteiras
 
-Preserve os nomes solicitados e esta ordem em `chapter_groups.snbt`:
+O plano versionado e os contratos da F00 prevalecem sobre a organização histórica. Preserve os IDs existentes e esta ordem em `chapter_groups.snbt`; a F01 acrescenta a nona categoria sem antecipar seus capítulos:
 
 | Categoria | ID | Conteúdo e fronteira |
 | --- | --- | --- |
@@ -18,6 +18,7 @@ Preserve os nomes solicitados e esta ordem em `chapter_groups.snbt`:
 | Forja e legado | `6E00000000000002` | Overgeared, metalurgia, equipamentos e feitos de combate. Marcos de expedição permanecem na categoria da expedição para evitar duplicação. |
 | Companheiros e coleções | `4DFBF6E45E6929B8` | Pets, instrumentos, pelúcias, artefatos e outras coleções; animais de produção pertencem principalmente a Vida no campo. |
 | Criando seu Lar | `1DA3993DEE28D0C0` | Construção, decoração, conforto e organização da casa/depósito. |
+| A Jornada até o End | `6E00000000000003` | Olhos do Mundo, O Último Voo e Ilhas do Vazio nas fases responsáveis; não é chave de desbloqueio para fazenda/casa. |
 
 Economia é transversal: trate vendas e produção na trilha correspondente, sem recriar uma categoria separada. Um mod pode aparecer em mais de um tema quando as atividades forem distintas; evite duplicar a mesma task de obtenção.
 
@@ -35,7 +36,7 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 
 - Reconheça um resultado significativo dentro da trilha: produção automatizada, uma viagem, a Lua, uma masmorra do Aether ou o Ender Dragon.
 - Os exemplos são propostas de conteúdo, não quests já implementadas ou prova de compatibilidade. Confirme mods, receitas e gatilhos antes de criar.
-- Não aceite um bloco de máquina no inventário como prova de fábrica funcional. Verifique ações por mecanismos realmente disponíveis; se só houver autodeclaração, sinalize claramente e não a disfarce de detecção automática.
+- Não aceite um bloco de máquina no inventário como prova de fábrica funcional. Verifique ações por mecanismos realmente disponíveis; sem detector real, mantenha orientação em texto, sem task de checkmark de gameplay.
 - Dê à fazenda, à casa e às ferrovias marcos próprios; não apresente chefes como única forma de progredir.
 
 ### Desafio ou coleção opcional
@@ -46,7 +47,7 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 
 ## Dependências e recompensas
 
-- Crie dependências somente quando representarem pré-requisitos reais da atividade na mesma trilha; não ligue categorias apenas para impor uma ordem editorial.
+- Priorize pré-requisitos reais na mesma trilha. A pedido do usuário, aceite também ordem didática de uso dentro do mesmo sistema, documentando que não representa ingredientes da receita; preserve alternativas e não conecte sistemas/categorias independentes.
 - Permita descobertas e consulta antes de completar objetivos sempre que o formato instalado oferecer isso. Não mude globalmente `progression_mode` sem avaliar as consequências para todas as trilhas.
 - Recompense o estilo de jogo escolhido. Não esconda mochila básica, armazenamento ou decoração atrás de chefes ou exploração espacial por decisões do livro.
 - As receitas do pack podem ter exigências próprias. Não afirme independência mecânica total apenas porque removeu dependências das quests; confira receitas antes de fazer essa promessa.
@@ -55,12 +56,18 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 ## Aplicação aos capítulos existentes
 
 - Primeiros Passos permanece em Primeiros Dias.
-- Create Mod permanece no grupo renomeado para engenhos e ferrovias.
+- Create está dividido em Oficina de Engenhos, Logística em Movimento e Estações e Ferrovias, em Engenhos e Ferrovias.
 - Overgeared passa para Forja e legado.
-- Immersive Melodies permanece no grupo renomeado para Companheiros e coleções.
-- Armazenamento passa para Criando seu Lar. Preserve por enquanto o catálogo, recompensas e layout compacto. Numa revisão de conteúdo, diferencie o aprendizado inicial da mochila/depósito e a consulta ou coleção de upgrades; não exija os 210 objetivos como progressão principal.
-- As demais categorias são espaços para expansão; registrar uma categoria não implementa seu conteúdo nem garante que grupos vazios sejam visíveis na interface.
+- Immersive Melodies virou Música para Lilyvale, em Companheiros e coleções, com as 11 folhas como C.
+- Na revisão F02, somente `mochila_e_organizacao.snbt` permanece, com sete aquisições e três ramais compactos: mochila → coleta; baú ou barril → aplicador; conector Tom’s → terminal. Caderno de Melhorias e seus 203 objetivos foram retirados explicitamente pelo usuário, assim como os quatro checks de gameplay. Consulte `docs/quests/fases/registros/f02-simplificacao.md` antes de restaurar qualquer material histórico.
+- As nove categorias têm capítulos (30 no total, gerados por `tools/quest-book/gen.py`); veja `docs/quests/planejamento.md`, seção 14. O conteúdo gerado passou só na validação estática.
 - A reorganização de categorias não classifica automaticamente cada quest nos três tipos. Faça a revisão editorial por capítulo, preservando progresso e validando os gatilhos propostos.
+- A F01 classifica PD01 e FL01; Overgeared conserva o arquivo e os IDs, com título Fogo, Martelo e Aço. A revisão F02 mantém somente PD02. Os capítulos gerados já trazem subtítulo, forma e recompensa A/M/C; o Create dividido ainda não teve os títulos revisados. Consulte os registros de cada fase para o estado de validação; não deduza conclusão de gameplay a partir da classificação.
+
+## Checks e capítulos informativos
+
+- Checkmarks são permitidos somente para informação/leitura, como os quatro cartões de Início. Não implemente propostas antigas P/autodeclaradas para gameplay; use detector real ou deixe a sugestão na descrição.
+- Ao retirar conteúdo por solicitação do usuário, capture snapshot e registre IDs removidos. Preserve os payloads dos objetivos mantidos, sem prometer retenção do progresso dos descartados após um reload.
 
 ## Critérios de revisão
 

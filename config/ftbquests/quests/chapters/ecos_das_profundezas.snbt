@@ -1,0 +1,331 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "ecos_das_profundezas"
+	group: "6E00000000000001"
+	icon: "minecraft:sculk_shrieker"
+	id: "7A0E000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"As cidades antigas dormem no fundo do Deep Dark. Ande agachado, leve lã para abafar os passos e não acorde quem está dormindo."
+				"A tarefa detecta a chegada à estrutura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:sculk"
+			id: "7A0E100000000001"
+			rewards: [{
+				id: "7A0E300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_city"
+				criterion: ""
+				id: "7A0E200000000001"
+				title: "Encontre uma cidade antiga"
+				type: "advancement"
+			}]
+			title: "&5Cidade sem voz"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0E100000000001"]
+			description: [
+				"No Deeper and Darker, o Warden guarda a chave do Otherside. É um combate para preparar com calma, de longe e, se possível, em grupo."
+				"O marco usa o avanço do mod: quem já venceu não precisa repetir."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:warden_carapace"
+			id: "7A0E100000000002"
+			rewards: [{
+				id: "7A0E300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "deeperdarker:main/kill_warden"
+				criterion: ""
+				id: "7A0E200000000002"
+				title: "Derrote um Warden"
+				type: "advancement"
+			}]
+			title: "&6&lO guardião cai"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0E100000000002"]
+			description: [
+				"O Warden derrotado deixa o Coração das Profundezas. Use-o na grande moldura da cidade antiga para abrir o portal."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:heart_of_the_deep"
+			id: "7A0E100000000003"
+			rewards: [{
+				id: "7A0E300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0E200000000003"
+				item: "deeperdarker:heart_of_the_deep"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&5Coração das profundezas"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0E100000000003"]
+			description: [
+				"O Otherside é um mundo inteiro de sculk: florestas de eco, cavernas floridas e criaturas que ouvem tudo."
+				"O marco detecta a chegada à dimensão. Nenhuma outra trilha do livro passa por aqui."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:echo_log"
+			id: "7A0E100000000004"
+			rewards: [{
+				id: "7A0E300000000004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "7A0E200000000004"
+				title: "Entre no Otherside"
+				type: "dimension"
+			}]
+			title: "&6&lDo outro lado"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Fragmentos de eco e carapaça de Warden formam o fragmento reforçado, base do equipamento das profundezas."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:reinforced_echo_shard"
+			id: "7A0E100000000005"
+			optional: true
+			rewards: [{
+				id: "7A0E300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/obtain_reinforced_echo_shard"
+				criterion: ""
+				id: "7A0E200000000005"
+				title: "Obtenha um fragmento de eco reforçado"
+				type: "advancement"
+			}]
+			title: "&dEco reforçado"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A0E100000000005"]
+			description: [
+				"O transmissor abre um recipiente ligado a ele de qualquer distância. Um baú de casa sempre ao alcance."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:sculk_transmitter"
+			id: "7A0E100000000006"
+			optional: true
+			rewards: [{
+				id: "7A0E300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/obtain_sculk_transmitter"
+				criterion: ""
+				id: "7A0E200000000006"
+				title: "Obtenha um transmissor de sculk"
+				type: "advancement"
+			}]
+			title: "&dTransmissor de sculk"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Floresta de eco, terras profundas, cavernas floridas e colunas nubladas. Cada bioma tem seus recursos e seus sustos."
+				"Usa o avanço do mod, que registra cada bioma visitado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:bloom_berries"
+			id: "7A0E100000000007"
+			optional: true
+			rewards: [{
+				id: "7A0E300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/explore_otherside"
+				criterion: ""
+				id: "7A0E200000000007"
+				title: "Visite os biomas do Otherside"
+				type: "advancement"
+			}]
+			title: "&dQuatro paisagens de eco"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Templos antigos do Otherside guardam o melhor saque da dimensão e bastante companhia indesejada."
+				"A tarefa detecta a chegada à estrutura; saqueá-la é escolha sua."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:sculk_stone"
+			id: "7A0E100000000008"
+			optional: true
+			rewards: [{
+				id: "7A0E300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_temple"
+				criterion: ""
+				id: "7A0E200000000008"
+				title: "Encontre um templo antigo"
+				type: "advancement"
+			}]
+			title: "&dTemplo antigo"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O cajado sonoro devolve ao mundo o grito do Warden. Use com respeito."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:sonorous_staff"
+			id: "7A0E100000000009"
+			optional: true
+			rewards: [{
+				id: "7A0E300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/obtain_sonorous_staff"
+				criterion: ""
+				id: "7A0E200000000009"
+				title: "Obtenha um cajado sonoro"
+				type: "advancement"
+			}]
+			title: "&dCajado sonoro"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A armadura de Warden é uma melhoria da netherita feita com fragmentos reforçados."
+				"O avanço pede o conjunto completo no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:warden_chestplate"
+			id: "7A0E10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0E30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "deeperdarker:main/warden_armor"
+				criterion: ""
+				id: "7A0E20000000000A"
+				title: "Tenha a armadura de Warden completa"
+				type: "advancement"
+			}]
+			title: "&dCarapaça vestida"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"A élitra de alma ganha impulso sozinha em pleno voo. Para quem já voa e quer voar melhor."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "deeperdarker:soul_elytra"
+			id: "7A0E10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0E30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0E20000000000B"
+				item: "deeperdarker:soul_elytra"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dAsas de alma"
+			x: 12.0d
+			y: 4.0d
+		}
+	]
+	title: "&5&lEcos das Profundezas"
+}

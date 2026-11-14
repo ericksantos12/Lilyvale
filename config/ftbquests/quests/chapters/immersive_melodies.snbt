@@ -5,10 +5,15 @@
 	group: "4DFBF6E45E6929B8"
 	icon: "immersive_melodies:lute"
 	id: "6D10000000000001"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Dois gravetos e um osso já dão outro som à mochila. Obtenha uma flauta; a receita está no EMI."]
 			icon: "immersive_melodies:flute"
 			id: "6D11000000000001"
@@ -27,9 +32,14 @@
 			}]
 			title: "&dFlauta"
 			x: 0.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Tábuas, linha e um graveto podem virar o começo de uma serenata. Obtenha um alaúde e consulte a montagem no EMI."]
 			icon: "immersive_melodies:lute"
 			id: "6D11000000000002"
@@ -48,9 +58,14 @@
 			}]
 			title: "&dAlaúde"
 			x: 2.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["A coleção de cordas merece uma vielle. Separe troncos, linha e um graveto; o EMI mostra como transformar a madeira em música."]
 			icon: "immersive_melodies:vielle"
 			id: "6D11000000000003"
@@ -69,9 +84,14 @@
 			}]
 			title: "&dVielle"
 			x: 4.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Um som grave para acompanhar a paisagem. Obtenha um didgeridoo; a receita com tábuas e lápis-lazúli está no EMI."]
 			icon: "immersive_melodies:didgeridoo"
 			id: "6D11000000000004"
@@ -90,9 +110,14 @@
 			}]
 			title: "&dDidgeridoo"
 			x: 6.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Pequeno no nome, pronto para marcar o ritmo. Obtenha um tambor minúsculo; confira a receita de couro, linha e tronco no EMI."]
 			icon: "immersive_melodies:tiny_drum"
 			id: "6D11000000000005"
@@ -111,9 +136,14 @@
 			}]
 			title: "&dTambor minúsculo"
 			x: 0.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Um pouco de cobre e um toque na hora certa. Obtenha um triângulo; o EMI mostra a montagem deste instrumento de percussão."]
 			icon: "immersive_melodies:triangle"
 			id: "6D11000000000006"
@@ -132,9 +162,14 @@
 			}]
 			title: "&dTriângulo"
 			x: 2.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["A vila está pronta para ouvir sua chegada. Obtenha um trompete; consulte no EMI a receita que combina cobre e ferro."]
 			icon: "immersive_melodies:trumpet"
 			id: "6D11000000000007"
@@ -153,9 +188,14 @@
 			}]
 			title: "&dTrompete"
 			x: 4.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["O cobre encontrou um ritmo tranquilo. Obtenha um handpan; confira no EMI a receita com lingotes e blocos de cobre."]
 			icon: "immersive_melodies:handpan"
 			id: "6D11000000000008"
@@ -174,9 +214,14 @@
 			}]
 			title: "&dHandpan"
 			x: 6.0d
-			y: 2.0d
+			y: 5.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["A coleção ganhou teclas. Obtenha um piano; o EMI mostra como combinar ossos e blocos musicais para preparar o próximo recital."]
 			icon: "immersive_melodies:piano"
 			id: "6D11000000000009"
@@ -195,9 +240,14 @@
 			}]
 			title: "&dPiano"
 			x: 0.0d
-			y: 4.0d
+			y: 7.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Três flautas e couro se juntam para formar uma gaita de foles. Consulte a disposição no EMI e prepare o fôlego para a apresentação."]
 			icon: "immersive_melodies:bagpipe"
 			id: "6D1100000000000A"
@@ -216,9 +266,14 @@
 			}]
 			title: "&dGaita de foles"
 			x: 2.0d
-			y: 4.0d
+			y: 7.0d
 		}
 		{
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			optional: true
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			description: ["Graves de outro mundo para fechar a banda. Obtenha um Ender Bass; a receita com blocos musicais e pérola do Ender está no EMI."]
 			icon: "immersive_melodies:ender_bass"
 			id: "6D1100000000000B"
@@ -237,8 +292,42 @@
 			}]
 			title: "&dEnder Bass"
 			x: 4.0d
-			y: 4.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"Com um instrumento na mão, clique com o botão direito para abrir a lista de melodias. Você pode tocar as que vêm com o mod ou importar arquivos MIDI."
+				"Quem estiver por perto ouve: dá para montar banda, serenata e festa de colheita. Qualquer instrumento conta; a coleção abaixo é toda opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:note_block"
+			id: "7A13100000000001"
+			rewards: [{
+				id: "7A13300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A13200000000001"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "immersive_melodies:instruments"
+					}
+				}
+				title: "Obtenha um instrumento qualquer"
+				type: "item"
+			}]
+			title: "&dPrimeira nota"
+			x: 3.0d
+			y: 0.0d
 		}
 	]
-	title: "&d&lImmersive Melodies"
+	title: "&d&lMúsica para Lilyvale"
 }

@@ -1,0 +1,785 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vida_no_estabulo"
+	group: "4DFBF6E45E6929B8"
+	icon: "minecraft:saddle"
+	id: "7A12000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"No Icy's Better Horses, cavalos têm raça, temperamento e vínculo com o dono. Dome um, dê um nome e cuide: ele retribui."
+				"A tarefa usa o avanço do mod, concedido quando o cavalo passa a ser seu."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:lead"
+			id: "7A12100000000001"
+			rewards: [{
+				id: "7A12300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "icys-better-horses:hold_your_horses"
+				criterion: ""
+				id: "7A12200000000001"
+				title: "Torne-se dono de um cavalo"
+				type: "advancement"
+			}]
+			title: "&dUm cavalo para chamar de seu"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A12100000000001"]
+			description: [
+				"A sela reforçada abre espaços de equipamento no cavalo: ferraduras, kit médico, estabilizador, engate de carroça."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:upgraded_saddle"
+			id: "7A12100000000002"
+			rewards: [{
+				id: "7A12300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "icys-better-horses:all_tacked_up"
+				criterion: ""
+				id: "7A12200000000002"
+				title: "Obtenha uma sela reforçada"
+				type: "advancement"
+			}]
+			title: "&dSela reforçada"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A12100000000002"]
+			description: [
+				"Ferraduras protegem os cascos em viagens longas e o kit médico cuida do cavalo quando o passeio dá errado."
+				"A tarefa pede as duas peças; instalá-las é com você e com a sela reforçada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:horse_hooves_gear"
+			id: "7A12100000000003"
+			rewards: [{
+				id: "7A12300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A12200000000003"
+				item: "icys-better-horses:horse_hooves_gear"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A12200000000004"
+				item: "icys-better-horses:horse_medkit_gear"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dFerraduras"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A12100000000001"]
+			description: [
+				"Todo cavalo precisa de uma baia para chamar de casa. Com a casa definida, ele sabe para onde voltar."
+				"A tarefa detecta a casa definida."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:hay_block"
+			id: "7A12100000000004"
+			rewards: [{
+				id: "7A12300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "icys-better-horses:home_is_where_the_hay_is"
+				criterion: ""
+				id: "7A12200000000005"
+				title: "Defina a casa do seu cavalo"
+				type: "advancement"
+			}]
+			title: "&dOnde mora o feno"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A12100000000004"]
+			description: [
+				"Passeios, cuidado e petiscos constroem o vínculo. No máximo, vocês dois se entendem sem rédea."
+				"O marco usa o avanço do mod. Não há atalho: é convivência."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:golden_carrot"
+			id: "7A12100000000005"
+			rewards: [{
+				id: "7A12300000000005"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "icys-better-horses:ride_or_die"
+				criterion: ""
+				id: "7A12200000000006"
+				title: "Alcance o vínculo máximo com um cavalo"
+				type: "advancement"
+			}]
+			title: "&6&lAmigo para a vida toda"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O manual do próprio mod explica raças, equipamento, vínculo e criação com mais detalhe do que cabe aqui."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:stable_handbook_book"
+			id: "7A12100000000006"
+			rewards: [{
+				id: "7A12300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A12200000000007"
+				item: "icys-better-horses:stable_handbook_book"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dManual do estábulo"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Dois cavalos bem cuidados, um pouco de privacidade e logo há um potro desengonçado no pasto."
+				"A tarefa detecta o nascimento."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:wheat"
+			id: "7A12100000000007"
+			optional: true
+			rewards: [{
+				id: "7A12300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "icys-better-horses:foal_play"
+				criterion: ""
+				id: "7A12200000000008"
+				title: "Tenha um potro nascido no seu estábulo"
+				type: "advancement"
+			}]
+			title: "&dPatas compridas"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A12100000000007"]
+			description: [
+				"Cruzar raças combina características dos pais. Criadores pacientes chegam a cavalos sob medida."
+				"A tarefa detecta o potro mestiço."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:golden_apple"
+			id: "7A12100000000008"
+			optional: true
+			rewards: [{
+				id: "7A12300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "icys-better-horses:best_of_both_worlds"
+				criterion: ""
+				id: "7A12200000000009"
+				title: "Tenha um potro de raças diferentes"
+				type: "advancement"
+			}]
+			title: "&dO melhor dos dois"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Dez cavalos pedem pasto, baias e muito feno. Um haras de verdade."
+				"Usa a contagem do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:oak_fence_gate"
+			id: "7A12100000000009"
+			optional: true
+			rewards: [{
+				id: "7A12300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "icys-better-horses:stable_genius"
+				criterion: ""
+				id: "7A1220000000000A"
+				title: "Seja dono de dez cavalos"
+				type: "advancement"
+			}]
+			title: "&dEstábulo cheio"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"O engate de carroça transforma o cavalo em transporte de carga e de passageiros. Ótimo com as estradas do Via Romana."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:horse_cart_gear"
+			id: "7A1210000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A1220000000000B"
+				item: "icys-better-horses:horse_cart_gear"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 2L
+				id: "7A1220000000000C"
+				item: "icys-better-horses:wheel"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dCarroça atrelada"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Raça, treino e estrada boa: descubra quão rápido seu melhor cavalo consegue ir."
+				"Usa o avanço do mod, que mede a velocidade máxima."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:sugar"
+			id: "7A1210000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "icys-better-horses:built_different"
+				criterion: ""
+				id: "7A1220000000000D"
+				title: "Alcance alta velocidade a cavalo"
+				type: "advancement"
+			}]
+			title: "&dVento na crina"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:icelandic_horse_spawn_egg"
+			id: "7A1210000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1220000000000E"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Islandês"
+				to_observe: "icys-better-horses:icelandic_horse"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:haflinger_horse_spawn_egg"
+			id: "7A1210000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1220000000000F"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Haflinger"
+				to_observe: "icys-better-horses:haflinger_horse"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:morgan_horse_spawn_egg"
+			id: "7A1210000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000010"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Morgan"
+				to_observe: "icys-better-horses:morgan_horse"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:quarter_horse_spawn_egg"
+			id: "7A1210000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1230000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000011"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Quarto de Milha"
+				to_observe: "icys-better-horses:quarter_horse"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:arabian_horse_spawn_egg"
+			id: "7A12100000000010"
+			optional: true
+			rewards: [{
+				id: "7A12300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000012"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Árabe"
+				to_observe: "icys-better-horses:arabian_horse"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:mustang_horse_spawn_egg"
+			id: "7A12100000000011"
+			optional: true
+			rewards: [{
+				id: "7A12300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000013"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Mustangue"
+				to_observe: "icys-better-horses:mustang_horse"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:appaloosa_horse_spawn_egg"
+			id: "7A12100000000012"
+			optional: true
+			rewards: [{
+				id: "7A12300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000014"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Appaloosa"
+				to_observe: "icys-better-horses:appaloosa_horse"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:american_paint_horse_spawn_egg"
+			id: "7A12100000000013"
+			optional: true
+			rewards: [{
+				id: "7A12300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000015"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Paint Horse"
+				to_observe: "icys-better-horses:american_paint_horse"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:andalusian_horse_spawn_egg"
+			id: "7A12100000000014"
+			optional: true
+			rewards: [{
+				id: "7A12300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000016"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Andaluz"
+				to_observe: "icys-better-horses:andalusian_horse"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:thoroughbred_horse_spawn_egg"
+			id: "7A12100000000015"
+			optional: true
+			rewards: [{
+				id: "7A12300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000017"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Puro-sangue Inglês"
+				to_observe: "icys-better-horses:thoroughbred_horse"
+				type: "observation"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:friesian_horse_spawn_egg"
+			id: "7A12100000000016"
+			optional: true
+			rewards: [{
+				id: "7A12300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000018"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Frísio"
+				to_observe: "icys-better-horses:friesian_horse"
+				type: "observation"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:percheron_horse_spawn_egg"
+			id: "7A12100000000017"
+			optional: true
+			rewards: [{
+				id: "7A12300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A12200000000019"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Percheron"
+				to_observe: "icys-better-horses:percheron_horse"
+				type: "observation"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:belgian_horse_spawn_egg"
+			id: "7A12100000000018"
+			optional: true
+			rewards: [{
+				id: "7A12300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1220000000001A"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Belga de tração"
+				to_observe: "icys-better-horses:belgian_horse"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:clydesdale_horse_spawn_egg"
+			id: "7A12100000000019"
+			optional: true
+			rewards: [{
+				id: "7A12300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1220000000001B"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Clydesdale"
+				to_observe: "icys-better-horses:clydesdale_horse"
+				type: "observation"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma raça para o caderno do criador. Cada uma prefere certas paisagens e tem porte e temperamento próprios."
+				"Chegue perto e mire no cavalo até a tarefa registrar. Observar basta; domar é opcional."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "icys-better-horses:shire_horse_spawn_egg"
+			id: "7A1210000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1230000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				id: "7A1220000000001C"
+				observe_type: 5
+				timer: 0L
+				title: "Observe: Shire"
+				to_observe: "icys-better-horses:shire_horse"
+				type: "observation"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+	]
+	title: "&d&lVida no Estábulo"
+}
