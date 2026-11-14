@@ -1,3 +1,0 @@
-minecraft:mineshaft
-minecraft:mineshaft_mesa
-minecraft:nether_fossil
