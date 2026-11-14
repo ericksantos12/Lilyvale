@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1]
+
+### Fixes
+
+- Removed the old storage chapter that came back by mistake in 1.0.0. Its quests had already been retired and do not count toward anything.
+
 ## [1.0.0]
 
 ### Quest book
