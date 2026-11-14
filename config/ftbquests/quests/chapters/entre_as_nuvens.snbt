@@ -1,0 +1,542 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "entre_as_nuvens"
+	group: "6E00000000000001"
+	icon: "aether:aether_portal_frame"
+	id: "7A0D000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"O portal do Aether é uma moldura de pedra luminosa, do formato do portal do Nether, acesa com um balde de água."
+				"Dez blocos bastam para a moldura sem os cantos. Antes de atravessar, leve comida e blocos: cair das ilhas devolve você ao mundo de baixo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:glowstone"
+			id: "7A0D100000000001"
+			rewards: [{
+				id: "7A0D300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				count: 10L
+				id: "7A0D200000000001"
+				item: "minecraft:glowstone"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A0D200000000002"
+				item: "minecraft:water_bucket"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&5Uma porta para o céu"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0D100000000001"]
+			description: [
+				"Ilhas flutuantes, baleias no céu e uma luz que não existe lá embaixo. Bem-vindo ao Aether."
+				"O marco detecta a chegada à dimensão. Nada da fazenda, da casa ou de outras trilhas depende desta viagem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:aether_grass_block"
+			id: "7A0D100000000002"
+			rewards: [{
+				id: "7A0D300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "7A0D200000000003"
+				title: "Entre no Aether"
+				type: "dimension"
+			}]
+			title: "&6&lAcima das nuvens"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0D100000000002"]
+			description: [
+				"No Aether as ferramentas do mundo de baixo rendem pouco. Comece de novo com Skyroot e suba para Holystone."
+				"Ferramentas de Skyroot às vezes dobram o que você coleta. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:skyroot_pickaxe"
+			id: "7A0D100000000003"
+			rewards: [{
+				id: "7A0D300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0D200000000004"
+				item: "aether:skyroot_pickaxe"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&5Madeira das alturas"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0D100000000003"]
+			description: [
+				"A ambrósia é o carvão do Aether: faz tochas, alimenta o altar e ainda mata a fome num aperto."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:ambrosium_shard"
+			id: "7A0D100000000004"
+			rewards: [{
+				id: "7A0D300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "7A0D200000000005"
+				item: "aether:ambrosium_shard"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&5Luz de ambrósia"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0D100000000004"]
+			description: [
+				"O altar encanta e repara itens usando ambrósia. É nele que a gravitita ganha seu poder e que a comida do Aether fica melhor."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:altar"
+			id: "7A0D100000000005"
+			rewards: [{
+				id: "7A0D300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "aether:craft_altar"
+				criterion: ""
+				id: "7A0D200000000006"
+				title: "Obtenha um altar"
+				type: "advancement"
+			}]
+			title: "&5Altar"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0D100000000003"]
+			description: [
+				"A zanita faz ferramentas que ficam mais rápidas quanto mais gastas. Uma lógica só do céu."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:zanite_gemstone"
+			id: "7A0D100000000006"
+			rewards: [{
+				id: "7A0D300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "aether:zanite"
+				criterion: ""
+				id: "7A0D200000000007"
+				title: "Obtenha uma gema de zanita"
+				type: "advancement"
+			}]
+			title: "&5Zanita"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0D100000000004"]
+			description: [
+				"A incubadora choca ovos de Moa com o calor de tochas de ambrósia. Uma Moa domada salta entre ilhas com você nas costas."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:incubator"
+			id: "7A0D100000000007"
+			rewards: [{
+				id: "7A0D300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0D200000000008"
+				item: "aether:incubator"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&5Incubadora"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0D100000000005"]
+			description: [
+				"O congelador usa pedra de gelo para transformar itens: nuvens azuis, acessórios de gelo e outras curiosidades."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:freezer"
+			id: "7A0D100000000008"
+			rewards: [{
+				id: "7A0D300000000008"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A0D200000000009"
+				item: "aether:freezer"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&5Congelador"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Os calabouços de bronze ficam dentro das ilhas, em salas de pedra talhada. O Slider só sente picareta."
+				"O marco usa o avanço do Aether: quem já venceu não precisa repetir."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:bronze_dungeon_key"
+			id: "7A0D100000000009"
+			rewards: [{
+				id: "7A0D300000000009"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "aether:bronze_dungeon"
+				criterion: ""
+				id: "7A0D20000000000A"
+				title: "Derrote o Slider"
+				type: "advancement"
+			}]
+			title: "&6&lCalabouço de bronze"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Templos de prata flutuam sobre nuvens. As valquírias exigem medalhas de vitória antes de aceitar o seu desafio."
+				"O marco usa o avanço do Aether."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:silver_dungeon_key"
+			id: "7A0D10000000000A"
+			rewards: [{
+				id: "7A0D30000000000A"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "aether:silver_dungeon"
+				criterion: ""
+				id: "7A0D20000000000B"
+				title: "Derrote a Rainha Valquíria"
+				type: "advancement"
+			}]
+			title: "&6&lCalabouço de prata"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"A ilha de ouro guarda o Espírito do Sol. Devolva as bolas de gelo que ele lança: fogo não o incomoda."
+				"O marco usa o avanço do Aether. É o maior desafio do céu e continua sendo opcional para o resto do livro."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:gold_dungeon_key"
+			id: "7A0D10000000000B"
+			rewards: [{
+				id: "7A0D30000000000B"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "aether:gold_dungeon"
+				criterion: ""
+				id: "7A0D20000000000C"
+				title: "Derrote o Espírito do Sol"
+				type: "advancement"
+			}]
+			title: "&6&lCalabouço de ouro"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Moas botam ovos azuis, brancos e pretos. Cada cor dá uma ave com fôlego diferente para saltos no ar."
+				"Qualquer cor conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:blue_moa_egg"
+			id: "7A0D10000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0D30000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:obtain_egg"
+				criterion: ""
+				id: "7A0D20000000000D"
+				title: "Obtenha um ovo de Moa"
+				type: "advancement"
+			}]
+			title: "&dOvo de Moa"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A0D10000000000C"]
+			description: [
+				"Mantenha a incubadora abastecida de tochas de ambrósia até o ovo abrir. O filhote precisa de pétalas de Aechor para crescer."
+				"A tarefa detecta a incubação."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:incubator"
+			id: "7A0D10000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0D30000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:incubate_moa"
+				criterion: ""
+				id: "7A0D20000000000E"
+				title: "Choque um ovo de Moa na incubadora"
+				type: "advancement"
+			}]
+			title: "&dChocadeira ligada"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"No Aether, porcos voam. Leve uma sela e veja as ilhas de cima."
+				"A tarefa detecta a montaria."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:saddle"
+			id: "7A0D10000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0D30000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:mount_phyg"
+				criterion: ""
+				id: "7A0D20000000000F"
+				title: "Monte um Phyg"
+				type: "advancement"
+			}]
+			title: "&dPorco com asas"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Nuvens azuis lançam você para o alto. Nuvens frias amortecem a queda. As douradas... descubra."
+				"A tarefa detecta o salto."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:blue_aercloud"
+			id: "7A0D10000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0D30000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:blue_aercloud"
+				criterion: ""
+				id: "7A0D200000000010"
+				title: "Pule em uma nuvem azul"
+				type: "advancement"
+			}]
+			title: "&dPula-pula de nuvem"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"O minério de gravitita cai para cima. Encantado no altar, vira o melhor material de ferramentas do Aether."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:enchanted_gravitite"
+			id: "7A0D100000000010"
+			optional: true
+			rewards: [{
+				id: "7A0D300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:enchanted_gravitite"
+				criterion: ""
+				id: "7A0D200000000011"
+				title: "Obtenha gravitita encantada"
+				type: "advancement"
+			}]
+			title: "&dGravitita encantada"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Monte um cantinho seguro numa ilha e passe a noite. O céu daqui não tem a pressa do de lá."
+				"A tarefa detecta o sono na dimensão."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:white_bed"
+			id: "7A0D100000000011"
+			optional: true
+			rewards: [{
+				id: "7A0D300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:aether_sleep"
+				criterion: ""
+				id: "7A0D200000000012"
+				title: "Durma no Aether"
+				type: "advancement"
+			}]
+			title: "&dCochilo nas alturas"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"O Livro de Saberes descreve cada item do Aether. Coloque um item nele para ler a história."
+				"A tarefa detecta a leitura de uma entrada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "aether:book_of_lore"
+			id: "7A0D100000000012"
+			optional: true
+			rewards: [{
+				id: "7A0D300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "aether:read_lore"
+				criterion: ""
+				id: "7A0D200000000013"
+				title: "Consulte o Livro de Saberes"
+				type: "advancement"
+			}]
+			title: "&dLivro de saberes"
+			x: 12.0d
+			y: 6.0d
+		}
+	]
+	title: "&5&lEntre as Nuvens"
+}

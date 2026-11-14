@@ -14,6 +14,7 @@ fancymenu_data/
 ESM/
 mod_data/
 .mixin.out/
+moonlight-global-datapacks/
 
 icon.png
 options.txt
@@ -21,6 +22,7 @@ rhino.local.properties
 usercache.json
 usernamecache.json
 emi.json
+patchouli_data.json
 
 # Pakku
 build/

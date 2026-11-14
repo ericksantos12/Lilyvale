@@ -1,0 +1,327 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "atlas_de_descobertas"
+	group: "2E622CDAB0B6B1F2"
+	icon: "minecraft:filled_map"
+	id: "7A0A000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Com o Lootr, baús de estruturas guardam um saque separado para cada jogador. Quem chega depois ainda encontra a sua parte."
+				"Por isso, não quebre esses baús: deixe-os para o próximo viajante. A tarefa detecta a abertura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "lootr:lootr_chest"
+			id: "7A0A100000000001"
+			rewards: [{
+				id: "7A0A300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "lootr:1chest"
+				criterion: ""
+				id: "7A0A200000000001"
+				title: "Abra um baú do Lootr"
+				type: "advancement"
+			}]
+			title: "&3Tesouro para cada um"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0A100000000001"]
+			description: [
+				"Dez tesouros abertos pelo mundo. Você já conhece o cheiro de ruína, de mina abandonada e de navio afundado."
+				"O marco usa a contagem do próprio Lootr."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "lootr:trophy"
+			id: "7A0A100000000002"
+			rewards: [{
+				id: "7A0A300000000002"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "lootr:10loot"
+				criterion: ""
+				id: "7A0A200000000002"
+				title: "Abra dez recipientes do Lootr"
+				type: "advancement"
+			}]
+			title: "&6&lViajante de carteirinha"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0A100000000002"]
+			description: [
+				"Para quem não consegue ver uma estrutura no horizonte sem ir conferir."
+				"Usa a contagem do próprio Lootr."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "lootr:trophy"
+			id: "7A0A100000000003"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000003"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "lootr:50loot"
+				criterion: ""
+				id: "7A0A200000000003"
+				title: "Abra cinquenta recipientes do Lootr"
+				type: "advancement"
+			}]
+			title: "&dCinquenta fechaduras"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0A100000000001"]
+			description: [
+				"Barris de vilas e estruturas também têm saque individual."
+				"A tarefa detecta a abertura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "lootr:lootr_barrel"
+			id: "7A0A100000000004"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "lootr:1barrel"
+				criterion: ""
+				id: "7A0A200000000004"
+				title: "Abra um barril do Lootr"
+				type: "advancement"
+			}]
+			title: "&dAté os barris"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Minas abandonadas escondem carrinhos com baú. Leve tochas e cuidado com as aranhas."
+				"A tarefa detecta a abertura."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:chest_minecart"
+			id: "7A0A100000000005"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "lootr:1cart"
+				criterion: ""
+				id: "7A0A200000000005"
+				title: "Abra um carrinho com baú do Lootr"
+				type: "advancement"
+			}]
+			title: "&dCarrinho esquecido"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Bordos de outono, pomares, bétulas prateadas, magnólias e salgueiros: florestas temperadas para passear sem pressa."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "regions_unexplored:maple_sapling"
+			id: "7A0A100000000006"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_bosques"
+				id: "7A0A200000000006"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dBosques de muitas cores"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Taigas boreais, sequoias gigantes, tundras e picos gelados. Leve agasalho e uma boa sopa."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "regions_unexplored:pine_sapling"
+			id: "7A0A100000000007"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_coniferas_e_gelo"
+				id: "7A0A200000000007"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dPinheiros e geada"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Campos de papoulas, trevos, cevada e abóboras, pradarias e colinas lilases: paisagens abertas, boas para fazenda e cavalo."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:poppy"
+			id: "7A0A100000000008"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_campos_e_flores"
+				id: "7A0A200000000008"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dCampos e flores"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Desertos de cactos e iúcas, savanas de baobás, o outback e paredões de pedra. Água na mochila, sempre."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:dead_bush"
+			id: "7A0A100000000009"
+			optional: true
+			rewards: [{
+				id: "7A0A300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_terras_aridas"
+				id: "7A0A200000000009"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dTerras de sol forte"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Pântanos, brejos, rios, recifes, praias e florestas tropicais. Onde há água, há vida e geralmente um bom ponto de pesca."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:lily_pad"
+			id: "7A0A10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0A30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_aguas_e_tropicos"
+				id: "7A0A20000000000A"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dÁguas e trópicos"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Cavernas de cogumelos luminosos, abismos de prismarinho, galerias de redstone e fornalhas naturais."
+				"Qualquer bioma da família conta: ninguém precisa visitar todos. A Bússola da Natureza ajuda a encontrar um deles."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:glow_lichen"
+			id: "7A0A10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0A30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				biome: "#lilyvale:ru_cavernas"
+				id: "7A0A20000000000B"
+				title: "Visite uma paisagem desta família"
+				type: "biome"
+			}]
+			title: "&dMundos sob a terra"
+			x: 10.0d
+			y: 6.0d
+		}
+	]
+	title: "&3&lAtlas de Descobertas"
+}

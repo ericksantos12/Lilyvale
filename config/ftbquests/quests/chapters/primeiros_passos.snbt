@@ -10,16 +10,19 @@
 	quests: [
 		{
 			description: ["Um tronco nas mãos e já estamos negociando com a floresta. Vale madeira de qualquer árvore."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: "minecraft:oak_log"
 			id: "2A131A7DE90EBD8A"
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 8
 				id: "2D4F27D7D0C563D8"
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 1.25d
+			shape: "circle"
+			size: 1.0d
 			tasks: [{
 				consume_items: false
 				icon: "minecraft:oak_log"
@@ -46,6 +49,9 @@
 			]
 			icon: "minecraft:crafting_table"
 			id: "21CB186D99292665"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 32
 				id: "33A17F8A41BC43B8"
@@ -70,6 +76,9 @@
 			]
 			icon: "overgeared:knappable_rock"
 			id: "2F7BB906F78CB017"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 2
@@ -115,6 +124,9 @@
 				}
 			}
 			id: "0B46EB803FB4BBA3"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 16
@@ -129,8 +141,8 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
-			size: 1.15d
+			shape: "circle"
+			size: 1.0d
 			tasks: [
 				{
 					consume_items: false
@@ -164,6 +176,9 @@
 			]
 			icon: "minecraft:raw_copper"
 			id: "306193A63C4C5CC3"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 8
 				id: "1879859C4ED3F4B3"
@@ -204,6 +219,9 @@
 				}
 			}
 			id: "04719CFB10027CB6"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 4
@@ -251,6 +269,9 @@
 			]
 			icon: "overgeared:stone_anvil"
 			id: "1CD23A4BBBF8E16B"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 2
@@ -265,8 +286,8 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
-			size: 1.15d
+			shape: "circle"
+			size: 1.0d
 			tasks: [
 				{
 					id: "3A1CB4A8F9882950"
@@ -303,6 +324,9 @@
 			]
 			icon: "minecraft:grindstone"
 			id: "79E58B9DB040B4BA"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 4
 				id: "5CFB1CFA2257723A"
@@ -349,6 +373,7 @@
 			description: [
 				"Com a cabeça de cobre já resfriada e polida, junte-a a um graveto para montar a picareta. Confira a receita no EMI."
 				"Agora sim: uma picareta com história!"
+				"Este marco registra a posse da picareta, não a autoria da forja. Continue no ferro em Forja e legado se quiser aprofundar a oficina; fazenda, casa, música e as outras trilhas não exigem concluir este capítulo."
 			]
 			icon: {
 				Count: 1
@@ -358,6 +383,9 @@
 				}
 			}
 			id: "3D531CC1B4F13F97"
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			subtitle: "&6M — Marco local"
 			rewards: [
 				{
 					count: 4

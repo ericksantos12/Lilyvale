@@ -1,0 +1,1321 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "paes_e_confeitaria"
+	group: "2F3E0F43CC0404AB"
+	icon: "bakery:croissant"
+	id: "7A06000000000001"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Todo pão começa com fermento. A receita está no EMI; morangos e aveia selvagens também aparecem pelo mundo para a padaria."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:yeast"
+			id: "7A06100000000001"
+			rewards: [{
+				id: "7A06300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "bakery:main/get_yeast"
+				criterion: ""
+				id: "7A06200000000001"
+				title: "Obtenha fermento"
+				type: "advancement"
+			}]
+			title: "&aFermento vivo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A06100000000001"]
+			description: [
+				"A tigela mistura a massa e o rolo abre. Neste pack as massas foram unificadas entre os mods de cozinha; confira no EMI a massa aceita por cada receita."
+				"A tarefa pede a tigela e o rolo, sem consumo."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:rolling_pin"
+			id: "7A06100000000002"
+			rewards: [{
+				id: "7A06300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A06200000000002"
+				item: "bakery:crafting_bowl"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A06200000000003"
+				item: "bakery:rolling_pin"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aMão na massa"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A06100000000002"]
+			description: [
+				"Na bancada a massa ganha forma: pão rústico, baguete, trança, croissant. Depois é só levar ao forno."
+				"A tarefa detecta a bancada colocada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:baker_station"
+			id: "7A06100000000003"
+			rewards: [{
+				id: "7A06300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "bakery:main/place_baker_station"
+				criterion: ""
+				id: "7A06200000000004"
+				title: "Coloque uma bancada de padeiro"
+				type: "advancement"
+			}]
+			title: "&aBancada do padeiro"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A06100000000003"]
+			description: [
+				"O forno de padaria assa pães, tortas, croissants e bolos de forma. Há versões em tijolo, pedra, arenito e outros materiais: escolha o que combina com a cozinha."
+				"Qualquer forno do Bakery conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:brick_stove"
+			id: "7A06100000000004"
+			rewards: [{
+				id: "7A06300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "bakery:main/place_stove"
+				criterion: ""
+				id: "7A06200000000005"
+				title: "Coloque um forno de padaria de qualquer material"
+				type: "advancement"
+			}]
+			title: "&aForno aceso"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A06100000000004"]
+			description: [
+				"Casca crocante, miolo quente. O primeiro pão saído do seu forno merece ser comido ainda morno."
+				"O marco detecta a mordida. Dividir com alguém continua sendo boa ideia."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:bread"
+			id: "7A06100000000005"
+			rewards: [{
+				id: "7A06300000000005"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "bakery:main/eat_bread"
+				criterion: ""
+				id: "7A06200000000006"
+				title: "Coma um pão da padaria"
+				type: "advancement"
+			}]
+			title: "&6&lFornada do dia"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O tacho pequeno cozinha geleias e cremes sobre o forno. Tenha potes vazios para envasar."
+				"São duas tarefas: o tacho colocado e um pote vazio."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:small_cooking_pot"
+			id: "7A06100000000006"
+			rewards: [{
+				id: "7A06300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				advancement: "bakery:main/place_cooking_pot"
+				criterion: ""
+				id: "7A06200000000007"
+				title: "Coloque um tacho pequeno"
+				type: "advancement"
+			}
+			{
+				consume_items: false
+				id: "7A06200000000008"
+				item: "bakery:jar"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&aTacho de geleia"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Bolos têm ramal próprio e não vão ao forno. Na tigela de preparo, trigo, açúcar, ovo e leite rendem uma boa leva de massa de bolo."
+				"Depois, na bancada do padeiro, a massa recebe uma geleia e vira bolo. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:cake_dough"
+			id: "7A06100000000007"
+			rewards: [{
+				id: "7A06300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000009"
+				item: "bakery:cake_dough"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aMassa de bolo"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A06100000000007"]
+			description: [
+				"Na bancada do padeiro, junte massa de bolo e geleia de morango. Coloque o bolo na mesa e corte com a faca de pão. Fatias e bolo inteiro contam como a mesma receita no álbum."
+				"O marco detecta o corte do bolo de morango colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:strawberry_cake"
+			id: "7A06100000000008"
+			rewards: [{
+				id: "7A06300000000008"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "bakery:main/cut_strawberry_cake"
+				criterion: ""
+				id: "7A0620000000000A"
+				title: "Corte um bolo de morango com a faca de pão"
+				type: "advancement"
+			}]
+			title: "&6&lA primeira fatia"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Caixotes cheios de pão na porta: o jeito mais simples de avisar que a padaria abriu."
+				"A tarefa detecta o caixote colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:bread_crate"
+			id: "7A06100000000009"
+			optional: true
+			rewards: [{
+				id: "7A06300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "bakery:main/place_bread_crate"
+				criterion: ""
+				id: "7A0620000000000B"
+				title: "Coloque um caixote de pães"
+				type: "advancement"
+			}]
+			title: "&dCaixote de pães"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Vitrines de parede, suportes de bolo e expositores mostram a fornada. Clique com o produto na mão para expor."
+				"A tarefa detecta o pão colocado na vitrine."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:wall_display"
+			id: "7A0610000000000A"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "bakery:main/use_bread_on_wall_display"
+				criterion: ""
+				id: "7A0620000000000C"
+				title: "Exponha um pão na vitrine de parede"
+				type: "advancement"
+			}]
+			title: "&dVitrine cheirosa"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Toda padaria de bairro tem uma placa. A sua agora também."
+				"A tarefa detecta a placa colocada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:street_sign"
+			id: "7A0610000000000B"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "bakery:main/place_sign"
+				criterion: ""
+				id: "7A0620000000000D"
+				title: "Coloque uma placa de rua"
+				type: "advancement"
+			}]
+			title: "&dPlaca na calçada"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Um padeiro viajante passa de vez em quando, vendendo ingredientes e curiosidades. Observe-o pela luneta quando aparecer."
+				"A tarefa detecta a observação. Não dá para marcar hora com ele."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:spyglass"
+			id: "7A0610000000000C"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "bakery:main/spyglass_at_baker"
+				criterion: ""
+				id: "7A0620000000000E"
+				title: "Observe o padeiro viajante pela luneta"
+				type: "advancement"
+			}]
+			title: "&dColega de profissão"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:crusty_bread"
+			id: "7A0610000000000D"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000000F"
+				item: "bakery:crusty_bread"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:bread"
+			id: "7A0610000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000010"
+				item: "bakery:bread"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:braided_bread"
+			id: "7A0610000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0630000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000011"
+				item: "bakery:braided_bread"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:bun"
+			id: "7A06100000000010"
+			optional: true
+			rewards: [{
+				id: "7A06300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000012"
+				item: "bakery:bun"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:baguette"
+			id: "7A06100000000011"
+			optional: true
+			rewards: [{
+				id: "7A06300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000013"
+				item: "bakery:baguette"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:toast"
+			id: "7A06100000000012"
+			optional: true
+			rewards: [{
+				id: "7A06300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000014"
+				item: "bakery:toast"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:croissant"
+			id: "7A06100000000013"
+			optional: true
+			rewards: [{
+				id: "7A06300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000015"
+				item: "bakery:croissant"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:waffle"
+			id: "7A06100000000014"
+			optional: true
+			rewards: [{
+				id: "7A06300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000016"
+				item: "bakery:waffle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:cornet"
+			id: "7A06100000000015"
+			optional: true
+			rewards: [{
+				id: "7A06300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000017"
+				item: "bakery:cornet"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:sandwich"
+			id: "7A06100000000016"
+			optional: true
+			rewards: [{
+				id: "7A06300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000018"
+				item: "bakery:sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:vegetable_sandwich"
+			id: "7A06100000000017"
+			optional: true
+			rewards: [{
+				id: "7A06300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000019"
+				item: "bakery:vegetable_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:apple_pie"
+			id: "7A06100000000018"
+			optional: true
+			rewards: [{
+				id: "7A06300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001A"
+				item: "bakery:apple_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:glowberry_tart"
+			id: "7A06100000000019"
+			optional: true
+			rewards: [{
+				id: "7A06300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001B"
+				item: "bakery:glowberry_tart"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_tart"
+			id: "7A0610000000001A"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001C"
+				item: "bakery:chocolate_tart"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:linzer_tart"
+			id: "7A0610000000001B"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001D"
+				item: "bakery:linzer_tart"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:bundt_cake"
+			id: "7A0610000000001C"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001E"
+				item: "bakery:bundt_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:pudding"
+			id: "7A0610000000001D"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000001F"
+				item: "bakery:pudding"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:strawberry_cake"
+			id: "7A0610000000001E"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000020"
+				item: "bakery:strawberry_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_cake"
+			id: "7A0610000000001F"
+			optional: true
+			rewards: [{
+				id: "7A0630000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000021"
+				item: "bakery:chocolate_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:sweetberry_cake"
+			id: "7A06100000000020"
+			optional: true
+			rewards: [{
+				id: "7A06300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000022"
+				item: "bakery:sweetberry_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_gateau"
+			id: "7A06100000000021"
+			optional: true
+			rewards: [{
+				id: "7A06300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000023"
+				item: "bakery:chocolate_gateau"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:jam_roll"
+			id: "7A06100000000022"
+			optional: true
+			rewards: [{
+				id: "7A06300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000024"
+				item: "bakery:jam_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_truffle"
+			id: "7A06100000000023"
+			optional: true
+			rewards: [{
+				id: "7A06300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000025"
+				item: "bakery:chocolate_truffle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:strawberry_cupcake"
+			id: "7A06100000000024"
+			optional: true
+			rewards: [{
+				id: "7A06300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000026"
+				item: "bakery:strawberry_cupcake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:sweetberry_cupcake"
+			id: "7A06100000000025"
+			optional: true
+			rewards: [{
+				id: "7A06300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000027"
+				item: "bakery:sweetberry_cupcake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:apple_cupcake"
+			id: "7A06100000000026"
+			optional: true
+			rewards: [{
+				id: "7A06300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000028"
+				item: "bakery:apple_cupcake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:strawberry_glazed_cookie"
+			id: "7A06100000000027"
+			optional: true
+			rewards: [{
+				id: "7A06300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000029"
+				item: "bakery:strawberry_glazed_cookie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_glazed_cookie"
+			id: "7A06100000000028"
+			optional: true
+			rewards: [{
+				id: "7A06300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002A"
+				item: "bakery:chocolate_glazed_cookie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:sweetberry_glazed_cookie"
+			id: "7A06100000000029"
+			optional: true
+			rewards: [{
+				id: "7A06300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002B"
+				item: "bakery:sweetberry_glazed_cookie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:strawberry_jam"
+			id: "7A0610000000002A"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002C"
+				item: "bakery:strawberry_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:sweetberry_jam"
+			id: "7A0610000000002B"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002D"
+				item: "bakery:sweetberry_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:apple_jam"
+			id: "7A0610000000002C"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002E"
+				item: "bakery:apple_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:glowberry_jam"
+			id: "7A0610000000002D"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A0620000000002F"
+				item: "bakery:glowberry_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:chocolate_jam"
+			id: "7A0610000000002E"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000030"
+				item: "bakery:chocolate_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"Uma receita da vitrine. Bolo inteiro e fatia são a mesma página: aqui vale o produto inteiro. Registrar exige apenas tê-lo uma vez, sem consumo; a receita está no EMI."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "bakery:misslilitu_biscuit"
+			id: "7A0610000000002F"
+			optional: true
+			rewards: [{
+				id: "7A0630000000002F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A06200000000031"
+				item: "bakery:misslilitu_biscuit"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 22.0d
+		}
+	]
+	title: "&a&lPães e Confeitaria"
+}

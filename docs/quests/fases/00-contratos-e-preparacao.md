@@ -1,6 +1,6 @@
 # F00 — Contratos e preparação
 
-**Estado: não iniciada.** Este documento autoriza apenas o planejamento; implementar esta fase exige solicitação explícita do usuário.
+**Estado: concluída — escopo e contratos aprovados explicitamente pelo usuário.** O aceite encerra somente F00; nenhuma F01 ou implementação de capítulos foi iniciada.
 
 [Índice de execução](README.md) · [Regras e arquitetura do plano](../planejamento.md) · [Catálogos candidatos](../catalogos-candidatos.md)
 
@@ -13,12 +13,12 @@ Preparar decisões e evidências que permitem iniciar entregas de conteúdo; nã
 - Nenhuma aprovação do planejamento anterior é presumida por este desmembramento.
 - Pendências de Perfect Plushies, Advanced Netherite e dimensões são locais: podem continuar pendentes sem bloquear fazenda/casa.
 
-## Checklist de execução futura
+## Checklist de execução
 
-- [ ] Confirmar o escopo de 49 mods, nove categorias e 30 capítulos-base contra os arquivos atuais; registrar divergências sem alterar o jogo.
-- [ ] Obter aceite das regras editoriais: A/M/C, consulta R, posse versus ação, projetos autodeclarados e registro inicial de receitas por descoberta.
-- [ ] Decidir política de equipe, idioma, recompensa de conteúdo novo e preservação das recompensas históricas; registrar exceções explicitamente.
-- [ ] Abrir uma ficha local de auditoria para cada detector/identidade ainda não comprovado; não tentar resolver todos os mods antes da primeira entrega.
+- [x] Confirmar o escopo de 49 mods, nove categorias e 30 capítulos-base contra os arquivos atuais; registrar divergências sem alterar o jogo.
+- [x] Obter aceite final consolidado das regras editoriais e do escopo. O usuário aprovou encerrar F00 sem iniciar F01, incluindo A/M/C, consulta R, distinção posse/ação, projetos autodeclarados e descoberta por posse.
+- [x] Registrar idioma português, alvo de coleções pessoais/marcos compartilhados condicionado à viabilidade, XP novo 50/150/25 e preservação das recompensas históricas.
+- [x] Abrir fichas de auditoria para 235 linhas/grupos de objetivos e 277 identidades candidatas, sem promovê-las a aprovadas.
 
 ## Fora do escopo
 
@@ -28,12 +28,12 @@ Preparar decisões e evidências que permitem iniciar entregas de conteúdo; nã
 
 ## Validação e aceite
 
-- [ ] Conferir que cada capítulo tem uma única fase responsável e que não existem mods esquecidos.
-- [ ] Registrar decisões aceitas, pendências e o que exige autorização separada, especialmente scripts de detecção e alterações de receitas.
+- [x] Conferir que cada capítulo tem uma única fase responsável e que não existem mods esquecidos.
+- [x] Registrar decisões aceitas, pendências e o que exige autorização separada, especialmente scripts de detecção e alterações de receitas.
 
-- [ ] Aplicar o protocolo comum do índice: integridade de arquivos/IDs, contratos de conclusão, visual e teste em jogo correspondente ao lote.
-- [ ] Registrar testes executados, evidências, falhas, pendências e aceite do usuário. Validação estática não substitui validação no jogo.
-- [ ] Não marcar a fase inteira como concluída se um lote ou um gate continuar pendente. Marcar parcial/em espera conforme o caso.
+- [x] Aplicar o protocolo pertinente ao lote documental: cobertura, propriedade dos capítulos, fontes locais, IDs/referências e parser nativo. Testes visuais/de gameplay de novos conteúdos não se aplicam porque não houve implementação.
+- [x] Registrar verificações executadas, limites e o aceite final explícito do usuário.
+- [x] Encerrar a F00 após o aceite final. Gates de viabilidade das futuras fases permanecem abertos sem impedir o fechamento dos contratos da F00.
 
 ## Como encerrar ou retomar
 
@@ -41,11 +41,16 @@ Atualizar a linha desta fase no índice e preencher a ficha de passagem abaixo. 
 
 | Registro | Preencher durante a execução |
 | --- | --- |
-| Lote executado | — |
-| Arquivos e IDs envolvidos | — |
-| Decisões e fontes conferidas | — |
-| Testes estáticos | — |
-| Testes no jogo / evidência | — |
-| Pendências e bloqueios locais | — |
-| Próximo lote seguro | — |
-| Aceite do usuário | — |
+| Lote executado | F00 — contratos, conferência de escopo e abertura de fichas |
+| Arquivos e IDs envolvidos | Apenas documentos; livro existente inspecionado sem alocar ou alterar IDs |
+| Decisões e fontes conferidas | `quest-mods.md`, plano/fases, lockfile, JARs e configurações de quests; ver registro detalhado |
+| Testes estáticos | 49 mods e versões, nove categorias planejadas, 30 capítulos com dono único; livro atual com 290 quests, IDs/referências válidos e parser nativo em sete arquivos |
+| Testes no jogo / evidência | Não executados; nenhum conteúdo de gameplay foi implementado nesta fase |
+| Pendências e bloqueios locais | EQ-01/EQ-02 para coleções pessoais/migração de equipe e gates próprios de cada sistema; são pendências das próximas fases, não falta de aceite da F00 |
+| Próximo lote seguro | Solicitar F01.1 após aceite, sem iniciá-la automaticamente |
+| Aceite do usuário | Aprovar e encerrar F00, sem iniciar F01; políticas e escopo consolidados aprovados explicitamente |
+
+## Registros produzidos
+
+- [Contratos, divergências, testes e gates locais](registros/f00-contratos-e-auditoria.md).
+- [Inventário versionado e fichas por objetivo/identidade](registros/f00-inventario.json).

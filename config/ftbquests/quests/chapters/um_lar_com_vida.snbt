@@ -1,0 +1,479 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "um_lar_com_vida"
+	group: "1DA3993DEE28D0C0"
+	icon: "another_furniture:oak_chair"
+	id: "7A15000000000001"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Quatro paredes, um teto e uma cama. Tudo o que vem depois é capricho, e capricho é o assunto deste capítulo."
+				"O marco detecta uma noite dormida. Os cômodos abaixo são independentes: monte só os que quiser."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:red_bed"
+			id: "7A15100000000001"
+			rewards: [{
+				id: "7A15300000000001"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				id: "7A15200000000001"
+				title: "Durma em uma cama"
+				type: "advancement"
+			}]
+			title: "&6&lPrimeira noite em casa"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O martelo do Another Furniture muda o formato dos móveis: encostos, braços de sofá, pernas de mesa. Clique no móvel colocado para alternar."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:furniture_hammer"
+			id: "7A15100000000002"
+			rewards: [{
+				id: "7A15300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A15200000000002"
+				item: "another_furniture:furniture_hammer"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&eMartelo de móveis"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Com o Display Delight a comida aparece servida. Coloque o prato na mesa e clique com a refeição na mão; sobremesas vão no prato pequeno."
+				"Funciona com muitas receitas do Caderno de Receitas. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "displaydelight:food_plate"
+			id: "7A15100000000003"
+			rewards: [{
+				id: "7A15300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A15200000000003"
+				item: "displaydelight:food_plate"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000004"
+				item: "displaydelight:small_food_plate"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&ePrato na mesa"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Prateleiras para os potes, gaveteiro para os talheres e um vaso de cerâmica no canto. A cozinha é onde a casa conversa."
+				"As peças são um ponto de partida e contam por posse, em qualquer cor ou madeira. O cômodo de verdade é o que você constrói; o livro não mede beleza."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:oak_shelf"
+			id: "7A15100000000004"
+			optional: true
+			rewards: [{
+				id: "7A15300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A15200000000005"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:shelves"
+					}
+				}
+				title: "Uma prateleira de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000006"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:drawers"
+					}
+				}
+				title: "Um gaveteiro de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000007"
+				item: "dustydecorations:ceramic_pot"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dCozinha"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Sofá, mesa de centro e um abajur aceso. Lugar de visita, de livro e de não fazer nada."
+				"As peças são um ponto de partida e contam por posse, em qualquer cor ou madeira. O cômodo de verdade é o que você constrói; o livro não mede beleza."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:white_sofa"
+			id: "7A15100000000005"
+			optional: true
+			rewards: [{
+				id: "7A15300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A15200000000008"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:sofas"
+					}
+				}
+				title: "Um sofá de qualquer cor"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000009"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:tables"
+					}
+				}
+				title: "Uma mesa de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1520000000000A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:lamps"
+					}
+				}
+				title: "Um abajur de qualquer cor"
+				type: "item"
+			}
+			]
+			title: "&dSala de estar"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Cortina para a manhã chegar devagar, uma luminária antiga e a pilha de livros que você jura que vai ler."
+				"As peças são um ponto de partida e contam por posse, em qualquer cor ou madeira. O cômodo de verdade é o que você constrói; o livro não mede beleza."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:white_curtain"
+			id: "7A15100000000006"
+			optional: true
+			rewards: [{
+				id: "7A15300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A1520000000000B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:curtains"
+					}
+				}
+				title: "Uma cortina de qualquer cor"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1520000000000C"
+				item: "cluttered:antique_standing_lamp"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1520000000000D"
+				item: "dustydecorations:bookstack"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dQuarto"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Floreira na janela, banco na sombra e um sino de vento de bambu. Os sinos do Chimes tocam com a brisa e mais forte na chuva."
+				"As peças são um ponto de partida e contam por posse, em qualquer cor ou madeira. O cômodo de verdade é o que você constrói; o livro não mede beleza."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "chimes:bamboo_chimes"
+			id: "7A15100000000007"
+			optional: true
+			rewards: [{
+				id: "7A15300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A1520000000000E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:flower_boxes"
+					}
+				}
+				title: "Uma floreira de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A1520000000000F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:benches"
+					}
+				}
+				title: "Um banco de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000010"
+				item: "chimes:bamboo_chimes"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dJardim e varanda"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Cadeiras, banquetas altas e um quadro de avisos: café, taverna, praça ou salão comunitário. Casa cheia é casa viva."
+				"As peças são um ponto de partida e contam por posse, em qualquer cor ou madeira. O cômodo de verdade é o que você constrói; o livro não mede beleza."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:white_stool"
+			id: "7A15100000000008"
+			optional: true
+			rewards: [{
+				id: "7A15300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A15200000000011"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:chairs"
+					}
+				}
+				title: "Uma cadeira de qualquer madeira"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000012"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:tall_stools"
+					}
+				}
+				title: "Uma banqueta alta de qualquer cor"
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000013"
+				item: "cluttered:bulletin_board"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dPonto de encontro"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A15100000000007"]
+			description: [
+				"Venezianas abrem e fecham com um clique e mudam a cara de qualquer fachada."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "another_furniture:oak_shutter"
+			id: "7A15100000000009"
+			optional: true
+			rewards: [{
+				id: "7A15300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A15200000000014"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "another_furniture:shutters"
+					}
+				}
+				title: "Uma veneziana de qualquer madeira"
+				type: "item"
+			}]
+			title: "&dJanela com venezianas"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Cada material tem sua voz: ferro, cobre, ametista e os sininhos de vidro. Juntos, fazem a trilha sonora do jardim."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "chimes:amethyst_chimes"
+			id: "7A1510000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1530000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+			{
+				consume_items: false
+				id: "7A15200000000015"
+				item: "chimes:iron_chimes"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000016"
+				item: "chimes:copper_chimes"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000017"
+				item: "chimes:amethyst_chimes"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A15200000000018"
+				item: "chimes:glass_bells"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&dCoro de vento"
+			x: 14.0d
+			y: 6.0d
+		}
+	]
+	title: "&e&lUm Lar com Vida"
+}
