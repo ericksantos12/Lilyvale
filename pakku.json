@@ -1,7 +1,7 @@
 {
     "name": "Lilyvale",
     "version": "DEV",
-    "release_type": "beta",
+    "release_type": "release",
     "description": "A cozy and satisfying modpack for SMP",
     "author": "ericksantos12",
     "overrides": [
