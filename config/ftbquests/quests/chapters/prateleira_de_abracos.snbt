@@ -43,9 +43,7 @@
 			y: 0.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:aye_aye_plushie"
@@ -70,9 +68,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:bear_plushie"
@@ -97,9 +93,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:brown_rabbit_plushie"
@@ -124,9 +118,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:capybara_plushie"
@@ -151,9 +143,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:cat_plushie"
@@ -178,9 +168,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:doe_plushie"
@@ -205,9 +193,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:dog_plushie"
@@ -232,9 +218,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:dolphin_plushie"
@@ -259,9 +243,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:duck_plushie"
@@ -286,9 +268,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:elephant_plushie"
@@ -313,9 +293,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:fennec_fox_plushie"
@@ -340,9 +318,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:frog_plushie"
@@ -367,9 +343,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:goose_plushie"
@@ -394,9 +368,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:hedgehog_plushie"
@@ -421,9 +393,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:hippo_plushie"
@@ -448,9 +418,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:hummingbird_plushie"
@@ -475,9 +443,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:koala_plushie"
@@ -502,9 +468,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:lion_cub_plushie"
@@ -529,9 +493,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:monkey_plushie"
@@ -556,9 +518,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:mouse_plushie"
@@ -583,9 +543,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:panda_plushie"
@@ -610,9 +568,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:quokka_plushie"
@@ -637,9 +593,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:raccoon_plushie"
@@ -664,9 +618,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:red_fox_plushie"
@@ -691,9 +643,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:red_panda_plushie"
@@ -718,9 +668,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:red_ruffed_lemur_plushie"
@@ -745,9 +693,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:reindeer_plushie"
@@ -772,9 +718,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:robin_plushie"
@@ -799,9 +743,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:rubber_duck_plushie"
@@ -826,9 +768,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:seal_plushie"
@@ -853,9 +793,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:snow_fox_plushie"
@@ -880,9 +818,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:turtle_plushie"
@@ -907,9 +843,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."
-			]
+			description: ["Uma pelúcia para a prateleira. Procure em baús de vilas e com comerciantes; trocar com outros jogadores também vale. Registrar exige apenas tê-la uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:white_rabbit_plushie"
@@ -934,9 +868,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:daniel_plushie"
@@ -961,9 +893,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:gamerpotion_plushie"
@@ -988,9 +918,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:geode_plushie"
@@ -1015,9 +943,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:joosh_plushie"
@@ -1042,9 +968,7 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:june_plushie"
@@ -1069,9 +993,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:nyf_plushie"
@@ -1096,9 +1018,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:rocris_plushie"
@@ -1123,9 +1043,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:silk_plushie"
@@ -1150,9 +1068,7 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:sirjain_plushie"
@@ -1177,9 +1093,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:sizableshrimp_plushie"
@@ -1204,9 +1118,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:tslat_plushie"
@@ -1231,9 +1143,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:dumbo_blob_plushie"
@@ -1258,9 +1168,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:gamerpotion_plushie_rare"
@@ -1285,9 +1193,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."
-			]
+			description: ["Raridade: pelúcias de tesouro e versões especiais aparecem em baús de estruturas e com o comerciante errante, quando aparecem. Página só para quem gosta de procurar; nada depende dela."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "perfectplushies:sirjain_plushie_rare"

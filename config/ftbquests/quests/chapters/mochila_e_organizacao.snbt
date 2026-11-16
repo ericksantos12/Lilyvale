@@ -5,7 +5,7 @@
 	group: "048ED71F33A9801E"
 	icon: "sophisticatedbackpacks:backpack"
 	id: "6A10000000000002"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -15,9 +15,9 @@
 				"A tarefa registra a mochila no inventário, sem consumi-la. Confira a receita no EMI."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "sophisticatedbackpacks:backpack"
-			hide_text_until_complete: false
 			id: "6A110000000003E9"
 			rewards: [{
 				id: "6A130000000003E9"
@@ -40,24 +40,24 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6A110000000003E9"]
 			description: [
 				"O Módulo de Coleta ajuda a recolher itens diretamente para a mochila. Instale-o em um espaço de upgrade e abra sua configuração para escolher o que coletar."
 				"Deixe espaço livre e confira o filtro antes de uma expedição. Esta tarefa pede apenas obter o módulo; instalar e configurar é a prática sugerida, não uma ação detectada automaticamente."
 				"Você pode continuar usando a mochila sem este módulo. A Base do Módulo é um ingrediente, não uma função pronta; consulte o EMI."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "sophisticatedbackpacks:pickup_upgrade"
-			shape: "circle"
-			size: 1.0d
-			hide_text_until_complete: false
-			dependencies: ["6A110000000003E9"]
 			id: "6A110000000003F0"
 			rewards: [{
 				id: "6A130000000003F0"
 				type: "xp"
 				xp: 50
 			}]
+			shape: "circle"
+			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
@@ -78,9 +78,9 @@
 				"Esta tarefa pede o baú no inventário, sem consumi-lo. O EMI mostra a receita; para converter um bloco vanilla já colocado, consulte o upgrade básico."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "sophisticatedstorage:chest"
-			hide_text_until_complete: false
 			id: "6A11000000000001"
 			rewards: [{
 				id: "6A13000000000001"
@@ -109,17 +109,17 @@
 				"A tarefa registra um barril no inventário, sem consumo. Confira no EMI a receita e as opções de decoração."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "sophisticatedstorage:barrel"
-			shape: "circle"
-			size: 1.0d
-			hide_text_until_complete: false
 			id: "6A11000000000007"
 			rewards: [{
 				id: "6A13000000000007"
 				type: "xp"
 				xp: 50
 			}]
+			shape: "circle"
+			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
@@ -134,6 +134,11 @@
 			y: 4.0d
 		}
 		{
+			dependencies: [
+				"6A11000000000001"
+				"6A11000000000007"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Depois de escolher um baú ou barril, conheça outra rota: o upgrade básico converte recipientes vanilla compatíveis em versões Sophisticated. Confira no EMI os alvos aceitos; o aplicador não é obrigatório para as receitas diretas do baú ou barril."
 				"Para aumentar o tier depois, escolha o aplicador ou a receita própria do mod. Antes de mexer num depósito em uso, faça uma cópia do mundo e teste a rota com itens sem valor; confira conteúdo, nome e módulos no resultado."
@@ -141,19 +146,17 @@
 				"A task não consome o aplicador e não comprova que você fez a conversão. A aplicação real pode consumi-lo; não confunda isso com o objetivo da quest."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "sophisticatedstorage:basic_tier_upgrade"
-			shape: "circle"
-			size: 1.0d
-			hide_text_until_complete: false
-			dependencies: ["6A11000000000001", "6A11000000000007"]
-			dependency_requirement: "one_completed"
 			id: "6A11000000000036"
 			rewards: [{
 				id: "6A13000000000036"
 				type: "xp"
 				xp: 50
 			}]
+			shape: "circle"
+			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
@@ -174,9 +177,9 @@
 				"O sistema é independente dos recipientes Sophisticated. Esta tarefa pede apenas obter o conector; depois acrescente um terminal para acessar os inventários da rede."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "toms_storage:ts.inventory_connector"
-			hide_text_until_complete: false
 			id: "6A110000000007D1"
 			rewards: [{
 				id: "6A130000000007D1"
@@ -199,24 +202,24 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["6A110000000007D1"]
 			description: [
 				"O terminal permite pesquisar, guardar e retirar itens dos inventários acessíveis pela rede Tom’s. Coloque-o sobre uma face de um inventário conectado."
 				"Para estender o acesso por cabos, use o conector de cabo adequado: cabo sozinho não substitui a conexão. O EMI mostra os componentes, mas você não precisa fabricar todos para começar."
 				"Obter o terminal conclui esta tarefa sem consumi-lo. Depois de instalá-lo, teste uma busca e retire um item para conferir sua rede; essa dica não é uma tarefa adicional."
 			]
 			hide_details_until_startable: false
+			hide_text_until_complete: false
 			hide_until_deps_visible: false
 			icon: "toms_storage:ts.storage_terminal"
-			shape: "circle"
-			size: 1.0d
-			hide_text_until_complete: false
-			dependencies: ["6A110000000007D1"]
 			id: "6A110000000007D2"
 			rewards: [{
 				id: "6A130000000007D2"
 				type: "xp"
 				xp: 50
 			}]
+			shape: "circle"
+			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false

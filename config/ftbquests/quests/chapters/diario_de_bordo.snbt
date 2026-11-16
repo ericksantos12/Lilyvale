@@ -142,20 +142,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A0F200000000005"
-				item: "ad_astra:fuel_refinery"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0F200000000006"
-				item: "ad_astra:fuel_bucket"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A0F200000000005"
+					item: "ad_astra:fuel_refinery"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0F200000000006"
+					item: "ad_astra:fuel_bucket"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&5Combustível"
 			x: 2.0d
@@ -179,20 +179,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A0F200000000007"
-				item: "ad_astra:oxygen_loader"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0F200000000008"
-				item: "ad_astra:gas_tank"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A0F200000000007"
+					item: "ad_astra:oxygen_loader"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0F200000000008"
+					item: "ad_astra:gas_tank"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&5Ar para a viagem"
 			x: 0.0d
@@ -206,7 +206,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "ad_astra:space_helmet"
+			icon: {
+				Count: 1
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0F100000000007"
 			rewards: [{
 				id: "7A0F300000000007"
@@ -246,20 +252,20 @@
 			size: 1.25d
 			subtitle: "&6M — Marco"
 			tasks: [
-			{
-				advancement: "ad_astra:tier_1_rocket"
-				criterion: ""
-				id: "7A0F20000000000A"
-				title: "Obtenha um foguete de nível 1"
-				type: "advancement"
-			}
-			{
-				consume_items: false
-				id: "7A0F20000000000B"
-				item: "ad_astra:launch_pad"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					advancement: "ad_astra:tier_1_rocket"
+					criterion: ""
+					id: "7A0F20000000000A"
+					title: "Obtenha um foguete de nível 1"
+					type: "advancement"
+				}
+				{
+					consume_items: false
+					id: "7A0F20000000000B"
+					item: "ad_astra:launch_pad"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&6&lFoguete na rampa"
 			x: 6.0d

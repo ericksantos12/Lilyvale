@@ -1,0 +1,1952 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "banquete_de_gensokyo"
+	group: "2F3E0F43CC0404AB"
+	icon: "youkaisfeasts:green_tea"
+	id: "7A1E000000000001"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"O Youkai's Feasts traz uma culinária inteira de Gensokyo. Pés de chá selvagens aparecem pelo mundo; plante as sementes para ter a sua plantação."
+				"A tarefa detecta o plantio."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tea_seeds"
+			id: "7A1E100000000001"
+			rewards: [{
+				id: "7A1E300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/tea"
+				criterion: ""
+				id: "7A1E200000000001"
+				title: "Plante um pé de chá"
+				type: "advancement"
+			}]
+			title: "&aChá do campo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000001"]
+			description: [
+				"As folhas frescas viram chá verde, amarelo, branco, oolong, preto ou escuro, conforme secam, fermentam ou torram. O EMI mostra cada caminho."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tea_leaves"
+			id: "7A1E100000000002"
+			rewards: [{
+				id: "7A1E300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/tea_leaves"
+				criterion: ""
+				id: "7A1E200000000002"
+				title: "Colha folhas de chá"
+				type: "advancement"
+			}]
+			title: "&aFolhas colhidas"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000002"]
+			description: [
+				"A chaleira de Gensokyo prepara os chás sobre o fogo. Tenha xícaras à mão."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:kettle"
+			id: "7A1E100000000003"
+			rewards: [{
+				id: "7A1E300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000003"
+				item: "youkaisfeasts:kettle"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aChaleira de ferro"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000003"]
+			description: [
+				"Uma xícara de chá feita do pé ao bule. Qualquer chá do Youkai's Feasts conta."
+				"O marco registra o chá no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:green_tea"
+			id: "7A1E100000000004"
+			rewards: [{
+				id: "7A1E300000000004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000004"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "youkaisfeasts:tea"
+					}
+				}
+				title: "Obtenha um chá de Gensokyo"
+				type: "item"
+			}]
+			title: "&6&lHora do chá"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A1E100000000004"]
+			description: [
+				"Verde, amarelo, branco, oolong, preto e escuro. Cada um com seu tempo de preparo e seu sabor."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:oolong_tea"
+			id: "7A1E100000000005"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "youkaisfeasts:main/tea_master"
+				criterion: ""
+				id: "7A1E200000000005"
+				title: "Beba os seis chás de Gensokyo"
+				type: "advancement"
+			}]
+			title: "&dMestre do chá"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Uvas tintas, brancas e pretas crescem em parreiras que sobem e se espalham. Uvas selvagens aparecem pelo mundo."
+				"A tarefa detecta o plantio."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:red_grape_seeds"
+			id: "7A1E100000000006"
+			rewards: [{
+				id: "7A1E300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/grape"
+				criterion: ""
+				id: "7A1E200000000006"
+				title: "Plante uma muda de uva"
+				type: "advancement"
+			}]
+			title: "&aParreira japonesa"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000006"]
+			description: [
+				"Cachos maduros pendem da parreira. Podar os galhos mantém a planta produzindo."
+				"A tarefa detecta a colheita."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:red_grape"
+			id: "7A1E100000000007"
+			rewards: [{
+				id: "7A1E300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/grape_harvest"
+				criterion: ""
+				id: "7A1E200000000007"
+				title: "Colha um cacho de uva"
+				type: "advancement"
+			}]
+			title: "&aCacho maduro"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000007"]
+			description: [
+				"O tanque fermenta sucos em vinhos e arroz em saquê. Uma torneira de cobre facilita encher as garrafas."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:fermentation_tank"
+			id: "7A1E100000000008"
+			rewards: [{
+				id: "7A1E300000000008"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000008"
+				item: "youkaisfeasts:fermentation_tank"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aTanque de fermentação"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E100000000008"]
+			description: [
+				"Tinto, branco, Borgonha, champanhe e outros rótulos. Qualquer vinho conta."
+				"O marco registra a garrafa no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:red_wine"
+			id: "7A1E100000000009"
+			rewards: [{
+				id: "7A1E300000000009"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000009"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "youkaisfeasts:wine"
+					}
+				}
+				title: "Obtenha um vinho de Gensokyo"
+				type: "item"
+			}]
+			title: "&6&lSafra de Gensokyo"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Soja selvagem aparece pelo mundo. É a base de tofu, molho de soja, missô e natto."
+				"A tarefa detecta o plantio."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:soybean"
+			id: "7A1E10000000000A"
+			rewards: [{
+				id: "7A1E30000000000A"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/soybean"
+				criterion: ""
+				id: "7A1E20000000000A"
+				title: "Plante soja"
+				type: "advancement"
+			}]
+			title: "&aSoja no quintal"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E10000000000A"]
+			description: [
+				"A bacia de madeira espreme soja, uvas e outros ingredientes. Pule ou clique para prensar."
+				"A tarefa detecta o uso da bacia."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:wood_basin"
+			id: "7A1E10000000000B"
+			rewards: [{
+				id: "7A1E30000000000B"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/squeeze"
+				criterion: ""
+				id: "7A1E20000000000B"
+				title: "Esprema ingredientes na bacia"
+				type: "advancement"
+			}]
+			title: "&aPrensa de madeira"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1E10000000000B"]
+			description: [
+				"Leite de soja coalhado e prensado: o tofu abre caminho para mapo tofu, hambúrguer de tofu e muito mais."
+				"O marco registra o tofu no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tofu"
+			id: "7A1E10000000000C"
+			rewards: [{
+				id: "7A1E30000000000C"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000000C"
+				item: "youkaisfeasts:tofu"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lTofu caseiro"
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Na tábua de culinária, sushis, rolinhos e pratos montados são feitos colocando os ingredientes na ordem certa."
+				"A tarefa detecta o uso da tábua."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:cuisine_board"
+			id: "7A1E10000000000D"
+			rewards: [{
+				id: "7A1E30000000000D"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/cuisine_board"
+				criterion: ""
+				id: "7A1E20000000000D"
+				title: "Monte um prato na tábua de culinária"
+				type: "advancement"
+			}]
+			title: "&aTábua de culinária"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Panelinha, panela baixa e caldeirão grande cozinham sopas e ensopados sobre o fogo."
+				"A tarefa detecta o cozimento."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:small_iron_pot"
+			id: "7A1E10000000000E"
+			rewards: [{
+				id: "7A1E30000000000E"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/small_pot"
+				criterion: ""
+				id: "7A1E20000000000E"
+				title: "Cozinhe na panelinha de ferro"
+				type: "advancement"
+			}]
+			title: "&aPanelinha de ferro"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Empilhe bandejas de vapor sobre uma panela com água no fogo e tampe. Pãezinhos, ovos e peixes saem macios."
+				"A tarefa detecta o primeiro cozimento a vapor."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:steamer_rack"
+			id: "7A1E10000000000F"
+			rewards: [{
+				id: "7A1E30000000000F"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "youkaisfeasts:main/steamer"
+				criterion: ""
+				id: "7A1E20000000000F"
+				title: "Cozinhe no vapor"
+				type: "advancement"
+			}]
+			title: "&aVapor"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"O varal seca peixes, folhas de chá, uvas-passas e couro ao sol."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:drying_rack"
+			id: "7A1E100000000010"
+			rewards: [{
+				id: "7A1E300000000010"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000010"
+				item: "youkaisfeasts:drying_rack"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aVaral de secar"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A1E10000000000D"]
+			description: [
+				"Otoro, gunkan de ovas, nigiri de atum e outros: cortes precisos na tábua de culinária."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:otoro_nigiri"
+			id: "7A1E100000000011"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "youkaisfeasts:main/sushi_master"
+				criterion: ""
+				id: "7A1E200000000011"
+				title: "Prepare os quatro sushis clássicos"
+				type: "advancement"
+			}]
+			title: "&dMestre do sushi"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A1E10000000000F"]
+			description: [
+				"Quanto mais bandejas, mais coisas cozinham juntas. Até onde vai a sua torre?"
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:steamer_lid"
+			id: "7A1E100000000012"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "youkaisfeasts:main/max_steamer"
+				criterion: ""
+				id: "7A1E200000000012"
+				title: "Monte uma torre de vapor com muitas bandejas"
+				type: "advancement"
+			}]
+			title: "&dTorre de vapor"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A1E10000000000E"]
+			description: [
+				"Um prato servido dentro do bambu, digno de uma princesa da lua."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:kaguya_hime"
+			id: "7A1E100000000013"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "youkaisfeasts:main/kaguya_hime"
+				criterion: ""
+				id: "7A1E200000000013"
+				title: "Prepare o kaguya-hime"
+				type: "advancement"
+			}]
+			title: "&dPrincesa de bambu"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Dizem que a udumbara floresce uma vez a cada três mil anos. Em Lilyvale, com paciência e o cuidado certo, um pouco antes."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:udumbara_flower"
+			id: "7A1E100000000014"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "youkaisfeasts:main/udumbara_flower"
+				criterion: ""
+				id: "7A1E200000000014"
+				title: "Obtenha uma flor de udumbara"
+				type: "advancement"
+			}]
+			title: "&dFlor de udumbara"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:mapo_tofu"
+			id: "7A1E100000000015"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000015"
+				item: "youkaisfeasts:mapo_tofu"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tofu_burger"
+			id: "7A1E100000000016"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000016"
+				item: "youkaisfeasts:tofu_burger"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:stinky_tofu"
+			id: "7A1E100000000017"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000017"
+				item: "youkaisfeasts:stinky_tofu"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:cold_tofu"
+			id: "7A1E100000000018"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000018"
+				item: "youkaisfeasts:cold_tofu"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:miso_soup"
+			id: "7A1E100000000019"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000019"
+				item: "youkaisfeasts:miso_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:seafood_miso_soup"
+			id: "7A1E10000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001A"
+				item: "youkaisfeasts:seafood_miso_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:longevity_noodles"
+			id: "7A1E10000000001B"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001B"
+				item: "youkaisfeasts:longevity_noodles"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:lions_head"
+			id: "7A1E10000000001C"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001C"
+				item: "youkaisfeasts:lions_head"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:onigili"
+			id: "7A1E10000000001D"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001D"
+				item: "youkaisfeasts:onigili"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:pork_rice_ball"
+			id: "7A1E10000000001E"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001E"
+				item: "youkaisfeasts:pork_rice_ball"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:grilled_eel_over_rice"
+			id: "7A1E10000000001F"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000001F"
+				item: "youkaisfeasts:grilled_eel_over_rice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:kabayaki"
+			id: "7A1E100000000020"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000020"
+				item: "youkaisfeasts:kabayaki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tamagoyaki"
+			id: "7A1E100000000021"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000021"
+				item: "youkaisfeasts:tamagoyaki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:steamed_egg_in_bamboo"
+			id: "7A1E100000000022"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000022"
+				item: "youkaisfeasts:steamed_egg_in_bamboo"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:mantou"
+			id: "7A1E100000000023"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000023"
+				item: "youkaisfeasts:mantou"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:bun"
+			id: "7A1E100000000024"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000024"
+				item: "youkaisfeasts:bun"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:oyaki"
+			id: "7A1E100000000025"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000025"
+				item: "youkaisfeasts:oyaki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:steamed_crab"
+			id: "7A1E100000000026"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000026"
+				item: "youkaisfeasts:steamed_crab"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tekka_maki"
+			id: "7A1E100000000027"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000027"
+				item: "youkaisfeasts:tekka_maki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:kappa_maki"
+			id: "7A1E100000000028"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000028"
+				item: "youkaisfeasts:kappa_maki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:california_roll"
+			id: "7A1E100000000029"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000029"
+				item: "youkaisfeasts:california_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tuna_nigiri"
+			id: "7A1E10000000002A"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002A"
+				item: "youkaisfeasts:tuna_nigiri"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:egg_nigiri"
+			id: "7A1E10000000002B"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002B"
+				item: "youkaisfeasts:egg_nigiri"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:volcano_roll"
+			id: "7A1E10000000002C"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002C"
+				item: "youkaisfeasts:volcano_roll"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:mochi"
+			id: "7A1E10000000002D"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002D"
+				item: "youkaisfeasts:mochi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:sakura_mochi"
+			id: "7A1E10000000002E"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002E"
+				item: "youkaisfeasts:sakura_mochi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:matcha_mochi"
+			id: "7A1E10000000002F"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000002F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000002F"
+				item: "youkaisfeasts:matcha_mochi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:mitarashi_dango"
+			id: "7A1E100000000030"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000030"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000030"
+				item: "youkaisfeasts:mitarashi_dango"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tsukimi_dango"
+			id: "7A1E100000000031"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000031"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000031"
+				item: "youkaisfeasts:tsukimi_dango"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:assorted_dango"
+			id: "7A1E100000000032"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000032"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000032"
+				item: "youkaisfeasts:assorted_dango"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:senbei"
+			id: "7A1E100000000033"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000033"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000033"
+				item: "youkaisfeasts:senbei"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:candy_apple"
+			id: "7A1E100000000034"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000034"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000034"
+				item: "youkaisfeasts:candy_apple"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:avgolemono"
+			id: "7A1E100000000035"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000035"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000035"
+				item: "youkaisfeasts:avgolemono"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:pastitsio"
+			id: "7A1E100000000036"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000036"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000036"
+				item: "youkaisfeasts:pastitsio"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:tuscan_salmon"
+			id: "7A1E100000000037"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000037"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000037"
+				item: "youkaisfeasts:tuscan_salmon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			description: ["Um prato do banquete de Gensokyo. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:blazing_red_curry"
+			id: "7A1E100000000038"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000038"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000038"
+				item: "youkaisfeasts:blazing_red_curry"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:green_tea"
+			id: "7A1E100000000039"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000039"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000039"
+				item: "youkaisfeasts:green_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:yellow_tea"
+			id: "7A1E10000000003A"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003A"
+				item: "youkaisfeasts:yellow_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:white_tea"
+			id: "7A1E10000000003B"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003B"
+				item: "youkaisfeasts:white_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:oolong_tea"
+			id: "7A1E10000000003C"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003C"
+				item: "youkaisfeasts:oolong_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:black_tea"
+			id: "7A1E10000000003D"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003D"
+				item: "youkaisfeasts:black_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:dark_tea"
+			id: "7A1E10000000003E"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003E"
+				item: "youkaisfeasts:dark_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:genmai_tea"
+			id: "7A1E10000000003F"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000003F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000003F"
+				item: "youkaisfeasts:genmai_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 16.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:sakura_honey_tea"
+			id: "7A1E100000000040"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000040"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000040"
+				item: "youkaisfeasts:sakura_honey_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:red_wine"
+			id: "7A1E100000000041"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000041"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000041"
+				item: "youkaisfeasts:red_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 16.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:white_wine"
+			id: "7A1E100000000042"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000042"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000042"
+				item: "youkaisfeasts:white_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:burgundy"
+			id: "7A1E100000000043"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000043"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000043"
+				item: "youkaisfeasts:burgundy"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:champagne"
+			id: "7A1E100000000044"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000044"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000044"
+				item: "youkaisfeasts:champagne"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:mead"
+			id: "7A1E100000000045"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000045"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000045"
+				item: "youkaisfeasts:mead"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:dassai"
+			id: "7A1E100000000046"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000046"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000046"
+				item: "youkaisfeasts:dassai"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 20.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:kiku"
+			id: "7A1E100000000047"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000047"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000047"
+				item: "youkaisfeasts:kiku"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 20.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:hakutsuru"
+			id: "7A1E100000000048"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000048"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000048"
+				item: "youkaisfeasts:hakutsuru"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 22.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:red_grape_juice"
+			id: "7A1E100000000049"
+			optional: true
+			rewards: [{
+				id: "7A1E300000000049"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E200000000049"
+				item: "youkaisfeasts:red_grape_juice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 22.0d
+		}
+		{
+			description: ["Uma bebida da casa de chá. Chás vêm da chaleira; vinhos e saquês, do tanque de fermentação. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "youkaisfeasts:white_grape_juice"
+			id: "7A1E10000000004A"
+			optional: true
+			rewards: [{
+				id: "7A1E30000000004A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1E20000000004A"
+				item: "youkaisfeasts:white_grape_juice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 22.0d
+		}
+	]
+	title: "&a&lBanquete de Gensokyo"
+}

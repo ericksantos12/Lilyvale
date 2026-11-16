@@ -5,7 +5,7 @@
 	group: "048ED71F33A9801E"
 	icon: "minecraft:oak_sapling"
 	id: "5C01DCD466AAB2FD"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -14,7 +14,6 @@
 			hide_text_until_complete: false
 			icon: "minecraft:oak_log"
 			id: "2A131A7DE90EBD8A"
-			subtitle: "&bA — Aprendizado"
 			rewards: [{
 				count: 8
 				id: "2D4F27D7D0C563D8"
@@ -23,6 +22,7 @@
 			}]
 			shape: "circle"
 			size: 1.0d
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				icon: "minecraft:oak_log"
@@ -47,17 +47,17 @@
 				"Quatro tábuas, uma bancada e planos ligeiramente ambiciosos."
 				"O cascalho da recompensa pode virar pederneira. Talvez ele precise de um pouco de convencimento."
 			]
-			icon: "minecraft:crafting_table"
-			id: "21CB186D99292665"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:crafting_table"
+			id: "21CB186D99292665"
 			rewards: [{
 				count: 32
 				id: "33A17F8A41BC43B8"
 				item: "minecraft:gravel"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				id: "1699D50BAF4485E5"
@@ -74,11 +74,10 @@
 				"Encontre pederneira no cascalho. Com ela na mão, clique repetidamente com o botão direito em pedra comum para soltar uma rocha."
 				"Talvez a pederneira reclame primeiro. As duas rochas extras completam as três necessárias para a cabeça da picareta."
 			]
-			icon: "overgeared:knappable_rock"
-			id: "2F7BB906F78CB017"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:knappable_rock"
+			id: "2F7BB906F78CB017"
 			rewards: [
 				{
 					count: 2
@@ -92,6 +91,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -116,6 +116,8 @@
 				"Use as rochas na interface de lascagem. Veja no EMI o desenho da cabeça de picareta de pedra."
 				"Depois, junte a cabeça a um graveto. Seus punhos agradecem."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "minecraft:stone_pickaxe"
@@ -124,9 +126,6 @@
 				}
 			}
 			id: "0B46EB803FB4BBA3"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 16
@@ -143,6 +142,7 @@
 			]
 			shape: "circle"
 			size: 1.0d
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -174,17 +174,17 @@
 				"Mine oito pedregulhos para montar uma fornalha e procure cobre com sua picareta nova."
 				"Traga pelo menos três cobres brutos. Marque o caminho de volta com as tochas!"
 			]
-			icon: "minecraft:raw_copper"
-			id: "306193A63C4C5CC3"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:raw_copper"
+			id: "306193A63C4C5CC3"
 			rewards: [{
 				count: 8
 				id: "1879859C4ED3F4B3"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -211,6 +211,8 @@
 				"Funda três cobres brutos. Use dois lingotes e dois gravetos para fazer o martelo de ferreiro; confira a disposição no EMI."
 				"Guarde o lingote restante. A pedra será sua bigorna, e a água servirá para resfriar a primeira peça."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:copper_smithing_hammer"
@@ -219,9 +221,6 @@
 				}
 			}
 			id: "04719CFB10027CB6"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
 			rewards: [
 				{
 					count: 4
@@ -235,6 +234,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -267,11 +267,10 @@
 				"Coloque um bloco de pedra, agache e clique nele com o botão direito usando o martelo para transformá-lo em bigorna. Depois, olhe diretamente para a bigorna para concluir a tarefa de observação."
 				"Faça pinças de madeira antes de tocar no cobre quente. O EMI mostra a receita; metal incandescente não aceita aperto de mão."
 			]
-			icon: "overgeared:stone_anvil"
-			id: "1CD23A4BBBF8E16B"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:stone_anvil"
+			id: "1CD23A4BBBF8E16B"
 			rewards: [
 				{
 					count: 2
@@ -288,6 +287,7 @@
 			]
 			shape: "circle"
 			size: 1.0d
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					id: "3A1CB4A8F9882950"
@@ -322,17 +322,17 @@
 				"Obtenha e coloque uma pedra de amolar (grindstone). Segure a cabeça na mão principal, agache e clique com o botão direito mirando a grindstone. O polimento acontece diretamente no bloco."
 				"Guarde a cabeça de cobre polida para a próxima etapa. Os gravetos da recompensa serão o cabo da picareta."
 			]
-			icon: "minecraft:grindstone"
-			id: "79E58B9DB040B4BA"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:grindstone"
+			id: "79E58B9DB040B4BA"
 			rewards: [{
 				count: 4
 				id: "5CFB1CFA2257723A"
 				item: "minecraft:stick"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -375,6 +375,8 @@
 				"Agora sim: uma picareta com história!"
 				"Este marco registra a posse da picareta, não a autoria da forja. Continue no ferro em Forja e legado se quiser aprofundar a oficina; fazenda, casa, música e as outras trilhas não exigem concluir este capítulo."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:copper_pickaxe"
@@ -383,9 +385,6 @@
 				}
 			}
 			id: "3D531CC1B4F13F97"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&6M — Marco local"
 			rewards: [
 				{
 					count: 4
@@ -402,6 +401,7 @@
 			]
 			shape: "hexagon"
 			size: 1.35d
+			subtitle: "&6M — Marco local"
 			tasks: [{
 				consume_items: false
 				id: "0C61A66CBCC4E527"

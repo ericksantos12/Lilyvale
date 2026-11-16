@@ -3,7 +3,13 @@
 	default_quest_shape: "circle"
 	filename: "olhos_do_mundo"
 	group: "6E00000000000003"
-	icon: "endrem:old_eye"
+	icon: {
+		Count: 1
+		id: "endrem:old_eye"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "7A17000000000001"
 	order_index: 0
 	quest_links: [ ]
@@ -15,7 +21,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:old_eye"
+			icon: {
+				Count: 1
+				id: "endrem:old_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000001"
 			rewards: [{
 				id: "7A17300000000001"
@@ -71,12 +83,16 @@
 			y: 0.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:old_eye"
+			icon: {
+				Count: 1
+				id: "endrem:old_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000003"
 			optional: true
 			rewards: [{
@@ -90,7 +106,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000003"
-				item: "endrem:old_eye"
+				item: {
+					Count: 1
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -98,12 +120,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:rogue_eye"
+			icon: {
+				Count: 1
+				id: "endrem:rogue_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000004"
 			optional: true
 			rewards: [{
@@ -117,7 +143,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000004"
-				item: "endrem:rogue_eye"
+				item: {
+					Count: 1
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -125,12 +157,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:black_eye"
+			icon: {
+				Count: 1
+				id: "endrem:black_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000005"
 			optional: true
 			rewards: [{
@@ -144,7 +180,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000005"
-				item: "endrem:black_eye"
+				item: {
+					Count: 1
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -152,12 +194,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:cold_eye"
+			icon: {
+				Count: 1
+				id: "endrem:cold_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000006"
 			optional: true
 			rewards: [{
@@ -171,7 +217,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000006"
-				item: "endrem:cold_eye"
+				item: {
+					Count: 1
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -179,12 +231,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:lost_eye"
+			icon: {
+				Count: 1
+				id: "endrem:lost_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000007"
 			optional: true
 			rewards: [{
@@ -198,7 +254,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000007"
-				item: "endrem:lost_eye"
+				item: {
+					Count: 1
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -206,12 +268,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:corrupted_eye"
+			icon: {
+				Count: 1
+				id: "endrem:corrupted_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000008"
 			optional: true
 			rewards: [{
@@ -225,7 +291,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000008"
-				item: "endrem:corrupted_eye"
+				item: {
+					Count: 1
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -233,12 +305,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:nether_eye"
+			icon: {
+				Count: 1
+				id: "endrem:nether_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000009"
 			optional: true
 			rewards: [{
@@ -252,7 +328,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000009"
-				item: "endrem:nether_eye"
+				item: {
+					Count: 1
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -260,12 +342,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:cursed_eye"
+			icon: {
+				Count: 1
+				id: "endrem:cursed_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000A"
 			optional: true
 			rewards: [{
@@ -279,7 +365,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000A"
-				item: "endrem:cursed_eye"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -287,12 +379,16 @@
 			y: 4.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:magical_eye"
+			icon: {
+				Count: 1
+				id: "endrem:magical_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000B"
 			optional: true
 			rewards: [{
@@ -306,7 +402,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000B"
-				item: "endrem:magical_eye"
+				item: {
+					Count: 1
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -314,12 +416,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:guardian_eye"
+			icon: {
+				Count: 1
+				id: "endrem:guardian_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000C"
 			optional: true
 			rewards: [{
@@ -333,7 +439,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000C"
-				item: "endrem:guardian_eye"
+				item: {
+					Count: 1
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -341,12 +453,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:wither_eye"
+			icon: {
+				Count: 1
+				id: "endrem:wither_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000D"
 			optional: true
 			rewards: [{
@@ -360,7 +476,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000D"
-				item: "endrem:wither_eye"
+				item: {
+					Count: 1
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -368,12 +490,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:evil_eye"
+			icon: {
+				Count: 1
+				id: "endrem:evil_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000E"
 			optional: true
 			rewards: [{
@@ -387,7 +513,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000E"
-				item: "endrem:evil_eye"
+				item: {
+					Count: 1
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -395,12 +527,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:cryptic_eye"
+			icon: {
+				Count: 1
+				id: "endrem:cryptic_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A1710000000000F"
 			optional: true
 			rewards: [{
@@ -414,7 +550,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A1720000000000F"
-				item: "endrem:cryptic_eye"
+				item: {
+					Count: 1
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -422,12 +564,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:witch_eye"
+			icon: {
+				Count: 1
+				id: "endrem:witch_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000010"
 			optional: true
 			rewards: [{
@@ -441,7 +587,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000010"
-				item: "endrem:witch_eye"
+				item: {
+					Count: 1
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -449,12 +601,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:undead_eye"
+			icon: {
+				Count: 1
+				id: "endrem:undead_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000011"
 			optional: true
 			rewards: [{
@@ -468,7 +624,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000011"
-				item: "endrem:undead_eye"
+				item: {
+					Count: 1
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -476,12 +638,16 @@
 			y: 6.0d
 		}
 		{
-			description: [
-				"Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."
-			]
+			description: ["Um olho para a coleção. O avanço do End Remastered com o nome deste olho dá a pista de onde procurar; alguns vêm de estruturas, outros de criaturas, trocas ou receitas. Registrar exige apenas tê-lo uma vez. Completar os dezesseis é opcional."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "endrem:exotic_eye"
+			icon: {
+				Count: 1
+				id: "endrem:exotic_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A17100000000012"
 			optional: true
 			rewards: [{
@@ -495,7 +661,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A17200000000012"
-				item: "endrem:exotic_eye"
+				item: {
+					Count: 1
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]

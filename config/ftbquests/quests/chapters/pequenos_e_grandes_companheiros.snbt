@@ -15,7 +15,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "naturalist:capture_net"
+			icon: {
+				Count: 1
+				id: "naturalist:capture_net"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A11100000000001"
 			rewards: [{
 				id: "7A11300000000001"
@@ -28,7 +34,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A11200000000001"
-				item: "naturalist:capture_net"
+				item: {
+					Count: 1
+					id: "naturalist:capture_net"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]

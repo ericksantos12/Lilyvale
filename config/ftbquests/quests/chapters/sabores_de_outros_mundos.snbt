@@ -1,0 +1,1145 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "sabores_de_outros_mundos"
+	group: "2F3E0F43CC0404AB"
+	icon: "mynethersdelight:nether_bricks_stove"
+	id: "7A1F000000000001"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"O My Nether's Delight leva a cozinha ao Nether. O fogão de tijolos do Nether (há uma versão de alma) cozinha como o do Farmer's Delight."
+				"Este capítulo é opcional e depende de viajar ao Nether e ao End; nada na fazenda precisa dele. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:nether_bricks_stove"
+			id: "7A1F100000000001"
+			rewards: [{
+				id: "7A1F300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000001"
+				item: "mynethersdelight:nether_bricks_stove"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aFogão do Nether"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"A pimenta-bala cresce em solo do Nether. Dá ardência a curries, espetinhos e sopas."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:bullet_pepper"
+			id: "7A1F100000000002"
+			rewards: [{
+				id: "7A1F300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000002"
+				item: "mynethersdelight:bullet_pepper"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aPimenta-bala"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O composto de Letios vira solo ressurgente, que faz fungos e plantas do Nether crescerem melhor."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:resurgent_soil"
+			id: "7A1F100000000003"
+			rewards: [{
+				id: "7A1F300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000003"
+				item: "mynethersdelight:resurgent_soil"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aSolo ressurgente"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1F100000000002"]
+			description: [
+				"Hoglin recheado e assado na panela, servido como banquete no centro da mesa. Não é para qualquer jantar."
+				"O marco registra o banquete no inventário."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:roast_stuffed_hoglin"
+			id: "7A1F100000000004"
+			rewards: [{
+				id: "7A1F300000000004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000004"
+				item: "mynethersdelight:roast_stuffed_hoglin"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lBanquete do Nether"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O End's Delight transforma frutas de coro, carne de shulker e até restos da dragoa em comida."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:end_stove"
+			id: "7A1F100000000005"
+			rewards: [{
+				id: "7A1F300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "ends_delight:the_end_chef"
+				criterion: ""
+				id: "7A1F200000000005"
+				title: "Obtenha um fogão do End"
+				type: "advancement"
+			}]
+			title: "&aFogão do End"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Facas de pedra do End, púrpura ou casca de ovo de dragão funcionam na tábua de corte como qualquer outra."
+				"Qualquer faca do End conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: {
+				Count: 1
+				id: "ends_delight:purpur_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7A1F100000000006"
+			rewards: [{
+				id: "7A1F300000000006"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "ends_delight:get_knife"
+				criterion: ""
+				id: "7A1F200000000006"
+				title: "Obtenha uma faca do End"
+				type: "advancement"
+			}]
+			title: "&aFaca do vazio"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Flores de coro secas viram um chá de cor estranha e sabor mais estranho ainda."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:chorus_flower_tea"
+			id: "7A1F100000000007"
+			rewards: [{
+				id: "7A1F300000000007"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "ends_delight:get_chorus_flower_tea"
+				criterion: ""
+				id: "7A1F200000000007"
+				title: "Prepare um chá de flor de coro"
+				type: "advancement"
+			}]
+			title: "&aChá de flor de coro"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1F100000000006"]
+			description: [
+				"Os dois grandes banquetes do End: ensopado de carne de dragão e ovo de dragão no vapor."
+				"Usa o avanço do próprio mod, que pede os dois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:dragon_meat_stew"
+			id: "7A1F100000000008"
+			rewards: [{
+				id: "7A1F300000000008"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "ends_delight:dragon_egg_shell_feast"
+				criterion: ""
+				id: "7A1F200000000008"
+				title: "Prepare o ensopado de dragão e o ovo de dragão no vapor"
+				type: "advancement"
+			}]
+			title: "&6&lCeia da dragoa"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:spicy_hoglin_stew"
+			id: "7A1F100000000009"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000009"
+				item: "mynethersdelight:spicy_hoglin_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:spicy_curry"
+			id: "7A1F10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000A"
+				item: "mynethersdelight:spicy_curry"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:spicy_noodle_soup"
+			id: "7A1F10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000B"
+				item: "mynethersdelight:spicy_noodle_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:strider_stew"
+			id: "7A1F10000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000C"
+				item: "mynethersdelight:strider_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:crimson_stroganoff"
+			id: "7A1F10000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000D"
+				item: "mynethersdelight:crimson_stroganoff"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:hotdog"
+			id: "7A1F10000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000E"
+				item: "mynethersdelight:hotdog"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:chilidog"
+			id: "7A1F10000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000000F"
+				item: "mynethersdelight:chilidog"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:nether_burger"
+			id: "7A1F100000000010"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000010"
+				item: "mynethersdelight:nether_burger"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:hot_wings"
+			id: "7A1F100000000011"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000011"
+				item: "mynethersdelight:hot_wings"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:scotch_eggs"
+			id: "7A1F100000000012"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000012"
+				item: "mynethersdelight:scotch_eggs"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:deviled_egg"
+			id: "7A1F100000000013"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000013"
+				item: "mynethersdelight:deviled_egg"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:breakfast_sampler"
+			id: "7A1F100000000014"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000014"
+				item: "mynethersdelight:breakfast_sampler"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:giant_takoyaki"
+			id: "7A1F100000000015"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000015"
+				item: "mynethersdelight:giant_takoyaki"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:fries_ghasta"
+			id: "7A1F100000000016"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000016"
+				item: "mynethersdelight:fries_ghasta"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:ghast_salad"
+			id: "7A1F100000000017"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000017"
+				item: "mynethersdelight:ghast_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:hot_cream_cone"
+			id: "7A1F100000000018"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000018"
+				item: "mynethersdelight:hot_cream_cone"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:magma_cake_block"
+			id: "7A1F100000000019"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000019"
+				item: "mynethersdelight:magma_cake_block"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do Nether, apimentado e quente. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "mynethersdelight:tear_popsicle"
+			id: "7A1F10000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001A"
+				item: "mynethersdelight:tear_popsicle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:ender_noodle"
+			id: "7A1F10000000001B"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001B"
+				item: "ends_delight:ender_noodle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:ender_congee"
+			id: "7A1F10000000001C"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001C"
+				item: "ends_delight:ender_congee"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:ender_bamboo_rice"
+			id: "7A1F10000000001D"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001D"
+				item: "ends_delight:ender_bamboo_rice"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:shulker_soup"
+			id: "7A1F10000000001E"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001E"
+				item: "ends_delight:shulker_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:stir_fried_shulker_meat"
+			id: "7A1F10000000001F"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000001F"
+				item: "ends_delight:stir_fried_shulker_meat"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:shulker_omelette"
+			id: "7A1F100000000020"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000020"
+				item: "ends_delight:shulker_omelette"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:roasted_dragon_steak"
+			id: "7A1F100000000021"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000021"
+				item: "ends_delight:roasted_dragon_steak"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:dragon_leg_with_sauce"
+			id: "7A1F100000000022"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000022"
+				item: "ends_delight:dragon_leg_with_sauce"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:dragon_breath_and_chorus_soup"
+			id: "7A1F100000000023"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000023"
+				item: "ends_delight:dragon_breath_and_chorus_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:end_mixed_salad"
+			id: "7A1F100000000024"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000024"
+				item: "ends_delight:end_mixed_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:assorted_salad"
+			id: "7A1F100000000025"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000025"
+				item: "ends_delight:assorted_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:stuffed_rice_cake"
+			id: "7A1F100000000026"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000026"
+				item: "ends_delight:stuffed_rice_cake"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:chorus_fruit_pie"
+			id: "7A1F100000000027"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000027"
+				item: "ends_delight:chorus_fruit_pie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:chorus_cookie"
+			id: "7A1F100000000028"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000028"
+				item: "ends_delight:chorus_cookie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:chorus_fruit_popsicle"
+			id: "7A1F100000000029"
+			optional: true
+			rewards: [{
+				id: "7A1F300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F200000000029"
+				item: "ends_delight:chorus_fruit_popsicle"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:bubble_tea"
+			id: "7A1F10000000002A"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000002A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000002A"
+				item: "ends_delight:bubble_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:chorus_fruit_milk_tea"
+			id: "7A1F10000000002B"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000002B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000002B"
+				item: "ends_delight:chorus_fruit_milk_tea"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 10.0d
+		}
+		{
+			description: ["Um prato do End, feito com o que sobra das ilhas e da dragoa. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "ends_delight:dragon_breath_soda"
+			id: "7A1F10000000002C"
+			optional: true
+			rewards: [{
+				id: "7A1F30000000002C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1F20000000002C"
+				item: "ends_delight:dragon_breath_soda"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 10.0d
+		}
+	]
+	title: "&a&lSabores de Outros Mundos"
+}

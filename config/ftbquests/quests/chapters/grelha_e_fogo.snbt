@@ -1,0 +1,466 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "grelha_e_fogo"
+	group: "2F3E0F43CC0404AB"
+	icon: "barbequesdelight:grill"
+	id: "7A1D000000000001"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"O Barbeque's Delight traz uma grelha de verdade: coloque-a sobre uma fonte de calor e vire os espetos para assar dos dois lados."
+				"Deixar tempo demais queima o espeto. A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grill"
+			id: "7A1D100000000001"
+			rewards: [{
+				id: "7A1D300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000001"
+				item: "barbequesdelight:grill"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aGrelha acesa"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1D100000000001"]
+			description: [
+				"Carnes, peixes, cogumelos, batatas e vegetais vão no palito: a montagem é feita com o espeto na mão, conforme o EMI."
+				"Qualquer espeto cru conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:raw_beef_skewer"
+			id: "7A1D100000000002"
+			rewards: [{
+				id: "7A1D300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000002"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "barbequesdelight:raw_skewers"
+					}
+				}
+				title: "Monte um espeto cru de qualquer tipo"
+				type: "item"
+			}]
+			title: "&aEspeto montado"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1D100000000002"]
+			description: [
+				"O primeiro espeto no ponto. Agora é chamar os vizinhos."
+				"Qualquer espeto grelhado conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_beef_skewer"
+			id: "7A1D100000000003"
+			rewards: [{
+				id: "7A1D300000000003"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000003"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "barbequesdelight:grilled_skewers"
+					}
+				}
+				title: "Obtenha um espeto grelhado de qualquer tipo"
+				type: "item"
+			}]
+			title: "&6&lChurrasco no quintal"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1D100000000002"]
+			description: [
+				"Todo churrasqueiro já queimou um espeto. Este é o seu atestado."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:burnt_skewer"
+			id: "7A1D100000000004"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000004"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000004"
+				item: "barbequesdelight:burnt_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dPassou do ponto"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_beef_skewer"
+			id: "7A1D100000000005"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000005"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000005"
+				item: "barbequesdelight:grilled_beef_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_chicken_skewer"
+			id: "7A1D100000000006"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000006"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000006"
+				item: "barbequesdelight:grilled_chicken_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_lamb_skewer"
+			id: "7A1D100000000007"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000007"
+				item: "barbequesdelight:grilled_lamb_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_pork_sausage_skewer"
+			id: "7A1D100000000008"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000008"
+				item: "barbequesdelight:grilled_pork_sausage_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_rabbit_skewer"
+			id: "7A1D100000000009"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000009"
+				item: "barbequesdelight:grilled_rabbit_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_cod_skewer"
+			id: "7A1D10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000A"
+				item: "barbequesdelight:grilled_cod_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_salmon_skewer"
+			id: "7A1D10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000B"
+				item: "barbequesdelight:grilled_salmon_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_mushroom_skewer"
+			id: "7A1D10000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000C"
+				item: "barbequesdelight:grilled_mushroom_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_potato_skewer"
+			id: "7A1D10000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000D"
+				item: "barbequesdelight:grilled_potato_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:grilled_vegetable_skewer"
+			id: "7A1D10000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000E"
+				item: "barbequesdelight:grilled_vegetable_skewer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:kebab_sandwich"
+			id: "7A1D10000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1D30000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D20000000000F"
+				item: "barbequesdelight:kebab_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:kebab_wrap"
+			id: "7A1D100000000010"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000010"
+				item: "barbequesdelight:kebab_wrap"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: ["Um espeto ou prato montado da grelha. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "barbequesdelight:bibimbap"
+			id: "7A1D100000000011"
+			optional: true
+			rewards: [{
+				id: "7A1D300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1D200000000011"
+				item: "barbequesdelight:bibimbap"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+	]
+	title: "&a&lGrelha e Fogo"
+}

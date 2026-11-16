@@ -514,6 +514,48 @@
             ]
         },
         {
+            "pakku_id": "7Y0CG0wdc9DOblXf",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "barbeques-delight"
+            },
+            "name": {
+                "curseforge": "Barbeque's Delight [Forge/NeoForge]"
+            },
+            "id": {
+                "curseforge": "1007788"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "barbequesdelight-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8004/548/barbequesdelight-1.0.6.jar",
+                    "id": "8004548",
+                    "parent_id": "1007788",
+                    "hashes": {
+                        "sha1": "954c6b97e0d6c3b3cd59291e2ff1388fd8d2ca6c",
+                        "md5": "55ecdf5c412180ed544b4db342c852d2"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 868228,
+                    "date_published": "2026-04-28T10:07:49.393Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "uhRiot17PjgrvdZU",
             "pakku_links": [
                 "AaycJhGQfNOYf79A",
@@ -788,6 +830,48 @@
             ]
         },
         {
+            "pakku_id": "C7cvW4b33YeHedls",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "brewin-and-chewin"
+            },
+            "name": {
+                "curseforge": "Brewin' And Chewin'"
+            },
+            "id": {
+                "curseforge": "637808"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BrewinAndChewin-1.20.1-3.2.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6237/884/BrewinAndChewin-1.20.1-3.2.1.jar",
+                    "id": "6237884",
+                    "parent_id": "637808",
+                    "hashes": {
+                        "sha1": "b11a91386ef9da2569b69fd4c229b1c31dcc2eb9",
+                        "md5": "a9764338cbfe60d1e67c578b246c79ba"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 1206255,
+                    "date_published": "2025-02-26T03:58:57.927Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "54V8l8PJyeQ8Fn3b",
             "pakku_links": [
                 "H7mBr7GVJnyWQxn7"
@@ -983,6 +1067,48 @@
                     ],
                     "size": 15060263,
                     "date_published": "2024-10-15T01:04:15.570Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "aKifTK6XKIUutv72",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "choppers-delight"
+            },
+            "name": {
+                "curseforge": "Chopper's Delight"
+            },
+            "id": {
+                "curseforge": "1339974"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "choppersdelight-forge-1.20.1-1.2.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9494/599/choppersdelight-forge-1.20.1-1.2.3.jar",
+                    "id": "9494599",
+                    "parent_id": "1339974",
+                    "hashes": {
+                        "sha1": "99a7c240c9343cb795c9d293a72bf1425a356fd2",
+                        "md5": "32c0d250abfde735501a69063d683f4f"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 263873,
+                    "date_published": "2026-11-07T15:42:42.250Z"
                 }
             ]
         },
@@ -2014,6 +2140,42 @@
             ]
         },
         {
+            "pakku_id": "NclgwQ7ENxwj5fc3",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "diegesis"
+            },
+            "name": {
+                "curseforge": "Diegesis"
+            },
+            "id": {
+                "curseforge": "1790227"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "diegesis-forge-1.20.1-1.0.0-beta.11.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/9643/618/diegesis-forge-1.20.1-1.0.0-beta.11.jar",
+                    "id": "9643618",
+                    "parent_id": "1790227",
+                    "hashes": {
+                        "sha1": "b5d520aa8d3b2854e2384ddd9d73c1943860ec0b",
+                        "md5": "8efd77f3c8c41f14dfeaa045a5d88307"
+                    },
+                    "required_dependencies": [],
+                    "size": 979754,
+                    "date_published": "2026-11-16T06:42:37.833Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "KKfFaLXz1vKqIMnQ",
             "type": "MOD",
             "slug": {
@@ -2668,6 +2830,47 @@
                     "required_dependencies": [],
                     "size": 889634,
                     "date_published": "2024-08-05T15:49:52.210Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "TUn18r7U3d5h44ZU",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ends-delight"
+            },
+            "name": {
+                "curseforge": "End's Delight"
+            },
+            "id": {
+                "curseforge": "662675"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ends_delight-2.6.1+forge.1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8675/193/ends_delight-2.6.1+forge.1.20.1.jar",
+                    "id": "8675193",
+                    "parent_id": "662675",
+                    "hashes": {
+                        "sha1": "92158881934f91b125a8d4699eb9e33317fc485b",
+                        "md5": "f078440f68f6273419fda69f21a8bd2c"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 264014,
+                    "date_published": "2026-08-18T06:33:25.287Z"
                 }
             ]
         },
@@ -3472,6 +3675,48 @@
             ]
         },
         {
+            "pakku_id": "qbS5RTddt7HZqeFy",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "gensokyo-delight-youkais-feasts"
+            },
+            "name": {
+                "curseforge": "Gensokyo Delight ~ Youkais' Feasts"
+            },
+            "id": {
+                "curseforge": "1309991"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "youkaisfeasts-0.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9285/772/youkaisfeasts-0.5.2.jar",
+                    "id": "9285772",
+                    "parent_id": "1309991",
+                    "hashes": {
+                        "sha1": "d41bb199dde663ce95d07c03e8959c2b38da923e",
+                        "md5": "31dac51380d95c0248c6c8a8b81a8553"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 4110564,
+                    "date_published": "2026-10-22T09:23:16.850Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "kN1RUQvBM6VERrU8",
             "type": "MOD",
             "slug": {
@@ -3627,6 +3872,49 @@
                     ],
                     "size": 439448,
                     "date_published": "2024-02-19T18:22:05.517Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zBBgl4WNkq664Xml",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv",
+                "NclgwQ7ENxwj5fc3"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hands-on-delight"
+            },
+            "name": {
+                "curseforge": "Hands-On Delight"
+            },
+            "id": {
+                "curseforge": "1790221"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "handson_delight-forge-1.20.1-1.5.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9624/649/handson_delight-forge-1.20.1-1.5.0.jar",
+                    "id": "9624649",
+                    "parent_id": "1790221",
+                    "hashes": {
+                        "sha1": "60eb5d4fc0fbfe70f43d65cab44af28d6f843712",
+                        "md5": "b78f5879fe4b94a3b9464c5f40573185"
+                    },
+                    "required_dependencies": [
+                        "398521",
+                        "1790227"
+                    ],
+                    "size": 1386094,
+                    "date_published": "2026-11-15T06:19:14.620Z"
                 }
             ]
         },
@@ -4111,43 +4399,6 @@
             ]
         },
         {
-            "pakku_id": "ATTzE6KJdnGXT8Y1",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lets-do-bakery"
-            },
-            "name": {
-                "curseforge": "Legacy: [Let's Do] Bakery"
-            },
-            "id": {
-                "curseforge": "886559"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "letsdo-bakery-forge-1.1.15.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5567/132/letsdo-bakery-forge-1.1.15.jar",
-                    "id": "5567132",
-                    "parent_id": "886559",
-                    "hashes": {
-                        "sha1": "c5cd44088089fca03f3291b851dcb0d00018fecb",
-                        "md5": "c1ea271f8ea61df80a37010e32d9e08f"
-                    },
-                    "required_dependencies": [],
-                    "size": 1539376,
-                    "date_published": "2024-07-26T07:04:28.740Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "aAFbTL0YcIfmglsa",
             "pakku_links": [
                 "lBHWVD9ZPfDmHNj0",
@@ -4524,6 +4775,47 @@
                     "required_dependencies": [],
                     "size": 374176,
                     "date_published": "2026-09-21T11:27:07.980Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "sj46OTVuzljCH9pK",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "my-nethers-delight"
+            },
+            "name": {
+                "curseforge": "My Nether's Delight"
+            },
+            "id": {
+                "curseforge": "1003673"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MyNethersDelight-1.20.1-1.10.4-backport.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8636/385/MyNethersDelight-1.20.1-1.10.4-backport.1.jar",
+                    "id": "8636385",
+                    "parent_id": "1003673",
+                    "hashes": {
+                        "sha1": "661313382f1764e14df775b0061050d946699de6",
+                        "md5": "4c425c02ff1d439442aec7e9b08a674b"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 903317,
+                    "date_published": "2026-08-13T00:01:37.067Z"
                 }
             ]
         },
@@ -6267,6 +6559,47 @@
             ]
         },
         {
+            "pakku_id": "ULr5Xx5lh2e8moWm",
+            "pakku_links": [
+                "FuzmH9aIjT9A6PAv"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "vanilla-delight"
+            },
+            "name": {
+                "curseforge": "Vanilla Delight"
+            },
+            "id": {
+                "curseforge": "1209304"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vanilladelight-1.20.1-1.0.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8650/468/vanilladelight-1.20.1-1.0.6.jar",
+                    "id": "8650468",
+                    "parent_id": "1209304",
+                    "hashes": {
+                        "sha1": "f5f211aeaba71d5bcb0efe862268b69be7e1f958",
+                        "md5": "fa3b4fedd67d06a6cc9a1c1bd1172880"
+                    },
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 1867584,
+                    "date_published": "2026-08-14T22:55:56.520Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "I0HqIPbfZ9bUKWwE",
             "pakku_links": [
                 "FuzmH9aIjT9A6PAv"
@@ -6827,174 +7160,6 @@
                     "required_dependencies": [],
                     "size": 999570,
                     "date_published": "2026-10-15T06:55:40.083Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "6EcW4aGKasygZJc2",
-            "pakku_links": [
-                "FXNKMvH6JiRMbecG"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "do-api"
-            },
-            "name": {
-                "curseforge": "[Let's Do] API "
-            },
-            "id": {
-                "curseforge": "864599"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "letsdo-API-forge-1.2.15-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5468/182/letsdo-API-forge-1.2.15-forge.jar",
-                    "id": "5468182",
-                    "parent_id": "864599",
-                    "hashes": {
-                        "sha1": "a261043a45097d861a13a63ebdbb0ca350e06a63",
-                        "md5": "82d392dd5ef6064d8988592a35b3b403"
-                    },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 1440591,
-                    "date_published": "2024-06-24T15:22:24.290Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "bpE5kzlY90Em0Ito",
-            "pakku_links": [
-                "FXNKMvH6JiRMbecG"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lets-do-farm-charm"
-            },
-            "name": {
-                "curseforge": "[Let's Do] Farm & Charm"
-            },
-            "id": {
-                "curseforge": "1038103"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "letsdo-farm_and_charm-forge-1.0.14.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7088/13/letsdo-farm_and_charm-forge-1.0.14.jar",
-                    "id": "7088013",
-                    "parent_id": "1038103",
-                    "hashes": {
-                        "sha1": "4db017c18fff8356e1aa5f0e9c683f1af30bec2b",
-                        "md5": "6278fb984da2ca60498fd4c78675524a"
-                    },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 2328624,
-                    "date_published": "2025-10-09T19:59:01.460Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "qBHFzpNIdJ70akbO",
-            "pakku_links": [
-                "6EcW4aGKasygZJc2",
-                "FXNKMvH6JiRMbecG"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lets-do-meadow"
-            },
-            "name": {
-                "curseforge": "[Let's Do] Meadow"
-            },
-            "id": {
-                "curseforge": "821483"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "letsdo-meadow-forge-1.3.25.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6467/344/letsdo-meadow-forge-1.3.25.jar",
-                    "id": "6467344",
-                    "parent_id": "821483",
-                    "hashes": {
-                        "sha1": "da7d934ff35f03279bee6597362f30d2aea7462f",
-                        "md5": "3ea594fdc393d588a236d54e870b7789"
-                    },
-                    "required_dependencies": [
-                        "864599",
-                        "419699"
-                    ],
-                    "size": 2676511,
-                    "date_published": "2025-04-26T15:45:47.767Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "Y8L2mGX1vLwhZsfW",
-            "pakku_links": [
-                "FXNKMvH6JiRMbecG"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lets-do-vinery"
-            },
-            "name": {
-                "curseforge": "[Let's Do] Vinery"
-            },
-            "id": {
-                "curseforge": "704465"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "letsdo-vinery-forge-1.4.41.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6965/751/letsdo-vinery-forge-1.4.41.jar",
-                    "id": "6965751",
-                    "parent_id": "704465",
-                    "hashes": {
-                        "sha1": "68ed3fa9524bef601064f49f60a30423db2f8fdc",
-                        "md5": "bf692e0100772cfa90b9878a38c1f28a"
-                    },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 2041283,
-                    "date_published": "2025-09-05T13:01:36.233Z"
                 }
             ]
         },

@@ -26,20 +26,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A14200000000001"
-				item: "chipped:mason_table"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A14200000000002"
-				item: "chipped:carpenters_table"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A14200000000001"
+					item: "chipped:mason_table"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A14200000000002"
+					item: "chipped:carpenters_table"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&eMil jeitos de ser pedra"
 			x: 0.0d
@@ -65,34 +65,34 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A14200000000003"
-				item: "chipped:loom_table"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A14200000000004"
-				item: "chipped:botanist_workbench"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A14200000000005"
-				item: "chipped:tinkering_table"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A14200000000006"
-				item: "chipped:alchemy_bench"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A14200000000003"
+					item: "chipped:loom_table"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A14200000000004"
+					item: "chipped:botanist_workbench"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A14200000000005"
+					item: "chipped:tinkering_table"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A14200000000006"
+					item: "chipped:alchemy_bench"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dOficina de acabamentos"
 			x: 0.0d
@@ -105,7 +105,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "constructionstick:wooden_stick"
+			icon: {
+				Count: 1
+				id: "constructionstick:wooden_stick"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A14100000000003"
 			rewards: [{
 				id: "7A14300000000003"
@@ -118,7 +124,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A14200000000007"
-				item: "constructionstick:wooden_stick"
+				item: {
+					Count: 1
+					id: "constructionstick:wooden_stick"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -134,7 +146,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "constructionstick:iron_stick"
+			icon: {
+				Count: 1
+				id: "constructionstick:iron_stick"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A14100000000004"
 			optional: true
 			rewards: [{
@@ -148,7 +166,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A14200000000008"
-				item: "constructionstick:iron_stick"
+				item: {
+					Count: 1
+					id: "constructionstick:iron_stick"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -176,20 +200,20 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A14200000000009"
-				item: "constructionstick:template_angel"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1420000000000A"
-				item: "constructionstick:template_replacement"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A14200000000009"
+					item: "constructionstick:template_angel"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1420000000000A"
+					item: "constructionstick:template_replacement"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dKit de reforma"
 			x: 4.0d
@@ -213,20 +237,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A1420000000000B"
-				item: "minecraft:lantern"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1420000000000C"
-				item: "minecraft:flower_pot"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A1420000000000B"
+					item: "minecraft:lantern"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1420000000000C"
+					item: "minecraft:flower_pot"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&eDetalhes que mudam tudo"
 			x: 8.0d

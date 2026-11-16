@@ -15,7 +15,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "minecraft:fishing_rod"
+			icon: {
+				Count: 1
+				id: "minecraft:fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A07100000000001"
 			rewards: [{
 				id: "7A07300000000001"
@@ -228,20 +234,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A07200000000008"
-				item: "tide:fishing_line"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A07200000000009"
-				item: "tide:fishing_hook"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A07200000000008"
+					item: "tide:fishing_line"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A07200000000009"
+					item: "tide:fishing_hook"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&aLinha e anzol"
 			x: 8.0d

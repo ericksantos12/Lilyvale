@@ -43,7 +43,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "another_furniture:furniture_hammer"
+			icon: {
+				Count: 1
+				id: "another_furniture:furniture_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A15100000000002"
 			rewards: [{
 				id: "7A15300000000002"
@@ -56,7 +62,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A15200000000002"
-				item: "another_furniture:furniture_hammer"
+				item: {
+					Count: 1
+					id: "another_furniture:furniture_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -82,20 +94,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A15200000000003"
-				item: "displaydelight:food_plate"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000004"
-				item: "displaydelight:small_food_plate"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A15200000000003"
+					item: "displaydelight:food_plate"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A15200000000004"
+					item: "displaydelight:small_food_plate"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&ePrato na mesa"
 			x: 2.0d
@@ -120,39 +132,39 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A15200000000005"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:shelves"
+				{
+					consume_items: false
+					id: "7A15200000000005"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:shelves"
+						}
 					}
+					title: "Uma prateleira de qualquer madeira"
+					type: "item"
 				}
-				title: "Uma prateleira de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000006"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:drawers"
+				{
+					consume_items: false
+					id: "7A15200000000006"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:drawers"
+						}
 					}
+					title: "Um gaveteiro de qualquer madeira"
+					type: "item"
 				}
-				title: "Um gaveteiro de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000007"
-				item: "dustydecorations:ceramic_pot"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A15200000000007"
+					item: "dustydecorations:ceramic_pot"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dCozinha"
 			x: 0.0d
@@ -177,45 +189,45 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A15200000000008"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:sofas"
+				{
+					consume_items: false
+					id: "7A15200000000008"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:sofas"
+						}
 					}
+					title: "Um sofá de qualquer cor"
+					type: "item"
 				}
-				title: "Um sofá de qualquer cor"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000009"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:tables"
+				{
+					consume_items: false
+					id: "7A15200000000009"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:tables"
+						}
 					}
+					title: "Uma mesa de qualquer madeira"
+					type: "item"
 				}
-				title: "Uma mesa de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1520000000000A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:lamps"
+				{
+					consume_items: false
+					id: "7A1520000000000A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:lamps"
+						}
 					}
+					title: "Um abajur de qualquer cor"
+					type: "item"
 				}
-				title: "Um abajur de qualquer cor"
-				type: "item"
-			}
 			]
 			title: "&dSala de estar"
 			x: 4.0d
@@ -240,33 +252,33 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A1520000000000B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:curtains"
+				{
+					consume_items: false
+					id: "7A1520000000000B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:curtains"
+						}
 					}
+					title: "Uma cortina de qualquer cor"
+					type: "item"
 				}
-				title: "Uma cortina de qualquer cor"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1520000000000C"
-				item: "cluttered:antique_standing_lamp"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1520000000000D"
-				item: "dustydecorations:bookstack"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A1520000000000C"
+					item: "cluttered:antique_standing_lamp"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1520000000000D"
+					item: "dustydecorations:bookstack"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dQuarto"
 			x: 8.0d
@@ -291,39 +303,39 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A1520000000000E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:flower_boxes"
+				{
+					consume_items: false
+					id: "7A1520000000000E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:flower_boxes"
+						}
 					}
+					title: "Uma floreira de qualquer madeira"
+					type: "item"
 				}
-				title: "Uma floreira de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A1520000000000F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:benches"
+				{
+					consume_items: false
+					id: "7A1520000000000F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:benches"
+						}
 					}
+					title: "Um banco de qualquer madeira"
+					type: "item"
 				}
-				title: "Um banco de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000010"
-				item: "chimes:bamboo_chimes"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A15200000000010"
+					item: "chimes:bamboo_chimes"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dJardim e varanda"
 			x: 12.0d
@@ -348,39 +360,39 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A15200000000011"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:chairs"
+				{
+					consume_items: false
+					id: "7A15200000000011"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:chairs"
+						}
 					}
+					title: "Uma cadeira de qualquer madeira"
+					type: "item"
 				}
-				title: "Uma cadeira de qualquer madeira"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000012"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "another_furniture:tall_stools"
+				{
+					consume_items: false
+					id: "7A15200000000012"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "another_furniture:tall_stools"
+						}
 					}
+					title: "Uma banqueta alta de qualquer cor"
+					type: "item"
 				}
-				title: "Uma banqueta alta de qualquer cor"
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000013"
-				item: "cluttered:bulletin_board"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A15200000000013"
+					item: "cluttered:bulletin_board"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dPonto de encontro"
 			x: 16.0d
@@ -441,34 +453,34 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A15200000000015"
-				item: "chimes:iron_chimes"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000016"
-				item: "chimes:copper_chimes"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000017"
-				item: "chimes:amethyst_chimes"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A15200000000018"
-				item: "chimes:glass_bells"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A15200000000015"
+					item: "chimes:iron_chimes"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A15200000000016"
+					item: "chimes:copper_chimes"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A15200000000017"
+					item: "chimes:amethyst_chimes"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A15200000000018"
+					item: "chimes:glass_bells"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dCoro de vento"
 			x: 14.0d

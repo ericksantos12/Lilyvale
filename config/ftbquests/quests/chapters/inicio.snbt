@@ -5,7 +5,7 @@
 	group: "048ED71F33A9801E"
 	icon: "minecraft:book"
 	id: "6B10000000000001"
-	order_index: -1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,7 +19,6 @@
 			icon: "minecraft:book"
 			id: "6B11000000000001"
 			optional: true
-			rewards: [ ]
 			tasks: [{
 				id: "6B12000000000001"
 				title: "Li as boas-vindas"
@@ -41,7 +40,6 @@
 			icon: "minecraft:compass"
 			id: "6B11000000000002"
 			optional: true
-			rewards: [ ]
 			tasks: [{
 				id: "6B12000000000002"
 				title: "Li sobre as trilhas"
@@ -62,7 +60,6 @@
 			icon: "minecraft:spyglass"
 			id: "6B11000000000003"
 			optional: true
-			rewards: [ ]
 			tasks: [{
 				id: "6B12000000000003"
 				title: "Li como as tarefas funcionam"
@@ -85,7 +82,6 @@
 			icon: "minecraft:paper"
 			id: "6B11000000000004"
 			optional: true
-			rewards: [ ]
 			tasks: [{
 				id: "6B12000000000004"
 				title: "Li a legenda das atividades"

@@ -246,7 +246,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "deeperdarker:sonorous_staff"
+			icon: {
+				Count: 1
+				id: "deeperdarker:sonorous_staff"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0E100000000009"
 			optional: true
 			rewards: [{
@@ -275,7 +281,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "deeperdarker:warden_chestplate"
+			icon: {
+				Count: 1
+				id: "deeperdarker:warden_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0E10000000000A"
 			optional: true
 			rewards: [{
@@ -304,7 +316,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "deeperdarker:soul_elytra"
+			icon: {
+				Count: 1
+				id: "deeperdarker:soul_elytra"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0E10000000000B"
 			optional: true
 			rewards: [{
@@ -318,7 +336,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A0E20000000000B"
-				item: "deeperdarker:soul_elytra"
+				item: {
+					Count: 1
+					id: "deeperdarker:soul_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]

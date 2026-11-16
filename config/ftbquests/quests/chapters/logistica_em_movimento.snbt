@@ -326,20 +326,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A08200000000001"
-				item: "toms_storage:ts.storage_terminal"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A08200000000002"
-				item: "create:item_vault"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A08200000000001"
+					item: "toms_storage:ts.storage_terminal"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A08200000000002"
+					item: "create:item_vault"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&bTerminal a bordo"
 			x: 4.0d

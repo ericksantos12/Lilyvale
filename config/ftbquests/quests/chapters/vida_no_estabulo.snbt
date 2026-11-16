@@ -84,20 +84,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A12200000000003"
-				item: "icys-better-horses:horse_hooves_gear"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A12200000000004"
-				item: "icys-better-horses:horse_medkit_gear"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A12200000000003"
+					item: "icys-better-horses:horse_hooves_gear"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A12200000000004"
+					item: "icys-better-horses:horse_medkit_gear"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dFerraduras"
 			x: 4.0d
@@ -296,21 +296,21 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A1220000000000B"
-				item: "icys-better-horses:horse_cart_gear"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 2L
-				id: "7A1220000000000C"
-				item: "icys-better-horses:wheel"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A1220000000000B"
+					item: "icys-better-horses:horse_cart_gear"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "7A1220000000000C"
+					item: "icys-better-horses:wheel"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dCarroça atrelada"
 			x: 6.0d

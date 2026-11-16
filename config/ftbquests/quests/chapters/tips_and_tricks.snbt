@@ -3,9 +3,15 @@
 	default_quest_shape: "circle"
 	filename: "tips_and_tricks"
 	group: "048ED71F33A9801E"
-	icon: "vc_gliders:paraglider_wood"
+	icon: {
+		Count: 1
+		id: "vc_gliders:paraglider_wood"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "7A01000000000001"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -15,7 +21,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "vc_gliders:paraglider_wood"
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_wood"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A01100000000001"
 			rewards: [{
 				id: "7A01300000000001"
@@ -28,7 +40,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A01200000000001"
-				item: "vc_gliders:paraglider_wood"
+				item: {
+					Count: 1
+					id: "vc_gliders:paraglider_wood"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -44,7 +62,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "vc_gliders:paraglider_iron"
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_iron"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A01100000000002"
 			optional: true
 			rewards: [{
@@ -58,7 +82,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A01200000000002"
-				item: "vc_gliders:paraglider_iron"
+				item: {
+					Count: 1
+					id: "vc_gliders:paraglider_iron"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -114,20 +144,20 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A01200000000004"
-				item: "camerapture:picture"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A01200000000005"
-				item: "camerapture:album"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A01200000000004"
+					item: "camerapture:picture"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A01200000000005"
+					item: "camerapture:album"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dPrimeira revelação"
 			x: 2.0d
@@ -187,27 +217,27 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A01200000000007"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "comforts:hammocks"
+				{
+					consume_items: false
+					id: "7A01200000000007"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "comforts:hammocks"
+						}
 					}
+					title: "Obtenha uma rede de qualquer cor"
+					type: "item"
 				}
-				title: "Obtenha uma rede de qualquer cor"
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 2L
-				id: "7A01200000000008"
-				item: "comforts:rope_and_nail"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					count: 2L
+					id: "7A01200000000008"
+					item: "comforts:rope_and_nail"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dSoneca da tarde"
 			x: 4.0d
@@ -252,7 +282,6 @@
 			icon: "minecraft:chest"
 			id: "7A01100000000008"
 			optional: true
-			rewards: [ ]
 			shape: "circle"
 			size: 1.0d
 			subtitle: "&7Dica de leitura"

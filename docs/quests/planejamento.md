@@ -1,6 +1,6 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado (2026-11-13): os 29 capítulos-base e o Início existem no livro — 30 capítulos, 607 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
+**Estado (2026-11-16): os capítulos-base e o Início existem no livro — 31 capítulos, 673 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
 
 **Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
@@ -52,11 +52,12 @@ Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastrea
 | Primeiros Dias | PD02 — Mochila e Organização | Sophisticated Backpacks, Sophisticated Storage e Tom's Simple Storage; começo prático | A curta, M de uso |
 | Primeiros Dias | PD04 — Tips & Tricks | Gliders, Camerapture, Comforts, Nature's Compass e Carry On | Dicas A independentes, pequenos C |
 | Vida no Campo | VC01 — Caderno de Receitas | Farmer's Delight, Farmer's Respite, Ocean's Delight, Veggies Delight e Vintage Delight | Predomínio Q; A apenas dos processos novos |
-| Vida no Campo | VC02 — Rotina da Fazenda | Farm & Charm e Harvest with Ease | A de sistemas rurais, M e projetos C |
-| Vida no Campo | VC03 — Sabores do Prado | Meadow: criação, laticínios e vida alpina | A curta, Q de queijos e projetos |
-| Vida no Campo | VC04 — Vinhedos e Adegas | Vinery: da uva à garrafa | A de processamento e Q de vinhos |
-| Vida no Campo | VC05 — Pães e Confeitaria | Bakery | A curta das estações e Q de receitas |
+| Vida no Campo | VC02 — Rotina da Fazenda | Farmer's Delight (horta), Harvest with Ease, Chopper's, Hands-On e Vanilla Delight | A de horta e cozinha, M de colheita, Q do Vanilla Delight |
+| Vida no Campo | VC03 — Taverna e Queijaria | Brewin' and Chewin' | A do barril e da cura, M de bebida e queijo, Q de bebidas e petiscos |
+| Vida no Campo | VC04 — Grelha e Fogo | Barbeque's Delight | A da grelha, M do primeiro espeto, Q de espetos |
+| Vida no Campo | VC05 — Banquete de Gensokyo | Gensokyo Delight: Youkai's Feasts | A de chá, uva, soja e cozinha, M por trilha, Q de pratos e bebidas |
 | Vida no Campo | VC06 — À Beira d'Água | Tide | A de pesca e M do diário; C especializados |
+| Vida no Campo | VC07 — Sabores de Outros Mundos | My Nether's Delight e End's Delight | A curta, M de banquete, Q por dimensão; opcional |
 | Engenhos e Ferrovias | EF01 — Oficina de Engenhos | Create: energia, processamento e automação | A e M funcionais |
 | Engenhos e Ferrovias | EF02 — Logística em Movimento | Create e Create Contraption Terminals | A de sistemas e projetos M/C |
 | Engenhos e Ferrovias | EF03 — Estações e Ferrovias | Create, Steam 'n' Rails e Create Railways Navigator | A ferroviária, M de viagem, C de rede |
@@ -242,10 +243,14 @@ A = merece orientação própria; M = sustenta um marco; C = desafio/coleção; 
 | Ocean's Delight | VC01 | C de pratos, sem tutorial separado |
 | Veggies Delight | VC01 | C de pratos e descobertas agrícolas, sem tutorial separado |
 | Vintage Delight | VC01 | A de conservação/fermentação e C de receitas |
-| [Let's Do] Farm & Charm | VC02 | A dos processos novos, M rurais, C de cultivos/pratos |
-| [Let's Do] Meadow | VC03 | A de laticínios, M de queijaria, C de queijos/ambientes |
-| [Let's Do] Vinery | VC04 | A de suco/fermentação, M de safra, C de rótulos |
-| [Let's Do] Bakery | VC05 | A curta de preparo/montagem, C de produtos e projeto de padaria |
+| Vanilla Delight | VC02 | A da faca de cobre, C de cozinha modular e Q de receitas |
+| Chopper's Delight | VC02 | Uma dica A de tábuas por madeira |
+| Hands-On Delight | VC02 | Dica no texto (preparo visível nas estações); sem itens próprios |
+| Brewin' and Chewin' | VC03 | A do barril e da temperatura, M de bebida e queijo, Q de bebidas e petiscos |
+| Barbeque's Delight | VC04 | A da grelha e do espeto, M do primeiro grelhado, Q de espetos |
+| Gensokyo Delight: Youkai's Feasts | VC05 | A de chá, uva, soja e estações, M por trilha, C dos avanços e Q de pratos e bebidas |
+| My Nether's Delight | VC07 | A do fogão e da pimenta, M de banquete, Q de pratos |
+| End's Delight | VC07 | A do fogão e da faca, M da ceia da dragoa, Q de pratos |
 | Harvest with Ease | VC02 | Uma dica de uso/configuração; sem capítulo próprio |
 | Tide | VC06 | A de pesca, M do diário, C de raridades e habitats |
 | Create | EF01 / EF02 / EF03 | A e M funcionais; C de projetos |
@@ -426,10 +431,11 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 | PD04 Tips & Tricks | `tips_and_tricks.snbt` | 8 |
 | VC01 Caderno de Receitas | `caderno_de_receitas.snbt` | 85 |
 | VC02 Rotina da Fazenda | `rotina_da_fazenda.snbt` | 39 |
-| VC03 Sabores do Prado | `sabores_do_prado.snbt` | 21 |
-| VC04 Vinhedos e Adegas | `vinhedos_e_adegas.snbt` | 41 |
-| VC05 Pães e Confeitaria | `paes_e_confeitaria.snbt` | 48 |
+| VC03 Taverna e Queijaria | `taverna_e_queijaria.snbt` | 41 |
+| VC04 Grelha e Fogo | `grelha_e_fogo.snbt` | 17 |
+| VC05 Banquete de Gensokyo | `banquete_de_gensokyo.snbt` | 74 |
 | VC06 À Beira d'Água | `a_beira_dagua.snbt` | 13 |
+| VC07 Sabores de Outros Mundos | `sabores_de_outros_mundos.snbt` | 44 |
 | EF01 Oficina de Engenhos | `create_mod.snbt` | 24 |
 | EF02 Logística em Movimento | `logistica_em_movimento.snbt` | 8 |
 | EF03 Estações e Ferrovias | `estacoes_e_ferrovias.snbt` | 15 |
@@ -458,7 +464,8 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 - **Instrumentos:** as 11 folhas ganharam identidade C e `optional`, com IDs e os 50 XP legados mantidos, e um cartão A de orientação.
 - **Catálogos:** VC01 tem 72 folhas curadas (36 de Farmer's Delight e 36 dos addons), sem cobrir todo prato. Pelúcias usam as tags do próprio mod: as de vila na galeria principal, as de tesouro e raras num canto separado.
 - **Checks:** fora do Início, só o cartão de Carry On, sem recompensa, por não haver item a detectar.
-- **Farm & Charm:** carroça de mantimentos e arado perderam a receita e foram ocultados do EMI em `kubejs/server_scripts/farm_carts.js`, porque não funcionam com os cavalos do Icy's; as quests deles saíram de VC02.
+- **Let's Do retirado (2026-11-16):** Farm & Charm, Meadow, Vinery e Bakery saíram do pack, junto com `farm_carts.js`. VC02 foi refeito sobre a horta do Farmer's Delight e os novos addons; VC03–VC05 viraram Brewin' and Chewin', Barbeque's Delight e Youkai's Feasts; VC07 reúne My Nether's e End's Delight. Esses capítulos usam números de capítulo novos (`0x1B`–`0x1F`), então o progresso antigo de Farm & Charm, Meadow, Vinery e Bakery não é reaproveitado.
+- **Validação dos addons:** o gerador aceita `QUEST_EXTRA_JARS` (pastas separadas por `;`) para validar JARs que ainda não estão em `mods/`. Itens com modelo mas sem receita ou registro (os molhos do Barbeque's Delight) ficaram de fora.
 - **Arqueologia:** o artefato identificado não está no registro de modelos; o marco pede a mesa e um artefato não identificado, e o texto diz que a identificação não é detectada.
 
 ### Pendências antes do aceite
