@@ -26,29 +26,29 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A18200000000001"
-				item: "minecraft:water_bucket"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 64L
-				id: "7A18200000000002"
-				item: "minecraft:arrow"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 2L
-				id: "7A18200000000003"
-				item: "minecraft:golden_apple"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A18200000000001"
+					item: "minecraft:water_bucket"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 64L
+					id: "7A18200000000002"
+					item: "minecraft:arrow"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "7A18200000000003"
+					item: "minecraft:golden_apple"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&eAntes de pular"
 			x: 0.0d

@@ -15,7 +15,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farmersdelight:flint_knife"
+			icon: {
+				Count: 1
+				id: "farmersdelight:flint_knife"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A02100000000001"
 			rewards: [{
 				id: "7A02300000000001"
@@ -100,7 +106,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farmersdelight:skillet"
+			icon: {
+				Count: 1
+				id: "farmersdelight:skillet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A02100000000004"
 			rewards: [{
 				id: "7A02300000000004"
@@ -113,7 +125,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A02200000000004"
-				item: "farmersdelight:skillet"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -199,20 +217,20 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				advancement: "farmersdelight:main/place_organic_compost"
-				criterion: ""
-				id: "7A02200000000007"
-				title: "Coloque composto orgânico"
-				type: "advancement"
-			}
-			{
-				consume_items: false
-				id: "7A02200000000008"
-				item: "farmersdelight:rich_soil"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					advancement: "farmersdelight:main/place_organic_compost"
+					criterion: ""
+					id: "7A02200000000007"
+					title: "Coloque composto orgânico"
+					type: "advancement"
+				}
+				{
+					consume_items: false
+					id: "7A02200000000008"
+					item: "farmersdelight:rich_soil"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dTerra que devolve"
 			x: 0.0d
@@ -294,20 +312,20 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A0220000000000B"
-				item: "farmersrespite:green_tea_leaves"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0220000000000C"
-				item: "farmersrespite:coffee_beans"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A0220000000000B"
+					item: "farmersrespite:green_tea_leaves"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0220000000000C"
+					item: "farmersrespite:coffee_beans"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&aFolhas no ponto"
 			x: 10.0d
@@ -388,29 +406,27 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				advancement: "vintagedelight:main/evaporator"
-				criterion: ""
-				id: "7A0220000000000F"
-				title: "Coloque um evaporador"
-				type: "advancement"
-			}
-			{
-				consume_items: false
-				id: "7A02200000000010"
-				item: "vintagedelight:salt_dust"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					advancement: "vintagedelight:main/evaporator"
+					criterion: ""
+					id: "7A0220000000000F"
+					title: "Coloque um evaporador"
+					type: "advancement"
+				}
+				{
+					consume_items: false
+					id: "7A02200000000010"
+					item: "vintagedelight:salt_dust"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&aSal da casa"
 			x: 16.0d
 			y: 0.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:bacon_and_eggs"
@@ -435,9 +451,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:bacon_sandwich"
@@ -462,9 +476,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:baked_cod_stew"
@@ -489,9 +501,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:barbecue_stick"
@@ -516,9 +526,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:beef_stew"
@@ -543,9 +551,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:bone_broth"
@@ -570,9 +576,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:cabbage_rolls"
@@ -597,9 +601,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:chicken_sandwich"
@@ -624,9 +626,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:chicken_soup"
@@ -651,9 +651,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:cod_roll"
@@ -678,9 +676,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:dumplings"
@@ -705,9 +701,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:egg_sandwich"
@@ -732,9 +726,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:fish_stew"
@@ -759,9 +751,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:fried_rice"
@@ -786,9 +776,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:fruit_salad"
@@ -813,9 +801,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:grilled_salmon"
@@ -840,9 +826,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:hamburger"
@@ -867,9 +851,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:honey_glazed_ham"
@@ -894,9 +876,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:kelp_roll"
@@ -921,9 +901,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:mixed_salad"
@@ -948,9 +926,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:mushroom_rice"
@@ -975,9 +951,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:mutton_wrap"
@@ -1002,9 +976,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:nether_salad"
@@ -1029,9 +1001,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:noodle_soup"
@@ -1056,9 +1026,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:onion_soup"
@@ -1083,9 +1051,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:pasta_with_meatballs"
@@ -1110,9 +1076,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:pasta_with_mutton_chop"
@@ -1137,9 +1101,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:pumpkin_soup"
@@ -1164,9 +1126,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:ratatouille"
@@ -1191,9 +1151,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:roast_chicken"
@@ -1218,9 +1176,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:roasted_mutton_chops"
@@ -1245,9 +1201,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:salmon_roll"
@@ -1272,9 +1226,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:shepherds_pie"
@@ -1299,9 +1251,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:squid_ink_pasta"
@@ -1326,9 +1276,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:steak_and_potatoes"
@@ -1353,9 +1301,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."
-			]
+			description: ["Uma página do caderno. Registrar exige apenas ter o prato uma vez; nada é consumido, e receber de alguém também vale. A receita está no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:stuffed_potato"
@@ -1380,9 +1326,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:apple_pie"
@@ -1407,9 +1351,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:chocolate_pie"
@@ -1434,9 +1376,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:sweet_berry_cheesecake"
@@ -1461,9 +1401,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:glow_berry_custard"
@@ -1488,9 +1426,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:hot_cocoa"
@@ -1515,9 +1451,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersdelight:apple_cider"
@@ -1542,9 +1476,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:green_tea"
@@ -1569,9 +1501,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:black_tea"
@@ -1596,9 +1526,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:coffee"
@@ -1623,9 +1551,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:rose_hip_tea"
@@ -1650,9 +1576,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:coffee_cake"
@@ -1677,9 +1601,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:rose_hip_pie"
@@ -1704,9 +1626,7 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:tea_curry"
@@ -1731,9 +1651,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "farmersrespite:blazing_chili"
@@ -1758,9 +1676,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:seagrass_salad"
@@ -1785,9 +1701,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:squid_rings"
@@ -1812,9 +1726,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:honey_fried_kelp"
@@ -1839,9 +1751,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:braised_sea_pickle"
@@ -1866,9 +1776,7 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:fugu_roll"
@@ -1893,9 +1801,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "oceansdelight:bowl_of_guardian_soup"
@@ -1920,9 +1826,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:cacciatore"
@@ -1947,9 +1851,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:broccoli_soup"
@@ -1974,9 +1876,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:cauliflower_kuku"
@@ -2001,9 +1901,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:garlic_bread"
@@ -2028,9 +1926,7 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:sweet_potato_pancakes"
@@ -2055,9 +1951,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:turnip_beef_stew"
@@ -2082,9 +1976,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:stuffed_zucchini_boat"
@@ -2109,9 +2001,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "veggiesdelight:vegetarian_burger"
@@ -2136,9 +2026,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:kimchi"
@@ -2163,9 +2051,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:pickle"
@@ -2190,9 +2076,7 @@
 			y: 16.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:century_egg"
@@ -2217,9 +2101,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:pad_thai"
@@ -2244,9 +2126,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:stuffed_burrito"
@@ -2271,9 +2151,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:overnight_oats"
@@ -2298,9 +2176,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:cheese_pasta"
@@ -2325,9 +2201,7 @@
 			y: 18.0d
 		}
 		{
-			description: [
-				"Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."
-			]
+			description: ["Doces, infusões, pratos do mar, da horta e da despensa. Registrar exige apenas ter o item uma vez; nada é consumido. Consulte a receita e a estação de preparo no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "vintagedelight:surstromming"

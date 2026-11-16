@@ -33,6 +33,9 @@ class Registry:
         self.items, self.advs, self.ents = set(), set(), set()
         self.biomes, self.structs, self.dims = set(), set(), set()
         jars = glob.glob(os.path.join(ROOT, 'mods', '*.jar')) + [MC_JAR]
+        # Pastas extras de JARs (separadas por ;) para validar mods ainda não baixados em mods/.
+        for extra in filter(None, os.environ.get('QUEST_EXTRA_JARS', '').split(';')):
+            jars += glob.glob(os.path.join(extra, '*.jar'))
         for jar in jars:
             try:
                 z = zipfile.ZipFile(jar)

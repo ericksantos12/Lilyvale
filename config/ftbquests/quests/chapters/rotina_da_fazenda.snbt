@@ -3,22 +3,22 @@
 	default_quest_shape: "circle"
 	filename: "rotina_da_fazenda"
 	group: "2F3E0F43CC0404AB"
-	icon: "farm_and_charm:pitchfork"
-	id: "7A03000000000001"
+	icon: "farmersdelight:straw"
+	id: "7A1B000000000001"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"Restos de colheita viram composto, e o composto vira fertilizante. É o começo do ciclo do Farm \\& Charm."
-				"O EMI mostra o que pode ser compostado. A tarefa registra posse, sem consumir: troca e presente também valem."
+				"Repolho, tomate, cebola e arroz crescem selvagens pelo mundo. Quebre um pé selvagem para começar sua própria horta."
+				"Os vegetais do Veggies Delight e do Vintage Delight também aparecem assim, cada um em seu clima."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:fertilizer"
-			id: "7A03100000000001"
+			icon: "farmersdelight:cabbage_seeds"
+			id: "7A1B100000000001"
 			rewards: [{
-				id: "7A03300000000001"
+				id: "7A1B300000000001"
 				type: "xp"
 				xp: 50
 			}]
@@ -26,115 +26,271 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
-				advancement: "farm_and_charm:main/get_fertilizer"
+				advancement: "farmersdelight:main/get_fd_seed"
 				criterion: ""
-				id: "7A03200000000001"
-				title: "Obtenha fertilizante"
+				id: "7A1B200000000001"
+				title: "Colha uma planta selvagem do Farmer's Delight"
 				type: "advancement"
 			}]
-			title: "&aNada se perde"
+			title: "&aSementes da beira da estrada"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7A03100000000001"]
+			dependencies: ["7A1B100000000001"]
 			description: [
-				"O solo fertilizado é um canteiro de luxo. Coloque-o onde a horta vai ficar; o forcado espalha e recolhe o adubo."
-				"A tarefa detecta o bloco colocado no mundo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:fertilized_soil"
-			id: "7A03100000000002"
-			rewards: [{
-				id: "7A03300000000002"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/place_fertilized_soil"
-				criterion: ""
-				id: "7A03200000000002"
-				title: "Coloque um bloco de solo fertilizado"
-				type: "advancement"
-			}]
-			title: "&aTerra adubada"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7A03100000000002"]
-			description: [
-				"Passe a enxada no solo fertilizado para criar terra arada adubada: as plantas crescem mais rápido e a terra não seca com pisões."
-				"Dica do Harvest with Ease: clique com o botão direito em uma planta madura para colher e replantar de uma vez. Com enxada na mão, a colheita pode alcançar uma área maior."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "minecraft:iron_hoe"
-			id: "7A03100000000003"
-			rewards: [{
-				id: "7A03300000000003"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/use_hoe_on_fertilized_soil"
-				criterion: ""
-				id: "7A03200000000003"
-				title: "Are o solo fertilizado com uma enxada"
-				type: "advancement"
-			}]
-			title: "&aCanteiro pronto"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7A03100000000002"]
-			description: [
-				"O regador giratório mantém os canteiros úmidos ao redor sem precisar de valas de água no meio da horta."
-				"A tarefa detecta o regador colocado."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:water_sprinkler"
-			id: "7A03100000000004"
-			rewards: [{
-				id: "7A03300000000004"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/place_water_sprinkler"
-				criterion: ""
-				id: "7A03200000000004"
-				title: "Coloque um regador giratório"
-				type: "advancement"
-			}]
-			title: "&aChuva particular"
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			description: [
-				"Uma colheita de respeito para estrear o clique direito do Harvest with Ease: trigo, cenoura e batata sem replantar à mão."
-				"A tarefa só confere os itens no inventário. Como eles chegaram lá é entre você e a horta."
+				"Com o Harvest with Ease, clique com o botão direito em uma planta madura: ela é colhida e replantada na hora. Com uma enxada na mão, a colheita alcança uma área maior."
+				"A tarefa só confere a colheita no inventário. Nada de pisotear a horta."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "minecraft:wheat"
-			id: "7A03100000000005"
+			id: "7A1B100000000002"
+			rewards: [{
+				id: "7A1B300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+				{
+					consume_items: false
+					count: 16L
+					id: "7A1B200000000002"
+					item: "minecraft:wheat"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "7A1B200000000003"
+					item: "minecraft:carrot"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "7A1B200000000004"
+					item: "minecraft:potato"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&aColher sem replantar"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"O arroz cresce em água rasa, com um bloco de terra embaixo. Um canal de um bloco de profundidade já serve."
+				"A tarefa detecta o plantio."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:rice_panicle"
+			id: "7A1B100000000003"
+			rewards: [{
+				id: "7A1B300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/plant_rice"
+				criterion: ""
+				id: "7A1B200000000005"
+				title: "Plante arroz"
+				type: "advancement"
+			}]
+			title: "&aPés na água"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Tomateiros sobem por cordas penduradas acima da planta. A horta fica mais alta, mais organizada e mais bonita."
+				"A tarefa detecta a colheita do tomate amarrado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:rope"
+			id: "7A1B100000000004"
+			rewards: [{
+				id: "7A1B300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/harvest_ropelogged_tomato"
+				criterion: ""
+				id: "7A1B200000000006"
+				title: "Colha tomates de uma corda"
+				type: "advancement"
+			}]
+			title: "&aTomate na corda"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Quebre capim, trigo ou arroz maduro com uma faca para recolher palha. Ela vira fardos, cordas, lona e cama para os animais."
+				"A tarefa detecta a primeira palha."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:straw"
+			id: "7A1B100000000005"
+			rewards: [{
+				id: "7A1B300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "farmersdelight:main/harvest_straw"
+				criterion: ""
+				id: "7A1B200000000007"
+				title: "Colha palha com uma faca"
+				type: "advancement"
+			}]
+			title: "&aPalha para tudo"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1B100000000003"]
+			description: [
+				"Repolho, tomate, cebola e arroz na despensa: a base de metade do Caderno de Receitas."
+				"O marco confere os quatro no inventário, sem consumir. Plantar continua sendo a parte divertida."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cabbage"
+			id: "7A1B100000000006"
+			rewards: [{
+				id: "7A1B300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A1B200000000008"
+					item: "farmersdelight:cabbage"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B200000000009"
+					item: "farmersdelight:tomato"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B20000000000A"
+					item: "farmersdelight:onion"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B20000000000B"
+					item: "farmersdelight:rice"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&6&lHorta completa"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Cogumelos plantados em solo rico viram colônias, que podem ser colhidas várias vezes com uma faca."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:red_mushroom_colony"
+			id: "7A1B100000000007"
 			optional: true
 			rewards: [{
-				id: "7A03300000000005"
+				id: "7A1B300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "farmersdelight:main/get_mushroom_colony"
+				criterion: ""
+				id: "7A1B20000000000C"
+				title: "Obtenha uma colônia de cogumelos"
+				type: "advancement"
+			}]
+			title: "&dCogumelos em casa"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Trigo, cenoura, batata, beterraba, abóbora, melancia, cacau, repolho, tomate, cebola, arroz e mais. Um desafio de quem gosta de horta variada."
+				"Usa o avanço do próprio Farmer's Delight."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:organic_compost"
+			id: "7A1B100000000008"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "farmersdelight:main/plant_all_crops"
+				criterion: ""
+				id: "7A1B20000000000D"
+				title: "Plante todas as culturas do Farmer's Delight e do vanilla"
+				type: "advancement"
+			}]
+			title: "&dDe tudo um pouco"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A1B100000000006"]
+			description: [
+				"Caixotes guardam nove unidades da colheita em um bloco e enfeitam qualquer celeiro."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "farmersdelight:cabbage_crate"
+			id: "7A1B100000000009"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000009"
 				type: "xp"
 				xp: 25
 			}]
@@ -142,83 +298,74 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				count: 32L
-				id: "7A03200000000005"
-				item: "minecraft:wheat"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 16L
-				id: "7A03200000000006"
-				item: "minecraft:carrot"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 16L
-				id: "7A03200000000007"
-				item: "minecraft:potato"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A1B20000000000E"
+					item: "farmersdelight:cabbage_crate"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B20000000000F"
+					item: "farmersdelight:tomato_crate"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B200000000010"
+					item: "farmersdelight:onion_crate"
+					match_nbt: false
+					type: "item"
+				}
 			]
-			title: "&dCeleiro cheio"
-			x: 0.0d
-			y: 2.0d
+			title: "&dCaixotes no celeiro"
+			x: 4.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["7A1B100000000005"]
 			description: [
-				"A tigela de preparo mistura farinha, água e fermento com algumas mexidas. A farinha vem de grãos moídos."
-				"Neste pack as massas dos mods de cozinha foram unificadas; confira no EMI qual massa cada receita aceita."
+				"Fardos de palha decoram o celeiro, amortecem quedas e, de quebra, guardam a palha que sobrou."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:crafting_bowl"
-			id: "7A03100000000006"
+			icon: "farmersdelight:straw_bale"
+			id: "7A1B10000000000A"
+			optional: true
 			rewards: [{
-				id: "7A03300000000006"
+				id: "7A1B30000000000A"
 				type: "xp"
-				xp: 50
+				xp: 25
 			}]
-			shape: "circle"
+			shape: "square"
 			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [
-			{
+			subtitle: "&dC — Opcional"
+			tasks: [{
 				consume_items: false
-				id: "7A03200000000008"
-				item: "farm_and_charm:crafting_bowl"
+				count: 4L
+				id: "7A1B200000000011"
+				item: "farmersdelight:straw_bale"
 				match_nbt: false
 				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A03200000000009"
-				item: "farm_and_charm:flour"
-				match_nbt: false
-				type: "item"
-			}
-			]
-			title: "&aMassa na tigela"
+			}]
+			title: "&dFardos de palha"
 			x: 8.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			description: [
-				"O moedor transforma carne em carne moída e grãos em farinha. Coloque o ingrediente e gire a manivela com cliques."
-				"A tarefa detecta o uso do moedor, não só a posse."
+				"O Chopper's Delight faz tábuas de corte em todas as madeiras do pack. Funcionam como a tábua do Farmer's Delight, só que combinando com a cozinha."
+				"A de carvalho é só um exemplo; qualquer madeira tem receita no EMI. A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:mincer"
-			id: "7A03100000000007"
+			icon: "choppersdelight:oak_cutting_board"
+			id: "7A1B10000000000B"
 			rewards: [{
-				id: "7A03300000000007"
+				id: "7A1B30000000000B"
 				type: "xp"
 				xp: 50
 			}]
@@ -226,99 +373,28 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
-				advancement: "farm_and_charm:main/introduction_mincing"
-				criterion: ""
-				id: "7A0320000000000A"
-				title: "Use o moedor"
-				type: "advancement"
+				consume_items: false
+				id: "7A1B200000000012"
+				item: "choppersdelight:oak_cutting_board"
+				match_nbt: false
+				title: "Obtenha uma tábua de corte de carvalho do Chopper's Delight"
+				type: "item"
 			}]
-			title: "&aGira a manivela"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"O silo seca grãos e ervas. Empilhe blocos de silo para aumentar a capacidade e retire o produto seco por baixo."
-				"A tarefa detecta o uso do silo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:silo_wood"
-			id: "7A03100000000008"
-			rewards: [{
-				id: "7A03300000000008"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/introduction_drying"
-				criterion: ""
-				id: "7A0320000000000B"
-				title: "Coloque algo para secar no silo"
-				type: "advancement"
-			}]
-			title: "&aSecar e guardar"
+			title: "&aTábua sob medida"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"Fogão, panela e assadeira: com as três peças no lugar, a cozinha da fazenda dá conta de pães, sopas e assados."
-				"O marco detecta os três blocos colocados no mundo. Onde fica a mesa é decisão sua."
+				"Com o Hands-On Delight, a panela, a tábua de corte, a frigideira e a grelha mostram os ingredientes e o preparo no próprio bloco: dá para ver o que está cozinhando e quanto falta."
+				"Na tábua, alguns ingredientes precisam ser montados em ordem: o primeiro vai embaixo. Olhe para a estação para ver as dicas. A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:stove"
-			id: "7A03100000000009"
+			icon: "farmersdelight:cooking_pot"
+			id: "7A1B10000000000C"
 			rewards: [{
-				id: "7A03300000000009"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "&6M — Marco"
-			tasks: [
-			{
-				advancement: "farm_and_charm:main/place_stove"
-				criterion: ""
-				id: "7A0320000000000C"
-				title: "Coloque um fogão de fazenda"
-				type: "advancement"
-			}
-			{
-				advancement: "farm_and_charm:main/place_cooking_pot"
-				criterion: ""
-				id: "7A0320000000000D"
-				title: "Coloque uma panela"
-				type: "advancement"
-			}
-			{
-				advancement: "farm_and_charm:main/place_roaster"
-				criterion: ""
-				id: "7A0320000000000E"
-				title: "Coloque uma assadeira"
-				type: "advancement"
-			}
-			]
-			title: "&6&lCozinha da fazenda"
-			x: 10.0d
-			y: 2.0d
-		}
-		{
-			description: [
-				"O galinheiro abriga as galinhas e junta os ovos num lugar só. Elas entram sozinhas ao anoitecer se estiverem por perto."
-				"A tarefa detecta o galinheiro colocado."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:chicken_coop"
-			id: "7A0310000000000A"
-			rewards: [{
-				id: "7A0330000000000A"
+				id: "7A1B30000000000C"
 				type: "xp"
 				xp: 50
 			}]
@@ -326,153 +402,69 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [{
-				advancement: "farm_and_charm:main/place_chicken_coop"
-				criterion: ""
-				id: "7A0320000000000F"
-				title: "Coloque um galinheiro"
-				type: "advancement"
-			}]
-			title: "&aCasa das galinhas"
-			x: 16.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7A0310000000000A"]
-			description: [
-				"Ninhos dão às galinhas um lugar para botar. Menos ovos perdidos pelo pasto, mais omeletes."
-				"A tarefa detecta o ninho colocado."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:chicken_nest"
-			id: "7A0310000000000B"
-			rewards: [{
-				id: "7A0330000000000B"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/place_chicken_nest"
-				criterion: ""
-				id: "7A03200000000010"
-				title: "Coloque um ninho"
-				type: "advancement"
-			}]
-			title: "&aNinho arrumado"
-			x: 18.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"O cocho alimenta os animais próximos com o que você deixar dentro. Bom para manter a criação sem correr atrás de cada bicho."
-				"A tarefa detecta o cocho colocado."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:feeding_trough"
-			id: "7A0310000000000C"
-			rewards: [{
-				id: "7A0330000000000C"
-				type: "xp"
-				xp: 50
-			}]
-			shape: "circle"
-			size: 1.0d
-			subtitle: "&bA — Aprendizado"
-			tasks: [{
-				advancement: "farm_and_charm:main/place_feeding_trough"
-				criterion: ""
-				id: "7A03200000000011"
-				title: "Coloque um cocho"
-				type: "advancement"
-			}]
-			title: "&aHora da ração"
-			x: 20.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7A0310000000000A"]
-			description: [
-				"Galinheiro montado, ração no cocho e ovos chegando. A criação agora se cuida entre uma visita e outra."
-				"O marco pede ração de galinha e dezesseis ovos. Ele confere a posse, não conta cada ovo no ninho."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "minecraft:egg"
-			id: "7A0310000000000D"
-			rewards: [{
-				id: "7A0330000000000D"
-				type: "xp"
-				xp: 150
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			subtitle: "&6M — Marco"
-			tasks: [
-			{
 				consume_items: false
-				id: "7A03200000000012"
-				item: "farm_and_charm:chicken_feed"
+				id: "7A1B200000000013"
+				item: "farmersdelight:cooking_pot"
 				match_nbt: false
 				type: "item"
-			}
-			{
-				consume_items: false
-				count: 16L
-				id: "7A03200000000013"
-				item: "minecraft:egg"
-				match_nbt: false
-				type: "item"
-			}
-			]
-			title: "&6&lCriação em ordem"
-			x: 16.0d
-			y: 2.0d
+			}]
+			title: "&aMão na massa, de verdade"
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			description: [
-				"Um espantalho dá personalidade à plantação. Os corvos de Lilyvale são imaginários, mas ele não sabe disso."
+				"O Vanilla Delight acrescenta uma faca de cobre, para quem quer trocar a de pederneira cedo, e dezenas de receitas com ingredientes que você já tem: maçã, abóbora, mel, frutas vermelhas."
 				"A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:scarecrow"
-			id: "7A0310000000000E"
-			optional: true
+			icon: {
+				Count: 1
+				id: "vanilladelight:copper_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7A1B10000000000D"
 			rewards: [{
-				id: "7A0330000000000E"
+				id: "7A1B30000000000D"
 				type: "xp"
-				xp: 25
+				xp: 50
 			}]
-			shape: "square"
+			shape: "circle"
 			size: 1.0d
-			subtitle: "&dC — Opcional"
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000014"
-				item: "farm_and_charm:scarecrow"
+				id: "7A1B200000000014"
+				item: {
+					Count: 1
+					id: "vanilladelight:copper_knife"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
-			title: "&dGuardião de palha"
-			x: 0.0d
-			y: 6.0d
+			title: "&aFaca de cobre"
+			x: 16.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["7A1B10000000000C"]
 			description: [
-				"Um suporte de ferramentas na parede do celeiro e um peitoril florido na janela. Fazenda também é capricho."
-				"A tarefa registra posse, sem consumir: troca e presente também valem."
+				"Fogão e armário modulares aceitam padrões de azulejo, e há fogões e armários em pedra, arenito, deepslate e outros acabamentos."
+				"A tarefa pede o fogão e o armário modulares; o projeto da cozinha é seu."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:tool_rack"
-			id: "7A0310000000000F"
+			icon: "vanilladelight:modular_stove"
+			id: "7A1B10000000000E"
 			optional: true
 			rewards: [{
-				id: "7A0330000000000F"
+				id: "7A1B30000000000E"
 				type: "xp"
 				xp: 25
 			}]
@@ -480,36 +472,38 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A03200000000015"
-				item: "farm_and_charm:tool_rack"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A03200000000016"
-				item: "farm_and_charm:window_sill"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A1B200000000015"
+					item: "vanilladelight:modular_stove"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1B200000000016"
+					item: "vanilladelight:modular_cabinet"
+					match_nbt: false
+					type: "item"
+				}
 			]
-			title: "&dCada ferramenta no lugar"
-			x: 2.0d
-			y: 6.0d
+			title: "&dCozinha planejada"
+			x: 14.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["7A1B10000000000D"]
 			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
+				"Um fogão de tijolos de pedra para a cozinha rústica. Funciona como o fogão do Farmer's Delight."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:simple_tomato_soup"
-			id: "7A03100000000010"
+			icon: "vanilladelight:stone_bricks_stove"
+			id: "7A1B10000000000F"
 			optional: true
 			rewards: [{
-				id: "7A03300000000010"
+				id: "7A1B30000000000F"
 				type: "xp"
 				xp: 25
 			}]
@@ -518,8 +512,184 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000017"
-				item: "farm_and_charm:simple_tomato_soup"
+				id: "7A1B200000000017"
+				item: "vanilladelight:stone_bricks_stove"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dFogão de pedra"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:apple_salad"
+			id: "7A1B100000000010"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B200000000018"
+				item: "vanilladelight:apple_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:berries_salad"
+			id: "7A1B100000000011"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B200000000019"
+				item: "vanilladelight:berries_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:carrot_salad"
+			id: "7A1B100000000012"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B20000000001A"
+				item: "vanilladelight:carrot_salad"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:cod_stew"
+			id: "7A1B100000000013"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B20000000001B"
+				item: "vanilladelight:cod_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:pufferfish_stew"
+			id: "7A1B100000000014"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B20000000001C"
+				item: "vanilladelight:pufferfish_stew"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:sweet_fish_soup"
+			id: "7A1B100000000015"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B20000000001D"
+				item: "vanilladelight:sweet_fish_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "vanilladelight:glow_tropical_fish_stew"
+			id: "7A1B100000000016"
+			optional: true
+			rewards: [{
+				id: "7A1B300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1B20000000001E"
+				item: "vanilladelight:glow_tropical_fish_stew"
 				match_nbt: false
 				type: "item"
 			}]
@@ -527,16 +697,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:barley_soup"
-			id: "7A03100000000011"
+			icon: "vanilladelight:caramelized_chicken"
+			id: "7A1B100000000017"
 			optional: true
 			rewards: [{
-				id: "7A03300000000011"
+				id: "7A1B300000000017"
 				type: "xp"
 				xp: 25
 			}]
@@ -545,8 +713,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000018"
-				item: "farm_and_charm:barley_soup"
+				id: "7A1B20000000001F"
+				item: "vanilladelight:caramelized_chicken"
 				match_nbt: false
 				type: "item"
 			}]
@@ -554,16 +722,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:onion_soup"
-			id: "7A03100000000012"
+			icon: "vanilladelight:grilled_beetroot"
+			id: "7A1B100000000018"
 			optional: true
 			rewards: [{
-				id: "7A03300000000012"
+				id: "7A1B300000000018"
 				type: "xp"
 				xp: 25
 			}]
@@ -572,8 +738,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000019"
-				item: "farm_and_charm:onion_soup"
+				id: "7A1B200000000020"
+				item: "vanilladelight:grilled_beetroot"
 				match_nbt: false
 				type: "item"
 			}]
@@ -581,16 +747,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:potato_soup"
-			id: "7A03100000000013"
+			icon: "vanilladelight:honey_pudding"
+			id: "7A1B100000000019"
 			optional: true
 			rewards: [{
-				id: "7A03300000000013"
+				id: "7A1B300000000019"
 				type: "xp"
 				xp: 25
 			}]
@@ -599,8 +763,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001A"
-				item: "farm_and_charm:potato_soup"
+				id: "7A1B200000000021"
+				item: "vanilladelight:honey_pudding"
 				match_nbt: false
 				type: "item"
 			}]
@@ -608,16 +772,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:goulash"
-			id: "7A03100000000014"
+			icon: "vanilladelight:sweet_berry_custard"
+			id: "7A1B10000000001A"
 			optional: true
 			rewards: [{
-				id: "7A03300000000014"
+				id: "7A1B30000000001A"
 				type: "xp"
 				xp: 25
 			}]
@@ -626,8 +788,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001B"
-				item: "farm_and_charm:goulash"
+				id: "7A1B200000000022"
+				item: "vanilladelight:sweet_berry_custard"
 				match_nbt: false
 				type: "item"
 			}]
@@ -635,16 +797,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:corn_grits"
-			id: "7A03100000000015"
+			icon: "vanilladelight:caramel_candy"
+			id: "7A1B10000000001B"
 			optional: true
 			rewards: [{
-				id: "7A03300000000015"
+				id: "7A1B30000000001B"
 				type: "xp"
 				xp: 25
 			}]
@@ -653,8 +813,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001C"
-				item: "farm_and_charm:corn_grits"
+				id: "7A1B200000000023"
+				item: "vanilladelight:caramel_candy"
 				match_nbt: false
 				type: "item"
 			}]
@@ -662,16 +822,14 @@
 			y: 10.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:farmer_salad"
-			id: "7A03100000000016"
+			icon: "vanilladelight:honey_candy"
+			id: "7A1B10000000001C"
 			optional: true
 			rewards: [{
-				id: "7A03300000000016"
+				id: "7A1B30000000001C"
 				type: "xp"
 				xp: 25
 			}]
@@ -680,8 +838,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001D"
-				item: "farm_and_charm:farmer_salad"
+				id: "7A1B200000000024"
+				item: "vanilladelight:honey_candy"
 				match_nbt: false
 				type: "item"
 			}]
@@ -689,16 +847,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:pasta_with_onion_sauce"
-			id: "7A03100000000017"
+			icon: "vanilladelight:glow_berries_candy"
+			id: "7A1B10000000001D"
 			optional: true
 			rewards: [{
-				id: "7A03300000000017"
+				id: "7A1B30000000001D"
 				type: "xp"
 				xp: 25
 			}]
@@ -707,8 +863,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001E"
-				item: "farm_and_charm:pasta_with_onion_sauce"
+				id: "7A1B200000000025"
+				item: "vanilladelight:glow_berries_candy"
 				match_nbt: false
 				type: "item"
 			}]
@@ -716,16 +872,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:oatmeal_with_strawberries"
-			id: "7A03100000000018"
+			icon: "vanilladelight:sweet_berries_jam"
+			id: "7A1B10000000001E"
 			optional: true
 			rewards: [{
-				id: "7A03300000000018"
+				id: "7A1B30000000001E"
 				type: "xp"
 				xp: 25
 			}]
@@ -734,8 +888,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A0320000000001F"
-				item: "farm_and_charm:oatmeal_with_strawberries"
+				id: "7A1B200000000026"
+				item: "vanilladelight:sweet_berries_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -743,16 +897,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:bacon_with_eggs"
-			id: "7A03100000000019"
+			icon: "vanilladelight:glow_berries_jam"
+			id: "7A1B10000000001F"
 			optional: true
 			rewards: [{
-				id: "7A03300000000019"
+				id: "7A1B30000000001F"
 				type: "xp"
 				xp: 25
 			}]
@@ -761,8 +913,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000020"
-				item: "farm_and_charm:bacon_with_eggs"
+				id: "7A1B200000000027"
+				item: "vanilladelight:glow_berries_jam"
 				match_nbt: false
 				type: "item"
 			}]
@@ -770,16 +922,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:beef_patty_with_vegetables"
-			id: "7A0310000000001A"
+			icon: "vanilladelight:golden_apple_cider"
+			id: "7A1B100000000020"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001A"
+				id: "7A1B300000000020"
 				type: "xp"
 				xp: 25
 			}]
@@ -788,8 +938,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000021"
-				item: "farm_and_charm:beef_patty_with_vegetables"
+				id: "7A1B200000000028"
+				item: "vanilladelight:golden_apple_cider"
 				match_nbt: false
 				type: "item"
 			}]
@@ -797,16 +947,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:barley_patties_with_potatoes"
-			id: "7A0310000000001B"
+			icon: "vanilladelight:carrot_cake"
+			id: "7A1B100000000021"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001B"
+				id: "7A1B300000000021"
 				type: "xp"
 				xp: 25
 			}]
@@ -815,8 +963,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000022"
-				item: "farm_and_charm:barley_patties_with_potatoes"
+				id: "7A1B200000000029"
+				item: "vanilladelight:carrot_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -824,16 +972,14 @@
 			y: 12.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:sausage_with_oat_patty"
-			id: "7A0310000000001C"
+			icon: "vanilladelight:honey_cake"
+			id: "7A1B100000000022"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001C"
+				id: "7A1B300000000022"
 				type: "xp"
 				xp: 25
 			}]
@@ -842,8 +988,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000023"
-				item: "farm_and_charm:sausage_with_oat_patty"
+				id: "7A1B20000000002A"
+				item: "vanilladelight:honey_cake"
 				match_nbt: false
 				type: "item"
 			}]
@@ -851,16 +997,14 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:lamb_with_corn"
-			id: "7A0310000000001D"
+			icon: "vanilladelight:melon_pie"
+			id: "7A1B100000000023"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001D"
+				id: "7A1B300000000023"
 				type: "xp"
 				xp: 25
 			}]
@@ -869,8 +1013,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000024"
-				item: "farm_and_charm:lamb_with_corn"
+				id: "7A1B20000000002B"
+				item: "vanilladelight:melon_pie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -878,16 +1022,14 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:chicken_wrapped_in_bacon"
-			id: "7A0310000000001E"
+			icon: "vanilladelight:chorus_pie"
+			id: "7A1B100000000024"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001E"
+				id: "7A1B300000000024"
 				type: "xp"
 				xp: 25
 			}]
@@ -896,8 +1038,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000025"
-				item: "farm_and_charm:chicken_wrapped_in_bacon"
+				id: "7A1B20000000002C"
+				item: "vanilladelight:chorus_pie"
 				match_nbt: false
 				type: "item"
 			}]
@@ -905,16 +1047,14 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:roasted_corn"
-			id: "7A0310000000001F"
+			icon: "vanilladelight:milky_pumpkin"
+			id: "7A1B100000000025"
 			optional: true
 			rewards: [{
-				id: "7A0330000000001F"
+				id: "7A1B300000000025"
 				type: "xp"
 				xp: 25
 			}]
@@ -923,8 +1063,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000026"
-				item: "farm_and_charm:roasted_corn"
+				id: "7A1B20000000002D"
+				item: "vanilladelight:milky_pumpkin"
 				match_nbt: false
 				type: "item"
 			}]
@@ -932,16 +1072,14 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:potato_with_roast_meat"
-			id: "7A03100000000020"
+			icon: "vanilladelight:roasted_beets"
+			id: "7A1B100000000026"
 			optional: true
 			rewards: [{
-				id: "7A03300000000020"
+				id: "7A1B300000000026"
 				type: "xp"
 				xp: 25
 			}]
@@ -950,8 +1088,8 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000027"
-				item: "farm_and_charm:potato_with_roast_meat"
+				id: "7A1B20000000002E"
+				item: "vanilladelight:roasted_beets"
 				match_nbt: false
 				type: "item"
 			}]
@@ -959,16 +1097,14 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
+			description: ["Uma receita do Vanilla Delight, feita com ingredientes do Minecraft de sempre. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "farm_and_charm:baked_lamb_ham"
-			id: "7A03100000000021"
+			icon: "vanilladelight:cooked_apple"
+			id: "7A1B100000000027"
 			optional: true
 			rewards: [{
-				id: "7A03300000000021"
+				id: "7A1B300000000027"
 				type: "xp"
 				xp: 25
 			}]
@@ -977,175 +1113,13 @@
 			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
-				id: "7A03200000000028"
-				item: "farm_and_charm:baked_lamb_ham"
+				id: "7A1B20000000002F"
+				item: "vanilladelight:cooked_apple"
 				match_nbt: false
 				type: "item"
 			}]
 			x: 10.0d
 			y: 14.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:stuffed_chicken"
-			id: "7A03100000000022"
-			optional: true
-			rewards: [{
-				id: "7A03300000000022"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A03200000000029"
-				item: "farm_and_charm:stuffed_chicken"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 0.0d
-			y: 16.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:stuffed_rabbit"
-			id: "7A03100000000023"
-			optional: true
-			rewards: [{
-				id: "7A03300000000023"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A0320000000002A"
-				item: "farm_and_charm:stuffed_rabbit"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 2.0d
-			y: 16.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:farmers_bread"
-			id: "7A03100000000024"
-			optional: true
-			rewards: [{
-				id: "7A03300000000024"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A0320000000002B"
-				item: "farm_and_charm:farmers_bread"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 4.0d
-			y: 16.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:farmers_breakfast"
-			id: "7A03100000000025"
-			optional: true
-			rewards: [{
-				id: "7A03300000000025"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A0320000000002C"
-				item: "farm_and_charm:farmers_breakfast"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 6.0d
-			y: 16.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:oat_pancake"
-			id: "7A03100000000026"
-			optional: true
-			rewards: [{
-				id: "7A03300000000026"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A0320000000002D"
-				item: "farm_and_charm:oat_pancake"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 8.0d
-			y: 16.0d
-		}
-		{
-			description: [
-				"Um prato da roça. Panela, assadeira e fogão dividem as receitas; o EMI mostra qual estação usar. Registrar exige apenas ter o prato uma vez, sem consumo."
-			]
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			icon: "farm_and_charm:grandmothers_strawberry_cake"
-			id: "7A03100000000027"
-			optional: true
-			rewards: [{
-				id: "7A03300000000027"
-				type: "xp"
-				xp: 25
-			}]
-			shape: "square"
-			size: 1.0d
-			subtitle: "&dC — Opcional"
-			tasks: [{
-				consume_items: false
-				id: "7A0320000000002E"
-				item: "farm_and_charm:grandmothers_strawberry_cake"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 10.0d
-			y: 16.0d
 		}
 	]
 	title: "&a&lRotina da Fazenda"

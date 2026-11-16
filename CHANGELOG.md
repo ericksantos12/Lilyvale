@@ -1,41 +1,63 @@
 # Changelog
 
+## [1.1.0]
+
+### Mods novos
+
+- **Brewin' and Chewin'**: barril para bebidas fermentadas, queijos curados e petiscos de taverna.
+- **Barbeque's Delight**: grelha e espetos.
+- **Gensokyo Delight: Youkai's Feasts**: chá, uva e vinho, soja e tofu, cozimento a vapor, sushi e dezenas de pratos.
+- **Vanilla Delight**: receitas com ingredientes do Minecraft de sempre, faca de cobre e peças de cozinha modulares.
+- **Chopper's Delight**: tábuas de corte em todas as madeiras.
+- **Hands-On Delight**: ingredientes e andamento do preparo visíveis nas próprias estações.
+- **My Nether's Delight** e **End's Delight**: culinária com ingredientes do Nether e do End.
+
+### Mods removidos
+
+- **[Let's Do] Farm & Charm**, **Meadow**, **Vinery** e **Bakery**. A cozinha do pack agora gira em torno do Farmer's Delight e seus addons, para que a imersão do Hands-On Delight, que mostra o preparo nas estações do Farmer's Delight, valha para toda a culinária. Os mods Let's Do tinham estações e receitas próprias que repetiam o papel das do Farmer's Delight, e manter os dois sistemas misturava propósitos parecidos em mods diferentes.
+- Seus itens, blocos e quests saíram do pack; guarde o que quiser manter antes de atualizar um mundo existente.
+
+### Livro de quests
+
+- **Rotina da Fazenda** foi refeita em torno da horta do Farmer's Delight, do Harvest with Ease e dos novos addons de cozinha.
+- Capítulos novos: **Taverna e Queijaria**, **Grelha e Fogo**, **Banquete de Gensokyo** e **Sabores de Outros Mundos**.
+- Os capítulos de Meadow, Vinery e Bakery foram removidos. O progresso desses capítulos e da antiga Rotina da Fazenda não é aproveitado.
+
 ## [1.0.1]
 
-### Fixes
+### Correções
 
-- Removed the old storage chapter that came back by mistake in 1.0.0. Its quests had already been retired and do not count toward anything.
+- Removido o antigo capítulo de armazenamento, que voltou por engano na 1.0.0. Suas quests já tinham sido retiradas e não contam para nada.
 
 ## [1.0.0]
 
-### Quest book
+### Livro de quests
 
-- The quest book now covers every mod in the pack: 30 chapters across nine categories, from first days and farming to Create, exploration, other dimensions, companions, home building and the journey to the End.
-- Every category is optional. Farming, cooking, decorating and caring for animals have their own milestones; no chapter requires a boss, a dimension or another play style.
-- Activities are marked by shape and colour: blue circles teach a system, gold hexagons celebrate a milestone, and lilac squares are optional challenges and collections.
-- Collection pages for dishes, wines, cheeses, breads, fossils, plushies, horse breeds, wildlife encounters and End Remastered eyes. Each entry is independent and nothing is consumed; trades and gifts count.
-- Milestones now detect real progress where possible: mod advancements, visiting dimensions, biomes and structures, and seeing animals up close.
-- The Create chapter is split into Workshop, Logistics and Railways, with new quests for Steam 'n' Rails, Railways Navigator and Contraption Terminals. Existing progress is kept.
-- Immersive Melodies becomes "Música para Lilyvale", with a new card explaining how to play.
-- New rewards are experience points only.
+- O livro de quests agora cobre todos os mods do pack: 30 capítulos em nove categorias, dos primeiros dias e da fazenda ao Create, à exploração, a outras dimensões, aos companheiros, à construção da casa e à jornada até o End.
+- Todas as categorias são opcionais. Fazenda, cozinha, decoração e cuidado com os animais têm marcos próprios; nenhum capítulo exige chefe, dimensão ou outro estilo de jogo.
+- As atividades são identificadas por forma e cor: círculos azuis ensinam um sistema, hexágonos dourados celebram um marco e quadrados lilás são desafios e coleções opcionais.
+- Páginas de coleção para pratos, vinhos, queijos, pães, fósseis, pelúcias, raças de cavalo, encontros com animais e olhos do End Remastered. Cada entrada é independente e nada é consumido; trocas e presentes contam.
+- Os marcos detectam progresso real sempre que possível: avanços dos mods, visitas a dimensões, biomas e estruturas, e animais vistos de perto.
+- O capítulo do Create foi dividido em Oficina, Logística e Ferrovias, com quests novas para Steam 'n' Rails, Railways Navigator e Contraption Terminals. O progresso existente foi mantido.
+- Immersive Melodies virou "Música para Lilyvale", com um cartão novo explicando como tocar.
+- As recompensas novas são apenas pontos de experiência.
 
-### New mods
+### Mods novos
 
-- **YUNG's Better Dungeons**, **YUNG's Better Mineshafts** and **YUNG's Better Strongholds**: redesigned dungeons, mineshafts and strongholds.
-- **Dungeons and Taverns**: taverns, towers and small dungeons in a vanilla style.
-- **Effortless Building**: mirror, array and shape tools that make walls, floors and roofs quicker to build.
-- **FTB Ultimine**: mine or harvest connected blocks in one go.
-- **Oculus**: shader support.
-- **Structure Essentials** and **Patchouli** as supporting libraries.
+- **YUNG's Better Dungeons**, **YUNG's Better Mineshafts** e **YUNG's Better Strongholds**: masmorras, minas e fortalezas redesenhadas.
+- **Dungeons and Taverns**: tavernas, torres e pequenas masmorras no estilo vanilla.
+- **Effortless Building**: espelho, repetição e formas que agilizam paredes, pisos e telhados.
+- **FTB Ultimine**: minera ou colhe blocos conectados de uma vez.
+- **Oculus**: suporte a shaders.
+- **Structure Essentials** e **Patchouli** como bibliotecas de apoio.
 
-### Gameplay
+### Jogabilidade
 
-- Removed the Farm & Charm supply cart and plow recipes, since they do not work with Icy's Better Horses. Use the Icy's horse cart gear instead. Existing carts in your world keep working.
+- Removidas as receitas da carroça de mantimentos e do arado do Farm & Charm, que não funcionam com o Icy's Better Horses. Use o engate de carroça do Icy's. Carroças já existentes no mundo continuam funcionando.
 
 ## [0.1.0]
 
-Changes
+### Mudanças
 
-- Initial Release
-
-- Added main mod structure and features
+- Lançamento inicial.
+- Estrutura principal de mods e recursos.

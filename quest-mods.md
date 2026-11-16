@@ -21,10 +21,14 @@
 - Ocean's Delight
 - Veggies Delight
 - Vintage Delight
-- [Let's Do] Farm &amp; Charm
-- [Let's Do] Meadow
-- [Let's Do] Vinery
-- [Let's Do] Bakery
+- Vanilla Delight
+- Chopper's Delight
+- Hands-On Delight
+- Brewin' and Chewin'
+- Barbeque's Delight
+- Gensokyo Delight: Youkai's Feasts
+- My Nether's Delight
+- End's Delight
 - Harvest with Ease
 
 ### Pescaria

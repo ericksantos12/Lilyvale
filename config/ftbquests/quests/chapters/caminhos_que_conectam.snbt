@@ -136,7 +136,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "minecraft:leather_boots"
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0C100000000005"
 			optional: true
 			rewards: [{

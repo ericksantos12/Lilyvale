@@ -51,11 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "treechop": {
-    "plugin": true,
-    "show_tree_block_counts": true,
-    "show_num_chops_remaining": true
-  },
   "camerapture": {
     "picture_frame": true
   },
@@ -75,9 +70,6 @@
   "jadeaddons.lootr": {
     "info": true
   },
-  "aether_redux": {
-    "logicator": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -88,5 +80,8 @@
   },
   "balm": {
     "jade": true
+  },
+  "barbequesdelight": {
+    "grill": true
   }
 }

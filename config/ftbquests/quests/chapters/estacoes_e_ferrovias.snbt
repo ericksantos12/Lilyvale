@@ -346,20 +346,20 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A09200000000007"
-				item: "railways:fuel_tank"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A09200000000008"
-				item: "railways:portable_fuel_interface"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A09200000000007"
+					item: "railways:fuel_tank"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A09200000000008"
+					item: "railways:portable_fuel_interface"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dTanque cheio"
 			x: 4.0d
@@ -384,20 +384,20 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A09200000000009"
-				item: "railways:conductor_whistle"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0920000000000A"
-				item: "railways:remote_lens"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A09200000000009"
+					item: "railways:conductor_whistle"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0920000000000A"
+					item: "railways:remote_lens"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dApito na curva"
 			x: 6.0d

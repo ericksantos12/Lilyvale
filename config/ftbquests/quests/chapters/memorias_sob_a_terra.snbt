@@ -3,7 +3,13 @@
 	default_quest_shape: "circle"
 	filename: "memorias_sob_a_terra"
 	group: "2E622CDAB0B6B1F2"
-	icon: "minecraft:brush"
+	icon: {
+		Count: 1
+		id: "minecraft:brush"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "7A0B000000000001"
 	order_index: 1
 	quest_links: [ ]
@@ -15,7 +21,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "minecraft:brush"
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0B100000000001"
 			rewards: [{
 				id: "7A0B300000000001"
@@ -28,7 +40,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A0B200000000001"
-				item: "minecraft:brush"
+				item: {
+					Count: 1
+					id: "minecraft:brush"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -73,7 +91,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "betterarcheology:iron_brush"
+			icon: {
+				Count: 1
+				id: "betterarcheology:iron_brush"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0B100000000003"
 			optional: true
 			rewards: [{
@@ -87,7 +111,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A0B200000000003"
-				item: "betterarcheology:iron_brush"
+				item: {
+					Count: 1
+					id: "betterarcheology:iron_brush"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -143,20 +173,20 @@
 			size: 1.25d
 			subtitle: "&6M — Marco"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A0B200000000005"
-				item: "betterarcheology:archeology_table"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0B200000000006"
-				item: "betterarcheology:unidentified_artifact"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A0B200000000005"
+					item: "betterarcheology:archeology_table"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0B200000000006"
+					item: "betterarcheology:unidentified_artifact"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&6&lGabinete de arqueologia"
 			x: 4.0d
@@ -249,9 +279,7 @@
 			y: 0.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:chicken_fossil"
@@ -276,9 +304,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:sheep_fossil"
@@ -303,9 +329,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:wolf_fossil"
@@ -330,9 +354,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:ocelot_fossil"
@@ -357,9 +379,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:villager_fossil"
@@ -384,9 +404,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:creeper_fossil"
@@ -411,9 +429,7 @@
 			y: 8.0d
 		}
 		{
-			description: [
-				"Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."
-			]
+			description: ["Um esqueleto montado para o museu. Cabeça e corpo se combinam no fóssil completo; cada espécie aparece em um tipo de sítio. Registrar exige ter o fóssil completo uma vez, sem consumo."]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
 			icon: "betterarcheology:guardian_fossil"

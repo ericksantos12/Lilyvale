@@ -1,0 +1,1086 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "taverna_e_queijaria"
+	group: "2F3E0F43CC0404AB"
+	icon: "brewinandchewin:keg"
+	id: "7A1C000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"No Brewin' and Chewin', o barril fermenta bebidas e conservas com o tempo. Encha com o líquido base, junte os ingredientes e espere."
+				"A tarefa detecta o barril colocado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:keg"
+			id: "7A1C100000000001"
+			rewards: [{
+				id: "7A1C300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "brewinandchewin:main/place_keg"
+				criterion: ""
+				id: "7A1C200000000001"
+				title: "Coloque um barril"
+				type: "advancement"
+			}]
+			title: "&aBarril de fermentação"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1C100000000001"]
+			description: [
+				"Cada receita pede uma temperatura. Barril de aquecimento, caixote de gelo, fogo ou gelo ao redor mudam o clima do barril; o painel dele mostra a faixa atual."
+				"A tarefa detecta o bloco de temperatura colocado junto ao barril."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:heating_cask"
+			id: "7A1C100000000002"
+			rewards: [{
+				id: "7A1C300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "brewinandchewin:main/place_temperature_block_near_keg"
+				criterion: ""
+				id: "7A1C200000000002"
+				title: "Coloque uma fonte de calor ou frio junto ao barril"
+				type: "advancement"
+			}]
+			title: "&aTemperatura certa"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Bebidas do barril se servem em canecas. Um porta-copos na mesa completa a taverna."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:tankard"
+			id: "7A1C100000000003"
+			rewards: [{
+				id: "7A1C300000000003"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000003"
+				item: "brewinandchewin:tankard"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&aCaneca na mão"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1C100000000003"]
+			description: [
+				"Cerveja, hidromel, vinho de arroz ou qualquer outra: a primeira bebida da sua taverna."
+				"Bebidas fortes dão efeitos e embriaguez; beba com moderação, até em bloco quadrado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:beer"
+			id: "7A1C100000000004"
+			rewards: [{
+				id: "7A1C300000000004"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "brewinandchewin:main/brew_drink"
+				criterion: ""
+				id: "7A1C200000000004"
+				title: "Obtenha uma bebida fermentada"
+				type: "advancement"
+			}]
+			title: "&6&lPrimeira rodada"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1C100000000001"]
+			description: [
+				"O barril também coalha leite em rodas de queijo fresco. Coloque a roda no mundo e espere ela curar."
+				"Qualquer um dos dois queijos conta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:unripe_flaxen_cheese_wheel"
+			id: "7A1C100000000005"
+			rewards: [{
+				id: "7A1C300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				advancement: "brewinandchewin:main/ferment_cheese"
+				criterion: ""
+				id: "7A1C200000000005"
+				title: "Obtenha uma roda de queijo fresco"
+				type: "advancement"
+			}]
+			title: "&aQueijo em cura"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A1C100000000005"]
+			description: [
+				"Depois de alguns dias no lugar, a roda fresca cura e pode ser fatiada em cunhas com a faca."
+				"O marco registra a roda de queijo dourado curada."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:flaxen_cheese_wheel"
+			id: "7A1C100000000006"
+			rewards: [{
+				id: "7A1C300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000006"
+				item: "brewinandchewin:flaxen_cheese_wheel"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&6&lQueijo curado"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"O queijo escarlate leva fungos do Nether e cura com um sabor bem mais forte."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:scarlet_cheese_wheel"
+			id: "7A1C100000000007"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000007"
+				item: "brewinandchewin:scarlet_cheese_wheel"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dQueijo escarlate"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A1C100000000006"]
+			description: [
+				"Queijo escarlate derretido numa panela no centro da mesa. Sirva em porções com pão."
+				"A tarefa registra a panela de fondue pronta."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:fiery_fondue_pot"
+			id: "7A1C100000000008"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "brewinandchewin:main/cook_fiery_fondue"
+				criterion: ""
+				id: "7A1C200000000008"
+				title: "Prepare um fondue flamejante"
+				type: "advancement"
+			}]
+			title: "&dFondue flamejante"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Massa, molho, queijo e as coberturas que quiser. A pizza vai na mesa e se serve em fatias."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:pizza"
+			id: "7A1C100000000009"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000009"
+				item: "brewinandchewin:pizza"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&dNoite da pizza"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Porta-copos sobre o balcão e um caixote de gelo atrás dele. O resto da decoração fica por conta do taverneiro."
+				"A tarefa registra posse, sem consumir: troca e presente também valem."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:coaster"
+			id: "7A1C10000000000A"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A1C20000000000A"
+					item: "brewinandchewin:coaster"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A1C20000000000B"
+					item: "brewinandchewin:ice_crate"
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&dTaverna montada"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:beer"
+			id: "7A1C10000000000B"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000000C"
+				item: "brewinandchewin:beer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:vodka"
+			id: "7A1C10000000000C"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000000D"
+				item: "brewinandchewin:vodka"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:mead"
+			id: "7A1C10000000000D"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000000E"
+				item: "brewinandchewin:mead"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:rice_wine"
+			id: "7A1C10000000000E"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000000F"
+				item: "brewinandchewin:rice_wine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:egg_grog"
+			id: "7A1C10000000000F"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000000F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000010"
+				item: "brewinandchewin:egg_grog"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:strongroot_ale"
+			id: "7A1C100000000010"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000010"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000011"
+				item: "brewinandchewin:strongroot_ale"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:saccharine_rum"
+			id: "7A1C100000000011"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000011"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000012"
+				item: "brewinandchewin:saccharine_rum"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:pale_jane"
+			id: "7A1C100000000012"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000012"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000013"
+				item: "brewinandchewin:pale_jane"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:salty_folly"
+			id: "7A1C100000000013"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000013"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000014"
+				item: "brewinandchewin:salty_folly"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:steel_toe_stout"
+			id: "7A1C100000000014"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000014"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000015"
+				item: "brewinandchewin:steel_toe_stout"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:glittering_grenadine"
+			id: "7A1C100000000015"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000015"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000016"
+				item: "brewinandchewin:glittering_grenadine"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:bloody_mary"
+			id: "7A1C100000000016"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000016"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000017"
+				item: "brewinandchewin:bloody_mary"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:red_rum"
+			id: "7A1C100000000017"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000017"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000018"
+				item: "brewinandchewin:red_rum"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:withering_dross"
+			id: "7A1C100000000018"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000018"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000019"
+				item: "brewinandchewin:withering_dross"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:dread_nog"
+			id: "7A1C100000000019"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000019"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001A"
+				item: "brewinandchewin:dread_nog"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			description: ["Uma bebida para a carta da taverna. Cada uma pede base, ingredientes e temperatura próprios no barril. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:kombucha"
+			id: "7A1C10000000001A"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001B"
+				item: "brewinandchewin:kombucha"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:kimchi"
+			id: "7A1C10000000001B"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001C"
+				item: "brewinandchewin:kimchi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:jerky"
+			id: "7A1C10000000001C"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001D"
+				item: "brewinandchewin:jerky"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:pickled_pickles"
+			id: "7A1C10000000001D"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001E"
+				item: "brewinandchewin:pickled_pickles"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:kippers"
+			id: "7A1C10000000001E"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000001F"
+				item: "brewinandchewin:kippers"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:cocoa_fudge"
+			id: "7A1C10000000001F"
+			optional: true
+			rewards: [{
+				id: "7A1C30000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000020"
+				item: "brewinandchewin:cocoa_fudge"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:vegetable_omelet"
+			id: "7A1C100000000020"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000021"
+				item: "brewinandchewin:vegetable_omelet"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:cheesy_pasta"
+			id: "7A1C100000000021"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000022"
+				item: "brewinandchewin:cheesy_pasta"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:creamy_onion_soup"
+			id: "7A1C100000000022"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000023"
+				item: "brewinandchewin:creamy_onion_soup"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:scarlet_pierogi"
+			id: "7A1C100000000023"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000023"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000024"
+				item: "brewinandchewin:scarlet_pierogi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:horror_lasagna"
+			id: "7A1C100000000024"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000024"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000025"
+				item: "brewinandchewin:horror_lasagna"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:quiche"
+			id: "7A1C100000000025"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000025"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000026"
+				item: "brewinandchewin:quiche"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:ham_and_cheese_sandwich"
+			id: "7A1C100000000026"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000026"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000027"
+				item: "brewinandchewin:ham_and_cheese_sandwich"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:sweet_berry_jam"
+			id: "7A1C100000000027"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000027"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000028"
+				item: "brewinandchewin:sweet_berry_jam"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:glow_berry_marmalade"
+			id: "7A1C100000000028"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000028"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C200000000029"
+				item: "brewinandchewin:glow_berry_marmalade"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: ["Petiscos, conservas e pratos com queijo para acompanhar a bebida. Registrar exige apenas ter o item uma vez; nada é consumido. A receita e a estação de preparo estão no EMI."]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "brewinandchewin:apple_jelly"
+			id: "7A1C100000000029"
+			optional: true
+			rewards: [{
+				id: "7A1C300000000029"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				consume_items: false
+				id: "7A1C20000000002A"
+				item: "brewinandchewin:apple_jelly"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 12.0d
+			y: 16.0d
+		}
+	]
+	title: "&a&lTaverna e Queijaria"
+}

@@ -10,6 +10,13 @@
 		[types.cake.veggiesdelight]
 			carrot_cake = true
 
+		[types.cake.mynethersdelight]
+			magma_cake = true
+
+		[types.cake.vanilladelight]
+			carrot_cake = true
+			honey_cake = true
+
 	[types.wood_type]
 
 		[types.wood_type.deeperdarker]
@@ -35,12 +42,6 @@
 			fluorescent_maple = true
 			blue_mushroom = true
 			red_mushroom = true
-
-		[types.wood_type.vinery]
-			dark_cherry = true
-
-		[types.wood_type.meadow]
-			pine = true
 
 		[types.wood_type.regions_unexplored]
 			alpha = true
@@ -70,6 +71,9 @@
 		[types.wood_type.betterarcheology]
 			rotten = true
 
+		[types.wood_type.mynethersdelight]
+			powdery = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.ad_astra]
@@ -96,14 +100,6 @@
 			sycamore = true
 			fluorescent_maple = true
 			flowering_fluorescent_maple = true
-
-		[types.leaves_type.vinery]
-			grapevine = true
-			dark_cherry = true
-			apple = true
-
-		[types.leaves_type.meadow]
-			pine = true
 
 		[types.leaves_type.regions_unexplored]
 			alpha = true
@@ -366,6 +362,9 @@
 			damaged_log = true
 			golden_barred_trapdoor = true
 			nailed_log = true
+
+		[entries.wood_type.choppersdelight]
+			cutting_board = true
 
 	[entries.leaves_type]
 

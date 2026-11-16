@@ -73,7 +73,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "advancednetherite:netherite_iron_pickaxe"
+			icon: {
+				Count: 1
+				id: "advancednetherite:netherite_iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A10100000000003"
 			optional: true
 			rewards: [{
@@ -138,7 +144,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "advancednetherite:netherite_gold_pickaxe"
+			icon: {
+				Count: 1
+				id: "advancednetherite:netherite_gold_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A10100000000005"
 			optional: true
 			rewards: [{
@@ -203,7 +215,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "advancednetherite:netherite_emerald_pickaxe"
+			icon: {
+				Count: 1
+				id: "advancednetherite:netherite_emerald_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A10100000000007"
 			optional: true
 			rewards: [{
@@ -268,7 +286,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "advancednetherite:netherite_diamond_pickaxe"
+			icon: {
+				Count: 1
+				id: "advancednetherite:netherite_diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A10100000000009"
 			optional: true
 			rewards: [{

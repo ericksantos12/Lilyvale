@@ -156,7 +156,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "minecraft:elytra"
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A19100000000006"
 			optional: true
 			rewards: [{
@@ -170,7 +176,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A19200000000006"
-				item: "minecraft:elytra"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]
@@ -227,21 +239,21 @@
 			size: 1.0d
 			subtitle: "&dC — Opcional"
 			tasks: [
-			{
-				consume_items: false
-				id: "7A19200000000008"
-				item: "minecraft:chorus_flower"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				count: 16L
-				id: "7A19200000000009"
-				item: "minecraft:end_stone"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					id: "7A19200000000008"
+					item: "minecraft:chorus_flower"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 16L
+					id: "7A19200000000009"
+					item: "minecraft:end_stone"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&dPomar do vazio"
 			x: 2.0d

@@ -26,21 +26,21 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-			{
-				consume_items: false
-				count: 10L
-				id: "7A0D200000000001"
-				item: "minecraft:glowstone"
-				match_nbt: false
-				type: "item"
-			}
-			{
-				consume_items: false
-				id: "7A0D200000000002"
-				item: "minecraft:water_bucket"
-				match_nbt: false
-				type: "item"
-			}
+				{
+					consume_items: false
+					count: 10L
+					id: "7A0D200000000001"
+					item: "minecraft:glowstone"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A0D200000000002"
+					item: "minecraft:water_bucket"
+					match_nbt: false
+					type: "item"
+				}
 			]
 			title: "&5Uma porta para o céu"
 			x: 0.0d
@@ -82,7 +82,13 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: "aether:skyroot_pickaxe"
+			icon: {
+				Count: 1
+				id: "aether:skyroot_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7A0D100000000003"
 			rewards: [{
 				id: "7A0D300000000003"
@@ -95,7 +101,13 @@
 			tasks: [{
 				consume_items: false
 				id: "7A0D200000000004"
-				item: "aether:skyroot_pickaxe"
+				item: {
+					Count: 1
+					id: "aether:skyroot_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
 				match_nbt: false
 				type: "item"
 			}]

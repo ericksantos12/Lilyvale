@@ -22,11 +22,10 @@
 				"As tarefas de item deste capítulo registram posse, inclusive peças recebidas de outra pessoa; o texto ensina a produção, mas o detector não prova autoria. Observação pede olhar para a bigorna indicada. Consulte as receitas no EMI."
 				"&bA — Aprendizado: círculo.&r &6M — Marco local: hexágono.&r &dC — Opcional: quadrado.&r Projetos, moldes e especializações têm ramais próprios; não é preciso completar a oficina inteira para seguir outra trilha."
 			]
-			icon: "minecraft:iron_ingot"
-			id: "6F11000000000001"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:iron_ingot"
+			id: "6F11000000000001"
 			rewards: [{
 				count: 4
 				id: "6F13000000000001"
@@ -35,6 +34,7 @@
 			}]
 			shape: "circle"
 			size: 1.0d
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				count: 8L
@@ -54,17 +54,17 @@
 				"Use as pinças para manusear o metal quente e levá-lo à bigorna. As pinças de madeira do início ainda servem; a versão de ferro tem uma trilha própria."
 				"O metal esfria depois de um tempo. Deixe a bancada organizada antes de começar: a fornalha não espera você procurar o martelo."
 			]
-			icon: "overgeared:heated_iron_ingot"
-			id: "6F11000000000002"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:heated_iron_ingot"
+			id: "6F11000000000002"
 			rewards: [{
 				count: 4
 				id: "6F13000000000002"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				count: 3L
@@ -84,17 +84,17 @@
 				"Resfrie a cabeça na água antes de polir. Depois, segure-a na mão principal, agache e clique com o botão direito mirando a grindstone."
 				"Obtenha a cabeça polida antes de colocar o cabo. A qualidade da forja pode variar; esta etapa exige apenas o polimento."
 			]
-			icon: "overgeared:iron_pickaxe_head"
-			id: "6F11000000000003"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:iron_pickaxe_head"
+			id: "6F11000000000003"
 			rewards: [{
 				count: 4
 				id: "6F13000000000003"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				id: "6F12000000000003"
@@ -120,6 +120,8 @@
 				"Junte a cabeça de ferro resfriada e polida a um graveto para montar a picareta. Confira a receita no EMI."
 				"Guarde a grindstone e as pinças: o aço ainda vai passar pela mesma oficina. Sua coleção de ferramentas acaba de ganhar peso."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "minecraft:iron_pickaxe"
@@ -128,9 +130,6 @@
 				}
 			}
 			id: "6F11000000000004"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000004"
@@ -139,6 +138,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.15d
+			subtitle: "&6M — Marco local"
 			tasks: [{
 				consume_items: false
 				id: "6F12000000000004"
@@ -162,6 +162,8 @@
 				"Para melhorar suas pinças, forje duas metades de ferro (iron tong) usando ferro aquecido na bigorna de pedra. O EMI mostra o desenho de cada metade."
 				"Resfrie as peças e junte as duas para obter iron tongs. Esta melhoria é opcional: as pinças de madeira continuam sendo uma entrada válida para a oficina."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:iron_tongs"
@@ -170,10 +172,6 @@
 				}
 			}
 			id: "6F11000000000005"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			shape: "square"
-			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -181,6 +179,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			tasks: [{
 				consume_items: false
 				id: "6F12000000000005"
@@ -205,17 +205,17 @@
 				"Agache e clique com o botão direito na bigorna usando um martelo de ferreiro para convertê-la na bigorna de ferreiro do Overgeared. Olhe diretamente para o bloco convertido para concluir a observação."
 				"Esta é a estação exigida pelas receitas de aço e pela forja de netherita. As bigornas Tier A e B estão desativadas neste pack; a oficina segue com esta versão."
 			]
-			icon: "overgeared:smithing_anvil"
-			id: "6F11000000000006"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:smithing_anvil"
+			id: "6F11000000000006"
 			rewards: [{
 				count: 4
 				id: "6F13000000000006"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -243,11 +243,10 @@
 				"Obtenha o projeto vazio antes de gastá-lo na mesa. Se preferir, prepare um segundo para começar seu primeiro desenho."
 				"Esta ramificação ensina blueprints e qualidade. Você pode continuar explorando os materiais enquanto pratica a forja."
 			]
-			icon: "overgeared:drafting_table"
-			id: "6F11000000000007"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado opcional"
+			icon: "overgeared:drafting_table"
+			id: "6F11000000000007"
 			optional: true
 			rewards: [{
 				count: 4
@@ -255,6 +254,7 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -282,11 +282,10 @@
 				"Use o projeto correspondente na forja da cabeça. Neste pack, os usos de treino avançam quando o resultado do minigame é Expert ou melhor; repetir bons resultados faz o projeto evoluir."
 				"O EMI também mostra como clonar blueprints. Guarde uma cópia de seus projetos úteis e confira a qualidade da cópia antes de gastar o original."
 			]
-			icon: "overgeared:blueprint"
-			id: "6F11000000000008"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado opcional"
+			icon: "overgeared:blueprint"
+			id: "6F11000000000008"
 			optional: true
 			rewards: [{
 				count: 4
@@ -294,6 +293,7 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado opcional"
 			tasks: [{
 				consume_items: false
 				id: "6F1200000000000A"
@@ -324,11 +324,10 @@
 				"Masterwork pode surgir como bônus aleatório de uma forja perfeita, com chance de 5% neste pack. Nenhuma quest deste capítulo exige esse resultado."
 				"A tarefa confere o estado da cabeça: polida e com qualidade Perfect. Não verifica quem a forjou; uma peça recebida também conta."
 			]
-			icon: "overgeared:iron_pickaxe_head"
-			id: "6F11000000000009"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&dC — Opcional: qualidade Perfect"
+			icon: "overgeared:iron_pickaxe_head"
+			id: "6F11000000000009"
 			optional: true
 			rewards: [{
 				id: "6F13000000000009"
@@ -337,6 +336,7 @@
 			}]
 			shape: "square"
 			size: 1.15d
+			subtitle: "&dC — Opcional: qualidade Perfect"
 			tasks: [{
 				consume_items: false
 				id: "6F1200000000000B"
@@ -364,6 +364,8 @@
 				"Aqueça o molde cru para obter o molde de argila cozido. As duas tarefas pedem moldes do tipo martelo; mantenha cada etapa no inventário antes de continuar."
 				"Depois da queima, o molde pode receber metal e produzir outra cabeça por fundição. O EMI mostra as quantidades e os fornos compatíveis; a rota avançada de fundição fica em outra ramificação."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:clay_tool_cast"
@@ -372,9 +374,6 @@
 				}
 			}
 			id: "6F1100000000000A"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -382,6 +381,7 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -425,17 +425,17 @@
 				"Obtenha um alto-forno. A receita usa uma fornalha, ferro e pedra lisa; o EMI mostra a montagem e as opções de processamento."
 				"Ele também entra nas receitas das estações de liga e fundição. Pegue-o no inventário antes de aproveitá-lo como ingrediente."
 			]
-			icon: "minecraft:blast_furnace"
-			id: "6F1100000000000B"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:blast_furnace"
+			id: "6F1100000000000B"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000B"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				id: "6F1200000000000E"
@@ -453,17 +453,17 @@
 				"Cerque um alto-forno com blocos de tijolos para criar a alloy furnace. Confira a montagem no EMI: o forno agora tem trabalho de equipe."
 				"Use esta estação para misturar os materiais da liga de aço bruto. Ela prepara a matéria-prima; o acabamento do aço acontece na bigorna."
 			]
-			icon: "overgeared:alloy_furnace"
-			id: "6F1100000000000C"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:alloy_furnace"
+			id: "6F1100000000000C"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000C"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				id: "6F1200000000000F"
@@ -481,17 +481,17 @@
 				"Na alloy furnace, a receita local combina três lingotes de ferro e um carvão para entregar quatro aços brutos. Abasteça a estação e confira a receita no EMI."
 				"Aço bruto ainda precisa de refino. Separe os quatro itens antes de aquecê-los: esta tarefa pede o lote no inventário."
 			]
-			icon: "overgeared:crude_steel"
-			id: "6F1100000000000D"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:crude_steel"
+			id: "6F1100000000000D"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000D"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				count: 4L
@@ -514,17 +514,17 @@
 				"Obtenha pelo menos um lingote de aço aquecido e resfrie o lote na água para reunir quatro lingotes de aço. As pinças ajudam a levar tudo ao lugar certo."
 				"Este refino exige a bigorna de ferro do Overgeared. A bigorna de pedra serviu ao começo da jornada e continua útil para as receitas indicadas para ela."
 			]
-			icon: "overgeared:steel_ingot"
-			id: "6F1100000000000E"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:steel_ingot"
+			id: "6F1100000000000E"
 			rewards: [{
 				count: 4
 				id: "6F1300000000000E"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -553,6 +553,8 @@
 				"Resfrie a cabeça, faça o polimento na grindstone e pegue a peça pronta antes de juntar o graveto. As tarefas pedem a cabeça polida e a picareta montada."
 				"Qualquer qualidade de forja serve para esta etapa. A picareta de aço será a base da melhoria de diamante."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:steel_pickaxe"
@@ -561,9 +563,6 @@
 				}
 			}
 			id: "6F1100000000000F"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F1300000000000F"
@@ -572,6 +571,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.15d
+			subtitle: "&6M — Marco local"
 			tasks: [
 				{
 					consume_items: false
@@ -613,6 +613,8 @@
 				"Para as pinças de aço, forje duas metades (steel tong), resfrie-as e una as peças. O conjunto melhora seus utensílios de trabalho."
 				"A exigência de martelos por tier está desativada neste pack. Esta melhoria é uma ramificação da oficina e não bloqueia os materiais seguintes."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:smithing_hammer"
@@ -621,10 +623,6 @@
 				}
 			}
 			id: "6F11000000000010"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			shape: "square"
-			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 4
@@ -632,6 +630,8 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -671,6 +671,8 @@
 				"As receitas de capacete, peitoral, calças e botas usam chapas de aço. Siga os desenhos do EMI e reúna as quatro peças no inventário."
 				"Esta trilha é opcional. A recompensa ajuda a abastecer o ferreiro depois de fabricar um guarda-roupa tão pesado."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "overgeared:steel_chestplate"
@@ -679,9 +681,6 @@
 				}
 			}
 			id: "6F11000000000011"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&dC — Opcional"
 			optional: true
 			rewards: [{
 				count: 8
@@ -691,6 +690,7 @@
 			}]
 			shape: "square"
 			size: 1.15d
+			subtitle: "&dC — Opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -762,17 +762,17 @@
 				"A receita mostrada no EMI duplica um molde existente: ela usa o próprio molde, diamantes e um lingote de aço. Encontre o primeiro exemplar e guarde uma cópia antes de fazer as melhorias."
 				"A melhoria de diamante usa uma ferramenta de aço como base. Esta tarefa pede a estação e o molde; a picareta melhorada vem a seguir."
 			]
-			icon: "overgeared:diamond_upgrade_smithing_template"
-			id: "6F11000000000012"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:diamond_upgrade_smithing_template"
+			id: "6F11000000000012"
 			rewards: [{
 				count: 4
 				id: "6F13000000000012"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -802,6 +802,9 @@
 				"Na mesa de ferraria, combine a picareta de aço, um molde de melhoria de diamante do Overgeared e um diamante. Confira a receita no EMI."
 				"Guarde a picareta de diamante: ela será a base da melhoria de netherita. O mesmo sistema de diamante também aparece nas receitas das outras ferramentas e armaduras de aço."
 			]
+			hide_dependency_lines: true
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "minecraft:diamond_pickaxe"
@@ -810,10 +813,6 @@
 				}
 			}
 			id: "6F11000000000013"
-			hide_dependency_lines: true
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000013"
@@ -822,6 +821,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.15d
+			subtitle: "&6M — Marco local"
 			tasks: [{
 				consume_items: false
 				id: "6F1200000000001E"
@@ -849,11 +849,10 @@
 				"Prepare também um molde de martelo do Nether (nether tool cast). Use uma cabeça de martelo como modelo e confira no EMI os materiais da versão do Nether."
 				"Os moldes guardam o tipo da peça e a quantidade de metal. Confira no EMI como preencher o molde na bancada e processá-lo no forno de fundição. Esta tarefa pede a estação e o molde; obter uma cabeça por forja continua sendo outra rota disponível."
 			]
-			icon: "overgeared:casting_furnace"
-			id: "6F11000000000014"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado opcional"
+			icon: "overgeared:casting_furnace"
+			id: "6F11000000000014"
 			optional: true
 			rewards: [{
 				count: 4
@@ -861,6 +860,7 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -895,17 +895,17 @@
 				"Cerque um alto-forno com blocos de tijolos do Nether para obter a nether alloy furnace. Confira no EMI a receita desta estação."
 				"Ela prepara a liga usada na forja da netherita. Reserve ouro e fragmentos de netherita para o próximo trabalho; agora sua oficina pede material de uma viagem mais quente."
 			]
-			icon: "overgeared:nether_alloy_furnace"
-			id: "6F11000000000015"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "overgeared:nether_alloy_furnace"
+			id: "6F11000000000015"
 			rewards: [{
 				count: 4
 				id: "6F13000000000015"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [{
 				consume_items: false
 				id: "6F12000000000021"
@@ -928,17 +928,17 @@
 				"Uma tentativa que falha nessa receita devolve quatro fragmentos de netherita. Prepare uma área segura e pratique o ritmo antes de comprometer outra liga."
 				"Esta tarefa pede o material aquecido e o lingote pronto. A receita do lingote não atribui qualidade à peça; o desafio opcional de qualidade Perfect continua em sua própria ramificação."
 			]
-			icon: "minecraft:netherite_ingot"
-			id: "6F11000000000016"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			subtitle: "&bA — Aprendizado"
+			icon: "minecraft:netherite_ingot"
+			id: "6F11000000000016"
 			rewards: [{
 				count: 4
 				id: "6F13000000000016"
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			subtitle: "&bA — Aprendizado"
 			tasks: [
 				{
 					consume_items: false
@@ -969,6 +969,8 @@
 				"Na mesa de ferraria, combine o molde, a picareta de diamante e um lingote de netherita. Obtenha o molde no inventário antes de gastá-lo na melhoria."
 				"Sua picareta começou com uma pedra lascada e passou por uma oficina inteira. Agora falta decidir qual montanha terá o privilégio da estreia."
 			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_pickaxe"
@@ -977,9 +979,6 @@
 				}
 			}
 			id: "6F11000000000017"
-			hide_details_until_startable: false
-			hide_text_until_complete: false
-			subtitle: "&6M — Marco local"
 			rewards: [{
 				count: 8
 				id: "6F13000000000017"
@@ -988,6 +987,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.15d
+			subtitle: "&6M — Marco local"
 			tasks: [
 				{
 					consume_items: false
@@ -1021,12 +1021,10 @@
 				"Forje pontas de ferro e de aço conforme os desenhos do EMI e combine-as com gravetos e penas. Reúna oito flechas de cada metal no inventário."
 				"A modificação também permite aplicar poções em tipos de flecha compatíveis. Esta ramificação pede as flechas comuns de ferro e aço; deixe as poções para os experimentos da sua oficina."
 			]
-			icon: "minecraft:fletching_table"
-			id: "6F11000000000018"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			shape: "square"
-			subtitle: "&dC — Opcional"
+			icon: "minecraft:fletching_table"
+			id: "6F11000000000018"
 			optional: true
 			rewards: [{
 				count: 8
@@ -1034,6 +1032,8 @@
 				item: "minecraft:feather"
 				type: "item"
 			}]
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			tasks: [
 				{
 					consume_items: false
@@ -1069,12 +1069,10 @@
 				"Use a lasca como ponta de flecha, com graveto e pena. Há receita na bancada e na mesa de flechas; o EMI mostra ambas. Cada montagem entrega quatro flechas; reúna oito para concluir a tarefa. Não é preciso obter flechas de ferro ou aço antes destas."
 				"As penas da recompensa ajudam a repor a munição. Marque seus alvos com cuidado: agora cada disparo tem acabamento de joalheria."
 			]
-			icon: "overgeared:diamond_arrow"
-			id: "6F11000000000019"
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			shape: "square"
-			subtitle: "&dC — Opcional"
+			icon: "overgeared:diamond_arrow"
+			id: "6F11000000000019"
 			optional: true
 			rewards: [{
 				count: 8
@@ -1082,6 +1080,8 @@
 				item: "minecraft:feather"
 				type: "item"
 			}]
+			shape: "square"
+			subtitle: "&dC — Opcional"
 			tasks: [
 				{
 					consume_items: false
