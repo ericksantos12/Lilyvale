@@ -4,12 +4,12 @@
 
 ### Mods novos
 
-- **Better Days**: ao dormir, a noite passa acelerada em vez de pular direto para a manhã; plantações, clima e efeitos acompanham o tempo que passou.
+- **Better Days**: dia e noite com horarios alterados para 40 minutos um dia total, 15 de noite e 25 de dia, favorecendo dias maiores.
 
 ### Mods removidos
 
 - **The Aether**, **Deeper and Darker**, **Blue's Better Monsters** e **Blue's Better Monsters LITE**, junto das bibliotecas AeroBlender e TerraBlender que só eles usavam.
-- Itens, blocos e construções dessas dimensões e criaturas saíram do pack; guarde o que quiser manter antes de atualizar um mundo existente.
+- Itens, blocos e construções dessas dimensões e criaturas saíram do pack; guarde o que quiser manter antes de atualizar um mundo existente. Não faziam parte pra ideia core do pack
 
 ### Livro de quests
 
