@@ -34,7 +34,7 @@ Os tipos abaixo são conceitos editoriais, não novos valores de `type` no SNBT.
 
 ### Marco de progressão
 
-- Reconheça um resultado significativo dentro da trilha: produção automatizada, uma viagem, a Lua, uma masmorra do Aether ou o Ender Dragon.
+- Reconheça um resultado significativo dentro da trilha: produção automatizada, uma viagem, a Lua ou o Ender Dragon.
 - Os exemplos são propostas de conteúdo, não quests já implementadas ou prova de compatibilidade. Confirme mods, receitas e gatilhos antes de criar.
 - Não aceite um bloco de máquina no inventário como prova de fábrica funcional. Verifique ações por mecanismos realmente disponíveis; sem detector real, mantenha orientação em texto, sem task de checkmark de gameplay.
 - Dê à fazenda, à casa e às ferrovias marcos próprios; não apresente chefes como única forma de progredir.

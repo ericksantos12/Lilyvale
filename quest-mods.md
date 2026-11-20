@@ -51,8 +51,6 @@
 
 ## Além do Horizonte
 
-- The Aether
-- Deeper and Darker
 - Ad Astra
 
 ## Forja e Legado

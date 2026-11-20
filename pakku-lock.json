@@ -89,50 +89,6 @@
             ]
         },
         {
-            "pakku_id": "Z5dV0IBWFSqx4o7X",
-            "pakku_links": [
-                "L7HCYmCXARdMSORz",
-                "GYqcs5nJLR41L0S5"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "aeroblender"
-            },
-            "name": {
-                "curseforge": "AeroBlender"
-            },
-            "id": {
-                "curseforge": "879879"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "aeroblender-1.20.1-1.0.1-neoforge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4789/8/aeroblender-1.20.1-1.0.1-neoforge.jar",
-                    "id": "4789008",
-                    "parent_id": "879879",
-                    "hashes": {
-                        "sha1": "98e6a2a4c312f2aae0eb674ea5a923037378c7da",
-                        "md5": "c0fab47292ec752a20e0e18d16d96a4a"
-                    },
-                    "required_dependencies": [
-                        "255308",
-                        "563928"
-                    ],
-                    "size": 21641,
-                    "date_published": "2023-10-09T05:41:24.883Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "whUyQ17qi1GTG5XK",
             "type": "MOD",
             "slug": {
@@ -641,6 +597,43 @@
             ]
         },
         {
+            "pakku_id": "wruaVajjteYYqS8F",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "betterdays"
+            },
+            "name": {
+                "curseforge": "Better Days"
+            },
+            "id": {
+                "curseforge": "895618"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "betterdays-1.20.1-3.3.4.5-FORGE.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7046/761/betterdays-1.20.1-3.3.4.5-FORGE.jar",
+                    "id": "7046761",
+                    "parent_id": "895618",
+                    "hashes": {
+                        "sha1": "281989d937d10266e059d4df4813cdb536531584",
+                        "md5": "f9036bfa119af0943a198f7746086813"
+                    },
+                    "required_dependencies": [],
+                    "size": 543969,
+                    "date_published": "2025-09-29T21:04:50.683Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "exkXLUdDjekBxBWB",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -717,78 +710,6 @@
                     "required_dependencies": [],
                     "size": 732475,
                     "date_published": "2024-08-12T16:41:49.460Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MjYBKMCuFThhFpKk",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "blues-better-monsters"
-            },
-            "name": {
-                "curseforge": "Blue's Better Monsters"
-            },
-            "id": {
-                "curseforge": "1017176"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Blues_Better_Monstersv0.11.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6049/920/Blues_Better_Monstersv0.11.zip",
-                    "id": "6049920",
-                    "parent_id": "1017176",
-                    "hashes": {
-                        "sha1": "92359d7b412d071dc5616eed870df5a7de22fe9a",
-                        "md5": "1b2f19104caeb976566168777ff3b178"
-                    },
-                    "required_dependencies": [],
-                    "size": 708323,
-                    "date_published": "2025-01-03T18:19:56.857Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "R4S4HNcu5IJ4Kk4g",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "blues-better-monsters-lite"
-            },
-            "name": {
-                "curseforge": "Blue's Better Monsters LITE"
-            },
-            "id": {
-                "curseforge": "1311249"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "§3Blue's §fBetter Monsters §3LITE Beyond Cosmo.zip",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7697/886/§3Blue's §fBetter Monsters §3LITE Beyond Cosmo.zip",
-                    "id": "7697886",
-                    "parent_id": "1311249",
-                    "hashes": {
-                        "sha1": "5ee633325795a4c231e2b5e035a733ebc0f693a4",
-                        "md5": "b994d36b857731228aa0d147c426b36f"
-                    },
-                    "required_dependencies": [],
-                    "size": 238231,
-                    "date_published": "2026-03-01T20:28:53.600Z"
                 }
             ]
         },
@@ -2058,42 +1979,6 @@
                     "required_dependencies": [],
                     "size": 117737,
                     "date_published": "2026-10-30T12:24:50.840Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "OYbsUhs9xhRqh4Ee",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "deeperdarker"
-            },
-            "name": {
-                "curseforge": "Deeper and Darker"
-            },
-            "id": {
-                "curseforge": "659011"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "deeperdarker-forge-1.20.1-1.3.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5906/86/deeperdarker-forge-1.20.1-1.3.3.jar",
-                    "id": "5906086",
-                    "parent_id": "659011",
-                    "hashes": {
-                        "sha1": "12f95fa85c62123140d1962702a97a3bb746bbf5",
-                        "md5": "0a71e15737a134276edb310ea02db5f4"
-                    },
-                    "required_dependencies": [],
-                    "size": 17844266,
-                    "date_published": "2024-11-15T19:53:35.520Z"
                 }
             ]
         },
@@ -6207,79 +6092,6 @@
                     "required_dependencies": [],
                     "size": 206584,
                     "date_published": "2023-08-21T13:15:54.190Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "GYqcs5nJLR41L0S5",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "terrablender"
-            },
-            "name": {
-                "curseforge": "TerraBlender (Forge)"
-            },
-            "id": {
-                "curseforge": "563928"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6290/448/TerraBlender-forge-1.20.1-3.0.1.10.jar",
-                    "id": "6290448",
-                    "parent_id": "563928",
-                    "hashes": {
-                        "sha1": "3bd99fb59e8b06b04e78b5153790c1e08b2be5dc",
-                        "md5": "9d8e305b95ae5a8f7b446d6346324267"
-                    },
-                    "required_dependencies": [],
-                    "size": 107532,
-                    "date_published": "2025-03-10T23:40:16.850Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "L7HCYmCXARdMSORz",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "aether"
-            },
-            "name": {
-                "curseforge": "The Aether"
-            },
-            "id": {
-                "curseforge": "255308"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "aether-1.20.1-1.5.2-neoforge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6134/920/aether-1.20.1-1.5.2-neoforge.jar",
-                    "id": "6134920",
-                    "parent_id": "255308",
-                    "hashes": {
-                        "sha1": "fb6af601028e399016271bc166fd1de888680de7",
-                        "md5": "3508066e170a010e8a466eea05579b85"
-                    },
-                    "required_dependencies": [],
-                    "size": 39746319,
-                    "date_published": "2025-01-28T21:40:42.637Z"
                 }
             ]
         },
