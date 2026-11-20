@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.2.0]
+
+### Mods novos
+
+- **Better Days**: dia e noite com horarios alterados para 40 minutos um dia total, 15 de noite e 25 de dia, favorecendo dias maiores.
+
+### Mods removidos
+
+- **The Aether**, **Deeper and Darker**, **Blue's Better Monsters** e **Blue's Better Monsters LITE**, junto das bibliotecas AeroBlender e TerraBlender que só eles usavam.
+- Itens, blocos e construções dessas dimensões e criaturas saíram do pack; guarde o que quiser manter antes de atualizar um mundo existente. Não faziam parte pra ideia core do pack
+
+### Livro de quests
+
+- Os capítulos **Entre as Nuvens** (Aether) e **Ecos das Profundezas** (Deeper and Darker) foram removidos. **Diário de Bordo** agora abre a categoria Além do Horizonte.
+- A quest do conector do Tom's explica as novas receitas com peças do Create.
+
+### Jogabilidade
+
+- As receitas do **Tom's Simple Storage** agora usam componentes do Create, sem diamante, pérola do End, glowstone ou quartzo direto.
+    - Conector, terminal e conector de cabo pedem liga e revestimento de andesito, feitos só na mesa de trabalho.
+    - Level emitter, conector filtrado e filtro de tags pedem electron tube.
+    - Filtro múltiplo e terminal de fabricação pedem latão.
+    - Terminal sem fio pede latão, redstone link e precision mechanism.
+    - Cabos, trims, proxy, caixote e filtro básico não mudaram.
+
 ## [1.1.0]
 
 ### Mods novos

@@ -106,3 +106,5 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+# oh-my-claudecode state
+.omc/

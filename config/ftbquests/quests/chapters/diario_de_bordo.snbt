@@ -5,7 +5,7 @@
 	group: "6E00000000000001"
 	icon: "ad_astra:tier_1_rocket"
 	id: "7A0F000000000001"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

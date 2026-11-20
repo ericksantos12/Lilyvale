@@ -1,6 +1,6 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado (2026-11-16): os capítulos-base e o Início existem no livro — 31 capítulos, 673 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano.
+**Estado (2026-11-20): os capítulos-base e o Início existem no livro — 29 capítulos, 644 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano. The Aether e Deeper and Darker saíram do pack, e com eles AH01 e AH02.
 
 **Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
@@ -15,7 +15,7 @@ Fonte de escopo: `quest-mods.md`. O plano cobre seus 49 mods em **29 capítulos-
 3. **Marcos reconhecem resultados, não apenas peças.** Possuir uma prensa não comprova uma fábrica; possuir trilhos não comprova uma ferrovia; possuir tanque não comprova oxigênio carregado.
 4. **Coleções registram variedade, não quantidade acumulada.** Um prato por receita final, um vinho por identidade, um instrumento por instrumento. Nada de exigir uma pilha, todas as cores ou todos os ingredientes simultaneamente.
 5. **Checkmarks somente em capítulos informativos**, como Início. Para gameplay, exija detector real; sem ele, deixe a inspiração em texto, sem confirmação manual nem posse disfarçada de ação. Esta revisão do usuário substitui propostas antigas de projetos P nos arquivos de fases.
-6. **Sem ligação obrigatória entre estilos de jogo.** Aether, Otherside, Lua e dragão não são pré-requisitos editoriais para plantar, decorar, cozinhar ou cuidar de um companheiro. Receitas reais podem exigir materiais de exploração; isso precisa ser informado, não disfarçado como independência mecânica absoluta.
+6. **Sem ligação obrigatória entre estilos de jogo.** Lua e dragão não são pré-requisitos editoriais para plantar, decorar, cozinhar ou cuidar de um companheiro. Receitas reais podem exigir materiais de exploração; isso precisa ser informado, não disfarçado como independência mecânica absoluta.
 7. **Documentação é consultável antes de concluir atividades.** Requisitos reais podem orientar trilhas, mas textos, receitas e dicas não ficam trancados atrás de completismo.
 8. **O escopo atual prevalece sobre a organização anterior.** Armazenamento tem sua entrada em Primeiros Dias. A Jornada até o End é uma nona categoria proposta porque aparece na lista atual; não substituir nem editar os oito grupos já existentes durante o planejamento.
 9. **Não somar todos os catálogos como uma barra de “progresso do pack”.** Uma pessoa pode avançar muito em agricultura sem ter qualquer interesse em metalurgia avançada. Evitar também recompensas exclusivas por completar 100% de uma categoria.
@@ -64,8 +64,6 @@ Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastrea
 | O Mundo Lá Fora | MF01 — Atlas de Descobertas | Regions Unexplored e Lootr | Exploração C, poucas dicas A |
 | O Mundo Lá Fora | MF02 — Memórias Sob a Terra | Better Archeology | A de escavação/identificação, Q de fósseis |
 | O Mundo Lá Fora | MF03 — Caminhos que Conectam | Via Romana | A de infraestrutura, M e projetos C |
-| Além do Horizonte | AH01 — Entre as Nuvens | The Aether | A de adaptação, M de expedição e C |
-| Além do Horizonte | AH02 — Ecos das Profundezas | Deeper and Darker | A curta, M de exploração e combate isolados |
 | Além do Horizonte | AH03 — Diário de Bordo | Ad Astra | A forte até a Lua, M de destinos, C de bases |
 | Forja e Legado | FL01 — Fogo, Martelo e Aço | Overgeared | A forte, M de equipamento, C de qualidade |
 | Forja e Legado | FL02 — Além da Netherita | Advanced Netherite | A mínima da melhoria, M locais e C opcionais |
@@ -141,8 +139,6 @@ P — Projeto:         inspiração / ferramentas
 | MF01 | B/G: leitura do mundo e Lootr no topo; seis famílias de paisagem em ilhas, sem exigir todos os biomas |
 | MF02 | T+G: escovar → recuperar → identificar; fósseis em pequena galeria independente |
 | MF03 | T/P: caminho → pontos válidos → viagem; projetos de conexão embaixo, sem dependência de ferrovia |
-| AH01 | X: chegada e segurança no centro; recursos/estações à esquerda; masmorras à direita; coleções embaixo |
-| AH02 | X: preparação no topo, acesso ao Otherside no centro; exploração à esquerda, combate à direita; nunca ligar à fazenda |
 | AH03 | X em quatro setores: preparo/oxigênio `(0,0)`, lançamento/Lua `(28,0)`, base `(28,16)`, novos destinos `(56,0)`; não misturar todos os planetas numa cadeia vertical |
 | FL01 | T: ferro à esquerda, aço no centro, diamante/netherita à direita; projetos, moldes e qualidade em ramos opcionais inferiores |
 | FL02 | T+G: leitura do upgrade → uma melhoria; quatro ligas como pequenos marcos locais, sem exigir todos os equipamentos de cada tier |
@@ -179,8 +175,6 @@ As especificações detalhadas foram **movidas, sem reescrever seu conteúdo**, 
 | MF01 — Atlas de Descobertas | [F09 — Paisagens e caminhos](fases/09-paisagens-e-caminhos.md) |
 | MF02 — Memórias Sob a Terra | [F10 — Arqueologia](fases/10-arqueologia.md) |
 | MF03 — Caminhos que Conectam | [F09 — Paisagens e caminhos](fases/09-paisagens-e-caminhos.md) |
-| AH01 — Entre as Nuvens | [F14 — Outras dimensões](fases/14-outras-dimensoes.md) |
-| AH02 — Ecos das Profundezas | [F14 — Outras dimensões](fases/14-outras-dimensoes.md) |
 | AH03 — Diário de Bordo | [F15 — Exploração espacial](fases/15-exploracao-espacial.md) |
 | FL01 — Fogo, Martelo e Aço | [F01 — Fundação e legado](fases/01-fundacao-e-legado.md) |
 | FL02 — Além da Netherita | [F16 — Netherita avançada](fases/16-netherita-avancada.md) |
@@ -261,8 +255,6 @@ A = merece orientação própria; M = sustenta um marco; C = desafio/coleção; 
 | Better Archeology | MF02 | A de escavação/identificação, M de achado, C de fósseis |
 | Via Romana | MF03 | A de rede/caminho, M de conexão, C de projetos |
 | Lootr | MF01 | Uma dica de exploração e saque por jogador; sem coleção de baús |
-| The Aether | AH01 | A de adaptação, M de masmorra, C de expedição |
-| Deeper and Darker | AH02 | A de acesso/adaptação, M de viagem, C de exploração/combate |
 | Ad Astra | AH03 | A forte de preparação/oxigênio, M por viagem/base, C de projetos |
 | Overgeared | FL01 | A forte e reaproveitada, M de equipamento, C de qualidade |
 | Advanced Netherite | FL02 | A pequena de upgrade, M/C de equipamento; depende de auditoria de integração |
@@ -442,8 +434,6 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 | MF01 Atlas de Descobertas | `atlas_de_descobertas.snbt` | 11 |
 | MF02 Memórias Sob a Terra | `memorias_sob_a_terra.snbt` | 15 |
 | MF03 Caminhos que Conectam | `caminhos_que_conectam.snbt` | 5 |
-| AH01 Entre as Nuvens | `entre_as_nuvens.snbt` | 18 |
-| AH02 Ecos das Profundezas | `ecos_das_profundezas.snbt` | 11 |
 | AH03 Diário de Bordo | `diario_de_bordo.snbt` | 21 |
 | FL01 Fogo, Martelo e Aço | `overgeared.snbt` | 25 |
 | FL02 Além da Netherita | `alem_da_netherita.snbt` | 9 |

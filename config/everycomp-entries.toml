@@ -19,17 +19,10 @@
 
 	[types.wood_type]
 
-		[types.wood_type.deeperdarker]
-			bloom = true
-			echo = true
-
 		[types.wood_type.ad_astra]
 			aeronos = true
 			strophar = true
 			glacian = true
-
-		[types.wood_type.aether]
-			skyroot = true
 
 		[types.wood_type.cluttered]
 			willow = true
@@ -78,17 +71,6 @@
 
 		[types.leaves_type.ad_astra]
 			glacian = true
-
-		[types.leaves_type.aether]
-			skyroot = true
-			golden_oak = true
-			crystal = true
-			crystal_fruit = true
-			holiday = true
-			decorated_holiday = true
-
-		[types.leaves_type.deeperdarker]
-			echo = true
 
 		[types.leaves_type.cluttered]
 			willow = true
