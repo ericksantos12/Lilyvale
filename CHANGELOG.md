@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1]
+
+### Correções
+
+- Removidos **No Chat Reports** e **No Chat Restrictions**. A CurseForge recusou o pack porque esses mods não podem ser incluídos em modpacks lá. Quem quiser continuar usando pode instalar por conta própria no cliente ou no servidor.
+
 ## [1.2.0]
 
 ### Mods novos
