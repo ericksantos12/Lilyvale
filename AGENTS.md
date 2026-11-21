@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-Lilyvale is a Minecraft 1.20.1 Forge modpack. Pakku controls the official mod list; consult `.pakku/docs/` for its commands. `pakku.json` declares the projects, and `pakku-lock.json` lists the resolved files. Keep both in sync when changing mods. Pack configuration lives in `config/` and `defaultconfigs/`. Put KubeJS startup registrations in `kubejs/startup_scripts/`, recipes and server events in `kubejs/server_scripts/`, and client behavior in `kubejs/client_scripts/`. KubeJS resources belong in `kubejs/assets/` and data pack files in `kubejs/data/`. Repository artwork is in `.github/assets/`. Runtime directories such as `saves/`, `logs/`, `mods/`, and `build/` are ignored; do not commit local game data.
+Lilyvale is a Minecraft 1.20.1 Forge modpack. Pakku controls the official mod list; consult `.pakku/docs/` for its commands. `pakku.json` declares the projects, and `pakku-lock.json` lists the resolved files. Keep both in sync when changing mods. Add, remove, and update mods only through Pakku commands (for example `pakku rm <project>`); never edit `pakku.json` or `pakku-lock.json` by hand to change the mod list. Pack configuration lives in `config/` and `defaultconfigs/`. Put KubeJS startup registrations in `kubejs/startup_scripts/`, recipes and server events in `kubejs/server_scripts/`, and client behavior in `kubejs/client_scripts/`. KubeJS resources belong in `kubejs/assets/` and data pack files in `kubejs/data/`. Repository artwork is in `.github/assets/`. Runtime directories such as `saves/`, `logs/`, `mods/`, and `build/` are ignored; do not commit local game data.
 
 ## Build, Test, and Development Commands
 
