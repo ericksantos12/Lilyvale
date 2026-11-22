@@ -108,3 +108,7 @@ $RECYCLE.BIN/
 .LSOverride
 # oh-my-claudecode state
 .omc/
+
+# Minecraft server list
+servers.dat
+servers.dat_old

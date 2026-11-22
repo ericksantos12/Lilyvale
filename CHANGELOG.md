@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0]
+
+### Mods novos
+
+- **Simple Voice Chat**: chat de voz por proximidade no servidor.
+- **Chunky**: pré-geração de chunks para reduzir travadas ao explorar.
+
 ## [1.2.1]
 
 ### Correções

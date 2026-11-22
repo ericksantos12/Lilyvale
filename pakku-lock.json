@@ -1034,6 +1034,43 @@
             ]
         },
         {
+            "pakku_id": "Rcb1v0Q8Cur627Gd",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "chunky"
+            },
+            "name": {
+                "curseforge": "Chunky"
+            },
+            "id": {
+                "curseforge": "1425266"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "chunky-1.0.0-forge-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7441/249/chunky-1.0.0-forge-1.20.1.jar",
+                    "id": "7441249",
+                    "parent_id": "1425266",
+                    "hashes": {
+                        "sha1": "98ba052db940fa3b37ae2f9653accd42e6717b07",
+                        "md5": "29b33d4af76049d6f4a29b7cc821f668"
+                    },
+                    "required_dependencies": [],
+                    "size": 71053,
+                    "date_published": "2026-01-10T10:26:45.623Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jt9Ioy5UhstEuPmx",
             "type": "MOD",
             "slug": {
@@ -3081,51 +3118,6 @@
                     ],
                     "size": 791875,
                     "date_published": "2025-07-24T16:54:08.133Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "Zu2UWRCJKC3mMp6i",
-            "pakku_links": [
-                "Nrc4EMztCniX3RnV",
-                "FXNKMvH6JiRMbecG",
-                "sZo9lF1AMRdTa1sf"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ftb-quests-forge"
-            },
-            "name": {
-                "curseforge": "FTB Quests (NeoForge)"
-            },
-            "id": {
-                "curseforge": "289412"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ftb-quests-forge-2001.4.22.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
-                    "id": "8078538",
-                    "parent_id": "289412",
-                    "hashes": {
-                        "sha1": "70f3bd771ab3b5921ce1ff5f14166fab694ca1aa",
-                        "md5": "a05a49243da4a2505413d74e13102b16"
-                    },
-                    "required_dependencies": [
-                        "404468",
-                        "419699",
-                        "404465"
-                    ],
-                    "size": 1255469,
-                    "date_published": "2026-05-12T15:59:14.893Z"
                 }
             ]
         },
@@ -5658,6 +5650,42 @@
                     "required_dependencies": [],
                     "size": 424035,
                     "date_published": "2025-03-07T11:54:51.647Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "YwP0YmHlyaC0Asxq",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "simple-voice-chat"
+            },
+            "name": {
+                "curseforge": "Simple Voice Chat"
+            },
+            "id": {
+                "curseforge": "416089"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "voicechat-forge-1.20.1-2.6.27.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/9350/450/voicechat-forge-1.20.1-2.6.27.jar",
+                    "id": "9350450",
+                    "parent_id": "416089",
+                    "hashes": {
+                        "sha1": "5eb3ace18a6b7cdb56e80f12bb763d9f593183d0",
+                        "md5": "52d2ad80b626159fedad90be8325b0b8"
+                    },
+                    "required_dependencies": [],
+                    "size": 4941878,
+                    "date_published": "2026-10-28T08:11:57.073Z"
                 }
             ]
         },
