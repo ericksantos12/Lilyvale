@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0]
+
+### Mods novos
+
+- **Corpse**: ao morrer, seus itens ficam guardados em um corpo no local da morte, em vez de se espalharem pelo chão.
+
+### Correções
+
+- O **FTB Quests** voltou ao pack. Ele tinha saído por engano na 1.3.0, deixando o livro de quests indisponível.
+
 ## [1.3.0]
 
 ### Mods novos
