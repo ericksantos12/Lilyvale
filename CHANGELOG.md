@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.1]
+
+### Correções
+
+- O **Chunky** foi trocado pela versão para Forge (**Chunky Pregenerator Forge**). A versão anterior não era a correta para o pack.
+
 ## [1.4.0]
 
 ### Mods novos
