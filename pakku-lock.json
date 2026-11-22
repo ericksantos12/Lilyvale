@@ -1501,6 +1501,42 @@
             ]
         },
         {
+            "pakku_id": "dDtVd409q6damn2o",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "corpse"
+            },
+            "name": {
+                "curseforge": "Corpse"
+            },
+            "id": {
+                "curseforge": "316582"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "corpse-forge-1.20.1-1.0.23.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7018/272/corpse-forge-1.20.1-1.0.23.jar",
+                    "id": "7018272",
+                    "parent_id": "316582",
+                    "hashes": {
+                        "sha1": "843b16ca88bc5c390bb22a2a84437e6bffdd43dd",
+                        "md5": "a486f676f5e47e5846e31cb66cb5c16d"
+                    },
+                    "required_dependencies": [],
+                    "size": 245644,
+                    "date_published": "2025-09-21T09:06:56.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "8wtOotT580SSvcVJ",
             "type": "MOD",
             "slug": {
@@ -3118,6 +3154,51 @@
                     ],
                     "size": 791875,
                     "date_published": "2025-07-24T16:54:08.133Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "fWJezB3UKevEWugP",
+            "pakku_links": [
+                "Nrc4EMztCniX3RnV",
+                "FXNKMvH6JiRMbecG",
+                "sZo9lF1AMRdTa1sf"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-quests-forge"
+            },
+            "name": {
+                "curseforge": "FTB Quests (NeoForge)"
+            },
+            "id": {
+                "curseforge": "289412"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-quests-forge-2001.4.22.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+                    "id": "8078538",
+                    "parent_id": "289412",
+                    "hashes": {
+                        "sha1": "70f3bd771ab3b5921ce1ff5f14166fab694ca1aa",
+                        "md5": "a05a49243da4a2505413d74e13102b16"
+                    },
+                    "required_dependencies": [
+                        "404468",
+                        "419699",
+                        "404465"
+                    ],
+                    "size": 1255469,
+                    "date_published": "2026-05-12T15:59:14.893Z"
                 }
             ]
         },
