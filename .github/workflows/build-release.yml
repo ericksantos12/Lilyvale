@@ -563,9 +563,6 @@ jobs:
           if [ ! -f ${{ needs.info.outputs.project_file_name }}-curseforge.zip ]; then
             echo '::error::No value found for artifact `curseforge.zip`.' && exit 1
           fi
-          if [ ! -f ${{ needs.info.outputs.project_file_name }}-serverpack.zip ]; then
-            echo '::error::No value found for artifact `serverpack.zip`.' && exit 1
-          fi
           echo "All artifacts found"
 
       - name: Upload to Curseforge
@@ -576,8 +573,8 @@ jobs:
           project-id: ${{ vars.CURSEFORGE_ID }}
           display-name: ${{ needs.info.outputs.project_full_name }}
           modpack-path: ${{ needs.info.outputs.project_file_name }}-curseforge.zip
-          server-display-name: ${{ needs.info.outputs.project_full_name }} Serverpack
-          modpack-server-path: ${{ needs.info.outputs.project_file_name }}-serverpack.zip
+          # The serverpack (~400 MB with every mod jar) is published only on GitHub Releases:
+          # CurseForge's upload endpoint sits behind Cloudflare and times out (HTTP 524) on it.
           changelog: |
             ${{ needs.info.outputs.changelog }}
             ${{ needs.info.outputs.diff }}
