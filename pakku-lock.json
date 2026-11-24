@@ -4407,45 +4407,6 @@
             ]
         },
         {
-            "pakku_id": "Snkfc9sBsMiPEt9G",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lmft"
-            },
-            "name": {
-                "curseforge": "Load My F***ing Tags"
-            },
-            "id": {
-                "curseforge": "656346"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "lmft-1.0.4+1.20.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4892/299/lmft-1.0.4+1.20.1-forge.jar",
-                    "id": "4892299",
-                    "parent_id": "656346",
-                    "hashes": {
-                        "sha1": "e44a12eb51813b16faaab89b8073ec63c746c1b0",
-                        "md5": "b6fef15e42caec14db87f5aa498233e8"
-                    },
-                    "required_dependencies": [],
-                    "size": 178625,
-                    "date_published": "2023-11-23T00:33:22.407Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "UGuiHKjE12REsjTw",
             "type": "MOD",
             "slug": {
@@ -4738,6 +4699,42 @@
                     "required_dependencies": [],
                     "size": 374176,
                     "date_published": "2026-09-21T11:27:07.980Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "zEM2Op34xayquojc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mouse-tweaks"
+            },
+            "name": {
+                "curseforge": "Mouse Tweaks"
+            },
+            "id": {
+                "curseforge": "60089"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5338/457/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+                    "id": "5338457",
+                    "parent_id": "60089",
+                    "hashes": {
+                        "sha1": "d751153e722a4e014691c83f39f5b07c6ec5333c",
+                        "md5": "ce4b5bbb9ef6a7905c458ab599ef4cb2"
+                    },
+                    "required_dependencies": [],
+                    "size": 76237,
+                    "date_published": "2024-05-12T16:26:46.523Z"
                 }
             ]
         },
@@ -7044,6 +7041,43 @@
                     "required_dependencies": [],
                     "size": 179839,
                     "date_published": "2025-08-21T01:40:45.620Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "a809whRs0lOBpdLc",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "alekiships"
+            },
+            "name": {
+                "curseforge": "aleki's Nifty Ships"
+            },
+            "id": {
+                "curseforge": "1068445"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "alekiNiftyShips-FORGE-1.20.1-1.0.14.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5963/449/alekiNiftyShips-FORGE-1.20.1-1.0.14.jar",
+                    "id": "5963449",
+                    "parent_id": "1068445",
+                    "hashes": {
+                        "sha1": "c42aaab43cd524c45c4065996cc06b9b48c5682a",
+                        "md5": "826feae586b23c81db1efc902bdaf481"
+                    },
+                    "required_dependencies": [],
+                    "size": 22335232,
+                    "date_published": "2024-12-04T22:45:19.893Z"
                 }
             ]
         },

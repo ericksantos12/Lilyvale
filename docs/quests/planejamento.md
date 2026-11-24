@@ -1,6 +1,6 @@
 # Lilyvale — plano editorial e visual das quests
 
-**Estado (2026-11-20): os capítulos-base e o Início existem no livro — 29 capítulos, 644 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano. The Aether e Deeper and Darker saíram do pack, e com eles AH01 e AH02.
+**Estado (2026-11-23): os capítulos-base e o Início existem no livro — 30 capítulos, 655 quests — gerados por `tools/quest-book/gen.py`. A validação estática passou; nenhum capítulo novo foi testado em jogo nem aceito.** F00 e F01 seguem aceitas; F02 aguarda validação em jogo. O livro gerado substitui as especificações de nós das fases F03–F18, que ficam como histórico. A seção 14 registra o que foi entregue e o que difere deste plano. The Aether e Deeper and Darker saíram do pack, e com eles AH01 e AH02.
 
 **Execução:** o conteúdo foi escrito do zero a partir deste documento, sem seguir as especificações de nós de [fases/](fases/README.md). Este documento preserva arquitetura, layout comum, políticas e critérios de aceite; o conteúdo real está nos SNBT e nos scripts do gerador.
 
@@ -64,6 +64,7 @@ Preferir tasks nativas disponíveis. Avanços próprios, hooks KubeJS ou rastrea
 | O Mundo Lá Fora | MF01 — Atlas de Descobertas | Regions Unexplored e Lootr | Exploração C, poucas dicas A |
 | O Mundo Lá Fora | MF02 — Memórias Sob a Terra | Better Archeology | A de escavação/identificação, Q de fósseis |
 | O Mundo Lá Fora | MF03 — Caminhos que Conectam | Via Romana | A de infraestrutura, M e projetos C |
+| O Mundo Lá Fora | MF04 — Estaleiro | aleki's Nifty Ships | A de peças, M por barco montado, C de navegação |
 | Além do Horizonte | AH03 — Diário de Bordo | Ad Astra | A forte até a Lua, M de destinos, C de bases |
 | Forja e Legado | FL01 — Fogo, Martelo e Aço | Overgeared | A forte, M de equipamento, C de qualidade |
 | Forja e Legado | FL02 — Além da Netherita | Advanced Netherite | A mínima da melhoria, M locais e C opcionais |
@@ -139,6 +140,7 @@ P — Projeto:         inspiração / ferramentas
 | MF01 | B/G: leitura do mundo e Lootr no topo; seis famílias de paisagem em ilhas, sem exigir todos os biomas |
 | MF02 | T+G: escovar → recuperar → identificar; fósseis em pequena galeria independente |
 | MF03 | T/P: caminho → pontos válidos → viagem; projetos de conexão embaixo, sem dependência de ferrovia |
+| MF04 | Duas linhas: barco a remo e sloop, cada uma com sua planta de casco ao lado; opcionais de navegação embaixo |
 | AH03 | X em quatro setores: preparo/oxigênio `(0,0)`, lançamento/Lua `(28,0)`, base `(28,16)`, novos destinos `(56,0)`; não misturar todos os planetas numa cadeia vertical |
 | FL01 | T: ferro à esquerda, aço no centro, diamante/netherita à direita; projetos, moldes e qualidade em ramos opcionais inferiores |
 | FL02 | T+G: leitura do upgrade → uma melhoria; quatro ligas como pequenos marcos locais, sem exigir todos os equipamentos de cada tier |
@@ -254,6 +256,7 @@ A = merece orientação própria; M = sustenta um marco; C = desafio/coleção; 
 | Regions Unexplored | MF01 | C de exploração por famílias; sem árvore tecnológica |
 | Better Archeology | MF02 | A de escavação/identificação, M de achado, C de fósseis |
 | Via Romana | MF03 | A de rede/caminho, M de conexão, C de projetos |
+| aleki's Nifty Ships | MF04 | A de andaimes e peças, M pelos avanços de barco pronto, C de canhões e tripulação |
 | Lootr | MF01 | Uma dica de exploração e saque por jogador; sem coleção de baús |
 | Ad Astra | AH03 | A forte de preparação/oxigênio, M por viagem/base, C de projetos |
 | Overgeared | FL01 | A forte e reaproveitada, M de equipamento, C de qualidade |
@@ -434,6 +437,7 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 | MF01 Atlas de Descobertas | `atlas_de_descobertas.snbt` | 11 |
 | MF02 Memórias Sob a Terra | `memorias_sob_a_terra.snbt` | 15 |
 | MF03 Caminhos que Conectam | `caminhos_que_conectam.snbt` | 5 |
+| MF04 Estaleiro | `estaleiro.snbt` | 11 |
 | AH03 Diário de Bordo | `diario_de_bordo.snbt` | 21 |
 | FL01 Fogo, Martelo e Aço | `overgeared.snbt` | 25 |
 | FL02 Além da Netherita | `alem_da_netherita.snbt` | 9 |
@@ -456,6 +460,7 @@ A notação `arquivo.jar!/caminho` aponta para um recurso dentro do arquivo inst
 - **Checks:** fora do Início, só o cartão de Carry On, sem recompensa, por não haver item a detectar.
 - **Let's Do retirado (2026-11-16):** Farm & Charm, Meadow, Vinery e Bakery saíram do pack, junto com `farm_carts.js`. VC02 foi refeito sobre a horta do Farmer's Delight e os novos addons; VC03–VC05 viraram Brewin' and Chewin', Barbeque's Delight e Youkai's Feasts; VC07 reúne My Nether's e End's Delight. Esses capítulos usam números de capítulo novos (`0x1B`–`0x1F`), então o progresso antigo de Farm & Charm, Meadow, Vinery e Bakery não é reaproveitado.
 - **Validação dos addons:** o gerador aceita `QUEST_EXTRA_JARS` (pastas separadas por `;`) para validar JARs que ainda não estão em `mods/`. Itens com modelo mas sem receita ou registro (os molhos do Barbeque's Delight) ficaram de fora.
+- **Estaleiro (2026-11-23):** MF04 é gerado por `chapters_ships.py` com `gen.py --only MF04`, para não regravar os capítulos salvos pelo jogo. As plantas de casco saem de `ship_diagrams.py` para `kubejs/assets/lilyvale/textures/quests/estaleiro/` e aparecem no painel do capítulo e na descrição das quests. Os formatos foram tirados de `ShipbuildingMultiblocks` e das estruturas `unfinished_*` do mod; falta testar a montagem em jogo.
 - **Arqueologia:** o artefato identificado não está no registro de modelos; o marco pede a mesa e um artefato não identificado, e o texto diz que a identificação não é detectada.
 
 ### Pendências antes do aceite

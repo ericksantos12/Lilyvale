@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.5.0]
+
+### Mods novos
+
+- **aleki's Nifty Ships**: barco a remo e sloop a vela, montados no estaleiro sobre armações de andaime, com compartimentos, canhões e âncora.
+- **Mouse Tweaks**: atalhos de mouse para mover e distribuir itens nos inventários.
+
+### Livro de quests
+
+- Capítulo novo **Estaleiro**, em O Mundo Lá Fora, ensinando a montar o barco a remo e o sloop do aleki's Nifty Ships. Cada barco tem uma planta do casco que mostra onde vai cada andaime, para que lado colocá-lo e onde entram a forqueta e o cunho.
+
+### Mods removidos
+
+- **Load My F\*\*\*ing Tags**.
+
+### Correções
+
+- O corpo deixado pelo **Corpse** não pode mais ser carregado com o **Carry On**.
+- Os barcos do **aleki's Nifty Ships** também não podem ser carregados com o **Carry On**.
+- A ordem padrão dos resource packs em instalações novas foi atualizada, e os packs que não fazem mais parte do modpack saíram da lista.
+
 ## [1.4.1]
 
 ### Correções
