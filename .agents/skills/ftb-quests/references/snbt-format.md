@@ -129,3 +129,20 @@ The `lang/*.snbt` file has **unquoted keys** with colon-space (`: `) separator â
 Use `&` prefix: `&0`-`&9`, `&a`-`&f` for colors. `&l` bold, `&n` underline, `&o` italic, `&m` strikethrough, `&r` reset.
 
 Example: `"&4&lWARNING: &rThis quest is dangerous!"`
+
+### Page Breaks
+A description line containing exactly `{@pagebreak}` splits the description into pages. The quest window shows one page at a time with arrows to move between them. The editor's page-break button inserts the same line. Confirmed in FTB Quests 2001.4.22 (`Quest.PAGEBREAK_CODE`, `ViewQuestPanel.addPageBreak`).
+
+```snbt
+description: [
+	"First page: what this quest is about."
+	"{@pagebreak}"
+	"&3&lSecond page title"
+	"Details that would make the first page too long."
+]
+```
+
+Use page breaks when a description runs past one screen: a long build guide, a materials list, controls. Start each page with a short colored heading so the reader knows where they are, and end the first page with a line saying what the next pages cover. Keep the line on its own; text on the same line is not treated as a break. In the 1.21+ lang format, put `"{@pagebreak}"` as its own element of the `quest_desc` array.
+
+### Images in Descriptions
+A line of the form `{image:namespace:path/to/texture.png width:80 height:100 align:center}` draws a texture inside the description (`width`/`height` in GUI pixels; `align` is `left`, `center` or `right`; `fit:true` scales to the panel). The texture must be in a loaded resource pack; in a KubeJS pack, put it under `kubejs/assets/<namespace>/textures/...`.

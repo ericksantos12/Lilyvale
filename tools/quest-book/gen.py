@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Gera os capítulos do livro de quests do Lilyvale. Rode da raiz: python tools/quest-book/gen.py"""
+"""Gera os capítulos do livro de quests do Lilyvale. Rode da raiz: python tools/quest-book/gen.py
+
+`--only MF04,VC02` reescreve só os capítulos com esses códigos; os outros arquivos ficam como estão,
+inclusive com as edições que o jogo fez neles. A validação continua olhando o livro inteiro.
+"""
 import glob
 import json
 import os
@@ -9,7 +13,7 @@ import zipfile
 
 sys.path.insert(0, os.path.dirname(__file__))
 import core  # noqa: E402
-import chapters_a, chapters_b, chapters_c, chapters_farm  # noqa: E402
+import chapters_a, chapters_b, chapters_c, chapters_farm, chapters_ships  # noqa: E402
 
 ROOT = core.ROOT
 CH = 'config/ftbquests/quests/chapters/'
@@ -37,7 +41,8 @@ def main():
     rare = jar_tag('perfectplushies', api + 'rare_treasure_plushies.json') + jar_tag('perfectplushies', api + 'rare_village_plushies.json')
     village = [p for p in village if p not in rare]
 
-    chapters = chapters_a.build() + chapters_farm.build() + chapters_b.build() + chapters_c.build(village, treasure, rare)
+    chapters = (chapters_a.build() + chapters_farm.build() + chapters_b.build() + chapters_ships.build()
+                + chapters_c.build(village, treasure, rare))
     by_code = {c.code: c for c in chapters}
 
     # ---------------- legado: quests antigas de Create e Immersive Melodies
@@ -85,9 +90,16 @@ def main():
         return ch.keys[key]
 
     # ---------------- escrita
+    only = None
+    if '--only' in sys.argv:
+        only = set(sys.argv[sys.argv.index('--only') + 1].split(','))
+        unknown = only - {c.code for c in chapters}
+        if unknown:
+            errors.append('--only: códigos desconhecidos %s' % ', '.join(sorted(unknown)))
     for c in chapters:
         text = core.chapter_snbt(c, reg, errors, resolve, header=getattr(c, 'header', None))
-        write(CH + c.filename + '.snbt', text)
+        if only is None or c.code in only:
+            write(CH + c.filename + '.snbt', text)
 
     # ---------------- tags de apoio (datapack do KubeJS)
     for name, biomes in chapters_b.RU_FAMILIES.items():

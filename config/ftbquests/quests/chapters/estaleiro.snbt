@@ -1,0 +1,453 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "estaleiro"
+	group: "2E622CDAB0B6B1F2"
+	icon: "alekiships:sloop_icon_only"
+	id: "7A20000000000001"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 4.0d
+			hover: ["Planta do barco a remo", "A seta aponta para onde olhar ao colocar cada andaime"]
+			image: "lilyvale:textures/quests/estaleiro/barco_a_remo.png"
+			order: 0
+			rotation: 0.0d
+			width: 3.2d
+			x: 8.6d
+			y: 0.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 6.0d
+			hover: ["Planta do sloop", "A seta aponta para onde olhar ao colocar cada andaime"]
+			image: "lilyvale:textures/quests/estaleiro/sloop.png"
+			order: 1
+			rotation: 0.0d
+			width: 4.0d
+			x: 8.6d
+			y: 7.4d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Barcos de verdade nascem em terra firme. No aleki's Nifty Ships, o casco é desenhado no chão com andaimes de estaleiro e depois forrado de tábuas."
+				"O andaime inclinado (Sloped Shipwright's Scaffolding) sai de seis andaimes comuns em escada na bancada e rende cinco. O barco a remo pede seis."
+				"Escolha um lugar plano perto da água: o barco aparece onde o casco foi montado."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:watercraft_frame_angled"
+			id: "7A20100000000001"
+			rewards: [{
+				id: "7A20300000000001"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [{
+				consume_items: false
+				count: 6L
+				id: "7A20200000000001"
+				item: "alekiships:watercraft_frame_angled"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&3Andaime de estaleiro"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A20100000000001"]
+			description: [
+				"As forquetas (Oarlock) apoiam os remos e são a peça que fecha o barco a remo. Cada uma leva quatro barras de ferro."
+				"Os remos (Oar) saem de gravetos e uma laje de madeira. Com o barco pronto, clique nele com os remos para encaixá-los."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:oarlock"
+			id: "7A20100000000002"
+			rewards: [{
+				id: "7A20300000000002"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				count: 2L
+				id: "7A20200000000002"
+				item: "alekiships:oarlock"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 2L
+				id: "7A20200000000003"
+				item: "alekiships:oar"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&3Forquetas e remos"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A20100000000002"]
+			description: [
+				"Seis andaimes inclinados formam um casco de duas armações de largura por três de comprimento:"
+				"{image:lilyvale:textures/quests/estaleiro/barco_a_remo.png width:80 height:100 align:center}"
+				"Vire a página para ler a planta, montar o barco e ver os controles."
+				"{@pagebreak}"
+				"&3&lComo ler a planta"
+				"Cada quadrado é uma armação vista de cima, com a proa no alto."
+				"&6Seta&r: andaime inclinado. A seta mostra para onde você deve olhar ao colocá-lo, sempre para fora do casco; assim a borda alta fica do lado de fora. Os cantos se ajustam sozinhos, como degraus de escada; coloque primeiro as armações retas e depois os cantos."
+				"&eListras&r: andaime plano, sem direção."
+				"O ícone na margem marca as armações que recebem uma peça em cima. Forquetas e cunhos são colocados de fora do barco, olhando para o casco: assim ficam virados para fora, como o mod exige."
+				"{@pagebreak}"
+				"&3&lMontagem"
+				"Depois de montar a planta, clique com &etábuas&r em cada armação: a primeira tábua define a madeira e mais três completam a armação, ou seja, quatro tábuas por armação. Use a mesma madeira no casco inteiro: é ela que dá a cor do barco e os materiais das próximas etapas. São 24 tábuas no total."
+				"Por fim, coloque uma forqueta em cima de cada armação do meio, uma de cada lado, de fora do barco e olhando para o casco. Tábuas e forquetas podem vir em qualquer ordem: quando o casco estiver completo e as duas forquetas no lugar, o barco aparece."
+				"Se aparecer \"No Valid Hull Structure Found\", confira a direção das setas e se todas as armações levaram as quatro tábuas."
+				"O marco usa o avanço do próprio mod."
+				"{@pagebreak}"
+				"&3&lControles padrão"
+				"&eW&r / &eS&r: remar para a frente e para trás."
+				"&eA&r / &eD&r: virar para a esquerda e para a direita."
+				"&eShift&r: sair do barco."
+				"Com os remos encaixados o barco anda cerca de 60% mais rápido; sem eles, se arrasta como um bote comum. O vento também empurra um pouco o barco."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:rowboat_icon_only"
+			id: "7A20100000000003"
+			rewards: [{
+				id: "7A20300000000003"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "alekiships:rowboat_completed"
+				criterion: ""
+				id: "7A20200000000004"
+				title: "Monte um barco a remo"
+				type: "advancement"
+			}]
+			title: "&6&lBarco a remo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A20100000000001"]
+			description: [
+				"O sloop tem fundo largo. Além de 18 andaimes inclinados, ele pede 6 andaimes planos (Flat Shipwright's Scaffolding), feitos com três andaimes comuns em linha."
+				"Separe também madeira à vontade: só o casco leva 96 tábuas."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:watercraft_frame_flat"
+			id: "7A20100000000004"
+			rewards: [{
+				id: "7A20300000000004"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				count: 6L
+				id: "7A20200000000005"
+				item: "alekiships:watercraft_frame_flat"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				count: 18L
+				id: "7A20200000000006"
+				item: "alekiships:watercraft_frame_angled"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&3Fundo plano"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A20100000000004"]
+			description: [
+				"Os cunhos (Cleat) são onde se amarram os cabos do barco, e são eles que transformam o casco pronto em um sloop em construção. O sloop pede quatro, um em cada canto marcado na planta."
+				"A âncora (Anchor) entra perto do fim da obra e segura o barco parado contra o vento. Ela pede um bloco de ferro."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:cleat"
+			id: "7A20100000000005"
+			rewards: [{
+				id: "7A20300000000005"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "&bA — Aprendizado"
+			tasks: [
+			{
+				consume_items: false
+				count: 4L
+				id: "7A20200000000007"
+				item: "alekiships:cleat"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A20200000000008"
+				item: "alekiships:anchor"
+				match_nbt: false
+				type: "item"
+			}
+			]
+			title: "&3Cunho e âncora"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A20100000000005"]
+			description: [
+				"O sloop é um veleiro de verdade. O casco tem 24 armações: duas de largura nas duas primeiras fileiras da proa e quatro da metade até a popa:"
+				"{image:lilyvale:textures/quests/estaleiro/sloop.png width:96 height:144 align:center}"
+				"Vire a página para ler a planta, montar o casco, terminar a obra e ver os controles."
+				"{@pagebreak}"
+				"&3&lComo ler a planta"
+				"Cada quadrado é uma armação vista de cima, com a proa no alto."
+				"&6Seta&r: andaime inclinado. A seta mostra para onde você deve olhar ao colocá-lo, sempre para fora do casco; assim a borda alta fica do lado de fora. Os cantos se ajustam sozinhos, como degraus de escada; coloque primeiro as armações retas e depois os cantos."
+				"&eListras&r: andaime plano, sem direção."
+				"O ícone na margem marca as armações que recebem uma peça em cima. Forquetas e cunhos são colocados de fora do barco, olhando para o casco: assim ficam virados para fora, como o mod exige."
+				"{@pagebreak}"
+				"&3&lCasco"
+				"Depois de montar a planta, clique com &etábuas&r em cada armação: a primeira tábua define a madeira e mais três completam a armação, ou seja, quatro tábuas por armação. Use a mesma madeira no casco inteiro: é ela que dá a cor do barco e os materiais das próximas etapas. São 96 tábuas só no casco."
+				"Com o casco completo, coloque um cunho em cima de cada um dos quatro cantos marcados, de fora do barco e olhando para o casco. Com os quatro no lugar, o casco vira um sloop em construção."
+				"{@pagebreak}"
+				"&3&lTerminando a obra"
+				"Clique na obra com cada material, nesta ordem, todos da madeira do casco:"
+				"1. Quilha: 8 toras descascadas"
+				"2. Convés: 20 tábuas"
+				"3. Gurupés: 6 toras descascadas"
+				"4. Mastro: 12 toras descascadas"
+				"5. Retranca: 8 toras descascadas"
+				"6. Vela grande: 16 lãs brancas"
+				"7. Bujarrona: 8 lãs brancas"
+				"8. Grade da popa: 8 cercas"
+				"9. Grade da proa: 8 cercas"
+				"10. Âncora: 1"
+				"11. Cordame: 8 laços"
+				"Na conta final: 34 toras descascadas, 116 tábuas, 24 lãs brancas, 16 cercas, 8 laços, uma âncora e quatro cunhos."
+				"O marco usa o avanço do próprio mod."
+				"{@pagebreak}"
+				"&3&lControles padrão"
+				"Sente-se no lugar do leme, na popa: é ele que pilota."
+				"&eA&r / &eD&r: virar o leme. Ao soltar, o leme volta ao centro."
+				"&eW&r / &eS&r: soltar e caçar a escota da vela grande, abrindo ou fechando a retranca."
+				"&eBotão direito&r nos controles &oSail&r: içar ou recolher a vela grande e a bujarrona."
+				"&eBotão direito&r no &oWindlass&r: soltar ou recolher a âncora. Com ela no fundo, o barco fica parado."
+				"&eShift&r: sair do assento."
+				"O sloop anda com o vento, não com remos: ajuste a vela conforme o vento mostrado na tela."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:sloop_icon_only"
+			id: "7A20100000000006"
+			rewards: [{
+				id: "7A20300000000006"
+				type: "xp"
+				xp: 150
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "&6M — Marco"
+			tasks: [{
+				advancement: "alekiships:sloop_completed"
+				criterion: ""
+				id: "7A20200000000009"
+				title: "Termine um sloop"
+				type: "advancement"
+			}]
+			title: "&6&lSloop"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"O sloop tem lugares próprios para canhões: clique num lugar vazio com o canhão (Cannon) e, se ele não encaixar, tente outro. A munição (Cannonball) sai de ferro, papel e pólvora. Ninguém precisa de guerra para gostar de um estrondo bonito."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:cannon"
+			id: "7A20100000000007"
+			optional: true
+			rewards: [{
+				id: "7A20300000000007"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "alekiships:cannon"
+				criterion: ""
+				id: "7A2020000000000A"
+				title: "Fabrique um canhão"
+				type: "advancement"
+			}]
+			title: "&dCanhão a bordo"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7A20100000000007"]
+			description: [
+				"Com três canhões do mesmo lado do sloop, dispare todos juntos."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "alekiships:cannonball"
+			id: "7A20100000000008"
+			optional: true
+			rewards: [{
+				id: "7A20300000000008"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "alekiships:full_broadside"
+				criterion: ""
+				id: "7A2020000000000B"
+				title: "Dispare uma salva completa"
+				type: "advancement"
+			}]
+			title: "&dSalva completa"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Todo marinheiro solitário merece companhia. Coloque um suporte de armadura num dos lugares do barco."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:armor_stand"
+			id: "7A20100000000009"
+			optional: true
+			rewards: [{
+				id: "7A20300000000009"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "alekiships:armor_stand_on_boat"
+				criterion: ""
+				id: "7A2020000000000C"
+				title: "Leve um suporte de armadura a bordo"
+				type: "advancement"
+			}]
+			title: "&dTripulante de madeira"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Os lugares do barco aceitam blocos: clique num assento vazio com um baú, barril, fornalha ou bancada e ele vira um compartimento. Agora experimente viajar dentro de um barril."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:barrel"
+			id: "7A2010000000000A"
+			optional: true
+			rewards: [{
+				id: "7A2030000000000A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "alekiships:ride_barrel"
+				criterion: ""
+				id: "7A2020000000000D"
+				title: "Viaje dentro de um barril"
+				type: "advancement"
+			}]
+			title: "&dPerdido no mar"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"Tinja o barco de preto e batize-o com uma etiqueta de nome: \"The Black Pearl\". O resto da lenda é com você."
+				"Usa o avanço do próprio mod."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:black_dye"
+			id: "7A2010000000000B"
+			optional: true
+			rewards: [{
+				id: "7A2030000000000B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&dC — Opcional"
+			tasks: [{
+				advancement: "alekiships:dye_ship_black"
+				criterion: ""
+				id: "7A2020000000000E"
+				title: "Batize um navio preto de The Black Pearl"
+				type: "advancement"
+			}]
+			title: "&dPérola Negra"
+			x: 2.0d
+			y: 10.0d
+		}
+	]
+	title: "&3&lEstaleiro"
+}

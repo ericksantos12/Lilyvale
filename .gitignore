@@ -112,3 +112,7 @@ $RECYCLE.BIN/
 # Minecraft server list
 servers.dat
 servers.dat_old
+
+# Local runtime data
+config/chunky/
+shaderpacks/
