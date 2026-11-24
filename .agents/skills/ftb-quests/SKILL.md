@@ -112,6 +112,8 @@ Key patterns:
 
 Color codes: `&0`-`&f` colors, `&l` bold, `&n` underline, `&o` italic, `&m` strikethrough, `&r` reset.
 
+Long descriptions: a line containing exactly `{@pagebreak}` starts a new page in the quest window; `{image:ns:path.png width:W height:H align:center}` embeds a texture. See [SNBT format](references/snbt-format.md#page-breaks).
+
 ---
 
 ## Global Config: `data.snbt`

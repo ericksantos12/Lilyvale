@@ -48,6 +48,7 @@
 - Better Archeology
 - Via Romana
 - Lootr
+- aleki's Nifty Ships
 
 ## Além do Horizonte
 

@@ -88,6 +88,7 @@ class Chapter:
         self.group, self.order, self.title, self.icon = GROUPS[group], order, title, icon
         self.id = '7A%02X0%011X' % (cc, 1)
         self.quests = []        # dicts novos
+        self.images = []        # imagens soltas no painel do capítulo
         self.raw = []           # blocos legados (texto SNBT verbatim)
         self.keys = {}
         self.n = {'q': 0, 't': 0, 'r': 0}
@@ -108,6 +109,10 @@ class Chapter:
                                 xp=XP[kind] if xp is None else xp,
                                 optional=(kind == 'C') if optional is None else optional))
         return qid
+
+    def image(self, path, x, y, w, h, hover=()):
+        """Imagem no painel do capítulo; x, y (centro), w e h em unidades de grade, como em q()."""
+        self.images.append(dict(path=path, x=x * 2.0, y=y * 2.0, w=w * 2.0, h=h * 2.0, hover=list(hover)))
 
     def gallery(self, prefix, items, ox, oy, desc, cols=6, kind='C'):
         """Álbum: uma folha independente por identidade, sem setas."""
@@ -212,14 +217,34 @@ def quest_snbt(ch, q, reg, errors, resolve):
     return '\t\t{\n' + '\n'.join('\t\t\t%s: %s' % kv for kv in L) + '\n\t\t}'
 
 
+def image_snbt(img, n):
+    hover = '[ ]' if not img['hover'] else '[' + ', '.join(esc(h) for h in img['hover']) + ']'
+    pairs = [('alpha', '255'), ('click', '""'), ('color', '16777215'), ('corner', 'false'), ('dev', 'false'),
+             ('height', '%.1fd' % img['h']), ('hover', hover), ('image', esc(img['path'])), ('order', str(n)),
+             ('rotation', '0.0d'), ('width', '%.1fd' % img['w']), ('x', '%.1fd' % img['x']), ('y', '%.1fd' % img['y'])]
+    return '{\n' + '\n'.join('\t\t\t%s: %s' % kv for kv in pairs) + '\n\t\t}'
+
+
+def texture_path(rl):
+    """'lilyvale:textures/a.png' -> ['lilyvale', 'textures', 'a.png'], relativo a kubejs/assets."""
+    ns, path = rl.split(':', 1)
+    return [ns] + path.split('/')
+
+
 def chapter_snbt(ch, reg, errors, resolve, header=None):
     blocks = list(ch.raw) + [quest_snbt(ch, q, reg, errors, resolve) for q in ch.quests]
     if header is None:
         if ch.icon not in reg.items:
             errors.append('%s: ícone de capítulo inexistente %s' % (ch.code, ch.icon))
+        for img in getattr(ch, 'images', []):
+            if not os.path.isfile(os.path.join(ROOT, 'kubejs', 'assets', *texture_path(img['path']))):
+                errors.append('%s: imagem inexistente %s' % (ch.code, img['path']))
+        images = ''
+        if getattr(ch, 'images', None):
+            images = '\timages: [\n\t\t' + '\n\t\t'.join(image_snbt(img, n) for n, img in enumerate(ch.images)) + '\n\t]\n'
         header = ('{\n\tdefault_hide_dependency_lines: false\n\tdefault_quest_shape: "circle"\n'
-                  '\tfilename: %s\n\tgroup: %s\n\ticon: %s\n\tid: %s\n\torder_index: %d\n\tquest_links: [ ]\n'
-                  % (esc(ch.filename), esc(ch.group), esc(ch.icon), esc(ch.id), ch.order))
+                  '\tfilename: %s\n\tgroup: %s\n\ticon: %s\n\tid: %s\n%s\torder_index: %d\n\tquest_links: [ ]\n'
+                  % (esc(ch.filename), esc(ch.group), esc(ch.icon), esc(ch.id), images, ch.order))
     return header + '\tquests: [\n' + '\n'.join(blocks) + '\n\t]\n\ttitle: %s\n}\n' % esc(ch.title)
 
 
