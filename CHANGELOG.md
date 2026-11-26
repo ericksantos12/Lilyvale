@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.2]
+
+### Correções
+
+- O Modo Modpack do **FancyMenu** agora vem ligado no pack de verdade: a barra de customização some e o atalho Ctrl+Alt+C não abre mais o editor de menus. A correção anunciada na 1.6.1 não tinha chegado ao pacote.
+
 ## [1.6.1]
 
 ### Correções

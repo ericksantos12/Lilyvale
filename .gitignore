@@ -122,3 +122,6 @@ config/fancymenu/user_variables.db
 config/fancymenu/ui_themes/
 config/fancymenu/legacy_checklist.txt
 config/fancymenu/custom_gui_screens.txt
+
+# FancyMenu: opções distribuídas com o pack (Modo Modpack ligado)
+!config/fancymenu/options.txt
