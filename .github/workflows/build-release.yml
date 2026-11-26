@@ -406,6 +406,19 @@ jobs:
           if ! grep -qF "  source = Lilyvale ${VERSION}" config/fancymenu/customization/lilyvale_titulo.txt; then
             echo "::error::A versão não foi gravada no layout do FancyMenu" && exit 1
           fi
+
+          # FancyMenu: Modo Modpack no pacote publicado (some a barra de customização e o atalho Ctrl+Alt+C).
+          # As opções do FancyMenu chegam ao jogador pelo Default Options (pasta extra); na instância de
+          # desenvolvimento elas ficam com 'false' para dar para editar os menus.
+          FM_OPTIONS=config/defaultoptions/extra/config/fancymenu/options.txt
+          if [ -f "$FM_OPTIONS" ]; then
+            sed -i -e "s/^B:modpack_mode = 'false';/B:modpack_mode = 'true';/" -e "s/^B:show_customization_overlay = 'true';/B:show_customization_overlay = 'false';/" "$FM_OPTIONS"
+            if ! grep -q "^B:modpack_mode = 'true';" "$FM_OPTIONS"; then
+              echo "::error::O Modo Modpack do FancyMenu não foi ativado em $FM_OPTIONS" && exit 1
+            fi
+          else
+            echo "::warning::$FM_OPTIONS não existe: o pacote sai sem o Modo Modpack do FancyMenu"
+          fi
           
           # sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           # sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt

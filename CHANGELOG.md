@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.1]
+
+### Correções
+
+- A barra de customização do **FancyMenu** não aparece mais para os jogadores: o pack agora sai com o Modo Modpack do FancyMenu ligado, e o atalho Ctrl+Alt+C deixa de abrir o editor de menus.
+
 ## [1.6.0]
 
 ### Mods novos
