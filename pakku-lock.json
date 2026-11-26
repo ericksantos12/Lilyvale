@@ -1699,6 +1699,42 @@
             ]
         },
         {
+            "pakku_id": "E12TT3ZWgQsXUbWp",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-deco"
+            },
+            "name": {
+                "curseforge": "Create Deco"
+            },
+            "id": {
+                "curseforge": "509285"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createdeco-2.0.3-1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6373/226/createdeco-2.0.3-1.20.1-forge.jar",
+                    "id": "6373226",
+                    "parent_id": "509285",
+                    "hashes": {
+                        "sha1": "54c8ad5686b846310bca9e69982a455e668dede3",
+                        "md5": "3e0976b862fd087493c7356f623f5cd7"
+                    },
+                    "required_dependencies": [],
+                    "size": 3509013,
+                    "date_published": "2025-04-01T04:12:15.583Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "80sotAiC9cnDKyg6",
             "pakku_links": [
                 "Q01fwlUES71AKwbq",
@@ -1778,6 +1814,48 @@
                     ],
                     "size": 557473,
                     "date_published": "2026-03-03T21:29:22.703Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "RszkLwk1p1rqxSYo",
+            "pakku_links": [
+                "80hSvQmaIy0QoWXF"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "copycats"
+            },
+            "name": {
+                "curseforge": "Create: Copycats+"
+            },
+            "id": {
+                "curseforge": "968398"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "copycats-3.0.10+mc.1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8822/431/copycats-3.0.10+mc.1.20.1-forge.jar",
+                    "id": "8822431",
+                    "parent_id": "968398",
+                    "hashes": {
+                        "sha1": "939d4ca4ac42b93c05a5fb92e629fb8cff060dc9",
+                        "md5": "a01e55fd62e02a141083f45865e72cfc"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 2003713,
+                    "date_published": "2026-09-06T13:50:50.940Z"
                 }
             ]
         },
@@ -3371,6 +3449,49 @@
             ]
         },
         {
+            "pakku_id": "UNjEnXJXuhjoihQ7",
+            "pakku_links": [
+                "faov4iPOLXl4KKoz",
+                "et16vahQ5jvoJfV6"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "fancymenu"
+            },
+            "name": {
+                "curseforge": "FancyMenu"
+            },
+            "id": {
+                "curseforge": "367706"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fancymenu_forge_3.11.0_MC_1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9764/716/fancymenu_forge_3.11.0_MC_1.20.1.jar",
+                    "id": "9764716",
+                    "parent_id": "367706",
+                    "hashes": {
+                        "sha1": "cf118071ac1aace8f032b14c99a83c175f5a3ea5",
+                        "md5": "17a8188005ba7a3a0cfa358dcc13385b"
+                    },
+                    "required_dependencies": [
+                        "938643",
+                        "410295"
+                    ],
+                    "size": 38125824,
+                    "date_published": "2026-11-23T01:34:44.570Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "FuzmH9aIjT9A6PAv",
             "type": "MOD",
             "slug": {
@@ -3923,6 +4044,42 @@
             ]
         },
         {
+            "pakku_id": "zCQLEa29GJWUAaIn",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "hoarfrost-snow-blizzards"
+            },
+            "name": {
+                "curseforge": "Hoarfrost: Snow & Blizzards"
+            },
+            "id": {
+                "curseforge": "1736975"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "hoarfrost-forge-1.20.1-1.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9340/211/hoarfrost-forge-1.20.1-1.3.0.jar",
+                    "id": "9340211",
+                    "parent_id": "1736975",
+                    "hashes": {
+                        "sha1": "43ac5bc4b33bb29151693e70c4cb22e1e58abcb8",
+                        "md5": "46e5d976afed6b485fe06bc79bf383be"
+                    },
+                    "required_dependencies": [],
+                    "size": 2411953,
+                    "date_published": "2026-10-27T04:27:02.350Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "70bcFKFwHnklDTec",
             "type": "MOD",
             "slug": {
@@ -4279,6 +4436,43 @@
             ]
         },
         {
+            "pakku_id": "et16vahQ5jvoJfV6",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "konkrete"
+            },
+            "name": {
+                "curseforge": "Konkrete"
+            },
+            "id": {
+                "curseforge": "410295"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5028/413/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+                    "id": "5028413",
+                    "parent_id": "410295",
+                    "hashes": {
+                        "sha1": "2019d821bed9071daabed43979433a5473ceee49",
+                        "md5": "d69107c593e361e1b7b96733250bd098"
+                    },
+                    "required_dependencies": [],
+                    "size": 625185,
+                    "date_published": "2024-01-13T03:30:23.267Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "O2MAFXzWqCxkHI0m",
             "type": "MOD",
             "slug": {
@@ -4407,6 +4601,42 @@
             ]
         },
         {
+            "pakku_id": "UnVDB2Kd1IL5Xk2B",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "living-wind"
+            },
+            "name": {
+                "curseforge": "Living Wind"
+            },
+            "id": {
+                "curseforge": "1743716"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "LivingWind-Forge-1.20.1-v1.4.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9734/230/LivingWind-Forge-1.20.1-v1.4.1.jar",
+                    "id": "9734230",
+                    "parent_id": "1743716",
+                    "hashes": {
+                        "sha1": "ebf19ded6af9004298f1cbfa8e96c5f9dcf53adc",
+                        "md5": "c6717e976afc0ec68c5e27086c9728ac"
+                    },
+                    "required_dependencies": [],
+                    "size": 20367687,
+                    "date_published": "2026-11-21T14:57:24.093Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "UGuiHKjE12REsjTw",
             "type": "MOD",
             "slug": {
@@ -4514,6 +4744,45 @@
                     "required_dependencies": [],
                     "size": 10782,
                     "date_published": "2024-05-28T10:28:20.950Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "faov4iPOLXl4KKoz",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "melody"
+            },
+            "name": {
+                "curseforge": "Melody"
+            },
+            "id": {
+                "curseforge": "938643"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5109/692/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+                    "id": "5109692",
+                    "parent_id": "938643",
+                    "hashes": {
+                        "sha1": "e0942d396a70c09038e6c2e5e1da6505178249b8",
+                        "md5": "6b528d368f7fcbf737df28f2457cdec6"
+                    },
+                    "required_dependencies": [],
+                    "size": 37178,
+                    "date_published": "2024-02-15T10:46:05.407Z"
                 }
             ]
         },
@@ -5209,6 +5478,42 @@
             ]
         },
         {
+            "pakku_id": "btr3orJG6OeJxGqw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "petrichor-rain-storms"
+            },
+            "name": {
+                "curseforge": "Petrichor: Rain & Storms"
+            },
+            "id": {
+                "curseforge": "1729574"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "petrichor-forge-1.20.1-1.6.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9340/210/petrichor-forge-1.20.1-1.6.0.jar",
+                    "id": "9340210",
+                    "parent_id": "1729574",
+                    "hashes": {
+                        "sha1": "0a5e6966681ca1ae222932eac766e0d181c37a20",
+                        "md5": "b997537a4a1e0c27a194b0108b5b7282"
+                    },
+                    "required_dependencies": [],
+                    "size": 7334737,
+                    "date_published": "2026-10-27T04:26:49.520Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "JxirDqZRx0UQcqgv",
             "type": "MOD",
             "slug": {
@@ -5242,6 +5547,44 @@
                     "required_dependencies": [],
                     "size": 282474,
                     "date_published": "2025-03-07T09:06:06.367Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KjCGmYrwXxtxAaTa",
+            "type": "SHADER",
+            "slug": {
+                "curseforge": "pocky-shaders"
+            },
+            "name": {
+                "curseforge": "Pocky Shaders"
+            },
+            "id": {
+                "curseforge": "1768473"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Pocky-Shaders-2.1.0.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.1",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20.3"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9368/643/Pocky-Shaders-2.1.0.zip",
+                    "id": "9368643",
+                    "parent_id": "1768473",
+                    "hashes": {
+                        "sha1": "0f711bac1d520ad36e207d668ad09b0fe99dc69d",
+                        "md5": "ff4b25985133a1c62a1279bf9471b959"
+                    },
+                    "required_dependencies": [],
+                    "size": 130685,
+                    "date_published": "2026-10-30T03:38:13.057Z"
                 }
             ]
         },
@@ -5628,6 +5971,42 @@
             ]
         },
         {
+            "pakku_id": "exfbxdEpLg8BAOEB",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rustling-leaves"
+            },
+            "name": {
+                "curseforge": "Rustling Leaves"
+            },
+            "id": {
+                "curseforge": "1729578"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rustling_leaves-forge-1.20.1-2.8.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9708/460/rustling_leaves-forge-1.20.1-2.8.3.jar",
+                    "id": "9708460",
+                    "parent_id": "1729578",
+                    "hashes": {
+                        "sha1": "6553ba1a25e59386634ce2973dc17a44a2967d3b",
+                        "md5": "240bbe4917909a5c3a916e4b5d3e395a"
+                    },
+                    "required_dependencies": [],
+                    "size": 625071,
+                    "date_published": "2026-11-20T01:00:39.800Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "rpXuqwdchyMoYPro",
             "type": "MOD",
             "slug": {
@@ -5927,6 +6306,42 @@
                     "required_dependencies": [],
                     "size": 1763762,
                     "date_published": "2026-10-21T17:05:42.967Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "nJUXzLUiEz1VU1of",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sophisticated-sorter"
+            },
+            "name": {
+                "curseforge": "Sophisticated Sorter"
+            },
+            "id": {
+                "curseforge": "1375092"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "SophisticatedSorter-forge-1.20.1-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8879/811/SophisticatedSorter-forge-1.20.1-1.1.1.jar",
+                    "id": "8879811",
+                    "parent_id": "1375092",
+                    "hashes": {
+                        "sha1": "b4d4caae7a79ad13f10ad1948e48b17fabae90a4",
+                        "md5": "bda7c9b3da7872dc43aecadb74140078"
+                    },
+                    "required_dependencies": [],
+                    "size": 168225,
+                    "date_published": "2026-09-14T14:14:03.760Z"
                 }
             ]
         },

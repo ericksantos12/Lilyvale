@@ -5,6 +5,98 @@
 	group: "048ED71F33A9801E"
 	icon: "sophisticatedbackpacks:backpack"
 	id: "6A10000000000002"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 1.1d
+			hover: ["&b&lMochila e Organização", "Cada coisa no seu lugar"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_titulo.png"
+			order: 0
+			rotation: 0.0d
+			width: 7.09d
+			x: 1.2d
+			y: -2.1d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.45d
+			hover: ["Para levar nas viagens"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_rotulo_estrada.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.52d
+			x: 0.3d
+			y: -0.8d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.45d
+			hover: ["Para guardar na base"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_rotulo_casa.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.12d
+			x: 0.1d
+			y: 1.1d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.45d
+			hover: ["Para achar tudo num lugar só"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_rotulo_rede.png"
+			order: 3
+			rotation: 0.0d
+			width: 2.28d
+			x: 0.6d
+			y: 5.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.4d
+			hover: ["Mochila de aventureiro"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_desenho.png"
+			order: 4
+			rotation: 0.0d
+			width: 2.15d
+			x: -2.6d
+			y: 0.9d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.6d
+			hover: ["Um depósito bem arrumado"]
+			image: "lilyvale:textures/quests/primeiros_dias/mochila_barris.png"
+			order: 5
+			rotation: 0.0d
+			width: 2.6d
+			x: 4.8d
+			y: 4.2d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

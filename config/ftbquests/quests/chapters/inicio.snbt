@@ -5,6 +5,83 @@
 	group: "048ED71F33A9801E"
 	icon: "minecraft:book"
 	id: "6B10000000000001"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 1.7d
+			hover: ["&a&lLilyvale", "Um modpack aconchegante para jogar com amigos"]
+			image: "lilyvale:textures/quests/primeiros_dias/inicio_logo.png"
+			order: 0
+			rotation: 0.0d
+			width: 7.77d
+			x: 2.0d
+			y: -2.3d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.5d
+			hover: ["Comece por aqui"]
+			image: "lilyvale:textures/quests/primeiros_dias/inicio_subtitulo.png"
+			order: 1
+			rotation: 0.0d
+			width: 4.83d
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.5d
+			hover: ["Um lar no vale"]
+			image: "lilyvale:textures/quests/primeiros_dias/inicio_casa.png"
+			order: 2
+			rotation: 0.0d
+			width: 2.73d
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.4d
+			hover: ["Fazenda, casa, companheiros, engenharia, exploração...", "Todas as trilhas são opcionais"]
+			image: "lilyvale:textures/quests/primeiros_dias/inicio_placa.png"
+			order: 3
+			rotation: 0.0d
+			width: 3.37d
+			x: 6.6d
+			y: 0.4d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 1.4d
+			hover: ["Lírios no lago de Lilyvale"]
+			image: "lilyvale:textures/quests/primeiros_dias/inicio_lago.png"
+			order: 4
+			rotation: 0.0d
+			width: 6.68d
+			x: 2.0d
+			y: 6.3d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

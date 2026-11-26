@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Primeiros Dias (PD04) e Vida no Campo (VC01, VC06). VC02–VC05 e VC07 ficam em chapters_farm.py."""
 from core import Chapter
+import chapters_tide
 
 POSSE = 'A tarefa registra posse, sem consumir: troca e presente também valem.'
 
@@ -9,7 +10,7 @@ def build():
     out = []
 
     # ------------------------------------------------------------ PD04
-    c = Chapter(0x01, 'PD04', 'tips_and_tricks', 'PD', 2, '&6&lTips & Tricks', 'vc_gliders:paraglider_wood')
+    c = Chapter(0x01, 'PD04', 'tips_and_tricks', 'PD', 3, '&6&lTips & Tricks', 'vc_gliders:paraglider_wood')
     c.q('glider', 'A', '&6Asas de pano', 'vc_gliders:paraglider_wood', 0, 0, ['vc_gliders:paraglider_wood'], [
         'Um planador de madeira transforma qualquer morro em atalho. Equipe-o, salte e segure o pulo para abrir as asas.',
         'Ele plana, não sobe: escolha um ponto alto e poupe a durabilidade. A receita está no EMI. ' + POSSE,
@@ -45,6 +46,32 @@ def build():
         'Você anda mais devagar enquanto carrega e alguns blocos e criaturas são bloqueados pela configuração do pack. Solte com o botão direito no chão.',
         'Este cartão é só leitura: não há item para detectar, então o check é uma confirmação manual, sem recompensa.',
     ], sub='&7Dica de leitura', xp=0, optional=True)
+    c.q('chipped', 'A', '&6Mil caras para cada bloco', 'chipped:carpenters_table', 5, 0, ['chipped:carpenters_table'], [
+        'O Chipped traz sete bancadas que trocam um bloco por variantes decorativas do mesmo material: tábuas entalhadas, '
+        'pedras lavradas, vidros desenhados. Coloque os blocos na bancada, escolha o visual e retire; a troca é de um para um '
+        'e dá para voltar ao original na mesma bancada.',
+        'A Mesa de Carpinteiro (Carpenters Table) cuida da madeira: tábuas, troncos e afins. Comece por ela; as receitas de todas '
+        'estão no EMI. ' + POSSE,
+    ])
+    c.q('chipped2', 'C', '&dAteliê completo', 'chipped:mason_table', 5, 2, [
+        'chipped:carpenters_table', 'chipped:mason_table', 'chipped:glassblower', 'chipped:loom_table',
+        'chipped:botanist_workbench', 'chipped:alchemy_bench', 'chipped:tinkering_table'], [
+        'Cada bancada cuida de uma família de blocos:',
+        '&6Mesa de Pedreiro&r (Mason Table): pedras, tijolos e rochas.',
+        '&6Soprador de Vidro&r (Glassblower): vidros e painéis, de todas as cores.',
+        '&6Mesa de Tear&r (Loom Table): lãs e tapetes.',
+        '&6Bancada do Botânico&r (Botanist Workbench): terra, areia, gelo, folhas, cogumelos, abóboras e outros blocos naturais.',
+        '&6Bancada de Alquimia&r (Alchemy Bench): blocos de minério, ametista, pedra luminosa, cobre encerado e outros especiais.',
+        '&6Mesa de Funileiro&r (Tinkering Table): lanternas, grades de ferro e blocos de redstone.',
+        'Uma oficina com as sete transforma qualquer obra. ' + POSSE,
+    ], deps=['chipped'])
+    # Mural (primeiros_dias_art.py): bilhete com o título preso por alfinete e polaroides das dicas.
+    for img, x, y, h, dica in (('mural_titulo', 2.5, -1.6, 1.5, ['&6&lTips & Tricks', 'Pequenos truques para o dia a dia']),
+                               ('polaroide_planador', 0.4, 3.8, 1.5, ['Voe de morro em morro']),
+                               ('polaroide_camera', 1.85, 3.85, 1.5, ['Fotografe o vale e revele as fotos']),
+                               ('polaroide_bussola', 3.3, 3.8, 1.5, ['Ache o bioma certo']),
+                               ('polaroide_chipped', 4.75, 3.85, 1.5, ['Dê outra cara ao bloco'])):
+        c.image('lilyvale:textures/quests/primeiros_dias/%s.png' % img, x, y, None, h, dica)
     out.append(c)
 
     # ------------------------------------------------------------ VC01
@@ -162,7 +189,7 @@ def build():
         'Qualquer isca do Tide conta.',
     ], deps=['rod'])
     c.q('journal', 'A', '&aDiário de pesca', 'tide:fishing_journal', 2, 0, ['tide:fishing_journal'], [
-        'O diário do Tide registra cada espécie, onde vive e do que gosta. É o álbum oficial da pescaria: este livro não repete a lista de peixes.',
+        'O diário do Tide registra cada espécie, onde vive e do que gosta. A grade abaixo resume o que cada peixe pede; o diário guarda os recordes.',
         POSSE,
     ])
     c.q('half', 'M', '&6&lMeio diário', 'tide:fishing_journal', 2, 1,
@@ -204,5 +231,17 @@ def build():
         'Pescar no vazio do End é para quem já pescou em todo o resto. Segure-se bem na borda.',
         'Especialização opcional: exige chegar ao End.',
     ])
+    # A progressão fica no centro, entre os peixes em 3D; a grade de espécies vem abaixo.
+    for q in c.quests:
+        q['x'] += 14.0
+    P = chapters_tide.ARTE
+    c.image(P + 'titulo.png', 9.5, -2.6, None, 3.2, ['&b&lÀ Beira d\'Água', 'Uma quest para cada peixe do Tide'])
+    for img, x, y, h, nome in (('coelacanth', 3.0, 1.5, 3.6, 'Coelacanth'), ('great_white_shark', 16.0, 1.5, 3.6, 'Great White Shark'),
+                               ('sailfish', -2.6, 8.0, 4.0, 'Sailfish'), ('manta_ray', 21.6, 8.0, 3.6, 'Manta Ray'),
+                               ('blazing_swordfish', 2.5, 17.6, 3.4, 'Blazing Swordfish'),
+                               ('shadow_shark', 9.5, 17.6, 3.4, 'Shadow Shark'), ('dragon_fish', 16.5, 17.6, 3.4, 'Dragon Fish')):
+        c.image(P + 'peixe_%s.png' % img, x, y, None, h, [nome])
+    falta = chapters_tide.build(c)
+    assert not falta, 'peixes do Tide fora da grade: %s' % ', '.join(falta)
     out.append(c)
     return out

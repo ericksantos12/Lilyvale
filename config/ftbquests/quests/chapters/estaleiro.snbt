@@ -36,6 +36,96 @@
 			x: 8.6d
 			y: 7.4d
 		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 4.4d
+			hover: ["&3&lEstaleiro", "Do andaime ao alto-mar"]
+			image: "lilyvale:textures/quests/estaleiro/titulo.png"
+			order: 2
+			rotation: 0.0d
+			width: 8.26d
+			x: 4.4d
+			y: -4.4d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Primeiro barco: seis andaimes e duas forquetas"]
+			image: "lilyvale:textures/quests/estaleiro/flamula_remo.png"
+			order: 3
+			rotation: 0.0d
+			width: 4.55d
+			x: 2.6d
+			y: -1.4d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["O veleiro: casco largo, cunhos, âncora e muita madeira"]
+			image: "lilyvale:textures/quests/estaleiro/flamula_sloop.png"
+			order: 4
+			rotation: 0.0d
+			width: 2.5d
+			x: 1.6d
+			y: 2.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Desafios opcionais para quem já tem um barco"]
+			image: "lilyvale:textures/quests/estaleiro/flamula_bordo.png"
+			order: 5
+			rotation: 0.0d
+			width: 4.35d
+			x: 2.5d
+			y: 6.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 4.8d
+			hover: ["O sloop anda com o vento", "Ajuste a vela conforme o vento mostrado na tela"]
+			image: "lilyvale:textures/quests/estaleiro/rosa_dos_ventos.png"
+			order: 6
+			rotation: 0.0d
+			width: 4.28d
+			x: -4.4d
+			y: 4.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 3.58d
+			hover: ["Bons ventos, marinheiro"]
+			image: "lilyvale:textures/quests/estaleiro/marinha.png"
+			order: 7
+			rotation: 0.0d
+			width: 14.0d
+			x: 4.4d
+			y: 14.0d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]

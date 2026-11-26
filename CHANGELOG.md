@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.6.0]
+
+### Mods novos
+
+- **Create Deco**: opções decorativas para as fábricas do Create, como tijolos coloridos, chapas de metal, passarelas, grades, portas e lâmpadas industriais.
+- **Create: Copycats+**: reúne num só mod dezenas de blocos imitadores do Create, em formatos como degraus, lajes, vigas e cercas, que copiam a textura de qualquer bloco colocado neles.
+- **FancyMenu**: personaliza os menus do jogo; é o que dá vida ao novo menu principal do Lilyvale. Vem com as bibliotecas **Konkrete** e **Melody**.
+- **Hoarfrost: Snow & Blizzards**: neve realista e aconchegante, com sete tipos de nevada e nevasca, flocos levados pelo vento, neve fofa se acumulando no chão e sons de inverno.
+- **Petrichor: Rain & Storms**: chuvas e tempestades realistas, com tipos diferentes de chuva, poças, enxurradas, goteiras e raios ramificados com trovão atrasado.
+- **Living Wind**: um sistema de vento leve e sincronizado que dá movimento às partículas e ao ambiente.
+- **Rustling Leaves**: folhas com física de verdade: caem das árvores, formam montes que dá para atravessar e juntar com o rastelo, e rodopiam com rajadas e redemoinhos. Funciona só no cliente.
+- **Sophisticated Sorter**: leva a ordenação, a busca e a transferência rápida de itens da série Sophisticated para o inventário do jogador e para os outros baús e recipientes.
+- **Pocky Shaders**: pacote de shaders opcional, para quem quiser um visual diferente.
+
+### Livro de quests
+
+- **À Beira d'Água** ganhou uma grade com uma quest para cada um dos 105 peixes do Tide, separada em água doce, mar, cavernas, lava, vazio do Overworld e vazio do End. Cada quest diz onde, quando e como pescar aquele peixe: profundidade, horário, clima, fase da lua e sorte necessária.
+- **Tips & Tricks** ganhou duas quests do **Chipped**: a Mesa de Carpinteiro e o ateliê completo com as sete bancadas, cada uma explicando que blocos transforma.
+- Os capítulos **Início**, **Primeiros Passos**, **Mochila e Organização**, **Tips & Tricks**, **Fogo, Martelo e Aço**, **Além da Netherita**, **Estaleiro** e **À Beira d'Água** foram decorados com títulos, faixas, ilustrações e desenhos em pixel art.
+
+### Menu principal
+
+- O Lilyvale ganhou um menu principal próprio, feito com o **FancyMenu**: o logo do pack no topo sobre o panorama original do jogo, botões de madeira sobre um painel com cantos de latão e uma moldura de espelho com o seu personagem acompanhando o mouse.
+
+### Relatório de crashes
+
+- Quando o jogo crasha, o **Crash Assistant** agora leva direto para um relatório de crash no GitHub do Lilyvale, já com a versão do pack preenchida. O botão de enviar todos os logs copia uma mensagem com os links dos logs, a análise do crash e os mods alterados, pronta para colar no relatório.
+
 ## [1.5.0]
 
 ### Mods novos

@@ -325,5 +325,10 @@ def build():
             'Qualquer ferramenta ou peça de armadura desta liga conta. O conjunto completo não é pedido em lugar nenhum.',
         ], deps=[t])
         prev = t
+    # Decoração (forja_art.py): título e um corte do Nether feito com as texturas do jogo.
+    c.image('lilyvale:textures/quests/forja/titulo_netherita.png', 2.0, -1.4, None, 0.9,
+            ['&6&lAlém da Netherita', 'Quatro ligas, um lingote de cada vez'])
+    c.image('lilyvale:textures/quests/forja/corte_nether.png', 2.0, 2.8, 4.6, None,
+            ['Os detritos ancestrais dormem fundo no Nether'])
     out.append(c)
     return out

@@ -1,0 +1,62 @@
+name: Relatório de crash
+description: Use quando o jogo fechar ou travar. Normalmente aberto pelo botão do Crash Assistant.
+title: "[Crash]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por relatar! Antes de enviar, confira se já não existe uma issue igual e se você está na versão mais recente do Lilyvale.
+
+        **Como preencher:** na janela do Crash Assistant, clique em **Enviar todos os logs e copiar uma mensagem para suporte**. Ele copia uma mensagem com os links dos logs; cole essa mensagem no primeiro campo abaixo com **Ctrl+V**.
+  - type: textarea
+    id: crash_message
+    attributes:
+      label: Mensagem do Crash Assistant
+      description: Cole aqui a mensagem copiada pelo botão de enviar todos os logs. Ela já traz os links dos logs, a análise do crash e os mods que você mudou.
+      placeholder: Ctrl+V aqui
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: O que você estava fazendo?
+      description: 'Conte o que aconteceu logo antes do crash. Ex.: "abri o mundo", "entrei no Nether", "coloquei um bloco do Create", "o jogo nem chegou ao menu".'
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão do Lilyvale
+      description: Preenchida automaticamente quando a issue é aberta pelo Crash Assistant.
+      placeholder: "Ex.: 1.6.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: launcher
+    attributes:
+      label: Launcher
+      options:
+        - CurseForge
+        - Prism Launcher
+        - Modrinth App
+        - ATLauncher
+        - Outro
+    validations:
+      required: true
+  - type: dropdown
+    id: changes
+    attributes:
+      label: Você mudou alguma coisa no modpack?
+      description: Mods adicionados, removidos ou atualizados, shaders e configurações alteradas contam.
+      options:
+        - Não, está como veio
+        - Sim, adicionei, removi ou atualizei mods
+        - Sim, mudei só configurações, shaders ou resource packs
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Mais alguma coisa?
+      description: Memória alocada, prints, se acontece sempre ou só às vezes... Tudo ajuda.
