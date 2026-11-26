@@ -116,3 +116,9 @@ servers.dat_old
 # Local runtime data
 config/chunky/
 shaderpacks/
+
+# FancyMenu: variáveis do jogador, geradas em tempo de execução
+config/fancymenu/user_variables.db
+config/fancymenu/ui_themes/
+config/fancymenu/legacy_checklist.txt
+config/fancymenu/custom_gui_screens.txt

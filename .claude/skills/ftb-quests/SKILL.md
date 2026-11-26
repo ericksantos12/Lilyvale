@@ -294,6 +294,34 @@ FTBQuestsEvents.customReward('29F9C17B7503E992', event => {
 }
 ```
 
+### Decorate chapters creatively
+
+Treat a chapter as a page the player opens and explores, not only as a quest grid. When you create or substantially rework a chapter, propose and build a decoration that fits its theme, even if the user did not ask for one. The user values this. Pick ideas that suit the subject instead of repeating one template:
+
+- **Title banner at the top.** Render the chapter name in Minecraft's own bitmap font from the client jar (`assets/minecraft/font/include/default.json`, `textures/font/ascii.png` and `accented.png`). Add a vertical colour gradient, the vanilla 1 px shadow and a dark outline. A themed flourish, such as a pixel wave for fishing, and a short subtitle finish it.
+- **Section headers.** When a chapter groups quests by theme, place a small coloured header image above each group, with an underline in the group's colour and a `hover` tooltip that summarises the group.
+- **Illustrations of the chapter's content, in whatever form suits it.** 3D renders are only one option. Choose the medium for the theme and vary it between chapters:
+  - 2D renders: an enlarged sprite of the mod's own item or mob, with an outline or a small frame.
+  - Images or compositions built from the game's textures, for example a scene, a shelf or a little diorama.
+  - Hand-drawn pixel-art drawings, such as footprints along a path, plants, signs or small icons that tell the story.
+  - 3D renders: extrude item sprites into voxels, thickening each column with its distance from the sprite edge, and add simple lighting and a dark outline. The larger `*_full.png` sprites give the best results.
+
+  Place the illustrations around the layout to frame it.
+- **Diagrams and plans.** For multiblocks, ships or machines, draw a plan the player can follow, for example `tools/quest-book/ship_diagrams.py`.
+- **Composition.** Centre the progression quests, and use renders or illustrations to fill and balance empty areas. Keep enough space between images and quests that nothing overlaps.
+
+Practical rules learned in Lilyvale:
+
+- Generate the art with a versioned script next to the quest generator, as `tools/quest-book/tide_art.py` does. PNGs go in `kubejs/assets/lilyvale/textures/quests/<chapter>/`. Read textures from the mod jars at generation time instead of copying them by hand.
+- Draw pixel art at its native size and upscale it with nearest-neighbour, so edges stay crisp in the book.
+- Make text easy to read first and decorate it second.
+  - On a light background (paper, a sign), write in solid dark ink at 2x or larger, with no gradient or outline.
+  - Don't rotate text: nearest-neighbour rotation makes the letters jagged.
+  - Every caption has to fit its frame and say something that matches the quest. A caption that doesn't, like "Clique" under a camera, confuses the player.
+- Check each item texture's size before using it. Some mods ship a 64×64 atlas for a 3D model instead of a 16×16 icon, for example the Camerapture camera. If so, draw a simple icon by hand.
+- Size images in grid units. Derive the missing dimension from the PNG's aspect ratio: `Chapter.image(path, x, y, None, h)`.
+- Before you finish, compose an offline preview of the chapter from the generated SNBT: images at their `x/y/width/height`, plus quest boxes with their item icons. Read that preview to check balance and overlaps, then still ask the user to check it in game.
+
 ---
 
 ## Reward Tables & Loot Crates
@@ -350,3 +378,4 @@ See `references/styling.md` for the full property list.
 5. **Follow the installed format** — use inline text in Lilyvale 1.20.1; use `lang/` where the pack version and existing chapters do
 6. **Hot reload** — use `/ftbquests reload` to test changes without restart
 7. **Command rewards for chaining** — use `/ftbquests change_progress` to unlock hidden quests
+8. **Decorate creatively** — give each new or reworked chapter a decoration that fits its theme, such as a title, section headers and illustrations (2D, 3D or drawings; see "Decorate chapters creatively")

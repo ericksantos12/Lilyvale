@@ -4,7 +4,11 @@
 Regras de montagem conferidas no mod 1.0.14 (ShipbuildingMultiblocks, OarlockBlock, CleatBlock,
 AngledWoodenBoatFrameBlock e SloopUnderConstructionEntity). As plantas saem de ship_diagrams.py.
 """
-from core import Chapter
+import os
+
+from PIL import Image
+
+from core import ROOT, Chapter
 
 PLANTA = 'lilyvale:textures/quests/estaleiro/'
 ROWBOAT_IMG = PLANTA + 'barco_a_remo.png'
@@ -150,5 +154,17 @@ def build():
 
     c.image(ROWBOAT_IMG, 4.3, 0.0, 1.6, 2.0, ['Planta do barco a remo', 'A seta aponta para onde olhar ao colocar cada andaime'])
     c.image(SLOOP_IMG, 4.3, 3.7, 2.0, 3.0, ['Planta do sloop', 'A seta aponta para onde olhar ao colocar cada andaime'])
+    # Decoração (estaleiro_art.py): título, uma flâmula por fileira, rosa dos ventos e a marinha no rodapé.
+    c.image(PLANTA + 'titulo.png', 2.2, -2.2, None, 2.2, ['&3&lEstaleiro', 'Do andaime ao alto-mar'])
+    for img, y, dica in (('flamula_remo', -0.7, 'Primeiro barco: seis andaimes e duas forquetas'),
+                         ('flamula_sloop', 1.3, 'O veleiro: casco largo, cunhos, âncora e muita madeira'),
+                         ('flamula_bordo', 3.3, 'Desafios opcionais para quem já tem um barco')):
+        with Image.open(os.path.join(ROOT, 'kubejs', 'assets', 'lilyvale', 'textures', 'quests', 'estaleiro',
+                                     img + '.png')) as im:
+            w = 0.45 * im.width / im.height
+        # alinhadas pela esquerda, logo à direita da linha de dependência que desce em x = 0
+        c.image(PLANTA + img + '.png', 0.15 + w / 2, y, w, 0.45, [dica])
+    c.image(PLANTA + 'rosa_dos_ventos.png', -2.2, 2.0, None, 2.4, ['O sloop anda com o vento', 'Ajuste a vela conforme o vento mostrado na tela'])
+    c.image(PLANTA + 'marinha.png', 2.2, 7.0, 7.0, None, ['Bons ventos, marinheiro'])
     out.append(c)
     return out

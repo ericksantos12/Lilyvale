@@ -5,6 +5,218 @@
 	group: "2F3E0F43CC0404AB"
 	icon: "tide:fishing_journal"
 	id: "7A07000000000001"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 6.4d
+			hover: ["&b&lÀ Beira d'Água", "Uma quest para cada peixe do Tide"]
+			image: "lilyvale:textures/quests/pesca/titulo.png"
+			order: 0
+			rotation: 0.0d
+			width: 15.9d
+			x: 19.0d
+			y: -5.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 7.2d
+			hover: ["Coelacanth"]
+			image: "lilyvale:textures/quests/pesca/peixe_coelacanth.png"
+			order: 1
+			rotation: 0.0d
+			width: 7.17d
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 7.2d
+			hover: ["Great White Shark"]
+			image: "lilyvale:textures/quests/pesca/peixe_great_white_shark.png"
+			order: 2
+			rotation: 0.0d
+			width: 6.06d
+			x: 32.0d
+			y: 3.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 8.0d
+			hover: ["Sailfish"]
+			image: "lilyvale:textures/quests/pesca/peixe_sailfish.png"
+			order: 3
+			rotation: 0.0d
+			width: 6.38d
+			x: -5.2d
+			y: 16.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 7.2d
+			hover: ["Manta Ray"]
+			image: "lilyvale:textures/quests/pesca/peixe_manta_ray.png"
+			order: 4
+			rotation: 0.0d
+			width: 7.25d
+			x: 43.2d
+			y: 16.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 6.8d
+			hover: ["Blazing Swordfish"]
+			image: "lilyvale:textures/quests/pesca/peixe_blazing_swordfish.png"
+			order: 5
+			rotation: 0.0d
+			width: 4.61d
+			x: 5.0d
+			y: 35.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 6.8d
+			hover: ["Shadow Shark"]
+			image: "lilyvale:textures/quests/pesca/peixe_shadow_shark.png"
+			order: 6
+			rotation: 0.0d
+			width: 11.03d
+			x: 19.0d
+			y: 35.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 6.8d
+			hover: ["Dragon Fish"]
+			image: "lilyvale:textures/quests/pesca/peixe_dragon_fish.png"
+			order: 7
+			rotation: 0.0d
+			width: 5.64d
+			x: 33.0d
+			y: 35.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Água doce", "Rios e lagos acima de Y 40, longe do mar"]
+			image: "lilyvale:textures/quests/pesca/secao_agua_doce.png"
+			order: 8
+			rotation: 0.0d
+			width: 6.05d
+			x: 5.0d
+			y: 9.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Mar", "Oceanos, praias e costas acima de Y 40"]
+			image: "lilyvale:textures/quests/pesca/secao_mar.png"
+			order: 9
+			rotation: 0.0d
+			width: 6.42d
+			x: 19.0d
+			y: 9.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Cavernas", "Água abaixo de Y 40 no Overworld"]
+			image: "lilyvale:textures/quests/pesca/secao_cavernas.png"
+			order: 10
+			rotation: 0.0d
+			width: 5.67d
+			x: 33.0d
+			y: 9.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Lava", "Anzol à prova de lava ou vara de netherita"]
+			image: "lilyvale:textures/quests/pesca/secao_lava.png"
+			order: 11
+			rotation: 0.0d
+			width: 3.44d
+			x: 5.0d
+			y: 23.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Vazio do Overworld", "Abaixo da bedrock, com o anzol do vazio"]
+			image: "lilyvale:textures/quests/pesca/secao_vazio.png"
+			order: 12
+			rotation: 0.0d
+			width: 10.23d
+			x: 19.0d
+			y: 23.6d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: ["Vazio do End", "Da borda das ilhas, com o anzol do vazio"]
+			image: "lilyvale:textures/quests/pesca/secao_end.png"
+			order: 13
+			rotation: 0.0d
+			width: 7.16d
+			x: 33.0d
+			y: 23.6d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
@@ -15,13 +227,7 @@
 			]
 			hide_details_until_startable: false
 			hide_text_until_complete: false
-			icon: {
-				Count: 1
-				id: "minecraft:fishing_rod"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "minecraft:fishing_rod"
 			id: "7A07100000000001"
 			rewards: [{
 				id: "7A07300000000001"
@@ -39,7 +245,7 @@
 				type: "advancement"
 			}]
 			title: "&aLinha na água"
-			x: 0.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -68,7 +274,7 @@
 				type: "advancement"
 			}]
 			title: "&6&lFisgou!"
-			x: 0.0d
+			x: 14.0d
 			y: 2.0d
 		}
 		{
@@ -97,12 +303,12 @@
 				type: "advancement"
 			}]
 			title: "&aIsca boa"
-			x: 2.0d
+			x: 16.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"O diário do Tide registra cada espécie, onde vive e do que gosta. É o álbum oficial da pescaria: este livro não repete a lista de peixes."
+				"O diário do Tide registra cada espécie, onde vive e do que gosta. A grade abaixo resume o que cada peixe pede; o diário guarda os recordes."
 				"A tarefa registra posse, sem consumir: troca e presente também valem."
 			]
 			hide_details_until_startable: false
@@ -125,7 +331,7 @@
 				type: "item"
 			}]
 			title: "&aDiário de pesca"
-			x: 4.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -154,7 +360,7 @@
 				type: "advancement"
 			}]
 			title: "&6&lMeio diário"
-			x: 4.0d
+			x: 18.0d
 			y: 2.0d
 		}
 		{
@@ -184,7 +390,7 @@
 				type: "advancement"
 			}]
 			title: "&dDiário completo"
-			x: 4.0d
+			x: 18.0d
 			y: 4.0d
 		}
 		{
@@ -212,7 +418,7 @@
 				type: "item"
 			}]
 			title: "&aMesa de pesca"
-			x: 6.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -234,23 +440,23 @@
 			size: 1.0d
 			subtitle: "&bA — Aprendizado"
 			tasks: [
-				{
-					consume_items: false
-					id: "7A07200000000008"
-					item: "tide:fishing_line"
-					match_nbt: false
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A07200000000009"
-					item: "tide:fishing_hook"
-					match_nbt: false
-					type: "item"
-				}
+			{
+				consume_items: false
+				id: "7A07200000000008"
+				item: "tide:fishing_line"
+				match_nbt: false
+				type: "item"
+			}
+			{
+				consume_items: false
+				id: "7A07200000000009"
+				item: "tide:fishing_hook"
+				match_nbt: false
+				type: "item"
+			}
 			]
 			title: "&aLinha e anzol"
-			x: 8.0d
+			x: 22.0d
 			y: 0.0d
 		}
 		{
@@ -279,7 +485,7 @@
 				type: "advancement"
 			}]
 			title: "&dTesouro encharcado"
-			x: 0.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
@@ -308,7 +514,7 @@
 				type: "advancement"
 			}]
 			title: "&dHistória de pescador"
-			x: 2.0d
+			x: 16.0d
 			y: 6.0d
 		}
 		{
@@ -337,7 +543,7 @@
 				type: "item"
 			}]
 			title: "&dTroféu na parede"
-			x: 4.0d
+			x: 18.0d
 			y: 6.0d
 		}
 		{
@@ -366,7 +572,7 @@
 				type: "advancement"
 			}]
 			title: "&dPescaria quente"
-			x: 8.0d
+			x: 22.0d
 			y: 6.0d
 		}
 		{
@@ -395,8 +601,3019 @@
 				type: "advancement"
 			}]
 			title: "&dLinha no nada"
-			x: 10.0d
+			x: 24.0d
 			y: 6.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:salmon"
+			id: "7A0710000000000E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000000F"
+				item: "minecraft:salmon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:black_crappie"
+			id: "7A0710000000000F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000000F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000010"
+				item: "tide:black_crappie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:bluegill"
+			id: "7A07100000000010"
+			optional: true
+			rewards: [{
+				id: "7A07300000000010"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000011"
+				item: "tide:bluegill"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:brook_trout"
+			id: "7A07100000000011"
+			optional: true
+			rewards: [{
+				id: "7A07300000000011"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000012"
+				item: "tide:brook_trout"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Quando:&r das 0h às 18h."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:carp"
+			id: "7A07100000000012"
+			optional: true
+			rewards: [{
+				id: "7A07300000000012"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000013"
+				item: "tide:carp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:largemouth_bass"
+			id: "7A07100000000013"
+			optional: true
+			rewards: [{
+				id: "7A07300000000013"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000014"
+				item: "tide:largemouth_bass"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:pike"
+			id: "7A07100000000014"
+			optional: true
+			rewards: [{
+				id: "7A07300000000014"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000015"
+				item: "tide:pike"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:rainbow_trout"
+			id: "7A07100000000015"
+			optional: true
+			rewards: [{
+				id: "7A07300000000015"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000016"
+				item: "tide:rainbow_trout"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:smallmouth_bass"
+			id: "7A07100000000016"
+			optional: true
+			rewards: [{
+				id: "7A07300000000016"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000017"
+				item: "tide:smallmouth_bass"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:white_crappie"
+			id: "7A07100000000017"
+			optional: true
+			rewards: [{
+				id: "7A07300000000017"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000018"
+				item: "tide:white_crappie"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Quando:&r das 3h às 21h."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:yellow_perch"
+			id: "7A07100000000018"
+			optional: true
+			rewards: [{
+				id: "7A07300000000018"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000019"
+				item: "tide:yellow_perch"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Quando:&r das 18h às 6h."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:catfish"
+			id: "7A07100000000019"
+			optional: true
+			rewards: [{
+				id: "7A07300000000019"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001A"
+				item: "tide:catfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:guppy"
+			id: "7A0710000000001A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001A"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001B"
+				item: "tide:guppy"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Quando:&r das 15h às 10h."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:walleye"
+			id: "7A0710000000001B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001B"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001C"
+				item: "tide:walleye"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de selvas ou de pântanos, acima de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:arapaima"
+			id: "7A0710000000001C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001D"
+				item: "tide:arapaima"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de bosques de cerejeiras, acima de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:blossom_bass"
+			id: "7A0710000000001D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001E"
+				item: "tide:blossom_bass"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água de biomas gelados ou nevados, acima de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:frostbite_flounder"
+			id: "7A0710000000001E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001E"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000001F"
+				item: "tide:frostbite_flounder"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de desertos e badlands, acima de Y 40."
+				"&3Quando:&r das 18h às 6h."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:mirage_catfish"
+			id: "7A0710000000001F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000001F"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000020"
+				item: "tide:mirage_catfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de desertos e badlands, acima de Y 40."
+				"&3Quando:&r das 15h às 9h."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:sand_tiger_shark"
+			id: "7A07100000000020"
+			optional: true
+			rewards: [{
+				id: "7A07300000000020"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000021"
+				item: "tide:sand_tiger_shark"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de pântanos, acima de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:slimy_salmon"
+			id: "7A07100000000021"
+			optional: true
+			rewards: [{
+				id: "7A07300000000021"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000022"
+				item: "tide:slimy_salmon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:sturgeon"
+			id: "7A07100000000022"
+			optional: true
+			rewards: [{
+				id: "7A07300000000022"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000023"
+				item: "tide:sturgeon"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce de rios, acima de Y 40."
+				"&3Quando:&r das 17h às 8h."
+				"&3Clima:&r prefere águas quentes e quase não aparece fora delas."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:bull_shark"
+			id: "7A07100000000023"
+			optional: true
+			rewards: [{
+				id: "7A07300000000023"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000024"
+				item: "tide:bull_shark"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água doce, acima de Y 40."
+				"&3Quando:&r das 18h às 7h."
+				"&3Clima:&r prefere águas frias e quase não aparece fora delas."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:mooneye"
+			id: "7A07100000000024"
+			optional: true
+			rewards: [{
+				id: "7A07300000000024"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Água doce"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000025"
+				item: "tide:mooneye"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:cod"
+			id: "7A07100000000025"
+			optional: true
+			rewards: [{
+				id: "7A07300000000025"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000026"
+				item: "minecraft:cod"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:tropical_fish"
+			id: "7A07100000000026"
+			optional: true
+			rewards: [{
+				id: "7A07300000000026"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000027"
+				item: "minecraft:tropical_fish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:anchovy"
+			id: "7A07100000000027"
+			optional: true
+			rewards: [{
+				id: "7A07300000000027"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000028"
+				item: "tide:anchovy"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:flounder"
+			id: "7A07100000000028"
+			optional: true
+			rewards: [{
+				id: "7A07300000000028"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000029"
+				item: "tide:flounder"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:mackerel"
+			id: "7A07100000000029"
+			optional: true
+			rewards: [{
+				id: "7A07300000000029"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002A"
+				item: "tide:mackerel"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:ocean_perch"
+			id: "7A0710000000002A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002B"
+				item: "tide:ocean_perch"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas frias; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:red_snapper"
+			id: "7A0710000000002B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002B"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002C"
+				item: "tide:red_snapper"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada de praias e costas pedregosas, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:snook"
+			id: "7A0710000000002C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002D"
+				item: "tide:snook"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas amenas; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:tuna"
+			id: "7A0710000000002D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002E"
+				item: "tide:tuna"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "minecraft:pufferfish"
+			id: "7A0710000000002E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002E"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000002F"
+				item: "minecraft:pufferfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:angelfish"
+			id: "7A0710000000002F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000002F"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000030"
+				item: "tide:angelfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:mahi_mahi"
+			id: "7A07100000000030"
+			optional: true
+			rewards: [{
+				id: "7A07300000000030"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000031"
+				item: "tide:mahi_mahi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:manta_ray"
+			id: "7A07100000000031"
+			optional: true
+			rewards: [{
+				id: "7A07300000000031"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000032"
+				item: "tide:manta_ray"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:sailfish"
+			id: "7A07100000000032"
+			optional: true
+			rewards: [{
+				id: "7A07300000000032"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000033"
+				item: "tide:sailfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água de ilhas de cogumelos, acima de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:spore_stalker"
+			id: "7A07100000000033"
+			optional: true
+			rewards: [{
+				id: "7A07300000000033"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000034"
+				item: "tide:spore_stalker"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Clima:&r prefere águas quentes; aparece mais em biomas assim."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:swordfish"
+			id: "7A07100000000034"
+			optional: true
+			rewards: [{
+				id: "7A07300000000034"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000035"
+				item: "tide:swordfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, dentro de monumentos oceânicos."
+				"Pesque na água de dentro do monumento, não no mar em volta. Cuidado com os guardiões."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:aquathorn"
+			id: "7A07100000000035"
+			optional: true
+			rewards: [{
+				id: "7A07300000000035"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000036"
+				item: "tide:aquathorn"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r das 17h às 23h e das 4h às 9h."
+				"&3Clima:&r prefere águas amenas e quase não aparece fora delas."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:great_white_shark"
+			id: "7A07100000000036"
+			optional: true
+			rewards: [{
+				id: "7A07300000000036"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000037"
+				item: "tide:great_white_shark"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r na lua minguante gibosa ou na lua crescente gibosa."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:marstilus"
+			id: "7A07100000000037"
+			optional: true
+			rewards: [{
+				id: "7A07300000000037"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000038"
+				item: "tide:marstilus"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r na lua nova."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:neptune_koi"
+			id: "7A07100000000038"
+			optional: true
+			rewards: [{
+				id: "7A07300000000038"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000039"
+				item: "tide:neptune_koi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r na lua minguante ou na lua crescente."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:pluto_snail"
+			id: "7A07100000000039"
+			optional: true
+			rewards: [{
+				id: "7A07300000000039"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003A"
+				item: "tide:pluto_snail"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r no quarto crescente."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:saturn_cuttlefish"
+			id: "7A0710000000003A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003A"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003B"
+				item: "tide:saturn_cuttlefish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r das 5h às 18h, na lua cheia."
+				"Pesca de dia, mas conta a fase da lua daquele dia: confira no calendário lunar."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:sun_emblem"
+			id: "7A0710000000003B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003B"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003C"
+				item: "tide:sun_emblem"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada, acima de Y 40."
+				"&3Quando:&r no quarto minguante."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:uranias_pisces"
+			id: "7A0710000000003C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003C"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003D"
+				item: "tide:uranias_pisces"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada de oceanos profundos, acima de Y 40."
+				"&3Quando:&r das 19h às 5h, com chuva ou tempestade."
+				"&3Clima:&r prefere águas quentes e quase não aparece fora delas."
+				"Noite, chuva e oceano profundo ao mesmo tempo: o rádio meteorológico avisa quando o tempo vira."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:coelacanth"
+			id: "7A0710000000003D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003D"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003E"
+				item: "tide:coelacanth"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em água salgada de oceanos profundos, acima de Y 40."
+				"&3Quando:&r das 19h às 5h, na lua cheia."
+				"Uma noite de lua cheia sobre oceano profundo. O calendário lunar mostra a fase."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:shooting_starfish"
+			id: "7A0710000000003E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Mar"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000003F"
+				item: "tide:shooting_starfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, entre Y -30 e Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:cave_crawler"
+			id: "7A0710000000003F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000003F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000040"
+				item: "tide:cave_crawler"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, entre Y -45 e Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:cave_eel"
+			id: "7A07100000000040"
+			optional: true
+			rewards: [{
+				id: "7A07300000000040"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000041"
+				item: "tide:cave_eel"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 30."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:deep_grouper"
+			id: "7A07100000000041"
+			optional: true
+			rewards: [{
+				id: "7A07300000000041"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000042"
+				item: "tide:deep_grouper"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 32.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 10."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:shadow_snapper"
+			id: "7A07100000000042"
+			optional: true
+			rewards: [{
+				id: "7A07300000000042"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000043"
+				item: "tide:shadow_snapper"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 34.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y -20."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:abyss_angler"
+			id: "7A07100000000043"
+			optional: true
+			rewards: [{
+				id: "7A07300000000043"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000044"
+				item: "tide:abyss_angler"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 36.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, entre Y -20 e Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:anglerfish"
+			id: "7A07100000000044"
+			optional: true
+			rewards: [{
+				id: "7A07300000000044"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000045"
+				item: "tide:anglerfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 38.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 35."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:crystal_shrimp"
+			id: "7A07100000000045"
+			optional: true
+			rewards: [{
+				id: "7A07300000000045"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000046"
+				item: "tide:crystal_shrimp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água de cavernas de espeleotemas, abaixo de Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:dripstone_darter"
+			id: "7A07100000000046"
+			optional: true
+			rewards: [{
+				id: "7A07300000000046"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000047"
+				item: "tide:dripstone_darter"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, entre Y -50 e Y 40."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:glowfish"
+			id: "7A07100000000047"
+			optional: true
+			rewards: [{
+				id: "7A07300000000047"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000048"
+				item: "tide:glowfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 32.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 50."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:iron_tetra"
+			id: "7A07100000000048"
+			optional: true
+			rewards: [{
+				id: "7A07300000000048"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000049"
+				item: "tide:iron_tetra"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 34.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 20."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:lapis_lanternfish"
+			id: "7A07100000000049"
+			optional: true
+			rewards: [{
+				id: "7A07300000000049"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004A"
+				item: "tide:lapis_lanternfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 36.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y -20."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:bedrock_tetra"
+			id: "7A0710000000004A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004B"
+				item: "tide:bedrock_tetra"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 38.0d
+			y: 14.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 10."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:crystalline_carp"
+			id: "7A0710000000004B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004C"
+				item: "tide:crystalline_carp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 30."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:gilded_minnow"
+			id: "7A0710000000004C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004C"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004D"
+				item: "tide:gilded_minnow"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 5."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:luminescent_jellyfish"
+			id: "7A0710000000004D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004D"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004E"
+				item: "tide:luminescent_jellyfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 32.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y -20."
+				"Guarde uma: clicar com ela na bedrock faz a enguia comer o bloco. É assim que se abre caminho até o vazio do Overworld."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:chasm_eel"
+			id: "7A0710000000004E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004E"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000004F"
+				item: "tide:chasm_eel"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 34.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água da Escuridão Profunda ou de cidades ancestrais, abaixo de Y 30."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:echo_snapper"
+			id: "7A0710000000004F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000004F"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000050"
+				item: "tide:echo_snapper"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 36.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, entre Y 20 e Y 30."
+				"A faixa é estreita: de Y 20 a Y 30. O medidor de profundidade conta a partir do nível do mar (Y 63), então procure de 33 a 43 nele."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:devils_hole_pupfish"
+			id: "7A07100000000050"
+			optional: true
+			rewards: [{
+				id: "7A07300000000050"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000051"
+				item: "tide:devils_hole_pupfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 38.0d
+			y: 16.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Em qualquer água, abaixo de Y 41."
+				"&3Sorte:&r pelo menos 5 de sorte de pesca."
+				"Sorte 5 sai, por exemplo, de Sorte do Mar III na vara mais a isca da sorte (+2). A linha dourada e a vara de ouro somam +1 cada."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:midas_fish"
+			id: "7A07100000000051"
+			optional: true
+			rewards: [{
+				id: "7A07300000000051"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Cavernas"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000052"
+				item: "tide:midas_fish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:ash_perch"
+			id: "7A07100000000052"
+			optional: true
+			rewards: [{
+				id: "7A07300000000052"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000053"
+				item: "tide:ash_perch"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:ember_koi"
+			id: "7A07100000000053"
+			optional: true
+			rewards: [{
+				id: "7A07300000000053"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000054"
+				item: "tide:ember_koi"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:magma_mackerel"
+			id: "7A07100000000054"
+			optional: true
+			rewards: [{
+				id: "7A07300000000054"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000055"
+				item: "tide:magma_mackerel"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:obsidian_pike"
+			id: "7A07100000000055"
+			optional: true
+			rewards: [{
+				id: "7A07300000000055"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000056"
+				item: "tide:obsidian_pike"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:volcano_tuna"
+			id: "7A07100000000056"
+			optional: true
+			rewards: [{
+				id: "7A07300000000056"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000057"
+				item: "tide:volcano_tuna"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava do Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:crimson_fangjaw"
+			id: "7A07100000000057"
+			optional: true
+			rewards: [{
+				id: "7A07300000000057"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000058"
+				item: "tide:crimson_fangjaw"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava de qualquer dimensão, Overworld ou Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:inferno_guppy"
+			id: "7A07100000000058"
+			optional: true
+			rewards: [{
+				id: "7A07300000000058"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000059"
+				item: "tide:inferno_guppy"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava do Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:soulscale"
+			id: "7A07100000000059"
+			optional: true
+			rewards: [{
+				id: "7A07300000000059"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005A"
+				item: "tide:soulscale"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava do Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:warped_guppy"
+			id: "7A0710000000005A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005A"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005B"
+				item: "tide:warped_guppy"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 4.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava do Nether."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:witherfin"
+			id: "7A0710000000005B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005B"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005C"
+				item: "tide:witherfin"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 6.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Lava do Nether."
+				"Com a vara flamejante (Blazing Fishing Rod), os peixes do Nether mordem em qualquer lava."
+				"Precisa do anzol à prova de lava (Lavaproof Hook) ou de uma vara de netherita."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:blazing_swordfish"
+			id: "7A0710000000005C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005C"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Lava"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005D"
+				item: "tide:blazing_swordfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 8.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:bedrock_bug"
+			id: "7A0710000000005D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005E"
+				item: "tide:bedrock_bug"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:incandescent_larva"
+			id: "7A0710000000005E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000005F"
+				item: "tide:incandescent_larva"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:sleepy_carp"
+			id: "7A0710000000005F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000005F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000060"
+				item: "tide:sleepy_carp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:blue_neonfish"
+			id: "7A07100000000060"
+			optional: true
+			rewards: [{
+				id: "7A07300000000060"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000061"
+				item: "tide:blue_neonfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:deep_blue"
+			id: "7A07100000000061"
+			optional: true
+			rewards: [{
+				id: "7A07300000000061"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000062"
+				item: "tide:deep_blue"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:judgment_fish"
+			id: "7A07100000000062"
+			optional: true
+			rewards: [{
+				id: "7A07300000000062"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000063"
+				item: "tide:judgment_fish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:nephrosilu"
+			id: "7A07100000000063"
+			optional: true
+			rewards: [{
+				id: "7A07300000000063"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000064"
+				item: "tide:nephrosilu"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 14.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:pentapus"
+			id: "7A07100000000064"
+			optional: true
+			rewards: [{
+				id: "7A07300000000064"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000065"
+				item: "tide:pentapus"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 16.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:vengeance"
+			id: "7A07100000000065"
+			optional: true
+			rewards: [{
+				id: "7A07300000000065"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000066"
+				item: "tide:vengeance"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 18.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:darkness_eater"
+			id: "7A07100000000066"
+			optional: true
+			rewards: [{
+				id: "7A07300000000066"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000067"
+				item: "tide:darkness_eater"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 20.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:shadow_shark"
+			id: "7A07100000000067"
+			optional: true
+			rewards: [{
+				id: "7A07300000000067"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000068"
+				item: "tide:shadow_shark"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 22.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do Overworld, abaixo da bedrock: abra caminho com uma Chasm Eel e pesque com o anzol do vazio (Hook of the Depths)."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:alpha_fish"
+			id: "7A07100000000068"
+			optional: true
+			rewards: [{
+				id: "7A07300000000068"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Vazio do Overworld"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000069"
+				item: "tide:alpha_fish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 24.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:amber_rockfish"
+			id: "7A07100000000069"
+			optional: true
+			rewards: [{
+				id: "7A07300000000069"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006A"
+				item: "tide:amber_rockfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:enderfin"
+			id: "7A0710000000006A"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006B"
+				item: "tide:enderfin"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:pale_clubfish"
+			id: "7A0710000000006B"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006B"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&fComum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006C"
+				item: "tide:pale_clubfish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 32.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:chorus_cod"
+			id: "7A0710000000006C"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006C"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006D"
+				item: "tide:chorus_cod"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 34.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:ender_glider"
+			id: "7A0710000000006D"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006D"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006E"
+				item: "tide:ender_glider"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 36.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:endergazer"
+			id: "7A0710000000006E"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006E"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A0720000000006F"
+				item: "tide:endergazer"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 38.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:violet_carp"
+			id: "7A0710000000006F"
+			optional: true
+			rewards: [{
+				id: "7A0730000000006F"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&aIncomum &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000070"
+				item: "tide:violet_carp"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:dutchman_sock"
+			id: "7A07100000000070"
+			optional: true
+			rewards: [{
+				id: "7A07300000000070"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000071"
+				item: "tide:dutchman_sock"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:elytrout"
+			id: "7A07100000000071"
+			optional: true
+			rewards: [{
+				id: "7A07300000000071"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000072"
+				item: "tide:elytrout"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 32.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:red_40"
+			id: "7A07100000000072"
+			optional: true
+			rewards: [{
+				id: "7A07300000000072"
+				type: "xp"
+				xp: 25
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&9Raro &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000073"
+				item: "tide:red_40"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 34.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:mantyvern"
+			id: "7A07100000000073"
+			optional: true
+			rewards: [{
+				id: "7A07300000000073"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000074"
+				item: "tide:mantyvern"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 36.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:snatcher_squid"
+			id: "7A07100000000074"
+			optional: true
+			rewards: [{
+				id: "7A07300000000074"
+				type: "xp"
+				xp: 40
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "&5Muito raro &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000075"
+				item: "tide:snatcher_squid"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 38.0d
+			y: 28.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:dragon_fish"
+			id: "7A07100000000075"
+			optional: true
+			rewards: [{
+				id: "7A07300000000075"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000076"
+				item: "tide:dragon_fish"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 28.0d
+			y: 30.0d
+		}
+		{
+			description: [
+				"&3Onde:&r Vazio do End: lance a linha da borda de uma ilha, com o anzol do vazio (Hook of the Depths) na vara."
+				"A tarefa registra a posse do peixe, sem consumir: pode soltá-lo ou cozinhá-lo depois."
+			]
+			hide_details_until_startable: false
+			hide_text_until_complete: false
+			icon: "tide:voidseeker"
+			id: "7A07100000000076"
+			optional: true
+			rewards: [{
+				id: "7A07300000000076"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "&6&lLendário &7· Vazio do End"
+			tasks: [{
+				consume_items: false
+				id: "7A07200000000077"
+				item: "tide:voidseeker"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 30.0d
+			y: 30.0d
 		}
 	]
 	title: "&a&lÀ Beira d'Água"

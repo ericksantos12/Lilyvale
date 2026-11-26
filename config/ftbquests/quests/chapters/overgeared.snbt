@@ -11,6 +11,113 @@
 		}
 	}
 	id: "6F10000000000001"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.4d
+			hover: ["&6&lFogo, Martelo e Aço", "A oficina do Overgeared"]
+			image: "lilyvale:textures/quests/forja/titulo_forja.png"
+			order: 0
+			rotation: 0.0d
+			width: 11.37d
+			x: 6.0d
+			y: -7.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 4.4d
+			hover: ["Bata enquanto o ferro está quente"]
+			image: "lilyvale:textures/quests/forja/bigorna.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 12.2d
+			y: -1.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.6d
+			hover: ["O fogo da oficina não se apaga"]
+			image: "lilyvale:textures/quests/forja/forja.png"
+			order: 2
+			rotation: 0.0d
+			width: 2.83d
+			x: 6.0d
+			y: 11.4d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Ferro", "Molde de argila, lingote aquecido, pinças, cabeça de picareta e bigorna"]
+			image: "lilyvale:textures/quests/forja/placa_ferro.png"
+			order: 3
+			rotation: 0.0d
+			width: 2.18d
+			x: -6.1d
+			y: 0.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Projetos", "Mesa de desenho e projetos que aprendem com o uso"]
+			image: "lilyvale:textures/quests/forja/placa_projetos.png"
+			order: 4
+			rotation: 0.0d
+			width: 2.94d
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Aço", "Fundição, alto-forno, liga, aço e as ferramentas da oficina"]
+			image: "lilyvale:textures/quests/forja/placa_aco.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.61d
+			x: -5.8d
+			y: 6.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.9d
+			hover: ["Nether", "Fornos do Nether e a liga de netherita"]
+			image: "lilyvale:textures/quests/forja/placa_nether.png"
+			order: 6
+			rotation: 0.0d
+			width: 2.37d
+			x: -2.2d
+			y: 10.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

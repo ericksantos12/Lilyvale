@@ -98,20 +98,26 @@ class Chapter:
         return '7A%02X%s%011X' % (self.cc, {'q': '1', 't': '2', 'r': '3'}[kind], self.n[kind])
 
     def q(self, key, kind, title, icon, x, y, tasks, desc, deps=(), req=None, sub=None, xp=None,
-          optional=None):
+          optional=None, shape=None, size=None):
         """x, y em unidades de grade (1 unidade = 2.0 no FTB Quests)."""
         qid = self._id('q')
         assert key not in self.keys, key
         self.keys[key] = qid
         self.quests.append(dict(key=key, kind=kind, title=title, icon=icon, x=x * 2.0, y=y * 2.0,
                                 tasks=tasks, desc=desc if isinstance(desc, list) else [desc],
-                                deps=list(deps), req=req, sub=sub, id=qid,
+                                deps=list(deps), req=req, sub=sub, id=qid, shape=shape, size=size,
                                 xp=XP[kind] if xp is None else xp,
                                 optional=(kind == 'C') if optional is None else optional))
         return qid
 
     def image(self, path, x, y, w, h, hover=()):
-        """Imagem no painel do capítulo; x, y (centro), w e h em unidades de grade, como em q()."""
+        """Imagem no painel do capítulo; x, y (centro), w e h em unidades de grade, como em q().
+        Com w ou h None, a medida sai da proporção do PNG em kubejs/assets."""
+        if w is None or h is None:
+            from PIL import Image
+            pw, ph = Image.open(os.path.join(ROOT, 'kubejs', 'assets', *texture_path(path))).size
+            w = h * pw / ph if w is None else w
+            h = w * ph / pw if h is None else h
         self.images.append(dict(path=path, x=x * 2.0, y=y * 2.0, w=w * 2.0, h=h * 2.0, hover=list(hover)))
 
     def gallery(self, prefix, items, ox, oy, desc, cols=6, kind='C'):
@@ -205,8 +211,8 @@ def quest_snbt(ch, q, reg, errors, resolve):
         L.append(('rewards', '[{\n\t\t\t\tid: %s\n\t\t\t\ttype: "xp"\n\t\t\t\txp: %d\n\t\t\t}]' % (esc(ch._id('r')), q['xp'])))
     else:
         L.append(('rewards', '[ ]'))
-    L.append(('shape', esc(SHAPE[q['kind']])))
-    L.append(('size', SIZE[q['kind']]))
+    L.append(('shape', esc(q.get('shape') or SHAPE[q['kind']])))
+    L.append(('size', q.get('size') or SIZE[q['kind']]))
     L.append(('subtitle', esc(q['sub'] or SUB[q['kind']])))
     tasks = [task_snbt(ch, t, reg, errors, where) for t in q['tasks']]
     L.append(('tasks', '[' + '\n\t\t\t'.join(tasks) + ']' if len(tasks) == 1 else '[\n\t\t\t' + '\n\t\t\t'.join(tasks) + '\n\t\t\t]'))
@@ -220,8 +226,8 @@ def quest_snbt(ch, q, reg, errors, resolve):
 def image_snbt(img, n):
     hover = '[ ]' if not img['hover'] else '[' + ', '.join(esc(h) for h in img['hover']) + ']'
     pairs = [('alpha', '255'), ('click', '""'), ('color', '16777215'), ('corner', 'false'), ('dev', 'false'),
-             ('height', '%.1fd' % img['h']), ('hover', hover), ('image', esc(img['path'])), ('order', str(n)),
-             ('rotation', '0.0d'), ('width', '%.1fd' % img['w']), ('x', '%.1fd' % img['x']), ('y', '%.1fd' % img['y'])]
+             ('height', '%rd' % round(img['h'], 2)), ('hover', hover), ('image', esc(img['path'])), ('order', str(n)),
+             ('rotation', '0.0d'), ('width', '%rd' % round(img['w'], 2)), ('x', '%.1fd' % img['x']), ('y', '%.1fd' % img['y'])]
     return '{\n' + '\n'.join('\t\t\t%s: %s' % kv for kv in pairs) + '\n\t\t}'
 
 
@@ -278,3 +284,19 @@ def set_field(block, key, value):
     if re.search(pat, block, re.M):
         return re.sub(pat, lambda m: line, block, count=1, flags=re.M)
     return block.replace('\t\t{\n', '\t\t{\n' + line + '\n', 1)
+
+
+def apply_images(chapter_path, imgs):
+    """Reescreve só o bloco `images` de um capítulo mantido à mão, preservando o resto e o fim de linha.
+    imgs: dicts com path, x, y (centro), w, h e hover, em unidades do FTB Quests."""
+    with open(chapter_path, encoding='utf-8', newline='') as f:
+        t = f.read()
+    nl = '\r\n' if '\r\n' in t else '\n'
+    t = t.replace('\r\n', '\n')
+    t = re.sub(r'^\timages: \[\n.*?^\t\]\n', '', t, flags=re.S | re.M)
+    if imgs:
+        bloco = '\timages: [\n\t\t' + '\n\t\t'.join(image_snbt(i, n) for n, i in enumerate(imgs)) + '\n\t]\n'
+        i = re.search(r'^\torder_index:', t, re.M).start()
+        t = t[:i] + bloco + t[i:]
+    with open(chapter_path, 'w', encoding='utf-8', newline='') as f:
+        f.write(t.replace('\n', nl))

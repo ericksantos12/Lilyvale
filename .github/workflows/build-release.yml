@@ -392,6 +392,20 @@ jobs:
           MINECRAFT_VERSION=${{ needs.info.outputs.mc_version }}
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
+
+          # Crash Assistant: versão no link da issue (com "#" escapado, já que builds de dev se chamam build_#N) e na mensagem gerada
+          VERSION_URL=${VERSION//#/%23}
+          sed -i -e "s/LILYVALE_VERSION_URL/${VERSION_URL}/g" -e "s/LILYVALE_VERSION/${VERSION}/g" config/crash_assistant/config.toml
+          if grep -q LILYVALE_VERSION config/crash_assistant/config.toml; then
+            echo "::error::A versão não foi gravada em config/crash_assistant/config.toml" && exit 1
+          fi
+
+          # FancyMenu: versão no canto do menu principal (tools/fancymenu/menu.py)
+          # (o gerador grava a última versão do CHANGELOG; aqui ela vira a versão exata deste build)
+          sed -i -E "s/^(  source = Lilyvale ).*$/\1${VERSION}/" config/fancymenu/customization/lilyvale_titulo.txt
+          if ! grep -qF "  source = Lilyvale ${VERSION}" config/fancymenu/customization/lilyvale_titulo.txt; then
+            echo "::error::A versão não foi gravada no layout do FancyMenu" && exit 1
+          fi
           
           # sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           # sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt

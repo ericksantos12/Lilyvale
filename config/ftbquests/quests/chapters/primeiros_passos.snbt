@@ -5,6 +5,113 @@
 	group: "048ED71F33A9801E"
 	icon: "minecraft:oak_sapling"
 	id: "5C01DCD466AAB2FD"
+	images: [
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.2d
+			hover: ["Um passo de cada vez"]
+			image: "lilyvale:textures/quests/primeiros_passos/pegadas.png"
+			order: 0
+			rotation: 0.0d
+			width: 0.69d
+			x: 7.6d
+			y: 1.5d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.2d
+			hover: ["&6&lPrimeiros Passos", "Da árvore à primeira forja"]
+			image: "lilyvale:textures/quests/primeiros_passos/titulo.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.58d
+			x: 2.0d
+			y: -3.4d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.8d
+			hover: ["Madeira e Pedra", "Tronco, bancada, lascas e a picareta de pedra"]
+			image: "lilyvale:textures/quests/primeiros_passos/secao_madeira.png"
+			order: 2
+			rotation: 0.0d
+			width: 3.53d
+			x: 3.0d
+			y: -1.1d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 0.8d
+			hover: ["Cobre e Forja", "Fornalha, martelo, bigorna e polimento"]
+			image: "lilyvale:textures/quests/primeiros_passos/secao_cobre.png"
+			order: 3
+			rotation: 0.0d
+			width: 3.24d
+			x: 2.0d
+			y: 4.2d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 1.4d
+			hover: ["Tudo começa com uma árvore"]
+			image: "lilyvale:textures/quests/primeiros_passos/muda.png"
+			order: 4
+			rotation: 0.0d
+			width: 1.28d
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 1.7d
+			hover: ["Martelo de ferreiro de cobre"]
+			image: "lilyvale:textures/quests/primeiros_passos/martelo.png"
+			order: 5
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			alpha: 255
+			click: ""
+			color: 16777215
+			corner: false
+			dev: false
+			height: 2.2d
+			hover: ["Sua primeira obra de metal"]
+			image: "lilyvale:textures/quests/primeiros_passos/picareta_cobre.png"
+			order: 6
+			rotation: 0.0d
+			width: 2.12d
+			x: -4.3d
+			y: 3.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
